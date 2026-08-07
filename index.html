@@ -133,7 +133,7 @@
             left: 0;
             background: #ffffff;
             min-width: 240px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+            box-shadow: 0 4px 14px rgba(0,0,0.18);
             border-radius: 8px;
             overflow: visible;
             clip-path: inset(0 0 0 0 round 8px);
@@ -179,10 +179,12 @@
             margin: 0 auto;
             padding: 4rem 5%;
         }
+        /* ==========側邊欄核心修復點========== */
         .page-row {
             display: grid;
             grid-template-columns: 74% 24%;
             gap: 2%;
+            align-items: start; /* 關鍵：取消預設拉伸，側邊欄不會撐滿高度 */
         }
         section {
             margin-bottom: 4rem;
@@ -258,17 +260,19 @@
         .map-central {
             background: url("./images/map-02.jpg") center / cover no-repeat;
         }
-        /* 側邊欄 */
+        /* 側邊欄 修復sticky+兼容Safari */
         .sidebar {
+            position: -webkit-sticky;
             position: sticky;
-            top: 85px;
+            top: 85px; /* 對應導航高度，不會被導航遮擋 */
             height: fit-content;
+            align-self: start;
         }
         .sidebar-box {
             background: #ffffff;
             padding: 1.4rem;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 10px rgba(0,0,0.06);
         }
         .sidebar-box h2 {
             font-size: 1.3rem;
@@ -320,6 +324,7 @@
         @media (max-width: 768px) {
             .page-row {
                 grid-template-columns: 1fr;
+                align-items: unset;
             }
             .sidebar {
                 position: static;
@@ -366,18 +371,16 @@
                     <span class="dropdown-btn"> ▾ 入梯專區 Menu</span>
                     <div class="dropdown-menu">
                         <a href="https://vocus.cc/salon/zootecture/room/spatial-logic">安寵好好學@入梯城</a>
-                            <a href="https://vocus.cc/salon/zootecture/room/asset-up">入梯成功案例</a>
-                            <a href="https://vocus.cc/salon/zootecture/room/6a7546e65c98dd2c0ef0e4db">入梯通通有</a>
-                               <a href="https://vocus.cc/salon/zootecture/room/asset-up">安寵空間</a>
+                        <a href="https://vocus.cc/salon/zootecture/room/asset-up">入梯成功案例</a>
+                        <a href="https://vocus.cc/salon/zootecture/room/6a7546e65c98dd2c0ef0e4db">入梯通通有</a>
+                        <a href="https://vocus.cc/salon/zootecture/room/asset-up">安寵空間</a>
                         <a href="https://vocus.cc/salon/petlogic/room/family-cfo">養寵省錢實錄</a>
                         <a href="https://vocus.cc/salon/petlogic/room/behavior-logic">拆家剋星手冊</a>
                         <a href="https://vocus.cc/salon/petlogic/room/real-life">毛孩長大手冊</a>
-                                           <a href="https://vocus.cc/salon/zootecture/room/eco-logic">順寵圖鑑</a>
-                                            <a href="https://vocus.cc/salon/zootecture/room/6a56e68e7fa09cf0e30d1f2b">乖寵養成錄</a>
-                                         <a href="https://vocus.cc/salon/petlogic/room/dogs">狗百科</a>
+                        <a href="https://vocus.cc/salon/zootecture/room/eco-logic">順寵圖鑑</a>
+                        <a href="https://vocus.cc/salon/zootecture/room/6a56e68e7fa09cf0e30d1f2b">乖寵養成錄</a>
+                        <a href="https://vocus.cc/salon/petlogic/room/dogs">狗百科</a>
                         <a href="https://vocus.cc/salon/petlogic/room/cats">貓咪圖鑑</a>
-                        
-                    
                     </div>
                 </div>
                 <a href="#location">Blog</a>
@@ -453,7 +456,6 @@
                                 <p>各類伴侶寵物完整圖鑑</p>
                             </div>
                         </a>
-                    
                         <a href="https://vocus.cc/salon/zootecture/room/6a56e68e7fa09cf0e30d1f2b" class="card-item">
                             <div class="card-img" style="background: url('./images/10-obey.jpg') center / cover no-repeat;"></div>
                             <div class="card-content">
@@ -495,6 +497,7 @@
                                 <h3>【Petlogic毛孩長大手冊 】毛行知識圖鑑</h3>
                                 <p>居家改造實例參考</p>
                             </div>
+                        </a>
                     </div>
                 </section>
                 <section id="location">
@@ -512,7 +515,7 @@
                 </section>
             </div>
          
-    <!-- 右側側邊欄 -->
+    <!-- 右側側邊欄 結構完整閉合 -->
             <div class="sidebar">
                 <div class="sidebar-box">
                     <h2>熱門 ZooTecture Blog</h2>
@@ -561,15 +564,15 @@
                 <p>● <a href="https://vocus.cc/article/6a190de4fd897800017dec11">【Petlogic】緬因貓巨型品種完整飼養指南</a></p>
                 <p>● <a href="https://vocus.cc/article/6a1900d0fd897800017866ab">【ZooTecture】英短在台灣飼養10個重點</a></p>
                 <p>● <a href="https://vocus.cc/article/6a1904dbfd8978000179fab5">【ZooTecture】黃金獵犬室內放電教學</a></p>
-                <p>● <a href="https://vocus.cc/article/6a18fd3ffd8978000176ff1b">【ZooTecture】英短貓性格與新手飼養技巧</p>
+                <p>● <a href="https://vocus.cc/article/6a18fd3ffd8978000176ff1b">【ZooTecture】英短美短分辨教學</p>
                 <p>● <a href="https://vocus.cc/article/69f3550dfd89780001a15fb4">【ZooTecture】不同年齡貓適合溫度對照</p>
-                <p>● <a href="https://vocus.cc/article/6a191cdffd8978000183e9d9">【ZooTecture】貴賓犬品種特性與訓練優勢</a></p>
+                <p>● <a href="https://vocus.cc/article/6a191cdffd8978000183e9d9">【ZooTecture】貴賓犬品種特性與訓練優勢</p>
                 <p>● <a href="https://vocus.cc/article/6a198dbffd89780001ac567f">【ZooTecture】現代人養毛孩的心靈寄託</p>
                 <p>● <a href="https://vocus.cc/article/6a191040fd897800017ee579">【ZooTecture】法鬥呼吸道日常護理守則</p>
                 <p>● <a href="https://vocus.cc/article/6a2ab302fd897800013f3ee3">【ZooTecture】貓咪盯空氣科學解釋</p>
                 <p>● <a href="https://vocus.cc/article/6a18fa44fd8978000175d9c8">【ZooTecture】英短美短分辨教學</p>
                 <p>● <a href="https://vocus.cc/article/6a1912e5fd897800017ff670">【ZooTecture】哈士奇性格與室內訓練</p>
-                <p>● <a href="https://vocus.cc/article/6a19557afd89780001988a6f">【ZooTecture】寵物棄養責任反思</a></p>
+                <p>● <a href="https://vocus.cc/article/6a19557afd89780001988a6f">【ZooTecture】寵物棄養責任反思</p>
                 <p>● <a href="https://vocus.cc/article/6a51f998fd89780001a4498a">【ZooTecture】台灣寵物禮儀介紹</p>
                 <p>● <a href="https://vocus.cc/post/6a649f68fd8978000122bb12">【ZooTecture】狗狗居家活動熱力圖</p>
                 <p>● <a href="https://vocus.cc/article/69429749fd897800013e29d8">【ZooTecture】打造放鬆居家貓狗空間</p>
@@ -586,9 +589,8 @@
                     <a href="https://vocus.cc/salon/petlogic/room/real-life">毛孩長大手冊</a><span class="divider">|</span>
                     <a href="https://vocus.cc/salon/petlogic/about">【Petlogic 安寵好好學】剷屎官與寵物的百科</a><span class="divider">|</span>
                     <a href="https://vocus.cc/salon/zootecture">ZooTecture 寵物毛孩百科【 Pets 順寵圖鑑】</a><span class="divider">|</span>
-                                       <a href="https://vocus.cc/tags/petlogic">#petlogic</a><span class="divider">|</span>
-                    <a href="https://vocus.cc/tags/zootecture">#zootecture</a><span class="divider">|
-               
+                    <a href="https://vocus.cc/tags/petlogic">#petlogic</a><span class="divider">|</span>
+                    <a href="https://vocus.cc/tags/zootecture">#zootecture</a>
                 </p>
             </div>
         </section>
