@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -332,7 +342,7 @@
 <h3>Q：可以自己在家處理嗎？</h3><p><strong>A：</strong>基礎護理可以在家進行，異常狀況應及時就醫。</p>
 <div class="highlight-box"><h4>重點整理</h4><p>1. 預防重於治療。2. 遵循正確步驟。3. 避免常見誤區。4. 異常及時就醫。5. 持之以恆。</p></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-067.html">寵物牙齒健康：被忽略的重要課題</a></li><li><a href="post-068.html">寵物營養學：如何為你的寵物選擇合適的食物</a></li><li><a href="post-069.html">寵物疫苗接種：守護健康的第一道防線</a></li></ul></div>
 <p>希望本文對你有所幫助，讓你的<strong>寵物</strong>健康快樂。</p></div>
-<div class="post-nav"><a href="post-133.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">狗狗定點如廁訓練完全指南：室內與室外</div></a><a href="post-135.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">狗狗吠叫控制訓練：告別擾人噪音</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-067.html" class="post-card"><img src="../images/111_pet-education-dental-health-anatomy.webp" class="post-card-thumb" alt="寵物牙齒健康：被忽略的重要課題 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物牙齒健康：被忽略的重要課題</h4><p class="post-card-excerpt">一張寵物牙齒解剖圖揭示了牙齒健康的重要性。探索如何為你的寵物保持口腔健康。</p></div></a><a href="post-068.html" class="post-card"><img src="../images/112_pet-education-nutrition-food-flatlay.webp" class="post-card-thumb" alt="寵物營養學：如何為你的寵物選擇合適的食物 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物營養學：如何為你的寵物選擇合適的食物</h4><p class="post-card-excerpt">各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p></div></a><a href="post-069.html" class="post-card"><img src="../images/113_pet-education-veterinary-checkup-vaccine.webp" class="post-card-thumb" alt="寵物疫苗接種：守護健康的第一道防線 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物疫苗接種：守護健康的第一道防線</h4><p class="post-card-excerpt">一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p></div></a></div></div>
+<div class="post-nav"><a href="post-133.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">狗狗定點如廁訓練完全指南：室內與室外</div></a><a href="post-135.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">狗狗吠叫控制訓練：告別擾人噪音</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-067.html" class="post-card"><img src="../images/102_pet-hedgehog-fairy-garden-miniature.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物牙齒健康：被忽略的重要課題</h4><p class="post-card-excerpt">一張寵物牙齒解剖圖揭示了牙齒健康的重要性。探索如何為你的寵物保持口腔健康。</p></div></a><a href="post-068.html" class="post-card"><img src="../images/322_pets-waterpark-shallow-wading-pool-small-dogs.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物營養學：如何為你的寵物選擇合適的食物</h4><p class="post-card-excerpt">各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p></div></a><a href="post-069.html" class="post-card"><img src="../images/157_pet-space-laundry-grooming-bath-drying-storage.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物疫苗接種：守護健康的第一道防線</h4><p class="post-card-excerpt">一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p></div></a></div></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -368,7 +378,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

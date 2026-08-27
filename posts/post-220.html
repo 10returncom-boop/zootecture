@@ -135,6 +135,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head><body>
 <header class="site-header"><div class="header-inner">
@@ -151,7 +161,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -164,7 +174,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -177,7 +187,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -190,7 +200,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -203,7 +213,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -216,7 +226,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -229,7 +239,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -242,7 +252,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -255,7 +265,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -268,7 +278,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -281,7 +291,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -303,7 +313,7 @@
 <main class="container"><article>
 <div class="post-header"><span class="post-category">寵物空間規劃</span><h1 class="post-title">寵物睡眠區域規劃：給毛孩子一個好夢</h1>
 <div class="post-meta"><span>ZooTecture 入梯毛孩</span><span>|</span><span>第 220 篇</span><span>|</span><span>分類：寵物空間規劃</span></div></div>
-<figure class="article-image"><img class="article-inline-img" src="../images/194_pets-senior-orthopedic-bed-memory-foam-floor.webp" alt="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor（圖片1）" title="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor（圖片1）" loading="lazy"><figcaption>寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor</figcaption></figure><div class="post-content"><div class="aio-answer"><p><strong>快速回答：</strong>好的睡眠對<strong>寵物</strong>健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。 核心原則是<strong>垂直空間最大化</strong>、<strong>多功能傢俱整合</strong>、<strong>安全設計優先</strong>，以及<strong>依寵物習性規劃動線</strong>。</p></div><p>好的睡眠對寵物健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。 隨著<strong>寵物</strong>在家庭中的地位提升，越來越多<strong>飼主</strong>開始重視<strong>寵物空間</strong>的規劃。本文將從實用角度出發，為你提供系統化的設計建議。</p><h2>一、寵物睡眠區域規劃的核心設計原則</h2>
+<figure class="article-image"><img class="article-inline-img" src="../images/119_pet-education-cat-body-language-emotions.webp" alt="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor（圖片1）" title="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor（圖片1）" loading="lazy"><figcaption>寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior orthopedic bed memory foam floor</figcaption></figure><div class="post-content"><div class="aio-answer"><p><strong>快速回答：</strong>好的睡眠對<strong>寵物</strong>健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。 核心原則是<strong>垂直空間最大化</strong>、<strong>多功能傢俱整合</strong>、<strong>安全設計優先</strong>，以及<strong>依寵物習性規劃動線</strong>。</p></div><p>好的睡眠對寵物健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。 隨著<strong>寵物</strong>在家庭中的地位提升，越來越多<strong>飼主</strong>開始重視<strong>寵物空間</strong>的規劃。本文將從實用角度出發，為你提供系統化的設計建議。</p><h2>一、寵物睡眠區域規劃的核心設計原則</h2>
 <h3>1.1 以寵物習性為出發點</h3>
 <p>成功的<strong>寵物空間</strong>設計始於對<strong>寵物</strong>習性的深入理解。<strong>貓咪</strong>喜歡居高臨下、需要垂直逃脫路線；<strong>狗狗</strong>需要開闊的活動空間與明確的進食區。觀察你的寵物日常行為，是規劃的第一步。</p><figure class="article-image"><img class="article-inline-img" src="../images/153_pet-space-bedroom-under-bed-den-cat-walkways.webp" alt="寵物睡眠區域規劃：給毛孩子一個好夢 - pet space bedroom under bed den cat walkways（圖片2）" title="寵物睡眠區域規劃：給毛孩子一個好夢 - pet space bedroom under bed den cat walkways（圖片2）" loading="lazy"><figcaption>寵物睡眠區域規劃：給毛孩子一個好夢 - pet space bedroom under bed den cat walkways</figcaption></figure>
 <h3>1.2 安全與美觀的平衡</h3>
@@ -328,7 +338,7 @@
 2. <strong>垂直空間</strong>是小坪數的最大救星，<strong>貓跳台</strong>與<strong>貓走道</strong>能有效釋放地面。<br>
 3. 依<strong>寵物習性</strong>規劃動線，避免進食區與如廁區過近。<br>
 4. 選擇<strong>無毒</strong>、<strong>耐磨</strong>、<strong>易清潔</strong>的材料。<br>
-5. 完成後觀察<strong>寵物</strong>使用情況，持續微調優化。</p></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-201.html">寵物空間規劃文章201</a></li><li><a href="post-202.html">寵物空間規劃文章202</a></li><li><a href="post-203.html">寵物空間規劃文章203</a></li></ul></div><p>希望本文的<strong>寵物睡眠區域規劃</strong>指南對你有所幫助。記住，最好的<strong>寵物空間</strong>不是花最多錢，而是最符合你與毛孩子生活習慣的設計。從小地方開始改變，逐步打造屬於你們的理想家園。</p></div><figure class="article-image"><img class="article-inline-img" src="../images/199_pets-senior-outdoor-raised-bed-shade-ramp.webp" alt="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp（圖片5）" title="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp（圖片5）" loading="lazy"><figcaption>寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp</figcaption></figure><div class="post-nav"><a href="post-219.html" class="prev"><div class="nav-label">← 上一篇</div></a><a href="post-221.html" class="next"><div class="nav-label">下一篇 →</div></a></div>
+5. 完成後觀察<strong>寵物</strong>使用情況，持續微調優化。</p></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-201.html">寵物空間規劃文章201</a></li><li><a href="post-202.html">寵物空間規劃文章202</a></li><li><a href="post-203.html">寵物空間規劃文章203</a></li></ul></div><p>希望本文的<strong>寵物睡眠區域規劃</strong>指南對你有所幫助。記住，最好的<strong>寵物空間</strong>不是花最多錢，而是最符合你與毛孩子生活習慣的設計。從小地方開始改變，逐步打造屬於你們的理想家園。</p></div><figure class="article-image"><img class="article-inline-img" src="../images/189_pets-safety-backyard-pool-fence-selflatching-gate.webp" alt="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp（圖片5）" title="寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp（圖片5）" loading="lazy"><figcaption>寵物睡眠區域規劃：給毛孩子一個好夢 - pets senior outdoor raised bed shade ramp</figcaption></figure><div class="post-nav"><a href="post-219.html" class="prev"><div class="nav-label">← 上一篇</div></a><a href="post-221.html" class="next"><div class="nav-label">下一篇 →</div></a></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -364,7 +374,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

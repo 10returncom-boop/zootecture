@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -319,20 +329,20 @@
 <p>貓咪腎臟病是高齡貓常見疾病，早期發現至關重要。本文介紹貓咪腎臟病的症狀、診斷、治療與日常預防方法。 本文將深入探討<strong>貓咪腎臟病早期症狀與預防指南</strong>的相關知識，為<strong>飼主</strong>提供實用建議。</p>
 <h2>一、貓咪腎臟病早期症狀與預防指南的基本認識</h2>
 <h3>1.1 為什麼貓咪腎臟病早期症狀與預防指南很重要？</h3>
-<p><strong>貓咪腎臟病早期症狀與預防指南</strong>是<strong>寵物</strong>照護中不可或缺的一環。正確的認識與實踐，能有效預防多種常見問題，提升<strong>寵物</strong>的生活品質。</p><figure class="article-image"><img class="article-inline-img" src="../images/198_pets-senior-medication-organizer-water-fountain.webp" alt="貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain（圖片2）" title="貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain（圖片2）" loading="lazy"><figcaption>貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain</figcaption></figure>
+<p><strong>貓咪腎臟病早期症狀與預防指南</strong>是<strong>寵物</strong>照護中不可或缺的一環。正確的認識與實踐，能有效預防多種常見問題，提升<strong>寵物</strong>的生活品質。</p><figure class="article-image"><img class="article-inline-img" src="../images/82_pet-space-cat-dog-shared-multilevel-furniture.webp" alt="貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain（圖片2）" title="貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain（圖片2）" loading="lazy"><figcaption>貓咪腎臟病早期症狀與預防指南 - pets senior medication organizer water fountain</figcaption></figure>
 <h3>1.2 核心概念</h3>
 <ul><li><strong>預防優先</strong>：日常護理重於事後治療。</li><li><strong>早期偵測</strong>：學會觀察異常訊號。</li><li><strong>正確處理</strong>：面對問題採取正確方法。</li></ul>
 <h2>二、實用方法與步驟</h2>
 <h3>2.1 日常護理步驟</h3>
 <ol><li>觀察與評估<strong>寵物</strong>狀態。</li><li>使用正確的工具與產品。</li><li>按照建議頻率執行。</li><li>記錄與追蹤效果。</li></ol>
 <h3>2.2 常見錯誤與糾正</h3>
-<div class="highlight-box"><h4>常見誤區</h4><p>避免過度護理、使用人類產品、忽略專業建議。遵循<strong>獸醫</strong>指導，循序漸進。</p><figure class="article-image"><img class="article-inline-img" src="../images/201_pets-medical-firstaid-station-wall-cabinet.webp" alt="貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet（圖片3）" title="貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet（圖片3）" loading="lazy"><figcaption>貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet</figcaption></figure></div>
+<div class="highlight-box"><h4>常見誤區</h4><p>避免過度護理、使用人類產品、忽略專業建議。遵循<strong>獸醫</strong>指導，循序漸進。</p><figure class="article-image"><img class="article-inline-img" src="../images/248_pets-eco-entryway-recycled-rubber-mat.webp" alt="貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet（圖片3）" title="貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet（圖片3）" loading="lazy"><figcaption>貓咪腎臟病早期症狀與預防指南 - pets medical firstaid station wall cabinet</figcaption></figure></div>
 <h2>三、常見問題 <strong>FAQ</strong></h2>
 <h3>Q：貓咪腎臟病早期症狀與預防指南多久做一次？</h3><p><strong>A：</strong>取決於<strong>寵物</strong>的品種、年齡與健康狀況，建議諮詢<strong>獸醫</strong>。</p>
 <h3>Q：可以自己在家處理嗎？</h3><p><strong>A：</strong>基礎護理可以在家進行，異常狀況應及時就醫。</p>
 <div class="highlight-box"><h4>重點整理</h4><p>1. 預防重於治療。2. 遵循正確步驟。3. 避免常見誤區。4. 異常及時就醫。5. 持之以恆。</p></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-097.html">高齡寵物的居家改造：讓老寵物安享晚年</a></li><li><a href="post-098.html">寵物居家安全：每個房間的危險排查</a></li><li><a href="post-099.html">寵物康復空間：為受傷寵物打造恢復環境</a></li></ul></div>
 <p>希望本文對你有所幫助，讓你的<strong>寵物</strong>健康快樂。</p></div>
-<div class="post-nav"><a href="post-101.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">狗狗常見皮膚問題與護理完全指南</div></a><a href="post-103.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物過敏原因與應對方法完全解析</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-097.html" class="post-card"><img src="../images/191_pets-senior-nonslip-flooring-rugs-traction.webp" class="post-card-thumb" alt="高齡寵物的居家改造：讓老寵物安享晚年 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">高齡寵物的居家改造：讓老寵物安享晚年</h4><p class="post-card-excerpt">為高齡寵物設計的防滑地板和傢俱。探索如何改造居家環境以適應高齡寵物的需求。</p></div></a><a href="post-098.html" class="post-card"><img src="../images/181_pets-safety-kitchen-babygate-chemicals-storage.webp" class="post-card-thumb" alt="寵物居家安全：每個房間的危險排查 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物居家安全：每個房間的危險排查</h4><p class="post-card-excerpt">客廳中固定的電視和安全的植物擺放。探索如何排查和消除家中的寵物安全隱患。</p></div></a><a href="post-099.html" class="post-card"><img src="../images/209_pets-medical-physical-therapy-livingroom-yoga-mat.webp" class="post-card-thumb" alt="寵物康復空間：為受傷寵物打造恢復環境 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物康復空間：為受傷寵物打造恢復環境</h4><p class="post-card-excerpt">寵物物理治療室中的康復設備。探索如何為受傷或手術後的寵物打造合適的康復空間。</p></div></a></div></div>
+<div class="post-nav"><a href="post-101.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">狗狗常見皮膚問題與護理完全指南</div></a><a href="post-103.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物過敏原因與應對方法完全解析</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-097.html" class="post-card"><img src="../images/272_pets-dogcafe-open-play-seating-perimeter.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">高齡寵物的居家改造：讓老寵物安享晚年</h4><p class="post-card-excerpt">為高齡寵物設計的防滑地板和傢俱。探索如何改造居家環境以適應高齡寵物的需求。</p></div></a><a href="post-098.html" class="post-card"><img src="../images/181_pets-safety-kitchen-babygate-chemicals-storage.webp" class="post-card-thumb" alt="寵物居家安全：每個房間的危險排查 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物居家安全：每個房間的危險排查</h4><p class="post-card-excerpt">客廳中固定的電視和安全的植物擺放。探索如何排查和消除家中的寵物安全隱患。</p></div></a><a href="post-099.html" class="post-card"><img src="../images/146_pet-outdoor-dog-beach-sunrise-running.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物康復空間：為受傷寵物打造恢復環境</h4><p class="post-card-excerpt">寵物物理治療室中的康復設備。探索如何為受傷或手術後的寵物打造合適的康復空間。</p></div></a></div></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -368,7 +378,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

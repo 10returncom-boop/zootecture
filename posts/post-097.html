@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -314,9 +324,9 @@
 <h1 class="post-title">高齡寵物的居家改造：讓老寵物安享晚年</h1>
 <div class="post-meta"><span>ZooTecture 入梯毛孩</span><span>|</span><span>第 97 篇</span><span>|</span><span>分類：寵物健康</span><span>|</span><span>閱讀時間約 5 分鐘</span></div>
 </div>
-<figure class="article-image"><img class="article-inline-img" src="../images/191_pets-senior-nonslip-flooring-rugs-traction.webp" alt="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior nonslip flooring rugs traction（圖片1）" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior nonslip flooring rugs traction（圖片1）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior nonslip flooring rugs traction</figcaption></figure>
-<div class="post-content"><p>在現代家庭中，高齡<strong>寵物</strong>居家改造——讓老寵物安享晚年已經成為越來越多人關注的話題。隨著寵物在家庭中的地位不斷提升，人們對於寵物的護理、健康和生活品質也有了更高的要求。本文將深入探討<strong>高齡寵物</strong>的居家改造：讓老寵物安享晚年的相關知識，為寵物主人提供實用的建議和參考。</p><h2>高齡寵物的居家改造：讓老寵物安享晚年的重要性</h2><p>寵物的健康是每個主人最關心的話題。高齡寵物的居家改造：讓老寵物安享晚年不僅關係到寵物的生活品質，也關係到整個家庭的和諧。一個健康的寵物不僅可以陪伴主人更長的時間，還可以帶來更多的歡樂和溫暖。因此，每個寵物主人都應該重視寵物的健康護理，學習相關的知識，為寵物提供最好的照顧。</p><h2>實用的健康護理建議</h2><ul><li><strong>定期體檢</strong>：每年至少帶寵物進行一次全面的健康檢查，及時發現和治療潛在的健康問題。</li><li><strong>疫苗接種</strong>：按照獸醫的建議定時為寵物接種<strong>疫苗</strong>，預防各種傳染病。</li><li><strong>定期驅蟲</strong>：定期為寵物進行體內和體外<strong>驅蟲</strong>，預防寄生蟲感染。</li><li><strong>均衡飲食</strong>：為寵物提供<strong>營養</strong>均衡的食物，避免過度餵食和營養不良。</li><li><strong>適量運動</strong>：每天確保寵物有足夠的運動量，維持健康體重和身體機能。</li><li><strong>口腔護理</strong>：定期為寵物清潔牙齒，預防口腔疾病。</li></ul><h2>需要注意的健康警訊</h2><p>作為寵物主人，應該學會觀察寵物的健康狀況，及時發現異常症狀。以下是一些常見的健康警訊，如果寵物出現這些症狀，應該及時就醫：食慾突然下降或增加；飲水量突然增加或減少；體重突然下降或增加；精神萎靡或異常興奮；嘔吐或腹瀉；咳嗽或呼吸困難；跛行或活動能力下降；皮膚發紅、脫毛或瘙癢；眼睛或鼻子有異常分泌物；如廁習慣改變。早期發現和治療可以大大提高治療效果和癒後狀況，因此不要忽視任何異常症狀。</p><div class="highlight-box"><h4>小結</h4><p>高齡寵物的居家改造：讓老寵物安享晚年是每個寵物主人都應該重視的課題。透過不斷學習和實踐，我們可以為寵物提供更好的照顧，讓牠們健康、快樂地陪伴我們更長的時間。記住，寵物的健康始終是最重要的，不要等到出現問題才開始重視。從今天開始，為你的寵物制定一個全面的健康護理計畫吧！</p><figure class="article-image"><img class="article-inline-img" src="../images/194_pets-senior-orthopedic-bed-memory-foam-floor.webp" alt="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior orthopedic bed memory foam floor（圖片2）" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior orthopedic bed memory foam floor（圖片2）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior orthopedic bed memory foam floor</figcaption></figure></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-098.html">寵物居家安全：每個房間的危險排查</a></li><li><a href="post-099.html">寵物康復空間：為受傷寵物打造恢復環境</a></li><li><a href="post-100.html">智慧寵物餵食器：科技改變寵物餵食方式</a></li></ul></div><p>希望本文的內容對你有所幫助。如果你有任何問題或建議，歡迎在下方留言交流。讓我們一起為寵物的健康和幸福努力！</p><figure class="article-image"><img class="article-inline-img" src="../images/197_pets-senior-low-furniture-steps-joint-pain.webp" alt="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior low furniture steps joint pain（圖片3）" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior low furniture steps joint pain（圖片3）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior low furniture steps joint pain</figcaption></figure></div>
-<div class="post-nav"><a href="post-096.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">玄關寵物站：進門處的寵物收納設計</div></a><a href="post-098.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物居家安全：每個房間的危險排查</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-098.html" class="post-card"><img src="../images/181_pets-safety-kitchen-babygate-chemicals-storage.webp" class="post-card-thumb" alt="寵物居家安全：每個房間的危險排查 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物居家安全：每個房間的危險排查</h4><p class="post-card-excerpt">客廳中固定的電視和安全的植物擺放。探索如何排查和消除家中的寵物安全隱患。</p></div></a><a href="post-099.html" class="post-card"><img src="../images/209_pets-medical-physical-therapy-livingroom-yoga-mat.webp" class="post-card-thumb" alt="寵物康復空間：為受傷寵物打造恢復環境 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物康復空間：為受傷寵物打造恢復環境</h4><p class="post-card-excerpt">寵物物理治療室中的康復設備。探索如何為受傷或手術後的寵物打造合適的康復空間。</p></div></a><a href="post-100.html" class="post-card"><img src="../images/231_pets-smart-kitchen-feeder-water-fountain.webp" class="post-card-thumb" alt="智慧寵物餵食器：科技改變寵物餵食方式 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">智慧寵物餵食器：科技改變寵物餵食方式</h4><p class="post-card-excerpt">廚房中智慧餵食器和飲水噴泉。探索智慧寵物產品如何改變寵物的餵食和護理方式。</p></div></a></div></div>
+<figure class="article-image"><img class="article-inline-img" src="../images/272_pets-dogcafe-open-play-seating-perimeter.webp" alt="可愛寵物生活照片" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior nonslip flooring rugs traction（圖片1）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior nonslip flooring rugs traction</figcaption></figure>
+<div class="post-content"><p>在現代家庭中，高齡<strong>寵物</strong>居家改造——讓老寵物安享晚年已經成為越來越多人關注的話題。隨著寵物在家庭中的地位不斷提升，人們對於寵物的護理、健康和生活品質也有了更高的要求。本文將深入探討<strong>高齡寵物</strong>的居家改造：讓老寵物安享晚年的相關知識，為寵物主人提供實用的建議和參考。</p><h2>高齡寵物的居家改造：讓老寵物安享晚年的重要性</h2><p>寵物的健康是每個主人最關心的話題。高齡寵物的居家改造：讓老寵物安享晚年不僅關係到寵物的生活品質，也關係到整個家庭的和諧。一個健康的寵物不僅可以陪伴主人更長的時間，還可以帶來更多的歡樂和溫暖。因此，每個寵物主人都應該重視寵物的健康護理，學習相關的知識，為寵物提供最好的照顧。</p><h2>實用的健康護理建議</h2><ul><li><strong>定期體檢</strong>：每年至少帶寵物進行一次全面的健康檢查，及時發現和治療潛在的健康問題。</li><li><strong>疫苗接種</strong>：按照獸醫的建議定時為寵物接種<strong>疫苗</strong>，預防各種傳染病。</li><li><strong>定期驅蟲</strong>：定期為寵物進行體內和體外<strong>驅蟲</strong>，預防寄生蟲感染。</li><li><strong>均衡飲食</strong>：為寵物提供<strong>營養</strong>均衡的食物，避免過度餵食和營養不良。</li><li><strong>適量運動</strong>：每天確保寵物有足夠的運動量，維持健康體重和身體機能。</li><li><strong>口腔護理</strong>：定期為寵物清潔牙齒，預防口腔疾病。</li></ul><h2>需要注意的健康警訊</h2><p>作為寵物主人，應該學會觀察寵物的健康狀況，及時發現異常症狀。以下是一些常見的健康警訊，如果寵物出現這些症狀，應該及時就醫：食慾突然下降或增加；飲水量突然增加或減少；體重突然下降或增加；精神萎靡或異常興奮；嘔吐或腹瀉；咳嗽或呼吸困難；跛行或活動能力下降；皮膚發紅、脫毛或瘙癢；眼睛或鼻子有異常分泌物；如廁習慣改變。早期發現和治療可以大大提高治療效果和癒後狀況，因此不要忽視任何異常症狀。</p><div class="highlight-box"><h4>小結</h4><p>高齡寵物的居家改造：讓老寵物安享晚年是每個寵物主人都應該重視的課題。透過不斷學習和實踐，我們可以為寵物提供更好的照顧，讓牠們健康、快樂地陪伴我們更長的時間。記住，寵物的健康始終是最重要的，不要等到出現問題才開始重視。從今天開始，為你的寵物制定一個全面的健康護理計畫吧！</p><figure class="article-image"><img class="article-inline-img" src="../images/119_pet-education-cat-body-language-emotions.webp" alt="可愛寵物生活照片" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior orthopedic bed memory foam floor（圖片2）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior orthopedic bed memory foam floor</figcaption></figure></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-098.html">寵物居家安全：每個房間的危險排查</a></li><li><a href="post-099.html">寵物康復空間：為受傷寵物打造恢復環境</a></li><li><a href="post-100.html">智慧寵物餵食器：科技改變寵物餵食方式</a></li></ul></div><p>希望本文的內容對你有所幫助。如果你有任何問題或建議，歡迎在下方留言交流。讓我們一起為寵物的健康和幸福努力！</p><figure class="article-image"><img class="article-inline-img" src="../images/109_pet-turtle-eating-lettuce-aquarium.webp" alt="可愛寵物生活照片" title="高齡寵物的居家改造：讓老寵物安享晚年 - pets senior low furniture steps joint pain（圖片3）" loading="lazy"><figcaption>高齡寵物的居家改造：讓老寵物安享晚年 - pets senior low furniture steps joint pain</figcaption></figure></div>
+<div class="post-nav"><a href="post-096.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">玄關寵物站：進門處的寵物收納設計</div></a><a href="post-098.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物居家安全：每個房間的危險排查</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-098.html" class="post-card"><img src="../images/181_pets-safety-kitchen-babygate-chemicals-storage.webp" class="post-card-thumb" alt="寵物居家安全：每個房間的危險排查 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物居家安全：每個房間的危險排查</h4><p class="post-card-excerpt">客廳中固定的電視和安全的植物擺放。探索如何排查和消除家中的寵物安全隱患。</p></div></a><a href="post-099.html" class="post-card"><img src="../images/146_pet-outdoor-dog-beach-sunrise-running.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">寵物康復空間：為受傷寵物打造恢復環境</h4><p class="post-card-excerpt">寵物物理治療室中的康復設備。探索如何為受傷或手術後的寵物打造合適的康復空間。</p></div></a><a href="post-100.html" class="post-card"><img src="../images/231_pets-smart-kitchen-feeder-water-fountain.webp" class="post-card-thumb" alt="智慧寵物餵食器：科技改變寵物餵食方式 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物健康</span><h4 class="post-card-title">智慧寵物餵食器：科技改變寵物餵食方式</h4><p class="post-card-excerpt">廚房中智慧餵食器和飲水噴泉。探索智慧寵物產品如何改變寵物的餵食和護理方式。</p></div></a></div></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -352,7 +362,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

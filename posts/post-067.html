@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -314,9 +324,9 @@
 <h1 class="post-title">寵物牙齒健康：被忽略的重要課題</h1>
 <div class="post-meta"><span>ZooTecture 入梯毛孩</span><span>|</span><span>第 67 篇</span><span>|</span><span>分類：寵物教育</span><span>|</span><span>閱讀時間約 5 分鐘</span></div>
 </div>
-<figure class="article-image"><img class="article-inline-img" src="../images/111_pet-education-dental-health-anatomy.webp" alt="寵物牙齒健康：被忽略的重要課題 - pet education dental health anatomy（圖片1）" title="寵物牙齒健康：被忽略的重要課題 - pet education dental health anatomy（圖片1）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pet education dental health anatomy</figcaption></figure>
-<div class="post-content"><p>在現代家庭中，<strong>寵物</strong>牙齒健康——被忽略重要課題已經成為越來越多人關注的話題。隨著寵物在家庭中的地位不斷提升，人們對於寵物的護理、健康和生活品質也有了更高的要求。本文將深入探討寵物牙齒健康：被忽略的重要課題的相關知識，為寵物主人提供實用的建議和參考。</p><h2>為什麼寵物牙齒健康：被忽略的重要課題很重要？</h2><p>很多寵物主人往往忽略了寵物牙齒健康：被忽略的重要課題的重要性，直到寵物出現健康問題才開始重視。事實上，預防永遠勝於治療，透過正確的知識和日常護理，可以有效預防很多常見的寵物健康問題。根據獸醫協會的統計，超過60%的寵物健康問題都與不正確的飼養方式有關，而這些問題大多數是可以透過教育和預防來避免的。</p><h2>實用建議與技巧</h2><ul><li><strong>定期檢查</strong>：建議每年至少帶寵物進行一次全面的健康檢查，老年寵物則需要每半年檢查一次。</li><li><strong>正確飲食</strong>：根據寵物的品種、年齡、體重和活動量選擇合適的食物，避免過度餵食和餵食人類食物。</li><li><strong>適量運動</strong>：每天確保寵物有足夠的運動量，這不僅可以維持健康體重，還可以促進心理健康。</li><li><strong>口腔護理</strong>：定期為寵物刷牙或提供<strong>口腔護理</strong>零食，預防<strong>牙結石</strong>和牙齦疾病。</li></ul><h2>常見誤區與糾正</h2><p>在寵物牙齒健康：被忽略的重要課題方面，很多寵物主人存在一些常見的誤區。例如，有些人認為寵物不需要專業的護理，只要餵飽就行；有些人則過度寵愛，給寵物餵食過多的零食和人類食物。這些做法都可能對寵物的健康造成不良影響。正確的做法是在獸醫和專業人士的指導下，根據寵物的個體需求制定合適的護理計畫，並持之以恆地執行。</p><div class="highlight-box"><h4>小結</h4><p>寵物牙齒健康：被忽略的重要課題是每個寵物主人都應該重視的課題。透過不斷學習和實踐，我們可以為寵物提供更好的照顧，讓牠們健康、快樂地陪伴我們更長的時間。記住，寵物的健康始終是最重要的，不要等到出現問題才開始重視。從今天開始，為你的寵物制定一個全面的健康護理計畫吧！</p><figure class="article-image"><img class="article-inline-img" src="../images/208_pets-medical-dental-care-bathroom-toothbrush.webp" alt="寵物牙齒健康：被忽略的重要課題 - pets medical dental care bathroom toothbrush（圖片2）" title="寵物牙齒健康：被忽略的重要課題 - pets medical dental care bathroom toothbrush（圖片2）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pets medical dental care bathroom toothbrush</figcaption></figure></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-068.html">寵物營養學：如何為你的寵物選擇合適的食物</a></li><li><a href="post-069.html">寵物疫苗接種：守護健康的第一道防線</a></li><li><a href="post-070.html">狗狗訓練手勢：與你的狗狗建立有效溝通</a></li></ul></div><p>希望本文的內容對你有所幫助。如果你有任何問題或建議，歡迎在下方留言交流。讓我們一起為寵物的健康和幸福努力！</p><figure class="article-image"><img class="article-inline-img" src="../images/451_pets-dentalclinic-teethcleaning-scaler-enamel-macro.webp" alt="寵物牙齒健康：被忽略的重要課題 - pets dentalclinic teethcleaning scaler enamel macro（圖片3）" title="寵物牙齒健康：被忽略的重要課題 - pets dentalclinic teethcleaning scaler enamel macro（圖片3）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pets dentalclinic teethcleaning scaler enamel macro</figcaption></figure></div>
-<div class="post-nav"><a href="post-066.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧</div></a><a href="post-068.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物營養學：如何為你的寵物選擇合適的食物</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-068.html" class="post-card"><img src="../images/112_pet-education-nutrition-food-flatlay.webp" class="post-card-thumb" alt="寵物營養學：如何為你的寵物選擇合適的食物 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物營養學：如何為你的寵物選擇合適的食物</h4><p class="post-card-excerpt">各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p></div></a><a href="post-069.html" class="post-card"><img src="../images/113_pet-education-veterinary-checkup-vaccine.webp" class="post-card-thumb" alt="寵物疫苗接種：守護健康的第一道防線 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物疫苗接種：守護健康的第一道防線</h4><p class="post-card-excerpt">一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p></div></a><a href="post-070.html" class="post-card"><img src="../images/114_pet-education-dog-training-hand-signals.webp" class="post-card-thumb" alt="狗狗訓練手勢：與你的狗狗建立有效溝通 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">狗狗訓練手勢：與你的狗狗建立有效溝通</h4><p class="post-card-excerpt">一隻狗狗正在學習手勢指令。探索常用的狗狗訓練手勢和正向訓練方法。</p></div></a></div></div>
+<figure class="article-image"><img class="article-inline-img" src="../images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="可愛寵物生活照片" title="寵物牙齒健康：被忽略的重要課題 - pet education dental health anatomy（圖片1）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pet education dental health anatomy</figcaption></figure>
+<div class="post-content"><p>在現代家庭中，<strong>寵物</strong>牙齒健康——被忽略重要課題已經成為越來越多人關注的話題。隨著寵物在家庭中的地位不斷提升，人們對於寵物的護理、健康和生活品質也有了更高的要求。本文將深入探討寵物牙齒健康：被忽略的重要課題的相關知識，為寵物主人提供實用的建議和參考。</p><h2>為什麼寵物牙齒健康：被忽略的重要課題很重要？</h2><p>很多寵物主人往往忽略了寵物牙齒健康：被忽略的重要課題的重要性，直到寵物出現健康問題才開始重視。事實上，預防永遠勝於治療，透過正確的知識和日常護理，可以有效預防很多常見的寵物健康問題。根據獸醫協會的統計，超過60%的寵物健康問題都與不正確的飼養方式有關，而這些問題大多數是可以透過教育和預防來避免的。</p><h2>實用建議與技巧</h2><ul><li><strong>定期檢查</strong>：建議每年至少帶寵物進行一次全面的健康檢查，老年寵物則需要每半年檢查一次。</li><li><strong>正確飲食</strong>：根據寵物的品種、年齡、體重和活動量選擇合適的食物，避免過度餵食和餵食人類食物。</li><li><strong>適量運動</strong>：每天確保寵物有足夠的運動量，這不僅可以維持健康體重，還可以促進心理健康。</li><li><strong>口腔護理</strong>：定期為寵物刷牙或提供<strong>口腔護理</strong>零食，預防<strong>牙結石</strong>和牙齦疾病。</li></ul><h2>常見誤區與糾正</h2><p>在寵物牙齒健康：被忽略的重要課題方面，很多寵物主人存在一些常見的誤區。例如，有些人認為寵物不需要專業的護理，只要餵飽就行；有些人則過度寵愛，給寵物餵食過多的零食和人類食物。這些做法都可能對寵物的健康造成不良影響。正確的做法是在獸醫和專業人士的指導下，根據寵物的個體需求制定合適的護理計畫，並持之以恆地執行。</p><div class="highlight-box"><h4>小結</h4><p>寵物牙齒健康：被忽略的重要課題是每個寵物主人都應該重視的課題。透過不斷學習和實踐，我們可以為寵物提供更好的照顧，讓牠們健康、快樂地陪伴我們更長的時間。記住，寵物的健康始終是最重要的，不要等到出現問題才開始重視。從今天開始，為你的寵物制定一個全面的健康護理計畫吧！</p><figure class="article-image"><img class="article-inline-img" src="../images/277_pets-cafe-kitchen-treat-baking-display.webp" alt="可愛寵物生活照片" title="寵物牙齒健康：被忽略的重要課題 - pets medical dental care bathroom toothbrush（圖片2）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pets medical dental care bathroom toothbrush</figcaption></figure></div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-068.html">寵物營養學：如何為你的寵物選擇合適的食物</a></li><li><a href="post-069.html">寵物疫苗接種：守護健康的第一道防線</a></li><li><a href="post-070.html">狗狗訓練手勢：與你的狗狗建立有效溝通</a></li></ul></div><p>希望本文的內容對你有所幫助。如果你有任何問題或建議，歡迎在下方留言交流。讓我們一起為寵物的健康和幸福努力！</p><figure class="article-image"><img class="article-inline-img" src="../images/125_pet-holiday-fourth-july-dog-flag-fireworks.webp" alt="可愛寵物生活照片" title="寵物牙齒健康：被忽略的重要課題 - pets dentalclinic teethcleaning scaler enamel macro（圖片3）" loading="lazy"><figcaption>寵物牙齒健康：被忽略的重要課題 - pets dentalclinic teethcleaning scaler enamel macro</figcaption></figure></div>
+<div class="post-nav"><a href="post-066.html" class="prev"><div class="nav-label">← 上一篇</div><div class="nav-title">吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧</div></a><a href="post-068.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">寵物營養學：如何為你的寵物選擇合適的食物</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-068.html" class="post-card"><img src="../images/322_pets-waterpark-shallow-wading-pool-small-dogs.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物營養學：如何為你的寵物選擇合適的食物</h4><p class="post-card-excerpt">各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p></div></a><a href="post-069.html" class="post-card"><img src="../images/157_pet-space-laundry-grooming-bath-drying-storage.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">寵物疫苗接種：守護健康的第一道防線</h4><p class="post-card-excerpt">一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p></div></a><a href="post-070.html" class="post-card"><img src="../images/114_pet-education-dog-training-hand-signals.webp" class="post-card-thumb" alt="狗狗訓練手勢：與你的狗狗建立有效溝通 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">寵物教育</span><h4 class="post-card-title">狗狗訓練手勢：與你的狗狗建立有效溝通</h4><p class="post-card-excerpt">一隻狗狗正在學習手勢指令。探索常用的狗狗訓練手勢和正向訓練方法。</p></div></a></div></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -352,7 +362,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

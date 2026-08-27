@@ -426,6 +426,16 @@
   .site-logo { font-size: 1.1rem; }
 }
 .nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 
         <style>
@@ -501,6 +511,16 @@
   .site-logo { font-size: 1.1rem; }
 }
 .nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 
     <!-- Enhanced SEO Meta Tags -->
@@ -577,7 +597,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -590,7 +610,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -603,7 +623,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -616,7 +636,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -629,7 +649,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -642,7 +662,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -655,7 +675,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -668,7 +688,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -681,7 +701,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -694,7 +714,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -707,7 +727,7 @@
 <a href="blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -780,7 +800,7 @@
                     </div>
                 </a>
 <a href="pet-health.html" class="card-item">
-                    <img src="images/111_pet-education-dental-health-anatomy.webp" alt="ZooTecture 寵物分類 - 111 pet-education-dental-health-anatomy" class="card-img" loading="lazy">
+                    <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="ZooTecture 寵物分類 - 111 pet-education-dental-health-anatomy" class="card-img" loading="lazy">
                     <div class="card-content">
                         <h3>寵物健康</h3>
                         <p>疾病預防、醫療護理與營養</p>
@@ -914,7 +934,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

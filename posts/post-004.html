@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -314,7 +324,7 @@
 <h1 class="post-title">合十的水獺：網路迷因背後的真實動物行為</h1>
 <div class="post-meta"><span>ZooTecture 入梯毛孩</span><span>|</span><span>第 4 篇</span><span>|</span><span>分類：萌寵日常</span><span>|</span><span>閱讀時間約 5 分鐘</span></div>
 </div>
-<figure class="article-image"><img class="article-inline-img" src="../images/04_合十水獭.webp" alt="合十的水獺：網路迷因背後的真實動物行為 - 合十水獭（圖片1）" title="合十的水獺：網路迷因背後的真實動物行為 - 合十水獭（圖片1）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 合十水獭</figcaption></figure>
+<figure class="article-image"><img class="article-inline-img" src="../images/04_合十水獭.webp" alt="可愛寵物生活照片" title="合十的水獺：網路迷因背後的真實動物行為 - 合十水獭（圖片1）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 合十水獭</figcaption></figure>
 <div class="post-content">
 <p>如果你活躍於網路世界，你一定看過那張照片：一隻水獺用後腿站立，前爪合在胸前，頭微微低下，表情看起來既虔誠又認真，彷彿正在向誰祈禱。這張照片被加上各種各樣的標語——「拜託今天不要下雨」「祈禱晚餐有魚吃」「拜託老闆不要發現我在摸魚」——成為了近年來最受歡迎的動物迷因之一。但問題來了：水獺真的會「祈禱」嗎？這個動作背後有什麼生物學意義？</p>
 <h2>水獺的「合十」到底是什麼？</h2>
@@ -325,11 +335,11 @@
 <li><strong>保持平衡</strong>：當水獺用後腿站立時，前爪的位置會影響重心。把爪子收在胸前可以讓身體更加穩定，特別是在觀察周圍環境或試圖夠到高處的東西時。</li>
 <li><strong>社交行為</strong>：在某些情況下，水獺之間的互動也會出現類似的動作，可能是一種溝通方式或展示行為。</li>
 </ul>
-<p>所以，那張爆紅的「祈禱水獺」照片，很可能只是一隻水獺在正確的時機、正確的角度下，剛好做出了一個看起來像人類祈禱的動作。攝影師的耐心和運氣，加上人類天生的「擬人化」傾向，共同創造了這個網路奇蹟。</p><figure class="article-image"><img class="article-inline-img" src="../images/15_居中_沙滩海豹.webp" alt="合十的水獺：網路迷因背後的真實動物行為 - 居中 沙滩海豹（圖片2）" title="合十的水獺：網路迷因背後的真實動物行為 - 居中 沙滩海豹（圖片2）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 居中 沙滩海豹</figcaption></figure>
+<p>所以，那張爆紅的「祈禱水獺」照片，很可能只是一隻水獺在正確的時機、正確的角度下，剛好做出了一個看起來像人類祈禱的動作。攝影師的耐心和運氣，加上人類天生的「擬人化」傾向，共同創造了這個網路奇蹟。</p><figure class="article-image"><img class="article-inline-img" src="../images/15_居中_沙滩海豹.webp" alt="可愛寵物生活照片" title="合十的水獺：網路迷因背後的真實動物行為 - 居中 沙滩海豹（圖片2）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 居中 沙滩海豹</figcaption></figure>
 <h2>水獺：比你想像的更神奇</h2>
 <p>除了「祈禱」之外，水獺還有很多令人驚嘆的特質。以下是一些你可能不知道的水獺冷知識：</p>
 <h3>最浓密的毛髮</h3>
-<p>海獺擁有動物界最濃密的毛髮，每平方公分多達14萬根毛髮——是人類頭髮密度的將近一百倍！這層濃密的毛髮能鎖住空氣，形成絕緣層，讓海獺在冰冷的北太平洋海水中也能保持體溫。但這也意味著海獺需要花大量時間梳理毛髮，確保毛髮中沒有多餘的水分。</p><figure class="article-image"><img class="article-inline-img" src="../images/20_居中_溪边鸭嘴兽.webp" alt="合十的水獺：網路迷因背後的真實動物行為 - 居中 溪边鸭嘴兽（圖片3）" title="合十的水獺：網路迷因背後的真實動物行為 - 居中 溪边鸭嘴兽（圖片3）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 居中 溪边鸭嘴兽</figcaption></figure>
+<p>海獺擁有動物界最濃密的毛髮，每平方公分多達14萬根毛髮——是人類頭髮密度的將近一百倍！這層濃密的毛髮能鎖住空氣，形成絕緣層，讓海獺在冰冷的北太平洋海水中也能保持體溫。但這也意味著海獺需要花大量時間梳理毛髮，確保毛髮中沒有多餘的水分。</p><figure class="article-image"><img class="article-inline-img" src="../images/20_居中_溪边鸭嘴兽.webp" alt="可愛寵物生活照片" title="合十的水獺：網路迷因背後的真實動物行為 - 居中 溪边鸭嘴兽（圖片3）" loading="lazy"><figcaption>合十的水獺：網路迷因背後的真實動物行為 - 居中 溪边鸭嘴兽</figcaption></figure>
 <h3>會使用工具的海洋哺乳動物</h3>
 <p>海獺是已知唯一會使用工具的海洋哺乳動物。牠們會挑選合適的石頭，放在胸前的「口袋」（其實是前肢下的皮膚皺褶）裡，然後用石頭敲開鮑魚、蛤蜊等貝類的外殼。更神奇的是，海獺會記住自己喜歡的石頭，甚至會把石頭保存下來重複使用。</p>
 <h3>手牽手睡覺</h3>
@@ -378,7 +388,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

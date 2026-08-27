@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -329,7 +339,7 @@
 <h3>2.1 步驟一：空間評估與需求盤點</h3>
 <p>開始規劃前，先評估可用空間的尺寸、採光、通風條件，並盤點<strong>寵物</strong>的實際需求。記錄寵物的日常活動路線、偏好的休息地點、進食與如廁習慣。</p>
 <h3>2.2 步驟二：動線與區域劃分</h3>
-<p>根據空間條件與寵物需求，劃分進食區、飲水區、如廁區、睡眠區、遊戲區。確保各區域之間的動線流暢，避免衝突（如貓砂盆不應緊鄰餵食區）。</p><figure class="article-image"><img class="article-inline-img" src="../images/196_pets-senior-lowentry-litterbox-nonslip-mat.webp" alt="隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat（圖片3）" title="隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat（圖片3）" loading="lazy"><figcaption>隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat</figcaption></figure>
+<p>根據空間條件與寵物需求，劃分進食區、飲水區、如廁區、睡眠區、遊戲區。確保各區域之間的動線流暢，避免衝突（如貓砂盆不應緊鄰餵食區）。</p><figure class="article-image"><img class="article-inline-img" src="../images/1144_pets-psychology-calmingcollar-fabric-plastic-macro.webp" alt="隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat（圖片3）" title="隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat（圖片3）" loading="lazy"><figcaption>隱藏式貓砂盆設計：讓貓如廁區消失於無形 - pets senior lowentry litterbox nonslip mat</figcaption></figure>
 <h3>2.3 步驟三：傢俱與設備選擇</h3>
 <p>選擇符合空間風格且寵物友善的<strong>多功能傢俱</strong>。優先考慮可收納、可調整、易清潔的設計。<strong>垂直空間</strong>的利用是小坪數的關鍵——<strong>貓跳台</strong>、<strong>貓走道</strong>、層板收納都能有效釋放地面空間。</p>
 <h3>2.4 步驟四：安全檢查與調整</h3>
@@ -381,7 +391,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

@@ -143,6 +143,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head>
 <body>
@@ -160,7 +170,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -173,7 +183,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -186,7 +196,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -199,7 +209,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -212,7 +222,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -225,7 +235,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -238,7 +248,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -251,7 +261,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -264,7 +274,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -277,7 +287,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -290,7 +300,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -339,7 +349,7 @@
 </div><div class="related-reading"><h3>延伸閱讀</h3><ul><li><a href="post-002.html">魚眼鏡頭下的柯基：當短腿狗遇上超廣角</a></li><li><a href="post-003.html">倉鼠的南瓜車：童話故事在現實中上演</a></li><li><a href="post-004.html">合十的水獺：網路迷因背後的真實動物行為</a></li></ul></div>
 <p>下次當你在網路上看到一張讓你心動的萌寵照片時，不妨多停留幾秒。那不只是一張照片，而是一個短暫逃離現實的入口，一個提醒你世界上還有單純美好的事物存在的訊號。而那隻茶杯裡的橘貓，或許正在某個角落，繼續做著它的美夢。</p>
 </div>
-<div class="post-nav"><div></div><a href="post-002.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">魚眼鏡頭下的柯基：當短腿狗遇上超廣角</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-002.html" class="post-card"><img src="../images/02_鱼眼柯基.webp" class="post-card-thumb" alt="魚眼鏡頭下的柯基：當短腿狗遇上超廣角 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">魚眼鏡頭下的柯基：當短腿狗遇上超廣角</h4><p class="post-card-excerpt">用魚眼鏡頭拍柯基是一種什麼樣的體驗？扭曲的透視讓短腿更短、屁股更大，卻意外捕捉到了狗狗最真實的快樂。</p></div></a><a href="post-003.html" class="post-card"><img src="../images/03_仓鼠南瓜车.webp" class="post-card-thumb" alt="倉鼠的南瓜車：童話故事在現實中上演 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">倉鼠的南瓜車：童話故事在現實中上演</h4><p class="post-card-excerpt">當一隻倉鼠住進南瓜做的小屋，整個畫面就像從童話書裡走出來一樣。一起探討小型寵物的環境豐容藝術。</p></div></a><a href="post-004.html" class="post-card"><img src="../images/04_合十水獭.webp" class="post-card-thumb" alt="合十的水獺：網路迷因背後的真實動物行為 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">合十的水獺：網路迷因背後的真實動物行為</h4><p class="post-card-excerpt">那張雙手合十、表情虔誠的水獺照片為什麼爆紅？牠真的在祈禱嗎？動物行為學家為你解密水獺的奇妙世界。</p></div></a></div></div>
+<div class="post-nav"><div></div><a href="post-002.html" class="next"><div class="nav-label">下一篇 →</div><div class="nav-title">魚眼鏡頭下的柯基：當短腿狗遇上超廣角</div></a></div><div class="related-section"><h3>相關文章推薦</h3><div class="post-grid"><a href="post-002.html" class="post-card"><img src="../images/02_鱼眼柯基.webp" class="post-card-thumb" alt="魚眼鏡頭下的柯基：當短腿狗遇上超廣角 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">魚眼鏡頭下的柯基：當短腿狗遇上超廣角</h4><p class="post-card-excerpt">用魚眼鏡頭拍柯基是一種什麼樣的體驗？扭曲的透視讓短腿更短、屁股更大，卻意外捕捉到了狗狗最真實的快樂。</p></div></a><a href="post-003.html" class="post-card"><img src="../images/03_仓鼠南瓜车.webp" class="post-card-thumb" alt="倉鼠的南瓜車：童話故事在現實中上演 - 相關文章" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">倉鼠的南瓜車：童話故事在現實中上演</h4><p class="post-card-excerpt">當一隻倉鼠住進南瓜做的小屋，整個畫面就像從童話書裡走出來一樣。一起探討小型寵物的環境豐容藝術。</p></div></a><a href="post-004.html" class="post-card"><img src="../images/04_合十水獭.webp" class="post-card-thumb" alt="可愛寵物生活照片" loading="lazy"><div class="post-card-body"><span class="post-card-cat">萌寵日常</span><h4 class="post-card-title">合十的水獺：網路迷因背後的真實動物行為</h4><p class="post-card-excerpt">那張雙手合十、表情虔誠的水獺照片為什麼爆紅？牠真的在祈禱嗎？動物行為學家為你解密水獺的奇妙世界。</p></div></a></div></div>
 </article></main>
 <footer class="site-footer"><div class="footer-inner">
 <div class="footer-links"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
@@ -375,7 +385,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");

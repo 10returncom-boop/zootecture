@@ -135,6 +135,16 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+
+/* Dropdown link colors */
+.dropdown-content a { color: #333 !important; text-decoration: none; }
+.dropdown-content a:hover { color: #ff6b35 !important; }
+.cat-view-all { color: #ff6b35 !important; }
+.view-all { color: #ff6b35 !important; }
+.cat-name { color: #333 !important; }
+.cat-count { color: #999 !important; }
+.cat-desc { color: #666 !important; }
+.dd-title { color: #333 !important; }
 </style>
 </head><body>
 <header class="site-header"><div class="header-inner">
@@ -151,7 +161,7 @@
 </div>
 <div class="dropdown-cats">
 <div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(0)">
+<button class="cat-toggle" onclick="toggleCat(0, event)">
 <span class="cat-icon">🐾</span>
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
@@ -164,7 +174,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(1)">
+<button class="cat-toggle" onclick="toggleCat(1, event)">
 <span class="cat-icon">🐱</span>
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
@@ -177,7 +187,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(2)">
+<button class="cat-toggle" onclick="toggleCat(2, event)">
 <span class="cat-icon">🐕</span>
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
@@ -190,7 +200,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(3)">
+<button class="cat-toggle" onclick="toggleCat(3, event)">
 <span class="cat-icon">🦎</span>
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
@@ -203,7 +213,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(4)">
+<button class="cat-toggle" onclick="toggleCat(4, event)">
 <span class="cat-icon">💊</span>
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
@@ -216,7 +226,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(5)">
+<button class="cat-toggle" onclick="toggleCat(5, event)">
 <span class="cat-icon">🎓</span>
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
@@ -229,7 +239,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(6)">
+<button class="cat-toggle" onclick="toggleCat(6, event)">
 <span class="cat-icon">🏠</span>
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
@@ -242,7 +252,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(7)">
+<button class="cat-toggle" onclick="toggleCat(7, event)">
 <span class="cat-icon">🛋️</span>
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
@@ -255,7 +265,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(8)">
+<button class="cat-toggle" onclick="toggleCat(8, event)">
 <span class="cat-icon">🏕️</span>
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
@@ -268,7 +278,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(9)">
+<button class="cat-toggle" onclick="toggleCat(9, event)">
 <span class="cat-icon">🎄</span>
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
@@ -281,7 +291,7 @@
 <a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div><div class="cat-accordion">
-<button class="cat-toggle" onclick="toggleCat(10)">
+<button class="cat-toggle" onclick="toggleCat(10, event)">
 <span class="cat-icon">🎨</span>
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
@@ -321,7 +331,7 @@
 <h3>2.4 步驟四：安全檢查與調整</h3>
 <p>完成佈置後，進行全面的安全檢查：確認所有固定件牢固、無尖銳邊角、電線已隱藏、化學品已上鎖。觀察<strong>寵物</strong>使用一週後的反應，再進行微調。</p><h2>三、常見問題 <strong>FAQ</strong></h2>
 <h3>Q1：寵物泳池與戲水區設計需要多大空間？</h3><p><strong>A：</strong>這取決於你的<strong>空間條件</strong>與<strong>寵物需求</strong>。即使是小空間也能透過<strong>垂直利用</strong>與<strong>多功能設計</strong>打造舒適的<strong>寵物空間</strong>。</p>
-<h3>Q2：<strong>小公寓</strong>可以做寵物泳池與戲水區設計嗎？</h3><p><strong>A：</strong>可以！<strong>小公寓</strong>的關鍵是<strong>垂直空間</strong>最大化與<strong>多功能傢俱</strong>。<strong>貓跳台</strong>、牆壁層板、抽屜式<strong>餵食站</strong>都是省空間的好選擇。</p><figure class="article-image"><img class="article-inline-img" src="../images/326_pets-waterpark-water-slide-splash-pool.webp" alt="寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool（圖片4）" title="寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool（圖片4）" loading="lazy"><figcaption>寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool</figcaption></figure>
+<h3>Q2：<strong>小公寓</strong>可以做寵物泳池與戲水區設計嗎？</h3><p><strong>A：</strong>可以！<strong>小公寓</strong>的關鍵是<strong>垂直空間</strong>最大化與<strong>多功能傢俱</strong>。<strong>貓跳台</strong>、牆壁層板、抽屜式<strong>餵食站</strong>都是省空間的好選擇。</p><figure class="article-image"><img class="article-inline-img" src="../images/59_corgi-astronaut-space-cosmic.webp" alt="寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool（圖片4）" title="寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool（圖片4）" loading="lazy"><figcaption>寵物泳池與戲水區設計：夏天的清涼樂園 - pets waterpark water slide splash pool</figcaption></figure>
 <h3>Q3：寵物泳池與戲水區設計的<strong>預算</strong>大概多少？</h3><p><strong>A：</strong><strong>DIY</strong>方案可以從數千元起，訂製傢俱則需視規模而定。建議先從核心需求開始，逐步擴充，避免一次性花費過高。</p>
 <h3>Q4：<strong>租屋族</strong>可以做寵物泳池與戲水區設計嗎？</h3><p><strong>A：</strong><strong>租屋族</strong>可以選擇免釘、移動式的設計，如吸盤式<strong>貓走道</strong>、獨立式<strong>貓跳台</strong>、無痕收納。退租時可輕鬆拆除，不損傷牆面。</p><div class="highlight-box"><h4>重點整理</h4>
 <p>1. <strong>寵物泳池與戲水區設計</strong>的核心是<strong>安全</strong>、<strong>功能</strong>、<strong>美觀</strong>三者平衡。<br>
@@ -364,7 +374,8 @@ function toggleDropdown() {
   dd.classList.toggle("show");
   btn.classList.toggle("active");
 }
-function toggleCat(index) {
+function toggleCat(index, event) {
+  if (event) event.stopPropagation();
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");
