@@ -386,8 +386,8 @@ body { font-size: 1.05rem; line-height: 1.8;
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
-.site-nav { display: flex; align-items: center; gap: 4px; }
-.nav-link { color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
+.site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
+.nav-link { color: #fff; text-decoration: none; padding: 8px 14px; white-space: nowrap; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
 .nav-link:hover { background: rgba(255,255,255,0.2); }
 .dropdown { position: relative; }
 .dropbtn { background: rgba(255,255,255,0.15); color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s; white-space: nowrap; }
@@ -473,8 +473,8 @@ body { font-size: 1.05rem; line-height: 1.8;
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
-.site-nav { display: flex; align-items: center; gap: 4px; }
-.nav-link { color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
+.site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
+.nav-link { color: #fff; text-decoration: none; padding: 8px 14px; white-space: nowrap; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
 .nav-link:hover { background: rgba(255,255,255,0.2); }
 .dropdown { position: relative; }
 .dropbtn { background: rgba(255,255,255,0.15); color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s; white-space: nowrap; }
@@ -731,7 +731,110 @@ body { font-size: 1.05rem; line-height: 1.8;
                 </div>
             </section>
 
-            <section id="petlogic" style="padding:3rem 5%;">
+            
+                <section id="categories">
+                <h2>文章分類總覽</h2>
+                <p style="text-align:center; color:#444; margin-bottom:2rem; font-size:1.1rem;">11 大分類 · 250 篇專業寵物知識文章</p>
+                <div class="card-grid">
+                    <a href="blog.html" class="card-item">
+                    <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="ZooTecture 最新文章 - 最新上架的寵物知識文章，掌握第一手毛孩資訊" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>最新文章</h3>
+                        <p>最新上架的寵物知識文章，掌握第一手毛孩資訊</p>
+                        <span class="card-count">最新上架</span>
+                    </div>
+                </a>
+                    <a href="pet-daily.html" class="card-item">
+                    <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="ZooTecture 萌寵日常 - 可愛療癒的寵物日常故事" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>萌寵日常</h3>
+                        <p>可愛療癒的寵物日常故事</p>
+                        <span class="card-count">療癒日常故事</span>
+                    </div>
+                </a>
+                    <a href="cat-story.html" class="card-item">
+                    <img src="images/119_pet-education-cat-body-language-emotions.webp" alt="ZooTecture 貓咪物語 - 貓咪護理、行為與品種指南" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>貓咪物語</h3>
+                        <p>貓咪護理、行為與品種指南</p>
+                        <span class="card-count">貓咪護理全攻略</span>
+                    </div>
+                </a>
+                    <a href="dog-diary.html" class="card-item">
+                    <img src="images/101_pet-golden-retriever-puppy-learning-swim.webp" alt="ZooTecture 狗狗日記 - 狗狗訓練、健康與品種介紹" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>狗狗日記</h3>
+                        <p>狗狗訓練、健康與品種介紹</p>
+                        <span class="card-count">狗狗照護百科</span>
+                    </div>
+                </a>
+                    <a href="pet-daily.html" class="card-item">
+                    <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="ZooTecture 異寵世界 - 爬蟲、小型哺乳動物等另類寵物" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>異寵世界</h3>
+                        <p>爬蟲、小型哺乳動物等另類寵物</p>
+                        <span class="card-count">另類寵物指南</span>
+                    </div>
+                </a>
+                    <a href="pet-health.html" class="card-item">
+                    <img src="images/111_pet-education-dental-health-anatomy.webp" alt="ZooTecture 寵物健康 - 疾病預防、醫療護理與營養" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物健康</h3>
+                        <p>疾病預防、醫療護理與營養</p>
+                        <span class="card-count">健康醫療知識</span>
+                    </div>
+                </a>
+                    <a href="pet-education.html" class="card-item">
+                    <img src="images/114_pet-education-dog-training-hand-signals.webp" alt="ZooTecture 寵物教育 - 訓練方法、行為矯正與飼養知識" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物教育</h3>
+                        <p>訓練方法、行為矯正與飼養知識</p>
+                        <span class="card-count">行為訓練指南</span>
+                    </div>
+                </a>
+                    <a href="pet-space.html" class="card-item">
+                    <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="ZooTecture 寵物空間規劃 - 居家空間設計、收納與寵物友善裝修" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物空間規劃</h3>
+                        <p>居家空間設計、收納與寵物友善裝修</p>
+                        <span class="card-count">空間設計實錄</span>
+                    </div>
+                </a>
+                    <a href="home-design.html" class="card-item">
+                    <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="ZooTecture 居家設計 - 寵物友善居家佈置與收納" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>居家設計</h3>
+                        <p>寵物友善居家佈置與收納</p>
+                        <span class="card-count">居家佈置靈感</span>
+                    </div>
+                </a>
+                    <a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/141_pet-outdoor-dog-hiking-mountain-backpack.webp" alt="ZooTecture 戶外探險 - 帶寵物旅行、露營與戶外活動" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>戶外探險</h3>
+                        <p>帶寵物旅行、露營與戶外活動</p>
+                        <span class="card-count">旅行露營攻略</span>
+                    </div>
+                </a>
+                    <a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="ZooTecture 節日寵物 - 節日慶祝與寵物安全須知" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>節日寵物</h3>
+                        <p>節日慶祝與寵物安全須知</p>
+                        <span class="card-count">節日安全須知</span>
+                    </div>
+                </a>
+                    <a href="pet-art.html" class="card-item">
+                    <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="ZooTecture 寵物藝術 - 寵物肖像、攝影與創作" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物藝術</h3>
+                        <p>寵物肖像、攝影與創作</p>
+                        <span class="card-count">創作攝影靈感</span>
+                    </div>
+                </a>
+                </div>
+            </section>
+<section id="petlogic" style="padding:3rem 5%;">
                 <div style="max-width:1200px; margin:0 auto;">
                     <h2>PetLogic 毛行知識</h2>
                     <p style="color:#333; line-height:1.9; margin-bottom:1.5rem; font-size:1.05rem;">
