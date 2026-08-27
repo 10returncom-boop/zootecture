@@ -91,23 +91,223 @@
 .post-nav .nav-label { font-size: 0.8rem; color: #ff6b35; font-weight: 600; margin-bottom: 4px; }
 .post-nav .nav-title { font-size: 0.95rem; font-weight: 600; color: #333; line-height: 1.4; }
 @media (max-width: 600px) { .post-nav { flex-direction: column; gap: 8px; padding: 12px; } .post-nav .next { text-align: left; } }
+
+/* === Unified Site Navigation === */
+.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #ff6b35, #f7931e); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.site-logo .paw { font-size: 1.5rem; }
+.site-nav { display: flex; align-items: center; gap: 4px; }
+.nav-link { color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
+.nav-link:hover { background: rgba(255,255,255,0.2); }
+.dropdown { position: relative; }
+.dropbtn { background: rgba(255,255,255,0.15); color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s; white-space: nowrap; }
+.dropbtn:hover, .dropbtn.active { background: rgba(255,255,255,0.3); }
+.dropbtn .arrow { font-size: 0.7rem; transition: transform 0.3s; }
+.dropbtn.active .arrow { transform: rotate(180deg); }
+.dropdown-content { display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); width: 420px; max-height: 70vh; overflow-y: auto; z-index: 1001; animation: slideDown 0.2s ease; }
+.dropdown-content.show { display: block; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+.dropdown-header { padding: 16px 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; border-radius: 16px 16px 0 0; position: sticky; top: 0; z-index: 1; }
+.dd-title { font-weight: 700; color: #333; font-size: 0.95rem; }
+.view-all { color: #ff6b35; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.view-all:hover { text-decoration: underline; }
+.dropdown-cats { padding: 8px; }
+.cat-accordion { border-bottom: 1px solid #f0f0f0; }
+.cat-accordion:last-child { border-bottom: none; }
+.cat-toggle { width: 100%; background: none; border: none; padding: 12px 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; border-radius: 10px; transition: background 0.15s; text-align: left; }
+.cat-toggle:hover { background: #fff8f0; }
+.cat-icon { font-size: 1.4rem; flex-shrink: 0; }
+.cat-info { flex: 1; display: flex; flex-direction: column; }
+.cat-name { font-weight: 600; color: #333; font-size: 0.95rem; }
+.cat-count { font-size: 0.75rem; color: #999; }
+.cat-arrow { color: #ccc; font-size: 0.7rem; transition: transform 0.2s; flex-shrink: 0; }
+.cat-accordion.open .cat-arrow { transform: rotate(90deg); color: #ff6b35; }
+.cat-content { display: none; padding: 0 14px 14px 50px; }
+.cat-accordion.open .cat-content { display: block; animation: fadeIn 0.2s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
+.cat-view-all { color: #ff6b35; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
+.cat-view-all:hover { text-decoration: underline; }
+.mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
+/* Mobile */
+@media (max-width: 768px) {
+  .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
+  .site-nav.show { display: flex; }
+  .nav-link { color: #333; width: 100%; padding: 12px 16px; }
+  .nav-link:hover { background: #fff8f0; }
+  .dropdown { width: 100%; }
+  .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
+  .dropbtn:hover { background: #fff8f0; }
+  .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
+  .mobile-menu-btn { display: block; }
+  .site-logo { font-size: 1.1rem; }
+}
 </style>
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
 <a href="../index.html" class="site-logo"><span class="paw">🐾</span>ZooTecture 入梯毛孩</a>
-<nav class="site-nav"><a href="../index.html">🏠 首頁</a><a href="../blog.html">📚 文章總覽</a><div class="dropdown">
-<button class="dropbtn" onclick="toggleDropdown()">文章分類 <span class="arrow">▼</span></button>
+<nav class="site-nav">
+<a href="../index.html" class="nav-link">🏠 首頁</a>
+<a href="../blog.html" class="nav-link">📚 文章總覽</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="toggleDropdown()">📋 網站總覽 <span class="arrow">▼</span></button>
 <div class="dropdown-content" id="catDropdown">
 <div class="dropdown-header">
-<span>11大分類 · 250篇文章</span>
+<span class="dd-title">11大分類 · 250篇文章</span>
 <a href="../blog.html#all-posts" class="view-all">查看全部文章 →</a>
 </div>
-<div class="dropdown-grid">
-<a href="../blog.html#categories" class="dropdown-item"><span class="di-name">萌寵日常</span><span class="di-desc">可愛療癒的寵物日常故事</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">貓咪物語</span><span class="di-desc">貓咪護理、行為與品種指南</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">狗狗日記</span><span class="di-desc">狗狗訓練、健康與品種介紹</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">異寵世界</span><span class="di-desc">爬蟲、小型哺乳動物等另類寵物</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物健康</span><span class="di-desc">疾病預防、醫療護理與營養</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物教育</span><span class="di-desc">訓練方法、行為矯正與飼養知識</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物空間規劃</span><span class="di-desc">居家空間設計、收納與寵物友善裝修</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">居家設計</span><span class="di-desc">寵物友善居家佈置與收納</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">戶外探險</span><span class="di-desc">帶寵物旅行、露營與戶外活動</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">節日寵物</span><span class="di-desc">節日慶祝與寵物安全須知</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物藝術</span><span class="di-desc">寵物肖像、攝影與創作</span></a>
+<div class="dropdown-cats">
+<div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(0)">
+<span class="cat-icon">🐾</span>
+<span class="cat-info">
+<span class="cat-name">萌寵日常</span>
+<span class="cat-count">20篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-0">
+<p class="cat-desc">可愛療癒的寵物日常故事</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(1)">
+<span class="cat-icon">🐱</span>
+<span class="cat-info">
+<span class="cat-name">貓咪物語</span>
+<span class="cat-count">35篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-1">
+<p class="cat-desc">貓咪護理、行為與品種指南</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(2)">
+<span class="cat-icon">🐕</span>
+<span class="cat-info">
+<span class="cat-name">狗狗日記</span>
+<span class="cat-count">36篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-2">
+<p class="cat-desc">狗狗訓練、健康與品種介紹</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(3)">
+<span class="cat-icon">🦎</span>
+<span class="cat-info">
+<span class="cat-name">異寵世界</span>
+<span class="cat-count">5篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-3">
+<p class="cat-desc">爬蟲、小型哺乳動物等另類寵物</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(4)">
+<span class="cat-icon">💊</span>
+<span class="cat-info">
+<span class="cat-name">寵物健康</span>
+<span class="cat-count">43篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-4">
+<p class="cat-desc">疾病預防、醫療護理與營養</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(5)">
+<span class="cat-icon">🎓</span>
+<span class="cat-info">
+<span class="cat-name">寵物教育</span>
+<span class="cat-count">35篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-5">
+<p class="cat-desc">訓練方法、行為矯正與飼養知識</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(6)">
+<span class="cat-icon">🏠</span>
+<span class="cat-info">
+<span class="cat-name">寵物空間規劃</span>
+<span class="cat-count">50篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-6">
+<p class="cat-desc">居家空間設計、收納與寵物友善裝修</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(7)">
+<span class="cat-icon">🛋️</span>
+<span class="cat-info">
+<span class="cat-name">居家設計</span>
+<span class="cat-count">6篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-7">
+<p class="cat-desc">寵物友善居家佈置與收納</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(8)">
+<span class="cat-icon">🏕️</span>
+<span class="cat-info">
+<span class="cat-name">戶外探險</span>
+<span class="cat-count">7篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-8">
+<p class="cat-desc">帶寵物旅行、露營與戶外活動</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(9)">
+<span class="cat-icon">🎄</span>
+<span class="cat-info">
+<span class="cat-name">節日寵物</span>
+<span class="cat-count">7篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-9">
+<p class="cat-desc">節日慶祝與寵物安全須知</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
+</div>
+</div><div class="cat-accordion">
+<button class="cat-toggle" onclick="toggleCat(10)">
+<span class="cat-icon">🎨</span>
+<span class="cat-info">
+<span class="cat-name">寵物藝術</span>
+<span class="cat-count">6篇</span>
+</span>
+<span class="cat-arrow">▶</span>
+</button>
+<div class="cat-content" id="cat-content-10">
+<p class="cat-desc">寵物肖像、攝影與創作</p>
+<a href="../blog.html#categories" class="cat-view-all">查看此分類全部文章 →</a>
 </div>
 </div>
-</div><a href="../blog.html#all-posts">全部文章</a><a href="../index.html#about">關於</a></nav>
+</div>
+</div>
+</div>
+</nav>
+<button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
 </div></header>
 <main class="container"><article>
 <div class="post-header"><span class="post-category">萌寵日常</span>
@@ -162,7 +362,7 @@
 <a href="../blog.html#categories" class="dropdown-item"><span class="di-name">萌寵日常</span><span class="di-desc">可愛療癒的寵物日常故事</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">貓咪物語</span><span class="di-desc">貓咪護理、行為與品種指南</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">狗狗日記</span><span class="di-desc">狗狗訓練、健康與品種介紹</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">異寵世界</span><span class="di-desc">爬蟲、小型哺乳動物等另類寵物</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物健康</span><span class="di-desc">疾病預防、醫療護理與營養</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物教育</span><span class="di-desc">訓練方法、行為矯正與飼養知識</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物空間規劃</span><span class="di-desc">居家空間設計、收納與寵物友善裝修</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">居家設計</span><span class="di-desc">寵物友善居家佈置與收納</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">戶外探險</span><span class="di-desc">帶寵物旅行、露營與戶外活動</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">節日寵物</span><span class="di-desc">節日慶祝與寵物安全須知</span></a><a href="../blog.html#categories" class="dropdown-item"><span class="di-name">寵物藝術</span><span class="di-desc">寵物肖像、攝影與創作</span></a>
 </div>
 </div>
-</div><a href="../blog.html#all-posts">全部文章</a><a href="../index.html#about">關於</a></div>
+</div></div>
 <p class="footer-copy">© 2026 ZooTecture 入梯毛孩 Pet Blog. 共 250 篇寵物護理知識文章 | ZooTecture 入梯毛孩，用愛守護每一隻毛孩子。</p>
 </div></footer>
 <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂端">↑</button>
@@ -176,4 +376,30 @@ document.addEventListener('click',function(e){
   if(d&&!d.contains(e.target)){d.classList.remove('open');}
 });
 window.addEventListener('scroll',function(){var b=document.querySelector('.back-top');if(window.scrollY>300)b.classList.add('show');else b.classList.remove('show');});</script>
+
+<script>
+function toggleDropdown() {
+  var dd = document.getElementById("catDropdown");
+  var btn = dd.previousElementSibling;
+  dd.classList.toggle("show");
+  btn.classList.toggle("active");
+}
+function toggleCat(index) {
+  var content = document.getElementById("cat-content-" + index);
+  var accordion = content.parentElement;
+  accordion.classList.toggle("open");
+}
+function toggleMobileMenu() {
+  var nav = document.querySelector(".site-nav");
+  nav.classList.toggle("show");
+}
+document.addEventListener("click", function(e) {
+  var dd = document.getElementById("catDropdown");
+  if (dd && !dd.parentElement.contains(e.target)) {
+    dd.classList.remove("show");
+    var btn = dd.previousElementSibling;
+    if (btn) btn.classList.remove("active");
+  }
+});
+</script>
 </body></html>
