@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <!-- 強制手機完美適配，禁止雙指縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ZooTecture 入梯毛孩｜入梯寵物專欄與PetLogic毛行知識平台，提供專業貓狗飼養知識、寵物行為矯正、居家寵物空間規劃與正向訓練教學，打造人寵共居的舒適共生環境。">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta property="og:title" content="ZooTecture 入梯毛孩｜入梯寵物專欄 × PetLogic 毛行知識">
+    <meta property="og:description" content="ZooTecture寵物空間設計與裝修，PetLogic毛孩行為科普平台就在【入梯城】，提供貓狗飼養知識、毛孩行為矯正、居家寵物空間規劃、新手養寵預算、正向訓練教學。">
+    <meta property="og:image" content="./images/social-logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <title>ZooTecture 入梯毛孩｜入梯寵物專欄 × PetLogic 毛行知識</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+            /* 手機文字防放大、防隨機斷行 */
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            word-wrap: break-word;
+            word-break: normal;
+        }
+        body {
+            background-color: #f7f9fa;
+            color: #222;
+            line-height: 1.6;
+            /* 全域文字自適應基準 */
+            font-size: clamp(14px, 2vw, 16px);
+        }
+        h1 {
+            font-size: clamp(22px, 4vw, 36px);
+        }
+        h2 {
+            font-size: clamp(18px, 3vw, 28px);
+        }
+        h3, h4 {
+            font-size: clamp(15px, 2.2vw, 20px);
+        }
+        /* 標題開頭橘圓點 */
+        h1::before, h2::before, h3::before {
+            content: "●";
+            color: #e67e22;
+            margin-right: 8px;
+        }
+        /* hover橘色規則 */
+        h1:hover, h2:hover, .logo a:hover, .dropdown-btn:hover, h4:hover, p:hover {
+            color: #e67e22;
+            transition: color 0.3s ease;
+        }
+        .card-content h3:hover {
+            color: #222 !important;
+        }
+        /* 全域連結基礎 */
+        a:link, a:visited, a:active,
+        .sidebar-box a, .blog-extra a, .nav-link a {
+            color: #222 !important;
+            text-decoration: none !important;
+            position: relative !important;
+            transition: color 0.3s ease;
+            /* 連結文字不單字斷行 */
+            white-space: nowrap;
+        }
+        /* 卡片hover效果 */
+        .card-item {
+            position: relative !important;
+            transition: transform 0.3s ease;
+        }
+        /* 滑入底線動畫 */
+        a::after, .sidebar-box a::after, .blog-extra a::after, .nav-link a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #e67e22;
+            transition: width 0.3s ease;
+        }
+        a:hover, .sidebar-box a:hover, .blog-extra a:hover, .nav-link a:hover {
+            color: #e67e22;
+        }
+        a:hover::after, .sidebar-box a:hover::after, .blog-extra a:hover::after, .nav-link a:hover::after {
+            width: 100%;
+        }
+        /* 頂部導航 */
+        nav {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: clamp(16px, 2.5vw, 1.25rem);
+        }
+        /* Logo：圖+文字同一行，不分段 */
+        .logo {
+            font-size: inherit;
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-img {
+            height: 32px;
+            width: auto;
+        }
+        .logo-text a {
+            display: inline;
+            color: #fff !important;
+            white-space: nowrap;
+        }
+        .logo-text a:hover {
+            color: #e67e22 !important;
+        }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        /* 導全部文字白色 */
+        .nav-link a, .dropdown-btn {
+            color: #fff !important;
+        }
+        /* 下拉修復防斷開hover */
+        .dropdown {
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .dropdown-btn {
+            cursor: pointer;
+            font-size: inherit;
+            transition: color 0.3s ease;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            min-width: 240px;
+            box-shadow: 0 4px 14px rgba(0,0,0.18);
+            border-radius: 8px;
+            overflow: visible;
+            clip-path: inset(0 0 0 0 round 8px);
+            z-index: 9999;
+            display: none;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: all 0.28s ease;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 14px 18px;
+            color: #000000 !important;
+            text-decoration: none !important;
+            position: relative;
+            white-space: normal;
+        }
+        .dropdown-menu a:hover {
+            background: #fff8e8;
+            color: #e67e22 !important;
+        }
+        .dropdown-menu a::after {
+            content: "";
+            position: absolute;
+            left: 18px;
+            right: 18px;
+            bottom: 8px;
+            width: 0;
+            height: 2px;
+            background-color: #e67e22;
+            transition: width 0.3s ease;
+        }
+        .dropdown-menu a:hover::after {
+            width: calc(100% - 36px);
+        }
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+        .page-row {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 2%;
+            align-items: start;
+        }
+        section {
+            margin-bottom: 4rem;
+        }
+        section h2 {
+            font-size: clamp(18px, 3vw, 1.8rem);
+            color: #2c3e50;
+        }
+        /* 關於區塊：影片容器 */
+        .about-block {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .about-video-wrap {
+            width: 100%;
+            aspect-ratio: 800 / 500;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-video-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .about-video-mask {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.15);
+        }
+        /* 卡片區 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+        }
+        .card-item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0.08);
+            display: block;
+        }
+        .card-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0.12);
+        }
+        .card-img {
+            width: 100%;
+            aspect-ratio: 600 / 400;
+            object-fit: cover;
+            display: block;
+        }
+        .card-item:hover .card-img {
+            transform: scale(1.05);
+            transition: transform 0.4s ease;
+        }
+        .card-content {
+            padding: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .card-content p {
+            /* 卡片內文自動換行，不溢出 */
+            white-space: normal;
+        }
+        .card-item:hover .card-content {
+            background: #fffaf2;
+        }
+        .card-content h3 {
+            margin-bottom: 0.6rem;
+            color: #222;
+            white-space: normal;
+        }
+        /* 地圖 */
+        .map-wrap {
+            display: grid;
+            gap: 2rem;
+        }
+        .map-block {
+            width: 100%;
+            aspect-ratio: 1200 / 800;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .map-north {
+            background: url("./images/map-01.webp") center / cover no-repeat;
+        }
+        .map-central {
+            background: url("./images/map-02.webp") center / cover no-repeat;
+        }
+        /* 側邊欄 */
+        
+        
+        .sidebar-box h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .blog-sidebar-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .blog-sidebar-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            white-space: normal;
+        }
+        .blog-sidebar-item p {
+            font-size: 0.9rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+            white-space: normal;
+        }
+        /* 底部延伸閱讀 */
+        
+        
+        .blog-list-extra p {
+            line-height: 1.7;
+            white-space: normal;
+        }
+        .divider {
+            margin: 0 8px;
+            color: #999;
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top:4rem;
+        }
+        /* 手機響應式：版型固定不變 */
+        @media (max-width: 768px) {
+            .page-row {
+                grid-template-columns: 1fr;
+                align-items: unset;
+            }
+            
+            .about-block {
+                grid-template-columns: 1fr;
+            }
+            .banner-text h1 {
+                font-size: clamp(18px, 5vw, 1.6rem);
+            }
+            .nav-wrap {
+                flex-direction: column;
+                gap: 1rem;
+                font-size: inherit;
+            }
+            .nav-link {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .logo {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            /* 手機導航文字取消nowrap避免擠爆畫面 */
+            .logo-text a {
+                white-space: normal;
+            }
+            .nav-link a {
+                white-space: normal;
+            }
+        }
+    </style>
+
+        <style>
+        .card-count {
+            display: inline-block;
+            background: #fff5ef;
+            color: #e67e22;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+        .about-text h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        </style>
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="author" content="ZooTecture 入梯毛孩">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZooTecture 入梯毛孩｜入梯寵物專欄 × PetLogic 毛行知識">
+    <meta name="twitter:description" content="專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。">
+    <meta name="twitter:image" content="https://zootecture.com/images/banner.webp">
+    <meta name="twitter:site" content="@zootecture">
+    <meta name="twitter:creator" content="@zootecture">
+    
+    <!-- Open Graph Enhanced -->
+    <meta property="og:site_name" content="ZooTecture 入梯毛孩">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zootecture.com/index.html">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ZooTecture 入梯毛孩｜入梯寵物專欄 × PetLogic 毛行知識">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://zootecture.com/index.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="ZooTecture 入梯毛孩 RSS Feed" href="https://zootecture.com/rss.xml">
+    
+    <!-- Performance: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}</script>
+    
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "potentialAction": {"@type": "SearchAction", "target": "https://zootecture.com/blog.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+    
+    <!-- Google Search Console Verification (replace with your code) -->
+    <meta name="google-site-verification" content="bj6ck6yji4">
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+    
+    <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+</head>
+<body>
+    <!-- 導航：圖片+文字同一行 -->
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">
+                <img src="images/logo.webp" alt="ZooTecture 入梯毛孩" class="logo-img">
+                <span class="logo-text"><a href="index.html">ZooTecture 入梯毛孩</a></span>
+            </div>
+            <div class="nav-link">
+                <a href="blog.html">📚 文章總覽</a>
+                <a href="#categories">📂 文章分類</a>
+                <a href="#zootecture">🏗️ 入梯寵物專欄</a>
+                <a href="#petlogic">🧠 PetLogic</a>
+                <a href="#about">關於我們</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div class="banner" id="home" style="width:100%;height:60vh;min-height:400px;background:url('./images/banner.webp') center/cover;display:flex;align-items:flex-end;">
+        <div class="banner-text" style="width:100%;background:rgba(0,0,0,0.35);color:#fff;padding:2rem 5%;">
+            <h1>ZooTecture 入梯毛孩</h1>
+            <h1>入梯寵物專欄 × PetLogic 毛行知識</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-row">
+            <div class="main-content">
+                <section id="about">
+                <h2>關於 ZooTecture 入梯毛孩</h2>
+                <div class="about-block">
+                    <div class="about-video-wrap">
+                        <video autoplay muted loop playsinline poster="images/about.webp" preload="metadata">
+                            <source src="zootecture_petlogic_petswiki.mp4" type="video/mp4">
+                        </video>
+                        <div class="about-video-mask"></div>
+                    </div>
+                    <div class="about-text">
+                        <h3>用心做寵物知識分享</h3>
+                        <p>了解毛孩邏輯、改善空間規劃、陪伴毛孩快樂成長。</p>
+                        <p>ZooTecture 提供專業寵物空間設計與裝修知識，PetLogic 分享系統化的寵物行為科普與飼養實錄，涵蓋行為問題、飲食健康、開銷規劃、行為訓練等全方位內容，與毛孩共創美好生活。</p>
+                        <p>目前全站共收錄 <strong>250 篇</strong> 專業寵物知識文章，涵蓋 <strong>11 大分類</strong>，從新手入門到進階飼養，一次滿足所有飼主需求。</p>
+                    </div>
+                </div>
+            </section>
+                <section id="categories">
+                <h2>📂 文章分類總覽</h2>
+                <p style="text-align:center; color:#666; margin-bottom:2rem;">11 大分類 · 250 篇專業寵物知識文章</p>
+                <div class="card-grid">
+                    <a href="blog.html" class="card-item">
+                    <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="ZooTecture 最新寵物知識文章" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>🆕 最新文章</h3>
+                        <p>最新上架的寵物知識文章，掌握第一手毛孩資訊</p>
+                        <span class="card-count">最新上架</span>
+                    </div>
+                </a>
+<a href="cat-story.html" class="card-item">
+                    <img src="images/119_pet-education-cat-body-language-emotions.webp" alt="ZooTecture 寵物分類 - 119 pet-education-cat-body-language-emotions" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>貓咪物語</h3>
+                        <p>貓咪護理、行為與品種指南</p>
+                        <span class="card-count">貓咪護理全攻略</span>
+                    </div>
+                </a>
+<a href="dog-diary.html" class="card-item">
+                    <img src="images/101_pet-golden-retriever-puppy-learning-swim.webp" alt="ZooTecture 寵物分類 - 101 pet-golden-retriever-puppy-learning-swim" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>狗狗日記</h3>
+                        <p>狗狗訓練、健康與品種介紹</p>
+                        <span class="card-count">狗狗照護百科</span>
+                    </div>
+                </a>
+<a href="pet-health.html" class="card-item">
+                    <img src="images/111_pet-education-dental-health-anatomy.webp" alt="ZooTecture 寵物分類 - 111 pet-education-dental-health-anatomy" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物健康</h3>
+                        <p>疾病預防、醫療護理與營養</p>
+                        <span class="card-count">健康醫療知識</span>
+                    </div>
+                </a>
+<a href="pet-education.html" class="card-item">
+                    <img src="images/114_pet-education-dog-training-hand-signals.webp" alt="ZooTecture 寵物分類 - 114 pet-education-dog-training-hand-signals" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物教育</h3>
+                        <p>訓練方法、行為矯正與飼養知識</p>
+                        <span class="card-count">貓咪護理全攻略</span>
+                    </div>
+                </a>
+<a href="pet-space.html" class="card-item">
+                    <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="ZooTecture 寵物分類 - 151 pet-space-aerial-view-room-layout-zones" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物空間規劃</h3>
+                        <p>居家空間設計、收納與寵物友善裝修</p>
+                        <span class="card-count">空間設計實錄</span>
+                    </div>
+                </a>
+<a href="home-design.html" class="card-item">
+                    <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="ZooTecture 寵物分類 - 155 pet-space-home-office-under-desk-pet-corner" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>居家設計</h3>
+                        <p>寵物友善居家佈置與收納</p>
+                        <span class="card-count">居家佈置靈感</span>
+                    </div>
+                </a>
+<a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/141_pet-outdoor-dog-hiking-mountain-backpack.webp" alt="ZooTecture 寵物分類 - 141 pet-outdoor-dog-hiking-mountain-backpack" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>戶外探險</h3>
+                        <p>帶寵物旅行、露營與戶外活動</p>
+                        <span class="card-count">旅行露營攻略</span>
+                    </div>
+                </a>
+<a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="ZooTecture 寵物分類 - 121 pet-holiday-christmas-dog-sweater-tree" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>節日寵物</h3>
+                        <p>節日慶祝與寵物安全須知</p>
+                        <span class="card-count">旅行露營攻略</span>
+                    </div>
+                </a>
+<a href="pet-art.html" class="card-item">
+                    <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="ZooTecture 寵物分類 - 131 pet-art-watercolor-golden-retriever" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物藝術</h3>
+                        <p>寵物肖像、攝影與創作</p>
+                        <span class="card-count">居家佈置靈感</span>
+                    </div>
+                </a>
+<a href="pet-daily.html" class="card-item">
+                    <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="ZooTecture 寵物分類 - 102 pet-hedgehog-fairy-garden-miniature" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>異寵世界</h3>
+                        <p>爬蟲、小型哺乳動物等另類寵物</p>
+                        <span class="card-count">精選5篇</span>
+                    </div>
+                </a>
+<a href="pet-daily.html" class="card-item">
+                    <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="ZooTecture 寵物分類 - 43 american-shorthair-tabby-cat-playing-yarn" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>萌寵日常</h3>
+                        <p>可愛療癒的寵物日常故事</p>
+                        <span class="card-count">療癒日常故事</span>
+                    </div>
+                </a>
+
+                </div>
+            </section>
+                <section id="zootecture" style="background:#f8f9fa; padding:3rem 5%;">
+                <div style="max-width:1200px; margin:0 auto;">
+                    <h2>🏗️ 入梯寵物專欄 ZooTecture</h2>
+                    <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
+                        ZooTecture 是<strong>入梯毛孩</strong>旗下的寵物空間設計專欄，專注於<strong>人寵共居空間規劃</strong>、<strong>寵物友善裝修</strong>與<strong>收納動線設計</strong>。從小公寓到透天厝，從貓跳台到狗狗活動區，我們提供系統化的空間解決方案，讓你的家同時滿足人類與毛孩的需求。
+                    </p>
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
+                        <a href="pet-space.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🏠 寵物空間規劃 (50篇)</a>
+                        <a href="home-design.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🎨 居家設計 (6篇)</a>
+                        <a href="blog.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">📚 全部文章</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="petlogic" style="padding:3rem 5%;">
+                <div style="max-width:1200px; margin:0 auto;">
+                    <h2>🧠 PetLogic 毛行知識</h2>
+                    <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
+                        PetLogic 是<strong>入梯毛孩</strong>的毛孩行為科普平台，以<strong>科學實證</strong>為基礎，解讀寵物行為背後的邏輯。從<strong>分離焦慮</strong>到<strong>亂咬亂尿</strong>，從<strong>覓食天性</strong>到<strong>社交階級</strong>，我們用淺顯易懂的方式，讓你真正理解毛孩在想什麼，進而建立和諧的人寵關係。
+                    </p>
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
+                        <a href="pet-education.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">📖 寵物教育 (35篇)</a>
+                        <a href="pet-health.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">💊 寵物健康 (43篇)</a>
+                        <a href="dog-diary.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🐕 狗狗日記 (36篇)</a>
+                        <a href="cat-story.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🐈 貓咪物語 (35篇)</a>
+                    </div>
+                </div>
+            </section>
+            </div>
+            
+        </div>
+        
+
+
+    <!-- Internal Linking Footer -->
+    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+        <div style="max-width:800px; margin:0 auto;">
+            <p style="margin-bottom:1rem; font-size:0.9rem;">
+                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+            </p>
+            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+        </div>
+    </div>
+
+</body>
+</html>

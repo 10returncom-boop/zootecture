@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /zootecture-main/
+
+# Sitemap
+Sitemap: https://zootecture.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Baiduspider
+Allow: /

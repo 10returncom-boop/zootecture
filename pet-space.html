@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="居家空間設計、收納與寵物友善裝修｜ZooTecture 入梯毛孩 寵物知識部落格">
+    <meta name="keywords" content="寵物空間規劃, 寵物, 寵物知識, ZooTecture, 入梯毛孩">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zootecture.com/pet-space.html">
+    <meta property="og:title" content="寵物空間規劃｜ZooTecture 入梯毛孩">
+    <meta property="og:description" content="居家空間設計、收納與寵物友善裝修">
+    <meta property="og:type" content="website">
+    <title>寵物空間規劃｜ZooTecture 入梯毛孩</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .cat-nav { background: #1a1a2e; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .cat-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+        .cat-nav a:hover { color: #f39c12; }
+        .cat-nav .logo { font-size: 1.2rem; }
+        .cat-nav .links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .cat-header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 3rem 5%; text-align: center; }
+        .cat-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+        .cat-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .cat-header .tag { display: inline-block; background: rgba(243,156,18,0.2); color: #f39c12; padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; font-weight: 500; }
+        .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+        .cat-card-body { padding: 1.2rem; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
+        .cat-footer a { color: #f39c12; text-decoration: none; }
+        .back-btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; background: #f39c12; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .back-btn:hover { background: #e67e22; }
+        .filter-bar { max-width: 1200px; margin: 0 auto; padding: 1.5rem 5%; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+        .filter-btn { padding: 0.4rem 1rem; border: 2px solid #ddd; background: #fff; border-radius: 20px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        .filter-btn:hover { border-color: #f39c12; color: #f39c12; }
+        .filter-btn.active { background: #f39c12; color: #fff; border-color: #f39c12; }
+        .cat-card.hidden { display: none; }
+</style>
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="author" content="ZooTecture 入梯毛孩">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="寵物空間規劃｜ZooTecture 入梯毛孩">
+    <meta name="twitter:description" content="居家空間設計、收納與寵物友善裝修">
+    <meta name="twitter:image" content="https://zootecture.com/images/banner.webp">
+    <meta name="twitter:site" content="@zootecture">
+    <meta name="twitter:creator" content="@zootecture">
+    
+    <!-- Open Graph Enhanced -->
+    <meta property="og:site_name" content="ZooTecture 入梯毛孩">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="collection">
+    <meta property="og:url" content="https://zootecture.com/pet-space.html">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="寵物空間規劃｜ZooTecture 入梯毛孩">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://zootecture.com/pet-space.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="ZooTecture 入梯毛孩 RSS Feed" href="https://zootecture.com/rss.xml">
+    
+    <!-- Performance: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}</script>
+    
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "potentialAction": {"@type": "SearchAction", "target": "https://zootecture.com/blog.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+    
+    <!-- Google Search Console Verification (replace with your code) -->
+    <meta name="google-site-verification" content="bj6ck6yji4">
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+    
+    <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+</head>
+<body>
+    <nav class="cat-nav">
+        <a href="index.html" class="logo">🐾 ZooTecture 入梯毛孩</a>
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="blog.html">全部文章</a>
+            <a href="index.html#categories">文章分類</a>
+        </div>
+    </nav>
+    <header class="cat-header">
+        <h1>寵物空間規劃</h1>
+        <p>居家空間設計、收納與寵物友善裝修</p>
+        <span class="tag">空間設計 · 收納規劃 · 寵物友善裝修</span>
+    </header>
+    <main class="cat-container">
+        <div class="cat-grid"><a href="posts/post-201.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1121_pets-rehabilitation-underwatertreadmill-metal-glass-macro.webp" alt="寵物空間規劃 - 小公寓寵物空間規劃完全指南：5坪也能擁有舒適生活" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>小公寓寵物空間規劃完全指南：5坪也能擁有舒適生活</h3>
+                    <p>小公寓也能養寵物？本文從垂直空間利用、多功能傢俱、收納整合到安全設計，完整教你在有限空間中為毛孩子打造舒適家園。</p>
+                </div>
+            </a>
+<a href="posts/post-202.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1122_pets-rehabilitation-lasertherapy-plastic-electronic-macro.webp" alt="寵物空間規劃 - 開放式廚房寵物餵食區設計：美觀與實用兼具" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>開放式廚房寵物餵食區設計：美觀與實用兼具</h3>
+                    <p>開放式廚房的寵物餵食區怎麼設計才不突兀？本文介紹中島整合、抽屜式餵食站、收納櫃隱藏、防潑濺設計等創意方案。</p>
+                </div>
+            </a>
+<a href="posts/post-203.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/86_pet-space-bedroom-elevated-cat-walkway-walls.webp" alt="寵物空間規劃 - 臥室貓咪垂直走道設計：從地板到天花板的貓咪高速公路" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>臥室貓咪垂直走道設計：從地板到天花板的貓咪高速公路</h3>
+                    <p>貓咪喜歡居高臨下，臥室垂直走道是最佳解。本文介紹貓走道的材質選擇、安裝位置、安全間距、與臥室風格整合，以及DIY與訂製的比較。</p>
+                </div>
+            </a>
+<a href="posts/post-204.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1123_pets-rehabilitation-messagetools-plastic-metal-macro.webp" alt="寵物空間規劃 - 客廳貓牆與攀爬系統設計：把整面牆變成貓咪樂園" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>客廳貓牆與攀爬系統設計：把整面牆變成貓咪樂園</h3>
+                    <p>客廳貓牆是貓咪的終極遊樂場。本文介紹貓牆的規劃原則、組件選擇（層板、跳台、爬柱、吊床）、安全設計、與電視牆/書架整合，以及預算規劃。</p>
+                </div>
+            </a>
+<a href="posts/post-205.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1124_pets-rehabilitation-balancepad-rubber-fabric-macro.webp" alt="寵物空間規劃 - 陽台貓樂園Catio設計：安全的戶外貓咪空間" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>陽台貓樂園Catio設計：安全的戶外貓咪空間</h3>
+                    <p>想讓貓咪享受戶外新鮮空氣又怕危險？Catio（貓咪陽台）是最佳解。本文介紹Catio的類型、防護網選擇、攀爬設施、遮陽與防雨、植物選擇，以及安全注意事項。</p>
+                </div>
+            </a>
+<a href="posts/post-206.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/83_pet-space-home-office-under-desk-dog-bed.webp" alt="寵物空間規劃 - 居家辦公室寵物友善空間設計：工作與陪伴兼得" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>居家辦公室寵物友善空間設計：工作與陪伴兼得</h3>
+                    <p>在家工作又想陪伴毛孩子？本文介紹居家辦公室的寵物友善設計：桌下寵物窩、電線管理、防抓保護、噪音控制、互動玩具安排，以及工作與陪伴的平衡技巧。</p>
+                </div>
+            </a>
+<a href="posts/post-207.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/90_pet-space-mudroom-pet-cleaning-entryway.webp" alt="寵物空間規劃 - 玄關寵物清潔站設計：進門第一步的整潔把關" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>玄關寵物清潔站設計：進門第一步的整潔把關</h3>
+                    <p>遛狗回來滿腳泥？玄關寵物清潔站是必備設計。本文介紹洗腳區、擦腳墊、牽繩收納、外出用品整理、除塵除味，以及與玄關整體風格的整合。</p>
+                </div>
+            </a>
+<a href="posts/post-208.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/88_pet-space-laundry-room-pet-washing-station.webp" alt="寵物空間規劃 - 洗衣間寵物洗澡區規劃：一機多用的空間魔法" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>洗衣間寵物洗澡區規劃：一機多用的空間魔法</h3>
+                    <p>洗衣間是最適合做寵物洗澡區的空間。本文介紹寵物浴缸選擇、水電配置、收納整合、吹毛區設計、防滑與排水，以及與洗衣機的空間安排。</p>
+                </div>
+            </a>
+<a href="posts/post-209.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1125_pets-rehabilitation-resistanceband-fabric-rubber-macro.webp" alt="寵物空間規劃 - 隱藏式貓砂盆設計：讓貓如廁區消失於無形" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>隱藏式貓砂盆設計：讓貓如廁區消失於無形</h3>
+                    <p>貓砂盆是貓咪家庭最頭痛的美觀問題。本文介紹隱藏式貓砂盆的各種方案：傢俱整合、櫃體隱藏、通風設計、除臭系統、清潔便利性，以及擺放位置選擇。</p>
+                </div>
+            </a>
+<a href="posts/post-210.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1126_pets-rehabilitation-therapyball-rubber-plastic-macro.webp" alt="寵物空間規劃 - 樓梯下的寵物空間利用：被忽略的黃金區域" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>樓梯下的寵物空間利用：被忽略的黃金區域</h3>
+                    <p>樓梯下的空間常常被拿來堆雜物，其實是絕佳的寵物空間。本文介紹樓梯下空間的各種利用方式：寵物窩、貓砂盆區、餵食站、收納櫃，以及結構安全與通風設計。</p>
+                </div>
+            </a>
+<a href="posts/post-211.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1127_pets-rehabilitation-acupunctureneedles-metal-plastic-macro.webp" alt="寵物空間規劃 - 多貓家庭空間規劃：讓每隻貓都有自己的領域" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>多貓家庭空間規劃：讓每隻貓都有自己的領域</h3>
+                    <p>多貓家庭的空間規劃是一門藝術。本文介紹資源分配原則、垂直領域劃分、貓砂盆數量與位置、進食區隔離、躲藏空間設計，以及貓咪衝突預防。</p>
+                </div>
+            </a>
+<a href="posts/post-212.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1128_pets-rehabilitation-electrostimulation-plastic-electronic-macro.webp" alt="寵物空間規劃 - 多狗家庭空間規劃：和平共處的空間魔法" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>多狗家庭空間規劃：和平共處的空間魔法</h3>
+                    <p>多狗家庭需要精心的空間規劃。本文介紹進食區隔離、睡眠區分配、玩具資源管理、戶外空間利用、品種差異考量，以及狗狗衝突的空間解決方案。</p>
+                </div>
+            </a>
+<a href="posts/post-213.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/82_pet-space-cat-dog-shared-multilevel-furniture.webp" alt="寵物空間規劃 - 貓狗共處空間設計：打造和諧的跨物種家庭" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>貓狗共處空間設計：打造和諧的跨物種家庭</h3>
+                    <p>貓狗共處需要空間上的巧妙安排。本文介紹貓咪安全區、狗狗無法進入的貓咪領域、垂直逃脫路線、分開進食區、貓砂盆保護，以及漸進式介紹的空間準備。</p>
+                </div>
+            </a>
+<a href="posts/post-214.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1129_pets-rehabilitation-hydrotherapypool-metal-glass-macro.webp" alt="寵物空間規劃 - 高齡寵物友善空間改造：讓老寵物行動自如" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>高齡寵物友善空間改造：讓老寵物行動自如</h3>
+                    <p>高齡寵物需要特別的空間改造。本文介紹防滑地板、樓梯坡道、低矮傢俱、加熱床墊、夜燈配置、容易進出的貓砂盆，以及關節友好的空間設計。</p>
+                </div>
+            </a>
+<a href="posts/post-215.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1130_pets-rehabilitation-orthopedicbrace-fabric-metal-macro.webp" alt="寵物空間規劃 - 幼犬幼貓安全空間規劃：寶寶級的防護設計" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>幼犬幼貓安全空間規劃：寶寶級的防護設計</h3>
+                    <p>幼犬幼貓像嬰兒一樣需要安全防護。本文介紹電線保護、有毒植物移除、小物品收納、安全閘門、化學品上鎖、窗戶防護，以及探索區的安全設計。</p>
+                </div>
+            </a>
+<a href="posts/post-216.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/176_pets-multipet-playroom-toy-organization.webp" alt="寵物空間規劃 - 寵物玩具收納與遊戲區設計：整潔又有趣" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物玩具收納與遊戲區設計：整潔又有趣</h3>
+                    <p>寵物玩具散落一地？本文介紹玩具收納系統、遊戲區規劃、旋轉玩具機制、益智玩具安排、DIY玩具收納，以及讓寵物自己取玩具的設計。</p>
+                </div>
+            </a>
+<a href="posts/post-217.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/174_pets-multipet-entryway-organization-supplies.webp" alt="寵物空間規劃 - 寵物用品收納系統設計：告別雜亂" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物用品收納系統設計：告別雜亂</h3>
+                    <p>寵物用品越買越多，收納成為挑戰。本文介紹食品儲存、藥品收納、清潔用品整理、外出裝備收納、季節性物品存放，以及標籤化管理系統。</p>
+                </div>
+            </a>
+<a href="posts/post-218.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/79_pet-interior-luxury-dog-washing-bathroom.webp" alt="寵物空間規劃 - 寵物友善浴室設計：洗澡與護理的專屬空間" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物友善浴室設計：洗澡與護理的專屬空間</h3>
+                    <p>寵物浴室是許多家庭的夢幻設施。本文介紹寵物浴缸尺寸、水溫控制、防滑設計、收納整合、吹毛區、除水漬設計，以及與人用浴室的整合方案。</p>
+                </div>
+            </a>
+<a href="posts/post-219.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1131_pets-tcm-acupunctureneedles-metal-plastic-macro.webp" alt="寵物空間規劃 - 寵物餐廚空間設計：餵食與收納的完美整合" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物餐廚空間設計：餵食與收納的完美整合</h3>
+                    <p>寵物的餐廚空間需要美觀與實用兼具。本文介紹餵食站設計、食品儲存櫃、碗架選擇、防潑濺設計、智慧餵食器整合，以及多寵物的餵食區隔離。</p>
+                </div>
+            </a>
+<a href="posts/post-220.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1132_pets-tcm-herbalmedicine-glass-paper-macro.webp" alt="寵物空間規劃 - 寵物睡眠區域規劃：給毛孩子一個好夢" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物睡眠區域規劃：給毛孩子一個好夢</h3>
+                    <p>好的睡眠對寵物健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。</p>
+                </div>
+            </a>
+<a href="posts/post-221.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1133_pets-tcm-moxibustion-wood-metal-macro.webp" alt="寵物空間規劃 - 花園寵物友善戶外空間設計：安全的遊樂場" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>花園寵物友善戶外空間設計：安全的遊樂場</h3>
+                    <p>花園是寵物的天然遊樂場。本文介紹圍籬安全、無毒植物選擇、挖掘區設計、遮陽休息區、戲水設施、糞便處理站，以及防逃脫設計。</p>
+                </div>
+            </a>
+<a href="posts/post-222.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1134_pets-tcm-cuppingdevice-glass-plastic-macro.webp" alt="寵物空間規劃 - 後院狗狗遊樂區設計：放電與娛樂的天堂" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>後院狗狗遊樂區設計：放電與娛樂的天堂</h3>
+                    <p>後院可以變成狗狗的終極遊樂場。本文介紹敏捷設施、挖掘坑、遮陽區、戲水池、嗅聞遊戲區、安全圍籬，以及不同品種的活動需求考量。</p>
+                </div>
+            </a>
+<a href="posts/post-223.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1135_pets-tcm-acupressuretools-plastic-metal-macro.webp" alt="寵物空間規劃 - 寵物泳池與戲水區設計：夏天的清涼樂園" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物泳池與戲水區設計：夏天的清涼樂園</h3>
+                    <p>夏天寵物也需要戲水降溫。本文介紹寵物泳池類型、安全圍籬、入水坡道、防滑設計、戲水玩具、日曬防護，以及清潔維護。</p>
+                </div>
+            </a>
+<a href="posts/post-224.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1136_pets-tcm-herbaltea-glass-ceramic-macro.webp" alt="寵物空間規劃 - 冬季寵物保暖空間設計：對抗寒冬的溫暖堡壘" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>冬季寵物保暖空間設計：對抗寒冬的溫暖堡壘</h3>
+                    <p>冬天寵物需要特別的保暖空間。本文介紹加熱床墊、保暖窩、室內溫度控制、防風區、衣物收納、外出保暖裝備，以及短毛與高齡寵物的特別需求。</p>
+                </div>
+            </a>
+<a href="posts/post-225.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1137_pets-tcm-acupuncturechart-paper-fabric-macro.webp" alt="寵物空間規劃 - 夏季寵物降溫空間設計：對抗酷暑的清涼綠洲" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>夏季寵物降溫空間設計：對抗酷暑的清涼綠洲</h3>
+                    <p>夏天高溫對寵物是嚴峻考驗。本文介紹室內降溫、涼感床墊、遮陽設計、噴霧降溫、飲水增加、地板材質選擇，以及避免熱傷害的空間策略。</p>
+                </div>
+            </a>
+<a href="posts/post-226.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1138_pets-tcm-massageoil-glass-plastic-macro.webp" alt="寵物空間規劃 - 智慧寵物空間設計：科技改變寵物生活" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>智慧寵物空間設計：科技改變寵物生活</h3>
+                    <p>智慧科技讓寵物照護更輕鬆。本文介紹自動餵食器、智慧貓砂盆、寵物監視器、互動玩具、溫濕度控制、寵物門，以及智慧設備的整合與隱私考量。</p>
+                </div>
+            </a>
+<a href="posts/post-227.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/241_pets-eco-livingroom-reclaimed-wood-organic.webp" alt="寵物空間規劃 - 環保寵物友善空間設計：綠色生活從家開始" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>環保寵物友善空間設計：綠色生活從家開始</h3>
+                    <p>愛寵物也愛地球。本文介紹環保材質選擇、節水設計、廚餘堆肥、再生傢俱、無毒塗料、永續清潔產品，以及寵物廢棄物的環保處理。</p>
+                </div>
+            </a>
+<a href="posts/post-228.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/74_pet-interior-midcentury-feeding-station-kitchen.webp" alt="寵物空間規劃 - 北歐風寵物空間設計：簡約與溫馨的完美結合" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>北歐風寵物空間設計：簡約與溫馨的完美結合</h3>
+                    <p>北歐風的簡約美學也能融入寵物空間。本文介紹北歐風的色彩搭配、木質傢俱、收納哲學、燈光設計、質感選擇，以及寵物設施的隱藏與整合。</p>
+                </div>
+            </a>
+<a href="posts/post-229.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1139_pets-tcm-heatlamp-metal-glass-macro.webp" alt="寵物空間規劃 - 工業風寵物空間設計：粗獷與個性的寵物樂園" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>工業風寵物空間設計：粗獷與個性的寵物樂園</h3>
+                    <p>工業風的粗獷美學與寵物空間意外合拍。本文介紹工業風的金屬與水泥元素、管線設計、開放式收納、復古燈具、耐磨地板，以及寵物設施的工業風改造。</p>
+                </div>
+            </a>
+<a href="posts/post-230.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1140_pets-tcm-herbalpaste-ceramic-glass-macro.webp" alt="寵物空間規劃 - 租屋族寵物空間規劃：不釘牆也能打造舒適家園" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>租屋族寵物空間規劃：不釘牆也能打造舒適家園</h3>
+                    <p>租屋不能釘牆？一樣可以打造寵物友善空間。本文介紹免釘貓跳台、移動式傢俱、吸盤式貓走道、無痕收納、臨時隔間，以及退租時的恢復原狀技巧。</p>
+                </div>
+            </a>
+<a href="posts/post-231.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1141_pets-psychology-calmingdiffuser-plastic-electronic-macro.webp" alt="寵物空間規劃 - 挑高住宅寵物垂直空間：把高度變成優勢" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>挑高住宅寵物垂直空間：把高度變成優勢</h3>
+                    <p>挑高住宅是貓咪的天堂。本文介紹垂直空間的最大化利用、多層次貓走道、吊橋設計、樓中樓貓窩、高空觀景台，以及安全防護設計。</p>
+                </div>
+            </a>
+<a href="posts/post-232.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1142_pets-psychology-anxietyvest-fabric-plastic-macro.webp" alt="寵物空間規劃 - 窗邊寵物觀景台設計：給毛孩子一個風景窗" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>窗邊寵物觀景台設計：給毛孩子一個風景窗</h3>
+                    <p>寵物最愛坐在窗邊看風景。本文介紹窗邊貓窩、吸盤式吊床、窗台加寬、安全防護、貓咪電視（魚缸/鳥籠），以及窗邊空間的多功能利用。</p>
+                </div>
+            </a>
+<a href="posts/post-233.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1143_pets-psychology-behaviorclicker-plastic-metal-macro.webp" alt="寵物空間規劃 - 電視牆整合寵物空間：娛樂與陪伴的結合" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>電視牆整合寵物空間：娛樂與陪伴的結合</h3>
+                    <p>電視牆是客廳核心，也能整合寵物空間。本文介紹電視牆貓跳台、櫃體貓窩、隱藏式貓通道、電線管理、防抓保護，以及美觀與功能的平衡。</p>
+                </div>
+            </a>
+<a href="posts/post-234.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1144_pets-psychology-calmingcollar-fabric-plastic-macro.webp" alt="寵物空間規劃 - 中島廚房的寵物區：現代廚房的寵物整合" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>中島廚房的寵物區：現代廚房的寵物整合</h3>
+                    <p>中島是現代廚房的核心，也能成為寵物的小天地。本文介紹中島下方寵物窩、抽屜式餵食站、收納整合、防潑濺設計，以及與廚房動線的配合。</p>
+                </div>
+            </a>
+<a href="posts/post-235.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1145_pets-psychology-enrichmenttoys-rubber-fabric-macro.webp" alt="寵物空間規劃 - 寵物安全閘門與空間分隔：靈活劃分家中區域" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物安全閘門與空間分隔：靈活劃分家中區域</h3>
+                    <p>安全閘門是多寵物與有幼兒家庭的必備。本文介紹閘門類型、安裝位置、材質選擇、美觀設計、臨時與永久方案，以及空間分隔的靈活運用。</p>
+                </div>
+            </a>
+<a href="posts/post-236.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1146_pets-psychology-puzzlefeeder-plastic-wood-macro.webp" alt="寵物空間規劃 - 寵物空間預算規劃與DIY：小資族也能打造夢幻空間" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物空間預算規劃與DIY：小資族也能打造夢幻空間</h3>
+                    <p>打造寵物空間不需要花大錢。本文介紹預算分配原則、必備與可選項目、DIY寵物傢俱教學、二手與回收利用、省錢技巧，以及預算與品質的平衡。</p>
+                </div>
+            </a>
+<a href="posts/post-237.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/271_pets-cafe-interior-cat-climbing-coffee-bar.webp" alt="寵物空間規劃 - 寵物咖啡廳空間設計：營造人寵共樂的場域" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物咖啡廳空間設計：營造人寵共樂的場域</h3>
+                    <p>寵物咖啡廳是近年熱門業態。本文介紹動線規劃、貓咪/狗狗區域設計、安全防護、清潔消毒系統、座位與互動區、空氣品質，以及法規與衛生要求。</p>
+                </div>
+            </a>
+<a href="posts/post-238.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/254_pets-hotel-bathroom-pet-washing-station.webp" alt="寵物空間規劃 - 寵物旅館空間規劃：給毛孩子一個安心的暫住家" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物旅館空間規劃：給毛孩子一個安心的暫住家</h3>
+                    <p>寵物旅館需要兼顧舒適與安全。本文介紹房型設計、通風除臭系統、安全圍籬、活動區規劃、清潔消毒、監控系統，以及不同寵物的空間需求差異。</p>
+                </div>
+            </a>
+<a href="posts/post-239.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/261_pets-grooming-salon-multiple-stations-tables.webp" alt="寵物空間規劃 - 寵物美容沙龍空間規劃：專業與舒適兼具" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物美容沙龍空間規劃：專業與舒適兼具</h3>
+                    <p>寵物美容沙龍需要專業的空間規劃。本文介紹洗澡區、吹毛區、修剪區、等候區、收納系統、通風除毛、防滑防水，以及美容師的工作動線。</p>
+                </div>
+            </a>
+<a href="posts/post-240.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/371_pets-trainingschool-classroom-obedience-equipment.webp" alt="寵物空間規劃 - 寵物訓練學校空間設計：紀律與快樂的學習場" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物訓練學校空間設計：紀律與快樂的學習場</h3>
+                    <p>寵物訓練學校需要開闊且安全的空間。本文介紹室內訓練場、戶外活動區、障礙設施、觀眾區、收納空間、安全圍籬，以及不同訓練課程的空間需求。</p>
+                </div>
+            </a>
+<a href="posts/post-241.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/362_pets-vetclinic-exam-room-medical-equipment.webp" alt="寵物空間規劃 - 寵物醫院空間規劃：降低焦慮的醫療環境" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物醫院空間規劃：降低焦慮的醫療環境</h3>
+                    <p>寵物醫院的空間設計會影響寵物的就醫體驗。本文介紹分區動線、貓狗分離等候區、診間設計、住院區、手術室、通風除臭，以及降低寵物焦慮的設計元素。</p>
+                </div>
+            </a>
+<a href="posts/post-242.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/291_pets-rehab-hydrotherapy-pool-underwater-treadmill.webp" alt="寵物空間規劃 - 寵物復健中心空間設計：協助毛孩子恢復健康" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物復健中心空間設計：協助毛孩子恢復健康</h3>
+                    <p>寵物復健中心需要專業的設備與空間。本文介紹水療池、水下跑步機、雷射治療區、針灸區、按摩區、運動訓練區，以及復健設備的空間配置。</p>
+                </div>
+            </a>
+<a href="posts/post-243.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/286_pets-photostudio-outdoor-garden-backdrop-props.webp" alt="寵物空間規劃 - 寵物攝影棚空間設計：捕捉毛孩子最美瞬間" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物攝影棚空間設計：捕捉毛孩子最美瞬間</h3>
+                    <p>寵物攝影棚需要特殊的空間設計。本文介紹背景系統、燈光配置、安全地墊、道具收納、等候與梳化區、空調與通風，以及讓寵物放鬆的環境營造。</p>
+                </div>
+            </a>
+<a href="posts/post-244.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/341_pets-memorial-garden-stones-flowers.webp" alt="寵物空間規劃 - 寵物紀念空間設計：溫柔道別的神聖場域" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物紀念空間設計：溫柔道別的神聖場域</h3>
+                    <p>寵物紀念空間需要溫柔而莊重的設計。本文介紹紀念花園、壁龕區、燭光區、紀念牆、噴泉裝置、植樹區，以及幫助飼主療癒的空間氛圍營造。</p>
+                </div>
+            </a>
+<a href="posts/post-245.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="寵物空間規劃 - 夾層空間的寵物利用：開發被忽略的垂直寶地" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>夾層空間的寵物利用：開發被忽略的垂直寶地</h3>
+                    <p>夾層空間常常被浪費，其實是寵物的絕佳領域。本文介紹夾層貓走道、閣樓貓窩、樓梯收納、吊橋連接，以及結構安全與出入設計。</p>
+                </div>
+            </a>
+<a href="posts/post-246.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1147_pets-psychology-slowfeeder-plastic-ceramic-macro.webp" alt="寵物空間規劃 - 走廊空間的寵物功能化：把動線變成遊戲場" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>走廊空間的寵物功能化：把動線變成遊戲場</h3>
+                    <p>走廊不只是過道，也能成為寵物的遊戲與收納空間。本文介紹走廊貓走道、牆面收納、懸掛式貓窩、互動玩具，以及不影響動線的設計原則。</p>
+                </div>
+            </a>
+<a href="posts/post-247.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1148_pets-psychology-behaviormat-fabric-rubber-macro.webp" alt="寵物空間規劃 - 衣櫃內的隱藏貓窩：收納與寵物空間的完美結合" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>衣櫃內的隱藏貓窩：收納與寵物空間的完美結合</h3>
+                    <p>衣櫃也能變成貓咪的秘密基地。本文介紹衣櫃貓窩設計、通風處理、出入門、收納整合、清潔便利性，以及貓咪喜歡的隱蔽空間營造。</p>
+                </div>
+            </a>
+<a href="posts/post-248.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/311_pets-restaurant-dogfriendly-seating-patio.webp" alt="寵物空間規劃 - 寵物餐廳空間設計：人寵共食的新趨勢" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物餐廳空間設計：人寵共食的新趨勢</h3>
+                    <p>寵物餐廳是新興的餐飲業態。本文介紹人寵共食區、寵物專屬菜單、清潔消毒、安全圍籬、座位設計、空氣品質，以及法規與衛生管理。</p>
+                </div>
+            </a>
+<a href="posts/post-249.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/1149_pets-psychology-calmingmedication-plastic-glass-macro.webp" alt="寵物空間規劃 - 寵物水上樂園空間設計：夏天的終極放電場" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物水上樂園空間設計：夏天的終極放電場</h3>
+                    <p>寵物水上樂園是夏天最受歡迎的寵物設施。本文介紹泳池設計、潑水區、淺水區、安全設施、沖洗區、休息區，以及不同體型寵物的水域規劃。</p>
+                </div>
+            </a>
+<a href="posts/post-250.html" class="cat-card" data-category="寵物空間規劃">
+                <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="寵物空間規劃 - 寵物滑雪渡假村空間設計：冬季的雪地樂園" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <h3>寵物滑雪渡假村空間設計：冬季的雪地樂園</h3>
+                    <p>寵物滑雪渡假村是冬季獨特的寵物設施。本文介紹雪地活動區、室內暖身區、靴子更換站、清洗區、保暖設施，以及冬季寵物安全的空間設計。</p>
+                </div>
+            </a></div>
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="index.html#categories" class="back-btn">← 返回文章分類</a>
+        </div>
+    </main>
+    <footer class="cat-footer">
+        <p>© 2026 ZooTecture 入梯毛孩｜<a href="index.html">首頁</a> ｜ <a href="blog.html">全部文章</a></p>
+    </footer>
+
+    <!-- Internal Linking Footer -->
+    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+        <div style="max-width:800px; margin:0 auto;">
+            <p style="margin-bottom:1rem; font-size:0.9rem;">
+                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+            </p>
+            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+        </div>
+    </div>
+
+</body>
+</html>

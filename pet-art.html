@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="寵物肖像、攝影與創作｜ZooTecture 入梯毛孩 寵物知識部落格">
+    <meta name="keywords" content="寵物藝術, 寵物, 寵物知識, ZooTecture, 入梯毛孩">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zootecture.com/pet-art.html">
+    <meta property="og:title" content="寵物藝術｜ZooTecture 入梯毛孩">
+    <meta property="og:description" content="寵物肖像、攝影與創作">
+    <meta property="og:type" content="website">
+    <title>寵物藝術｜ZooTecture 入梯毛孩</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .cat-nav { background: #1a1a2e; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .cat-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+        .cat-nav a:hover { color: #f39c12; }
+        .cat-nav .logo { font-size: 1.2rem; }
+        .cat-nav .links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .cat-header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 3rem 5%; text-align: center; }
+        .cat-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+        .cat-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .cat-header .tag { display: inline-block; background: rgba(243,156,18,0.2); color: #f39c12; padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; font-weight: 500; }
+        .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+        .cat-card-body { padding: 1.2rem; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
+        .cat-footer a { color: #f39c12; text-decoration: none; }
+        .back-btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; background: #f39c12; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .back-btn:hover { background: #e67e22; }
+        .filter-bar { max-width: 1200px; margin: 0 auto; padding: 1.5rem 5%; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+        .filter-btn { padding: 0.4rem 1rem; border: 2px solid #ddd; background: #fff; border-radius: 20px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        .filter-btn:hover { border-color: #f39c12; color: #f39c12; }
+        .filter-btn.active { background: #f39c12; color: #fff; border-color: #f39c12; }
+        .cat-card.hidden { display: none; }
+</style>
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="author" content="ZooTecture 入梯毛孩">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="寵物藝術｜ZooTecture 入梯毛孩">
+    <meta name="twitter:description" content="寵物肖像、攝影與創作">
+    <meta name="twitter:image" content="https://zootecture.com/images/banner.webp">
+    <meta name="twitter:site" content="@zootecture">
+    <meta name="twitter:creator" content="@zootecture">
+    
+    <!-- Open Graph Enhanced -->
+    <meta property="og:site_name" content="ZooTecture 入梯毛孩">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="collection">
+    <meta property="og:url" content="https://zootecture.com/pet-art.html">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="寵物藝術｜ZooTecture 入梯毛孩">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://zootecture.com/pet-art.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="ZooTecture 入梯毛孩 RSS Feed" href="https://zootecture.com/rss.xml">
+    
+    <!-- Performance: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}</script>
+    
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "potentialAction": {"@type": "SearchAction", "target": "https://zootecture.com/blog.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+    
+    <!-- Google Search Console Verification (replace with your code) -->
+    <meta name="google-site-verification" content="bj6ck6yji4">
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+    
+    <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+</head>
+<body>
+    <nav class="cat-nav">
+        <a href="index.html" class="logo">🐾 ZooTecture 入梯毛孩</a>
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="blog.html">全部文章</a>
+            <a href="index.html#categories">文章分類</a>
+        </div>
+    </nav>
+    <header class="cat-header">
+        <h1>寵物藝術</h1>
+        <p>寵物肖像、攝影與創作</p>
+        <span class="tag">寵物攝影 · 肖像創作 · 藝術設計</span>
+    </header>
+    <main class="cat-container">
+        <div class="cat-grid"><a href="posts/post-079.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="寵物藝術 - 水彩畫中的黃金獵犬：用藝術記錄寵物的美好" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>水彩畫中的黃金獵犬：用藝術記錄寵物的美好</h3>
+                    <p>一幅水彩畫風格的黃金獵犬畫像。探索寵物肖像畫的藝術形式和製作方法。</p>
+                </div>
+            </a>
+<a href="posts/post-080.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/132_pet-art-oil-painting-classical-cat.webp" alt="寵物藝術 - 古典油畫中的貓咪：當貓咪遇見文藝復興" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>古典油畫中的貓咪：當貓咪遇見文藝復興</h3>
+                    <p>一幅古典油畫風格的貓咪肖像。探索將寵物融入古典藝術風格的創意。</p>
+                </div>
+            </a>
+<a href="posts/post-081.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/133_pet-art-pop-art-dog-warhol-style.webp" alt="寵物藝術 - 普普藝術風格的狗狗：安迪沃荷的寵物世界" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>普普藝術風格的狗狗：安迪沃荷的寵物世界</h3>
+                    <p>一幅普普藝術風格的狗狗畫像，色彩鮮豔。探索普普藝術在寵物肖像中的應用。</p>
+                </div>
+            </a>
+<a href="posts/post-082.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/135_pet-art-ukiyoe-japanese-dog-wave.webp" alt="寵物藝術 - 浮世繪中的狗狗：日本傳統藝術與寵物" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>浮世繪中的狗狗：日本傳統藝術與寵物</h3>
+                    <p>一幅浮世繪風格的狗狗畫像，背景是海浪。探索日本傳統藝術風格在寵物肖像中的應用。</p>
+                </div>
+            </a>
+<a href="posts/post-083.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/134_pet-art-pixel-8bit-cat-retro-game.webp" alt="寵物藝術 - 像素藝術中的貓咪：復古遊戲風格的寵物畫像" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>像素藝術中的貓咪：復古遊戲風格的寵物畫像</h3>
+                    <p>一幅8位元像素風格的貓咪畫像。探索復古像素藝術在寵物肖像中的應用。</p>
+                </div>
+            </a>
+<a href="posts/post-084.html" class="cat-card" data-category="寵物藝術">
+                <img src="images/140_pet-art-ink-wash-chinese-cat-sumi-e.webp" alt="寵物藝術 - 水墨畫中的貓咪：東方藝術的禪意與寵物" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <h3>水墨畫中的貓咪：東方藝術的禪意與寵物</h3>
+                    <p>一幅中國水墨畫風格的貓咪。探索東方傳統藝術在寵物肖像中的應用。</p>
+                </div>
+            </a></div>
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="index.html#categories" class="back-btn">← 返回文章分類</a>
+        </div>
+    </main>
+    <footer class="cat-footer">
+        <p>© 2026 ZooTecture 入梯毛孩｜<a href="index.html">首頁</a> ｜ <a href="blog.html">全部文章</a></p>
+    </footer>
+
+    <!-- Internal Linking Footer -->
+    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+        <div style="max-width:800px; margin:0 auto;">
+            <p style="margin-bottom:1rem; font-size:0.9rem;">
+                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+            </p>
+            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+        </div>
+    </div>
+
+</body>
+</html>

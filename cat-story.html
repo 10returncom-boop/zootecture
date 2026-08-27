@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="貓咪護理、行為與品種指南｜ZooTecture 入梯毛孩 寵物知識部落格">
+    <meta name="keywords" content="貓咪物語, 寵物, 寵物知識, ZooTecture, 入梯毛孩">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zootecture.com/cat-story.html">
+    <meta property="og:title" content="貓咪物語｜ZooTecture 入梯毛孩">
+    <meta property="og:description" content="貓咪護理、行為與品種指南">
+    <meta property="og:type" content="website">
+    <title>貓咪物語｜ZooTecture 入梯毛孩</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .cat-nav { background: #1a1a2e; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .cat-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+        .cat-nav a:hover { color: #f39c12; }
+        .cat-nav .logo { font-size: 1.2rem; }
+        .cat-nav .links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .cat-header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 3rem 5%; text-align: center; }
+        .cat-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+        .cat-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .cat-header .tag { display: inline-block; background: rgba(243,156,18,0.2); color: #f39c12; padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; font-weight: 500; }
+        .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+        .cat-card-body { padding: 1.2rem; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
+        .cat-footer a { color: #f39c12; text-decoration: none; }
+        .back-btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; background: #f39c12; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .back-btn:hover { background: #e67e22; }
+        .filter-bar { max-width: 1200px; margin: 0 auto; padding: 1.5rem 5%; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+        .filter-btn { padding: 0.4rem 1rem; border: 2px solid #ddd; background: #fff; border-radius: 20px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        .filter-btn:hover { border-color: #f39c12; color: #f39c12; }
+        .filter-btn.active { background: #f39c12; color: #fff; border-color: #f39c12; }
+        .cat-card.hidden { display: none; }
+</style>
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="author" content="ZooTecture 入梯毛孩">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="貓咪物語｜ZooTecture 入梯毛孩">
+    <meta name="twitter:description" content="貓咪護理、行為與品種指南">
+    <meta name="twitter:image" content="https://zootecture.com/images/banner.webp">
+    <meta name="twitter:site" content="@zootecture">
+    <meta name="twitter:creator" content="@zootecture">
+    
+    <!-- Open Graph Enhanced -->
+    <meta property="og:site_name" content="ZooTecture 入梯毛孩">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="collection">
+    <meta property="og:url" content="https://zootecture.com/cat-story.html">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="貓咪物語｜ZooTecture 入梯毛孩">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://zootecture.com/cat-story.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="ZooTecture 入梯毛孩 RSS Feed" href="https://zootecture.com/rss.xml">
+    
+    <!-- Performance: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}</script>
+    
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "potentialAction": {"@type": "SearchAction", "target": "https://zootecture.com/blog.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+    
+    <!-- Google Search Console Verification (replace with your code) -->
+    <meta name="google-site-verification" content="bj6ck6yji4">
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+    
+    <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+</head>
+<body>
+    <nav class="cat-nav">
+        <a href="index.html" class="logo">🐾 ZooTecture 入梯毛孩</a>
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="blog.html">全部文章</a>
+            <a href="index.html#categories">文章分類</a>
+        </div>
+    </nav>
+    <header class="cat-header">
+        <h1>貓咪物語</h1>
+        <p>貓咪護理、行為與品種指南</p>
+        <span class="tag">貓咪護理 · 行為解析 · 品種介紹</span>
+    </header>
+    <main class="cat-container">
+        <div class="cat-grid"><a href="posts/post-021.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/21_英短_钥匙孔视角.webp" alt="貓咪物語 - 鑰匙孔視角的英短：窺探貓咪的秘密世界" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>鑰匙孔視角的英短：窺探貓咪的秘密世界</h3>
+                    <p>從鑰匙孔的角度看貓咪，是一種什麼樣的體驗？透過獨特視角，發現貓咪不為人知的一面。</p>
+                </div>
+            </a>
+<a href="posts/post-022.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/22_英短_毛线球迷宫.webp" alt="貓咪物語 - 毛線球迷宮中的英短：貓咪的狩獵本能" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>毛線球迷宮中的英短：貓咪的狩獵本能</h3>
+                    <p>為什麼貓咪對毛線球毫無抵抗力？一個簡單的毛線球，如何喚醒貓咪體內沉睡萬年的狩獵本能？</p>
+                </div>
+            </a>
+<a href="posts/post-023.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/23_英短_俯视书本.webp" alt="貓咪物語 - 俯視書本上的英短：貓咪與閱讀的慵懶午後" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>俯視書本上的英短：貓咪與閱讀的慵懶午後</h3>
+                    <p>為什麼貓咪總是喜歡坐在你正在看的書上？探索貓咪的佔有慾與注意力爭奪行為。</p>
+                </div>
+            </a>
+<a href="posts/post-024.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/24_英短_墙壁裂缝.webp" alt="貓咪物語 - 牆壁裂縫中的英短：貓咪的液體之謎" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>牆壁裂縫中的英短：貓咪的液體之謎</h3>
+                    <p>貓咪是液體嗎？為什麼貓咪能鑽進任何縫隙？探索貓咪身體的驚人柔韌性。</p>
+                </div>
+            </a>
+<a href="posts/post-025.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/25_英短_水下仰视.webp" alt="貓咪物語 - 水下仰視的英短：貓咪其實愛喝水？" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>水下仰視的英短：貓咪其實愛喝水？</h3>
+                    <p>從水下仰視一隻正在喝水的貓咪，是一種什麼樣的體驗？揭開貓咪飲水習慣的秘密。</p>
+                </div>
+            </a>
+<a href="posts/post-026.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/26_英短_留声机喇叭.webp" alt="貓咪物語 - 留聲機喇叭中的英短：貓咪的音樂品味" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>留聲機喇叭中的英短：貓咪的音樂品味</h3>
+                    <p>貓咪喜歡聽什麼樣的音樂？研究顯示，貓咪有自己獨特的音樂偏好，而且和人類完全不同。</p>
+                </div>
+            </a>
+<a href="posts/post-027.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/27_英短_万花筒.webp" alt="貓咪物語 - 萬花筒中的英短：貓咪的視覺奇幻世界" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>萬花筒中的英短：貓咪的視覺奇幻世界</h3>
+                    <p>透過萬花筒看貓咪，是一場視覺的奇幻之旅。但你知道貓咪自己看到的世界是什麼樣子嗎？</p>
+                </div>
+            </a>
+<a href="posts/post-028.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/28_英短_棋盘格透视.webp" alt="貓咪物語 - 棋盤格透視中的英短：貓咪的空間感知能力" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>棋盤格透視中的英短：貓咪的空間感知能力</h3>
+                    <p>貓咪為什麼能在複雜的環境中準確跳躍？探索貓咪驚人的空間感知和運動控制能力。</p>
+                </div>
+            </a>
+<a href="posts/post-030.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/30_英短_镜面迷宫.webp" alt="貓咪物語 - 鏡面迷宮中的英短：貓咪能認出鏡中的自己嗎？" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>鏡面迷宮中的英短：貓咪能認出鏡中的自己嗎？</h3>
+                    <p>當貓咪走進鏡面迷宮，會發生什麼？貓咪能認出鏡中的自己嗎？動物心理學家為你解密。</p>
+                </div>
+            </a>
+<a href="posts/post-041.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1100_pets-microbiology-testtuberack-plastic-glass-macro.webp" alt="貓咪物語 - 陽光窗邊的美短：貓咪的日光浴哲學" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>陽光窗邊的美短：貓咪的日光浴哲學</h3>
+                    <p>為什麼貓咪這麼喜歡曬太陽？一隻在窗邊享受日光浴的美國短毛貓，告訴你貓咪的太陽崇拜。</p>
+                </div>
+            </a>
+<a href="posts/post-042.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1101_pets-parasitology-fecalsample-plastic-glass-macro.webp" alt="貓咪物語 - 金色眼睛的英短藍貓：貓咪的眼睛之謎" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>金色眼睛的英短藍貓：貓咪的眼睛之謎</h3>
+                    <p>一隻英國短毛藍貓的金色眼睛在燈光下閃耀，彷彿兩顆寶石。探索貓咪眼睛的顏色、結構和神秘能力。</p>
+                </div>
+            </a>
+<a href="posts/post-043.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="貓咪物語 - 玩毛線的美短虎斑：貓咪的狩獵遊戲" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>玩毛線的美短虎斑：貓咪的狩獵遊戲</h3>
+                    <p>一隻美國短毛虎斑貓在地上翻滾，瘋狂地撲打一個毛線球。為什麼貓咪對移動的物體毫無抵抗力？</p>
+                </div>
+            </a>
+<a href="posts/post-044.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/44_british-shorthair-lilac-cat-minimalist-interior.webp" alt="貓咪物語 - 極簡空間中的英短丁香貓：貓咪與室內設計" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>極簡空間中的英短丁香貓：貓咪與室內設計</h3>
+                    <p>一隻英國短毛丁香貓在極簡風格的房間中，創造出一種寧靜的和諧。探索如何為貓咪打造一個美觀又實用的家。</p>
+                </div>
+            </a>
+<a href="posts/post-045.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1102_pets-parasitology-microscopeslide-glass-plastic-macro.webp" alt="貓咪物語 - 花園裡與蝴蝶親吻的美短：貓咪的好奇心" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>花園裡與蝴蝶親吻的美短：貓咪的好奇心</h3>
+                    <p>一隻美國短毛貓在花園裡與一隻蝴蝶「親吻」，那個畫面既溫馨又有趣。探索貓咪的好奇心和探索精神。</p>
+                </div>
+            </a>
+<a href="posts/post-046.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1103_pets-parasitology-dewormermedication-plastic-glass-macro.webp" alt="貓咪物語 - 秋楓中的英短：貓咪與季節的變化" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>秋楓中的英短：貓咪與季節的變化</h3>
+                    <p>一隻英國短毛貓坐在秋楓樹下，毛色與落葉融為一體。探索貓咪如何感知和應對季節的變化。</p>
+                </div>
+            </a>
+<a href="posts/post-047.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1104_pets-parasitology-fleacomb-plastic-metal-macro.webp" alt="貓咪物語 - 紙箱辦公室的美短：貓咪的紙箱哲學" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>紙箱辦公室的美短：貓咪的紙箱哲學</h3>
+                    <p>一隻美國短毛貓把紙箱當成了辦公室，在裡面認真地「工作」。為什麼貓咪這麼愛紙箱？</p>
+                </div>
+            </a>
+<a href="posts/post-048.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/48_british-shorthair-cat-latte-cozy-cafe.webp" alt="貓咪物語 - 拿鐵咖啡廳的英短：貓咪咖啡廳的治愈魔法" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>拿鐵咖啡廳的英短：貓咪咖啡廳的治愈魔法</h3>
+                    <p>一隻英國短毛貓坐在咖啡廳的吧檯上，旁邊是一杯香氣撲鼻的拿鐵。探索貓咪咖啡廳為什麼這麼治愈。</p>
+                </div>
+            </a>
+<a href="posts/post-049.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1105_pets-parasitology-tickremover-metal-plastic-macro.webp" alt="貓咪物語 - 野花草原日落的美短：貓咪的戶外探險" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>野花草原日落的美短：貓咪的戶外探險</h3>
+                    <p>一隻美國短毛貓在野花草原的日落中漫步，那個畫面既自由又美麗。探索帶貓咪戶外探險的正確方式。</p>
+                </div>
+            </a>
+<a href="posts/post-050.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/50_british-shorthair-cat-vintage-bookshelf-library.webp" alt="貓咪物語 - 複古書架圖書館的英短：貓咪與閱讀的不解之緣" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>複古書架圖書館的英短：貓咪與閱讀的不解之緣</h3>
+                    <p>一隻英國短毛貓坐在複古書架前，旁邊是堆積如山的書本。為什麼貓咪這麼喜歡待在圖書館和書房裡？</p>
+                </div>
+            </a>
+<a href="posts/post-152.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1106_pets-parasitology-fecalflotation-glass-plastic-macro.webp" alt="貓咪物語 - 英國短毛貓個性與照護完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>英國短毛貓個性與照護完全指南</h3>
+                    <p>英國短毛貓以圓潤可愛的外表和溫和個性著稱。本文介紹英短的歷史、個性特點、餵食建議、毛髮護理、常見遺傳疾病，以及適合的飼養環境。</p>
+                </div>
+            </a>
+<a href="posts/post-155.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1107_pets-parasitology-centrifugetube-plastic-glass-macro.webp" alt="貓咪物語 - 美國短毛貓健康與護理完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>美國短毛貓健康與護理完全指南</h3>
+                    <p>美國短毛貓是體格強健、個性溫和的經典品種。本文介紹美短的歷史、個性特點、餵食建議、毛髮護理、常見健康問題（如肥厚性心肌病），以及壽命與照護要點。</p>
+                </div>
+            </a>
+<a href="posts/post-157.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1108_pets-parasitology-microscope-metal-glass-macro.webp" alt="貓咪物語 - 布偶貓個性與飼養完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>布偶貓個性與飼養完全指南</h3>
+                    <p>布偶貓以藍色大眼睛和溫柔個性被稱為「仙女貓」。本文介紹布偶的歷史、個性特點、毛髮護理（重點色長毛）、室內飼養要點、常見健康問題（多囊腎），以及互動需求。</p>
+                </div>
+            </a>
+<a href="posts/post-159.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1109_pets-parasitology-gloves-fabric-plastic-macro.webp" alt="貓咪物語 - 橘貓的個性特點與有趣事實完全解析" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>橘貓的個性特點與有趣事實完全解析</h3>
+                    <p>「十隻橘貓九隻胖」是真的嗎？本文介紹橘貓的毛色遺傳（80%是公貓）、個性特點（親人、愛吃）、體重管理、常見迷思破解，以及橘貓成為網紅的原因。</p>
+                </div>
+            </a>
+<a href="posts/post-161.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1110_pets-parasitology-labcoat-fabric-plastic-macro.webp" alt="貓咪物語 - 波斯貓護理與美容完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>波斯貓護理與美容完全指南</h3>
+                    <p>波斯貓以優雅的長毛和扁臉聞名。本文介紹波斯貓的歷史、個性特點、每日梳毛的重要性、臉部清潔、眼睛護理、短頭犬症候群、常見健康問題，以及美容頻率。</p>
+                </div>
+            </a>
+<a href="posts/post-163.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1111_pets-toxicology-activatedcharcoal-plastic-glass-macro.webp" alt="貓咪物語 - 暹羅貓個性與叫聲解讀完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>暹羅貓個性與叫聲解讀完全指南</h3>
+                    <p>暹羅貓以藍色杏仁眼和「話多」著稱。本文介紹暹羅貓的歷史、個性特點（黏人、愛叫）、叫聲含義解讀、社交需求、重點色遺傳、常見健康問題，以及適合的家庭。</p>
+                </div>
+            </a>
+<a href="posts/post-165.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1112_pets-toxicology-emeticmedication-plastic-glass-macro.webp" alt="貓咪物語 - 緬因貓個性與飼養完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>緬因貓個性與飼養完全指南</h3>
+                    <p>緬因貓是體型最大的家貓品種，被稱為「溫柔的巨人」。本文介紹緬因貓的歷史傳說、個性特點（親人、愛水）、體型與成長、毛髮護理、常見健康問題（肥厚性心肌病），以及餵食需求。</p>
+                </div>
+            </a>
+<a href="posts/post-166.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1113_pets-toxicology-ivfluidbag-plastic-liquid-macro.webp" alt="貓咪物語 - 新手養貓完全指南：從準備到適應的第一個月" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>新手養貓完全指南：從準備到適應的第一個月</h3>
+                    <p>第一次養貓不知道從何開始？本文從貓咪到家前的準備清單、第一天的適應方法、餵食與如廁訓練、健康檢查時機，到第一個月的照護重點，完整帶你度過新手期。</p>
+                </div>
+            </a>
+<a href="posts/post-169.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1114_pets-toxicology-bloodtesttube-glass-plastic-macro.webp" alt="貓咪物語 - 幼貓餵養與照護完全指南：從斷奶到成年" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>幼貓餵養與照護完全指南：從斷奶到成年</h3>
+                    <p>幼貓的成長速度驚人，每個階段都有不同需求。本文介紹幼貓的年齡判斷、奶粉餵養與斷奶過渡、幼貓糧選擇、疫苗與驅蟲時間表、社會化與遊戲，以及常見健康問題。</p>
+                </div>
+            </a>
+<a href="posts/post-172.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1115_pets-toxicology-urineteststrip-plastic-paper-macro.webp" alt="貓咪物語 - 貓咪洗澡正確步驟與讓貓咪不掙扎的技巧" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓咪洗澡正確步驟與讓貓咪不掙扎的技巧</h3>
+                    <p>多數貓咪怕水，洗澡像打仗。本文介紹貓咪洗澡的頻率、事前準備（修剪指甲、梳理毛髮）、正確洗澡步驟、貓咪專用洗毛精選擇、吹乾技巧，以及怕水貓咪的漸進適應法。</p>
+                </div>
+            </a>
+<a href="posts/post-175.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1116_pets-toxicology-stomachpump-plastic-metal-macro.webp" alt="貓咪物語 - 貓咪毛髮護理與梳毛技巧完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓咪毛髮護理與梳毛技巧完全指南</h3>
+                    <p>定期梳毛不僅減少掉毛，還能促進皮膚健康。本文介紹短毛貓與長毛貓的梳毛頻率、梳子種類選擇（針梳、排梳、去毛梳）、正確梳毛手法、毛球預防、掉毛異常的判斷，以及貓咪配合梳毛的技巧。</p>
+                </div>
+            </a>
+<a href="posts/post-178.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1117_pets-toxicology-antidotemedication-plastic-glass-macro.webp" alt="貓咪物語 - 貓咪眼睛護理與常見眼部問題" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓咪眼睛護理與常見眼部問題</h3>
+                    <p>貓咪眼睛是健康的窗口。本文介紹貓咪眼睛的日常清潔方法、正常分泌物與異常的區別、常見眼部疾病（結膜炎、角膜潰瘍、青光眼）、淚痕護理、眼藥使用方法，以及就醫時機判斷。</p>
+                </div>
+            </a>
+<a href="posts/post-182.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/196_pets-senior-lowentry-litterbox-nonslip-mat.webp" alt="貓咪物語 - 貓砂種類比較與選擇完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓砂種類比較與選擇完全指南</h3>
+                    <p>貓砂是貓咪家庭的必需品，種類繁多怎麼選？本文比較凝結砂、木屑砂、水晶砂、豆腐砂、紙砂的優缺點、粉塵、除臭力、腳感、價格、環保性，以及根據貓咪偏好與家庭需求的選擇建議。</p>
+                </div>
+            </a>
+<a href="posts/post-186.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1118_pets-toxicology-oxygenmask-plastic-rubber-macro.webp" alt="貓咪物語 - 貓跳台選購與安裝完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓跳台選購與安裝完全指南</h3>
+                    <p>貓跳台是貓咪的遊樂園與觀景台。本文介紹貓跳台的類型（層架式、柱狀式、牆壁式、窗台式）、高度與穩定性、材質選擇（劍麻柱、絨布、木質）、貓抓板整合、擺放位置、安裝與固定方法，以及不同貓...</p>
+                </div>
+            </a>
+<a href="posts/post-189.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1119_pets-toxicology-ecgmonitor-plastic-electronic-macro.webp" alt="貓咪物語 - 貓咪飲水器選擇與清潔完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>貓咪飲水器選擇與清潔完全指南</h3>
+                    <p>貓咪喜歡流動水，飲水器可以增加飲水量。本文介紹貓咪飲水器的類型（噴泉式、瀑布式、重力式）、材質選擇（不鏽鋼、陶瓷、塑膠）、濾芯更換頻率、清潔步驟、常見問題（噪音、漏水）、擺放位置，...</p>
+                </div>
+            </a>
+<a href="posts/post-199.html" class="cat-card" data-category="貓咪物語">
+                <img src="images/1120_pets-toxicology-gloves-fabric-plastic-macro.webp" alt="貓咪物語 - 多貓家庭的和平共處完全指南" class="cat-card-img" loading="lazy">
+                <div class="cat-card-body">
+                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <h3>多貓家庭的和平共處完全指南</h3>
+                    <p>家裡養多隻貓咪，如何讓牠們和平相處？本文介紹多貓家庭的資源分配原則（貓砂盆、食物、水、窩、貓抓板）、新貓引進的漸進步驟、貓咪之間的關係類型、打架的識別與處理、貓咪壓力訊號、空間垂直...</p>
+                </div>
+            </a></div>
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="index.html#categories" class="back-btn">← 返回文章分類</a>
+        </div>
+    </main>
+    <footer class="cat-footer">
+        <p>© 2026 ZooTecture 入梯毛孩｜<a href="index.html">首頁</a> ｜ <a href="blog.html">全部文章</a></p>
+    </footer>
+
+    <!-- Internal Linking Footer -->
+    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+        <div style="max-width:800px; margin:0 auto;">
+            <p style="margin-bottom:1rem; font-size:0.9rem;">
+                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+            </p>
+            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+        </div>
+    </div>
+
+</body>
+</html>

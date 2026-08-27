@@ -1,0 +1,7 @@
+# Git ignore for zootecture site
+zootecture-main/
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
