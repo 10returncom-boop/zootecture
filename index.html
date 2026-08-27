@@ -382,8 +382,8 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
     
 /* === Unified Site Navigation === */
-.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
-.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: none; }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; overflow: visible; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
 .site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
@@ -394,8 +394,8 @@ body { font-size: 1.05rem; line-height: 1.8;
 .dropbtn:hover, .dropbtn.active { background: rgba(255,255,255,0.3); }
 .dropbtn .arrow { font-size: 0.7rem; transition: transform 0.3s; }
 .dropbtn.active .arrow { transform: rotate(180deg); }
-.dropdown-content { display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); width: 420px; max-height: 70vh; overflow-y: auto; z-index: 1001; animation: slideDown 0.2s ease; }
-.dropdown-content.show { display: block; }
+.dropdown-content { display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); width: 420px; max-height: 70vh; overflow-y: auto; z-index: 9999; animation: slideDown 0.2s ease; }
+.dropdown-content.show { display: block !important; }
 @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 .dropdown-header { padding: 16px 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; border-radius: 16px 16px 0 0; position: sticky; top: 0; z-index: 1; }
 .dd-title { font-weight: 700; color: #333; font-size: 0.95rem; }
@@ -469,8 +469,8 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
         
 /* === Unified Site Navigation === */
-.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
-.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: none; }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; overflow: visible; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
 .site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
@@ -481,8 +481,8 @@ body { font-size: 1.05rem; line-height: 1.8;
 .dropbtn:hover, .dropbtn.active { background: rgba(255,255,255,0.3); }
 .dropbtn .arrow { font-size: 0.7rem; transition: transform 0.3s; }
 .dropbtn.active .arrow { transform: rotate(180deg); }
-.dropdown-content { display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); width: 420px; max-height: 70vh; overflow-y: auto; z-index: 1001; animation: slideDown 0.2s ease; }
-.dropdown-content.show { display: block; }
+.dropdown-content { display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); width: 420px; max-height: 70vh; overflow-y: auto; z-index: 9999; animation: slideDown 0.2s ease; }
+.dropdown-content.show { display: block !important; }
 @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 .dropdown-header { padding: 16px 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; border-radius: 16px 16px 0 0; position: sticky; top: 0; z-index: 1; }
 .dd-title { font-weight: 700; color: #333; font-size: 0.95rem; }
@@ -855,7 +855,7 @@ body { font-size: 1.05rem; line-height: 1.8;
 
 
     <!-- Internal Linking Footer -->
-    <div style="background:#1a1a2e; color:#ddd; padding:2rem 5%; margin-top:3rem; text-align:center;">
+    <div style="background:#1a1a2e; color:#fff; padding:2rem 5%; margin-top:3rem; text-align:center;">
         <div style="max-width:800px; margin:0 auto;">
             <p style="margin-bottom:1rem; font-size:1rem;">
                 <a href="index.html" style="color:#F5B841;">首頁</a> ｜ 
