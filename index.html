@@ -30,7 +30,7 @@
             color: #222;
             line-height: 1.6;
             /* 全域文字自適應基準 */
-            font-size: clamp(14px, 2vw, 16px);
+            font-size: clamp(16px, 2.2vw, 18px);
         }
         h1 {
             font-size: clamp(22px, 4vw, 36px);
@@ -425,6 +425,7 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+.nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
 </style>
 
         <style>
@@ -499,6 +500,7 @@
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
+.nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
 </style>
 
     <!-- Enhanced SEO Meta Tags -->
@@ -562,10 +564,12 @@
     <header class="site-header"><div class="header-inner">
 <a href="index.html" class="site-logo"><span class="paw">🐾</span>ZooTecture 入梯毛孩</a>
 <nav class="site-nav">
-<a href="index.html" class="nav-link">🏠 首頁</a>
-<a href="blog.html" class="nav-link">📚 文章總覽</a>
+<a href="index.html" class="nav-link">首頁</a>
+<span class="nav-sep">|</span>
+<a href="blog.html" class="nav-link">文章總覽</a>
+<span class="nav-sep">|</span>
 <div class="dropdown">
-<button class="dropbtn" onclick="toggleDropdown()">📋 網站總覽 <span class="arrow">▼</span></button>
+<button class="dropbtn" onclick="toggleDropdown()">網站總覽 <span class="arrow">▼</span></button>
 <div class="dropdown-content" id="catDropdown">
 <div class="dropdown-header">
 <span class="dd-title">11大分類 · 250篇文章</span>
@@ -574,7 +578,7 @@
 <div class="dropdown-cats">
 <div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(0)">
-<span class="cat-icon">🐾</span>
+
 <span class="cat-info">
 <span class="cat-name">萌寵日常</span>
 <span class="cat-count">20篇</span>
@@ -587,7 +591,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(1)">
-<span class="cat-icon">🐱</span>
+
 <span class="cat-info">
 <span class="cat-name">貓咪物語</span>
 <span class="cat-count">35篇</span>
@@ -600,7 +604,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(2)">
-<span class="cat-icon">🐕</span>
+
 <span class="cat-info">
 <span class="cat-name">狗狗日記</span>
 <span class="cat-count">36篇</span>
@@ -613,7 +617,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(3)">
-<span class="cat-icon">🦎</span>
+
 <span class="cat-info">
 <span class="cat-name">異寵世界</span>
 <span class="cat-count">5篇</span>
@@ -626,7 +630,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(4)">
-<span class="cat-icon">💊</span>
+
 <span class="cat-info">
 <span class="cat-name">寵物健康</span>
 <span class="cat-count">43篇</span>
@@ -639,7 +643,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(5)">
-<span class="cat-icon">🎓</span>
+
 <span class="cat-info">
 <span class="cat-name">寵物教育</span>
 <span class="cat-count">35篇</span>
@@ -652,7 +656,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(6)">
-<span class="cat-icon">🏠</span>
+
 <span class="cat-info">
 <span class="cat-name">寵物空間規劃</span>
 <span class="cat-count">50篇</span>
@@ -665,7 +669,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(7)">
-<span class="cat-icon">🛋️</span>
+
 <span class="cat-info">
 <span class="cat-name">居家設計</span>
 <span class="cat-count">6篇</span>
@@ -678,7 +682,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(8)">
-<span class="cat-icon">🏕️</span>
+
 <span class="cat-info">
 <span class="cat-name">戶外探險</span>
 <span class="cat-count">7篇</span>
@@ -691,7 +695,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(9)">
-<span class="cat-icon">🎄</span>
+
 <span class="cat-info">
 <span class="cat-name">節日寵物</span>
 <span class="cat-count">7篇</span>
@@ -704,7 +708,7 @@
 </div>
 </div><div class="cat-accordion">
 <button class="cat-toggle" onclick="toggleCat(10)">
-<span class="cat-icon">🎨</span>
+
 <span class="cat-info">
 <span class="cat-name">寵物藝術</span>
 <span class="cat-count">6篇</span>
@@ -734,23 +738,21 @@
             <div class="main-content">
                 <section id="about">
                 <h2>關於 ZooTecture 入梯毛孩</h2>
-                <div class="about-block">
-                    <div class="about-video-wrap">
-                        <video autoplay muted loop playsinline poster="images/about.webp" preload="metadata">
-                            <source src="zootecture_petlogic_petswiki.mp4" type="video/mp4">
-                        </video>
-                        <div class="about-video-mask"></div>
-                    </div>
-                    <div class="about-text">
+                <div class="about-block"><div class="about-text">
                         <h3>用心做寵物知識分享</h3>
                         <p>了解毛孩邏輯、改善空間規劃、陪伴毛孩快樂成長。</p>
                         <p>ZooTecture 提供專業寵物空間設計與裝修知識，PetLogic 分享系統化的寵物行為科普與飼養實錄，涵蓋行為問題、飲食健康、開銷規劃、行為訓練等全方位內容，與毛孩共創美好生活。</p>
                         <p>目前全站共收錄 <strong>250 篇</strong> 專業寵物知識文章，涵蓋 <strong>11 大分類</strong>，從新手入門到進階飼養，一次滿足所有飼主需求。</p>
                     </div>
-                </div>
+                    <div class="about-video-wrap">
+                        <video autoplay muted loop playsinline poster="images/about.webp" preload="metadata">
+                            <source src="zootecture_petlogic_petswiki.mp4" type="video/mp4">
+                        </video>
+                        <div class="about-video-mask"></div>
+                    </div></div>
             </section>
                 <section id="categories">
-                <h2>📂 文章分類總覽</h2>
+                <h2>文章分類總覽</h2>
                 <p style="text-align:center; color:#666; margin-bottom:2rem;">11 大分類 · 250 篇專業寵物知識文章</p>
                 <div class="card-grid">
                     <a href="blog.html" class="card-item">
@@ -854,13 +856,13 @@
             </section>
                 <section id="zootecture" style="background:#f8f9fa; padding:3rem 5%;">
                 <div style="max-width:1200px; margin:0 auto;">
-                    <h2>🏗️ 入梯寵物專欄 ZooTecture</h2>
+                    <h2>入梯寵物專欄 ZooTecture</h2>
                     <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
                         ZooTecture 是<strong>入梯毛孩</strong>旗下的寵物空間設計專欄，專注於<strong>人寵共居空間規劃</strong>、<strong>寵物友善裝修</strong>與<strong>收納動線設計</strong>。從小公寓到透天厝，從貓跳台到狗狗活動區，我們提供系統化的空間解決方案，讓你的家同時滿足人類與毛孩的需求。
                     </p>
                     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
-                        <a href="pet-space.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🏠 寵物空間規劃 (50篇)</a>
-                        <a href="home-design.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🎨 居家設計 (6篇)</a>
+                        <a href="pet-space.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">寵物空間規劃 (50篇)</a>
+                        <a href="home-design.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">居家設計 (6篇)</a>
                         <a href="blog.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">📚 全部文章</a>
                     </div>
                 </div>
@@ -868,15 +870,15 @@
 
             <section id="petlogic" style="padding:3rem 5%;">
                 <div style="max-width:1200px; margin:0 auto;">
-                    <h2>🧠 PetLogic 毛行知識</h2>
+                    <h2>PetLogic 毛行知識</h2>
                     <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
                         PetLogic 是<strong>入梯毛孩</strong>的毛孩行為科普平台，以<strong>科學實證</strong>為基礎，解讀寵物行為背後的邏輯。從<strong>分離焦慮</strong>到<strong>亂咬亂尿</strong>，從<strong>覓食天性</strong>到<strong>社交階級</strong>，我們用淺顯易懂的方式，讓你真正理解毛孩在想什麼，進而建立和諧的人寵關係。
                     </p>
                     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
-                        <a href="pet-education.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">📖 寵物教育 (35篇)</a>
+                        <a href="pet-education.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">寵物教育 (35篇)</a>
                         <a href="pet-health.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">💊 寵物健康 (43篇)</a>
-                        <a href="dog-diary.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🐕 狗狗日記 (36篇)</a>
-                        <a href="cat-story.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">🐈 貓咪物語 (35篇)</a>
+                        <a href="dog-diary.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">狗狗日記 (36篇)</a>
+                        <a href="cat-story.html" style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); text-decoration:none; color:#222; font-weight:600;">貓咪物語 (35篇)</a>
                     </div>
                 </div>
             </section>
