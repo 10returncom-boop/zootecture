@@ -384,7 +384,7 @@ body { font-size: 1.05rem; line-height: 1.8;
 /* === Unified Site Navigation === */
 .site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: none; }
 .header-inner { max-width: 100%; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; overflow: visible; }
-.site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.site-logo { color: #fff !important; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
 .site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
 .nav-link { color: #fff !important; text-decoration: none; padding: 8px 14px; white-space: nowrap; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
@@ -445,6 +445,13 @@ body { font-size: 1.05rem; line-height: 1.8;
 .dd-title { color: #333 !important; }
 
 .site-nav a { color: #fff !important; text-decoration: none; }
+
+.site-header .site-logo { color: #fff !important; }
+.site-header .site-logo:link, .site-header .site-logo:visited { color: #fff !important; }
+
+[style*="background:#1a1a2e"] a, [style*="background: #1a1a2e"] a { color: #F5B841 !important; }
+[style*="background:#1a1a2e"] a:link, [style*="background:#1a1a2e"] a:visited { color: #F5B841 !important; }
+footer a, footer a:link, footer a:visited { color: #F5B841 !important; }
 </style>
 
         <style>
@@ -473,7 +480,7 @@ body { font-size: 1.05rem; line-height: 1.8;
 /* === Unified Site Navigation === */
 .site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: none; }
 .header-inner { max-width: 100%; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; overflow: visible; }
-.site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.site-logo { color: #fff !important; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
 .site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
 .nav-link { color: #fff !important; text-decoration: none; padding: 8px 14px; white-space: nowrap; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: background 0.2s; white-space: nowrap; }
