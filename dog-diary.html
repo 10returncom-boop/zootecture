@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-029.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/29_英短_天窗仰拍.webp" alt="狗狗日記 - 天窗仰拍的柴犬：狗狗眼中的天空" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>天窗仰拍的柴犬：狗狗眼中的天空</h3>
                     <p>從天窗仰拍一隻仰望天空的柴犬，是一種什麼樣的體驗？狗狗看到的天空和我們一樣嗎？</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-031.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1083_pets-pathology-stainingsolution-glass-plastic-macro.webp" alt="狗狗日記 - 紙箱探頭的柴犬：狗狗為什麼愛鑽紙箱？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>紙箱探頭的柴犬：狗狗為什麼愛鑽紙箱？</h3>
                     <p>不是只有貓咪才愛紙箱，狗狗也對紙箱有著莫名的執著。探索狗狗的「紙箱情結」背後的心理學。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-032.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/32_柴犬_红叶隧道.webp" alt="狗狗日記 - 紅葉隧道中的柴犬：秋天最浪漫的散步" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>紅葉隧道中的柴犬：秋天最浪漫的散步</h3>
                     <p>帶著柴犬走進紅葉隧道，是一種什麼樣的體驗？探索狗狗與季節的奇妙連結。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-033.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/33_柴犬_复古摩托.webp" alt="狗狗日記 - 復古摩托上的柴犬：狗狗的冒險精神" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>復古摩托上的柴犬：狗狗的冒險精神</h3>
                     <p>一隻戴著護目鏡的柴犬坐在復古摩托上，彷彿準備展開一場偉大的冒險。探索狗狗的冒險精神和旅行樂趣。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-034.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/34_柴犬_雪埋脑袋.webp" alt="狗狗日記 - 雪埋腦袋的柴犬：狗狗的冬日遊戲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>雪埋腦袋的柴犬：狗狗的冬日遊戲</h3>
                     <p>為什麼狗狗看到雪就會瘋狂？一隻把腦袋埋進雪裡的柴犬，告訴你冬天最快樂的事情是什麼。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-035.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/35_柴犬_樱花奔跑.webp" alt="狗狗日記 - 櫻花奔跑的柴犬：春天最治愈的畫面" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>櫻花奔跑的柴犬：春天最治愈的畫面</h3>
                     <p>當柴犬跑過盛開的櫻花樹下，花瓣隨風飄落，這就是春天最治愈的瞬間。探索狗狗與春天的故事。</p>
                 </div>
@@ -166,7 +166,7 @@
 <a href="posts/post-036.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/36_柴犬_海边追浪.webp" alt="狗狗日記 - 海邊追浪的柴犬：狗狗的海邊假期" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>海邊追浪的柴犬：狗狗的海邊假期</h3>
                     <p>當柴犬第一次看到大海，會發生什麼？探索狗狗與海洋的奇妙緣分，以及帶狗狗去海邊的完整指南。</p>
                 </div>
@@ -174,7 +174,7 @@
 <a href="posts/post-037.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/37_柴犬_咖啡吧台.webp" alt="狗狗日記 - 咖啡吧台的柴犬：狗狗咖啡廳的興起" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>咖啡吧台的柴犬：狗狗咖啡廳的興起</h3>
                     <p>一隻柴犬站在咖啡吧台後面，彷彿在為你調製一杯特調咖啡。探索狗狗咖啡廳為什麼這麼受歡迎。</p>
                 </div>
@@ -182,7 +182,7 @@
 <a href="posts/post-038.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1084_pets-pathology-formalincontainer-plastic-glass-macro.webp" alt="狗狗日記 - 星空剪影的柴犬：與狗狗一起仰望星空" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>星空剪影的柴犬：與狗狗一起仰望星空</h3>
                     <p>在星空下，一隻柴犬的剪影顯得格外寧靜。狗狗能看到星星嗎？探索狗狗的夜視能力和星空下的故事。</p>
                 </div>
@@ -190,7 +190,7 @@
 <a href="posts/post-039.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/39_柴犬_洗衣篮里.webp" alt="狗狗日記 - 洗衣籃裡的柴犬：狗狗的躲藏遊戲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>洗衣籃裡的柴犬：狗狗的躲藏遊戲</h3>
                     <p>為什麼狗狗喜歡躲在洗衣籃、沙發底下和各種奇怪的地方？探索狗狗的躲藏行為背後的心理學。</p>
                 </div>
@@ -198,7 +198,7 @@
 <a href="posts/post-040.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/40_柴犬_雨中撑伞.webp" alt="狗狗日記 - 雨中撐傘的柴犬：狗狗與雨天的故事" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>雨中撐傘的柴犬：狗狗與雨天的故事</h3>
                     <p>一隻撐著小雨傘的柴犬站在雨中，那個畫面既可愛又讓人心疼。為什麼有些狗狗討厭下雨，而有些卻喜歡？</p>
                 </div>
@@ -206,7 +206,7 @@
 <a href="posts/post-051.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/51_corgi-puppy-yellow-raincoat-puddle.webp" alt="狗狗日記 - 黃色雨衣的柯基幼犬：狗狗的雨天時尚" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>黃色雨衣的柯基幼犬：狗狗的雨天時尚</h3>
                     <p>一隻穿著黃色雨衣的柯基幼犬在水坑中開心地跳躍，那個畫面既可愛又治愈。探索狗狗雨衣的選擇和雨天散步的樂趣。</p>
                 </div>
@@ -214,7 +214,7 @@
 <a href="posts/post-052.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/52_corgi-herding-ducklings-meadow.webp" alt="狗狗日記 - 牧鴨的柯基：狗狗的工作本能" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>牧鴨的柯基：狗狗的工作本能</h3>
                     <p>一隻柯基在草地上牧趕一群小鴨子，那個畫面既有趣又不可思議。探索柯基犬的牧牛本能和工作犬的遺傳記憶。</p>
                 </div>
@@ -222,7 +222,7 @@
 <a href="posts/post-053.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/53_corgi-sunglasses-surfboard-beach.webp" alt="狗狗日記 - 沖浪板墨鏡的柯基：狗狗的海邊時尚" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>沖浪板墨鏡的柯基：狗狗的海邊時尚</h3>
                     <p>一隻戴著墨鏡、趴在衝浪板上的柯基，成為了沙灘上最時尚的明星。探索狗狗的海邊樂趣和安全須知。</p>
                 </div>
@@ -230,7 +230,7 @@
 <a href="posts/post-054.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/54_corgi-puppy-giant-pumpkin-halloween.webp" alt="狗狗日記 - 巨型南瓜的柯基：狗狗的萬聖節派對" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>巨型南瓜的柯基：狗狗的萬聖節派對</h3>
                     <p>一隻柯基坐在一個比牠還大的南瓜旁邊，那個畫面既應景又可愛。探索如何和狗狗一起度過一個安全又快樂的萬聖節。</p>
                 </div>
@@ -238,7 +238,7 @@
 <a href="posts/post-055.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/55_corgi-yoga-stretch-morning-light.webp" alt="狗狗日記 - 晨光瑜伽的柯基：狗狗的晨練時光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>晨光瑜伽的柯基：狗狗的晨練時光</h3>
                     <p>一隻柯基在晨光中做著瑜伽姿勢，那個畫面既療癒又有趣。探索狗狗的運動需求和晨練的好處。</p>
                 </div>
@@ -246,7 +246,7 @@
 <a href="posts/post-056.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/56_corgi-sunflower-field-summer.webp" alt="狗狗日記 - 向日葵田的柯基：狗狗與夏天的約定" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>向日葵田的柯基：狗狗與夏天的約定</h3>
                     <p>一隻柯基在金黃色的向日葵田中開心地奔跑，那個畫面就是夏天本身。探索如何和狗狗一起度過一個美好的夏天。</p>
                 </div>
@@ -254,7 +254,7 @@
 <a href="posts/post-057.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/57_corgi-vintage-pickup-truck-road-trip.webp" alt="狗狗日記 - 復古皮卡的柯基：狗狗的公路旅行" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>復古皮卡的柯基：狗狗的公路旅行</h3>
                     <p>一隻柯基坐在復古皮卡車的後座，準備展開一場公路旅行。探索帶狗狗自駕旅行的完整指南。</p>
                 </div>
@@ -262,7 +262,7 @@
 <a href="posts/post-058.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/58_corgi-bubble-bath-wooden-tub.webp" alt="狗狗日記 - 泡泡浴的柯基：狗狗的SPA時光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>泡泡浴的柯基：狗狗的SPA時光</h3>
                     <p>一隻柯基在木質浴缸裡享受泡泡浴，那個畫面既療癒又可愛。探索狗狗洗澡的正確方式和護理要點。</p>
                 </div>
@@ -270,7 +270,7 @@
 <a href="posts/post-059.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/59_corgi-astronaut-space-cosmic.webp" alt="狗狗日記 - 太空宇航員的柯基：狗狗的太空夢" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>太空宇航員的柯基：狗狗的太空夢</h3>
                     <p>一隻穿著宇航服的柯基漂浮在太空中，那個畫面既科幻又可愛。回顧人類太空探索史上的動物宇航員們。</p>
                 </div>
@@ -278,7 +278,7 @@
 <a href="posts/post-060.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/60_corgi-picnic-park-checkered-bandana.webp" alt="狗狗日記 - 野餐公園的柯基：狗狗的社交派對" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>野餐公園的柯基：狗狗的社交派對</h3>
                     <p>一隻戴著格紋領巾的柯基在公園野餐，旁邊是籃子和美食。探索狗狗的社交需求和公園禮儀。</p>
                 </div>
@@ -286,7 +286,7 @@
 <a href="posts/post-061.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1085_pets-pathology-microtomeblade-metal-plastic-macro.webp" alt="狗狗日記 - 學游泳的黃金獵犬幼犬：狗狗的第一堂游泳課" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>學游泳的黃金獵犬幼犬：狗狗的第一堂游泳課</h3>
                     <p>一隻黃金獵犬幼犬在泳池中學習游泳，旁邊是教練的鼓勵。探索狗狗游泳的好處和安全須知。</p>
                 </div>
@@ -294,7 +294,7 @@
 <a href="posts/post-151.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1086_pets-pathology-coverslip-glass-plastic-macro.webp" alt="狗狗日記 - 黃金獵犬個性特點與飼養完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>黃金獵犬個性特點與飼養完全指南</h3>
                     <p>黃金獵犬是最受歡迎的家庭犬之一。本文介紹黃金獵犬的歷史、個性特點、運動需求、美容護理、常見健康問題，以及適合的家庭類型。</p>
                 </div>
@@ -302,7 +302,7 @@
 <a href="posts/post-153.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1087_pets-pathology-pipettetips-plastic-metal-macro.webp" alt="狗狗日記 - 柴犬個性特點與訓練要點完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>柴犬個性特點與訓練要點完全指南</h3>
                     <p>柴犬以獨立、傲嬌的個性擄獲眾多粉絲。本文介紹柴犬的歷史淵源、個性特點、訓練挑戰與技巧、社交化重要性、美容護理，以及常見健康問題。</p>
                 </div>
@@ -310,7 +310,7 @@
 <a href="posts/post-154.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1088_pets-pathology-centrifugetube-plastic-glass-macro.webp" alt="狗狗日記 - 柯基犬飼養指南：短腿狗的大秘密" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>柯基犬飼養指南：短腿狗的大秘密</h3>
                     <p>柯基犬以短腿大屁股成為網紅狗。本文介紹柯基的兩個品種（彭布羅克與卡提根）、個性特點、運動需求、脊椎健康護理、減重管理，以及訓練要點。</p>
                 </div>
@@ -318,7 +318,7 @@
 <a href="posts/post-156.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1089_pets-pathology-labcoat-fabric-plastic-macro.webp" alt="狗狗日記 - 拉布拉多犬個性與訓練完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>拉布拉多犬個性與訓練完全指南</h3>
                     <p>拉布拉多是全球最受歡迎的犬種之一。本文介紹拉拉的三個顏色變種、個性特點、高運動需求、訓練潛力、常見健康問題（髖關節發育不良、肥胖），以及適合的家庭。</p>
                 </div>
@@ -326,7 +326,7 @@
 <a href="posts/post-158.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/107_pet-french-bulldog-life-jacket-boat.webp" alt="狗狗日記 - 法國鬥牛犬健康與照護完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>法國鬥牛犬健康與照護完全指南</h3>
                     <p>法鬥以可愛的扁臉和大耳朵成為人氣犬種。本文介紹法鬥的個性特點、呼吸系統問題（短頭犬症候群）、皮膚護理、體溫調節、運動限制，以及高溫季節的特別注意事項。</p>
                 </div>
@@ -334,7 +334,7 @@
 <a href="posts/post-160.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1090_pets-pathology-safetygoggles-plastic-glass-macro.webp" alt="狗狗日記 - 哈士奇犬個性與運動需求完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>哈士奇犬個性與運動需求完全指南</h3>
                     <p>哈士奇以狼一般的外表和「二哈」的諧星性格著稱。本文介紹哈士奇的歷史（雪橇犬）、高運動需求、脫毛護理、叫聲特點、逃跑本能、訓練挑戰，以及適合的飼主類型。</p>
                 </div>
@@ -342,7 +342,7 @@
 <a href="posts/post-162.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1091_pets-microbiology-petridishculture-glass-plastic-macro.webp" alt="狗狗日記 - 貴賓犬智商與訓練完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>貴賓犬智商與訓練完全指南</h3>
                     <p>貴賓犬是犬界智商排名第二的天才狗。本文介紹貴賓的三個尺寸（標準、迷你、玩具）、智商與學習能力、不掉毛的優點、美容造型、訓練潛力，以及常見健康問題。</p>
                 </div>
@@ -350,7 +350,7 @@
 <a href="posts/post-164.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1092_pets-microbiology-agarplate-plastic-glass-macro.webp" alt="狗狗日記 - 邊境牧羊犬訓練與運動完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>邊境牧羊犬訓練與運動完全指南</h3>
                     <p>邊境牧羊犬是犬界智商冠軍，需要大量腦力與體力活動。本文介紹邊牧的歷史、智商與學習能力、高運動需求、牧羊本能、敏捷與飛盤運動、訓練挑戰，以及不適合的飼主類型。</p>
                 </div>
@@ -358,7 +358,7 @@
 <a href="posts/post-167.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1093_pets-microbiology-inoculationloop-metal-plastic-macro.webp" alt="狗狗日記 - 新手養狗入門指南：你需要知道的一切" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>新手養狗入門指南：你需要知道的一切</h3>
                     <p>準備迎接狗狗回家？本文介紹養狗前的評估（時間、空間、經濟）、用品準備清單、幼犬與成犬的差異、第一天的安排、基本訓練啟動，以及新手常見錯誤避免。</p>
                 </div>
@@ -366,7 +366,7 @@
 <a href="posts/post-168.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1095_pets-microbiology-incubator-metal-glass-macro.webp" alt="狗狗日記 - 幼犬到家第一週的照護與訓練指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>幼犬到家第一週的照護與訓練指南</h3>
                     <p>幼犬剛到家的第一週是關鍵適應期。本文介紹幼犬的睡眠需求、定時餵食與如廁規律、社會化黃金期、籠內訓練啟動、疫苗期間的外出限制，以及夜間哭鬧的處理方法。</p>
                 </div>
@@ -374,7 +374,7 @@
 <a href="posts/post-173.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1096_pets-microbiology-autoclave-metal-plastic-macro.webp" alt="狗狗日記 - 狗狗洗澡頻率與正確方法完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗洗澡頻率與正確方法完全指南</h3>
                     <p>狗狗多久洗一次澡才合適？本文介紹不同品種與皮膚狀況的洗澡頻率、狗狗專用洗毛精選擇、正確洗澡步驟、耳朵與眼睛保護、吹乾與毛髮護理，以及皮膚敏感狗狗的特別注意事項。</p>
                 </div>
@@ -382,7 +382,7 @@
 <a href="posts/post-176.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1097_pets-microbiology-biosafetycabinet-metal-glass-macro.webp" alt="狗狗日記 - 狗狗毛髮護理與美容完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗毛髮護理與美容完全指南</h3>
                     <p>狗狗毛髮健康反映整體健康狀態。本文介紹不同毛質（短毛、長毛、捲毛、剛毛）的護理要點、梳毛頻率與工具、脫毛季的特別護理、美容造型選擇、皮膚與毛髮的營養補充，以及常見皮膚問題。</p>
                 </div>
@@ -390,7 +390,7 @@
 <a href="posts/post-183.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1098_pets-microbiology-microscope-metal-glass-macro.webp" alt="狗狗日記 - 狗狗牽繩與胸背帶選擇完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗牽繩與胸背帶選擇完全指南</h3>
                     <p>牽繩與胸背帶是遛狗必備，但款式百百種。本文介紹頸圈、胸背帶、牽繩的種類與功能、不同品種與個性的適合款式、正確穿戴方法、材質與耐用性、安全設計，以及常見穿戴錯誤。</p>
                 </div>
@@ -398,7 +398,7 @@
 <a href="posts/post-187.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1099_pets-microbiology-centrifuge-plastic-metal-macro.webp" alt="狗狗日記 - 狗狗玩具種類與安全選擇完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗玩具種類與安全選擇完全指南</h3>
                     <p>玩具是狗狗的精神食糧，但不安全的玩具可能造成傷害。本文介紹狗狗玩具的類型（咀嚼玩具、益智玩具、拉扯玩具、發聲玩具、球類）、不同品種與咀嚼力的適合玩具、材質安全標準、玩具尺寸原則、定...</p>
                 </div>

@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-001.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/1157_pets-nutrition-slowfeederbowl-plastic-ceramic-macro.webp" alt="萌寵日常 - 茶杯裡的橘貓：世界上最療癒的角落" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>茶杯裡的橘貓：世界上最療癒的角落</h3>
                     <p>一隻蜷縮在古董茶杯裡的橘貓，為什麼能讓數百萬人瞬間忘記煩惱？探索萌寵經濟背後的心理學秘密。</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-002.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/1158_pets-nutrition-puzzlefeeder-plastic-wood-macro.webp" alt="萌寵日常 - 魚眼鏡頭下的柯基：當短腿狗遇上超廣角" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>魚眼鏡頭下的柯基：當短腿狗遇上超廣角</h3>
                     <p>用魚眼鏡頭拍柯基是一種什麼樣的體驗？扭曲的透視讓短腿更短、屁股更大，卻意外捕捉到了狗狗最真實的快樂。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-003.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/03_仓鼠南瓜车.webp" alt="萌寵日常 - 倉鼠的南瓜車：童話故事在現實中上演" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>倉鼠的南瓜車：童話故事在現實中上演</h3>
                     <p>當一隻倉鼠住進南瓜做的小屋，整個畫面就像從童話書裡走出來一樣。一起探討小型寵物的環境豐容藝術。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-004.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/04_合十水獭.webp" alt="萌寵日常 - 合十的水獺：網路迷因背後的真實動物行為" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>合十的水獺：網路迷因背後的真實動物行為</h3>
                     <p>那張雙手合十、表情虔誠的水獺照片為什麼爆紅？牠真的在祈禱嗎？動物行為學家為你解密水獺的奇妙世界。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-005.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/05_蘑菇伞兔子.webp" alt="萌寵日常 - 蘑菇傘下的兔子：一場微型世界的奇幻之旅" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>蘑菇傘下的兔子：一場微型世界的奇幻之旅</h3>
                     <p>當兔子遇到巨型蘑菇，整個畫面就像走進了愛麗絲夢遊仙境。探索微縮攝影如何為寵物打造童話般的夢幻場景。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-006.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/06_秋叶柴犬.webp" alt="萌寵日常 - 秋葉中的柴犬：日本國犬的四季物語" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>秋葉中的柴犬：日本國犬的四季物語</h3>
                     <p>當赤柴的毛色與楓葉融為一體，這就是秋天最完美的畫面。走進柴犬的世界，了解這個最受歡迎的日本犬種。</p>
                 </div>
@@ -166,7 +166,7 @@
 <a href="posts/post-007.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/07_倒挂小熊猫.webp" alt="萌寵日常 - 倒掛的小熊貓：動物園裡最矯健的運動員" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>倒掛的小熊貓：動物園裡最矯健的運動員</h3>
                     <p>小熊貓為什麼喜歡倒掛在樹上？這個看似特技的動作背後，藏著這個物種千年以來的生存智慧。</p>
                 </div>
@@ -174,7 +174,7 @@
 <a href="posts/post-008.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/08_草莓田豚鼠.webp" alt="萌寵日常 - 草莓田中的天竺鼠：舌尖上的寵物樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>草莓田中的天竺鼠：舌尖上的寵物樂園</h3>
                     <p>當天竺鼠走進一片草莓田，會發生什麼？這不只是一張可愛的照片，更是關於寵物飲食與環境豐容的啟示。</p>
                 </div>
@@ -182,7 +182,7 @@
 <a href="posts/post-009.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/09_雪中小狐狸.webp" alt="萌寵日常 - 雪地中的小狐狸：北國精靈的生存傳奇" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>雪地中的小狐狸：北國精靈的生存傳奇</h3>
                     <p>在白雪皚皚的森林中，一隻小狐狸的出現就像一團跳動的火焰。探索北極狐和赤狐在極寒環境中的生存秘訣。</p>
                 </div>
@@ -190,7 +190,7 @@
 <a href="posts/post-010.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/10_鱼缸倒影蓝猫.webp" alt="萌寵日常 - 魚缸倒影中的藍貓：當貓咪遇見另一個自己" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>魚缸倒影中的藍貓：當貓咪遇見另一個自己</h3>
                     <p>一隻英國短毛貓趴在魚缸旁，水中的倒影與牠的臉龐重合，創造出一幅超現實的畫面。貓咪真的能認出鏡中的自己嗎？</p>
                 </div>
@@ -198,7 +198,7 @@
 <a href="posts/post-011.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/11_居中_花海小羊.webp" alt="萌寵日常 - 花海中的小羊：治癒系動物的心理魔力" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>花海中的小羊：治癒系動物的心理魔力</h3>
                     <p>一隻小羊站在紫色花海中，為什麼能讓人瞬間感到平靜？探索動物輔助治療背後的科學證據。</p>
                 </div>
@@ -206,7 +206,7 @@
 <a href="posts/post-012.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/12_居中_冰面企鹅.webp" alt="萌寵日常 - 冰面上的企鵝：南極紳士的生存智慧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>冰面上的企鵝：南極紳士的生存智慧</h3>
                     <p>企鵝為什麼不會凍死在南極？牠們的腳為什麼不會黏在冰上？揭開南極最可愛居民的生存秘密。</p>
                 </div>
@@ -214,7 +214,7 @@
 <a href="posts/post-013.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/13_居中_树枝树懒.webp" alt="萌寵日常 - 樹枝上的樹懶：慢，是一種生活哲學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹枝上的樹懶：慢，是一種生活哲學</h3>
                     <p>樹懶為什麼這麼慢？牠的慢不是懶惰，而是一種歷經千萬年演化的生存策略。從樹懶身上學習慢生活的智慧。</p>
                 </div>
@@ -222,7 +222,7 @@
 <a href="posts/post-014.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/14_居中_落叶刺猬.webp" alt="萌寵日常 - 落葉中的刺蝟：秋天裡的小刺球" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>落葉中的刺蝟：秋天裡的小刺球</h3>
                     <p>刺蝟為什麼會長滿刺？牠們真的會把水果刺在背上嗎？走進刺蝟的奇妙世界，了解這個秋天最應景的小動物。</p>
                 </div>
@@ -230,7 +230,7 @@
 <a href="posts/post-015.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/15_居中_沙滩海豹.webp" alt="萌寵日常 - 沙灘上的海豹：海洋與陸地之間的優雅舞者" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>沙灘上的海豹：海洋與陸地之間的優雅舞者</h3>
                     <p>海豹在水中是矯健的獵手，在陸地上卻是笨拙的「蠕蟲」。探索海豹的雙重生活和令人驚嘆的適應能力。</p>
                 </div>
@@ -238,7 +238,7 @@
 <a href="posts/post-016.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/16_居中_树干考拉.webp" alt="萌寵日常 - 樹幹上的無尾熊：最會睡覺的動物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹幹上的無尾熊：最會睡覺的動物</h3>
                     <p>無尾熊每天睡20小時，不是因為懶，而是因為桉樹葉有毒。揭開這個澳洲國寶的睡眠秘密。</p>
                 </div>
@@ -246,7 +246,7 @@
 <a href="posts/post-017.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/17_居中_晨雾小鹿.webp" alt="萌寵日常 - 晨霧中的小鹿：森林精靈的溫柔目光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>晨霧中的小鹿：森林精靈的溫柔目光</h3>
                     <p>當晨霧籠罩森林，一隻小鹿安靜地站在樹叢間，那雙溫柔的眼睛彷彿能看穿你的靈魂。探索鹿的神秘世界。</p>
                 </div>
@@ -254,7 +254,7 @@
 <a href="posts/post-018.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/18_居中_蝴蝶小猪.webp" alt="萌寵日常 - 蝴蝶旁的小豬：農場動物的智慧與情感" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>蝴蝶旁的小豬：農場動物的智慧與情感</h3>
                     <p>小豬其實是世界上最聰明的動物之一，智商堪比三歲人類孩童。重新認識我們最熟悉卻最不了解的農場動物。</p>
                 </div>
@@ -262,7 +262,7 @@
 <a href="posts/post-019.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/19_居中_树桩猫头鹰.webp" alt="萌寵日常 - 樹樁上的貓頭鷹：黑夜中的智慧象徵" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹樁上的貓頭鷹：黑夜中的智慧象徵</h3>
                     <p>貓頭鷹的頭可以旋轉270度，眼睛是人類的1.3倍大。揭開這個夜行猛禽的神秘面紗。</p>
                 </div>
@@ -270,7 +270,7 @@
 <a href="posts/post-020.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/20_居中_溪边鸭嘴兽.webp" alt="萌寵日常 - 溪邊的鴨嘴獸：大自然最古怪的發明" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>溪邊的鴨嘴獸：大自然最古怪的發明</h3>
                     <p>鴨嘴獸有鴨子的嘴、河狸的尾巴、水獺的腳，而且是會下蛋的哺乳動物。揭開這個澳洲最奇怪動物的秘密。</p>
                 </div>
@@ -278,7 +278,7 @@
 <a href="posts/post-062.html" class="cat-card" data-category="異寵世界">
                 <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="異寵世界 - 精靈花園的刺蝟：另類寵物的魅力" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>精靈花園的刺蝟：另類寵物的魅力</h3>
                     <p>一隻刺蝟在精靈花園的迷你場景中探索，那個畫面既夢幻又可愛。探索飼養刺蝟作為寵物的知識和樂趣。</p>
                 </div>
@@ -286,7 +286,7 @@
 <a href="posts/post-063.html" class="cat-card" data-category="異寵世界">
                 <img src="images/103_pet-parrot-shoulder-human-interaction.webp" alt="異寵世界 - 肩膀上的鸚鵡：鳥類寵物的智慧與情感" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>肩膀上的鸚鵡：鳥類寵物的智慧與情感</h3>
                     <p>一隻色彩繽紛的鸚鵡站在主人的肩膀上，親密地互動。探索鸚鵡作為寵物的獨特魅力和飼養要點。</p>
                 </div>
@@ -294,7 +294,7 @@
 <a href="posts/post-064.html" class="cat-card" data-category="異寵世界">
                 <img src="images/104_pet-rabbit-agility-course-jumping.webp" alt="異寵世界 -  agility course的兔子：兔兔的運動天賦" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3> agility course的兔子：兔兔的運動天賦</h3>
                     <p>一隻兔子在敏捷訓練場上跳躍障礙，那個畫面既可愛又驚喜。探索兔子的運動需求和敏捷訓練。</p>
                 </div>
@@ -302,7 +302,7 @@
 <a href="posts/post-065.html" class="cat-card" data-category="異寵世界">
                 <img src="images/105_pet-bearded-dragon-basking-heat-lamp.webp" alt="異寵世界 - 加熱燈下的鬃獅蜥：爬蟲寵物的世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>加熱燈下的鬃獅蜥：爬蟲寵物的世界</h3>
                     <p>一隻鬃獅蜥在加熱燈下享受日光浴，那個畫面既獨特又迷人。探索爬蟲類寵物的飼養知識和獨特魅力。</p>
                 </div>
@@ -310,7 +310,7 @@
 <a href="posts/post-066.html" class="cat-card" data-category="異寵世界">
                 <img src="images/106_pet-guinea-pig-eating-carrot-cage.webp" alt="異寵世界 - 吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧</h3>
                     <p>一隻天竺鼠在籠子裡開心地吃著胡蘿蔔，那個畫面既可愛又治愈。探索天竺鼠的飲食需求和飼養要點。</p>
                 </div>

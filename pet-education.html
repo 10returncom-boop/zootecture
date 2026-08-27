@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-067.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1051_pets-exotic-reptileterrarium-glass-metal-macro.webp" alt="寵物教育 - 寵物牙齒健康：被忽略的重要課題" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物牙齒健康：被忽略的重要課題</h3>
                     <p>一張寵物牙齒解剖圖揭示了牙齒健康的重要性。探索如何為你的寵物保持口腔健康。</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-068.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1052_pets-exotic-birdcage-metal-plastic-macro.webp" alt="寵物教育 - 寵物營養學：如何為你的寵物選擇合適的食物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物營養學：如何為你的寵物選擇合適的食物</h3>
                     <p>各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-069.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1053_pets-exotic-smallmammalenclosure-plastic-metal-macro.webp" alt="寵物教育 - 寵物疫苗接種：守護健康的第一道防線" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物疫苗接種：守護健康的第一道防線</h3>
                     <p>一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-070.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1054_pets-exotic-heatlamp-metal-glass-macro.webp" alt="寵物教育 - 狗狗訓練手勢：與你的狗狗建立有效溝通" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗訓練手勢：與你的狗狗建立有效溝通</h3>
                     <p>一隻狗狗正在學習手勢指令。探索常用的狗狗訓練手勢和正向訓練方法。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-071.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1055_pets-exotic-uvblight-plastic-electronic-macro.webp" alt="寵物教育 - 寵物美容工具與技巧：在家也能做的寵物SPA" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物美容工具與技巧：在家也能做的寵物SPA</h3>
                     <p>各種寵物美容工具整齊擺放。探索基本的寵物美容技巧和在家護理的方法。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-072.html" class="cat-card" data-category="寵物教育">
                 <img src="images/116_pet-education-first-aid-kit-emergency.webp" alt="寵物教育 - 寵物急救知識：每個主人都應該知道的急救技能" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物急救知識：每個主人都應該知道的急救技能</h3>
                     <p>一個整齊的寵物急救箱。探索常見的寵物緊急情況和基本的急救處理方法。</p>
                 </div>
@@ -166,7 +166,7 @@
 <a href="posts/post-121.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1056_pets-exotic-humiditygauge-plastic-metal-macro.webp" alt="寵物教育 - 幼犬籠內訓練完全指南：從抗拒到愛上籠子" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>幼犬籠內訓練完全指南：從抗拒到愛上籠子</h3>
                     <p>籠內訓練不是懲罰，而是給狗狗一個安全的空間。本文介紹籠子選擇、訓練步驟、常見問題解決，以及如何讓幼犬自願進入籠子休息。</p>
                 </div>
@@ -174,7 +174,7 @@
 <a href="posts/post-122.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1057_pets-exotic-thermometer-plastic-electronic-macro.webp" alt="寵物教育 - 貓咪亂抓沙發解決方法與貓抓板引導指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪亂抓沙發解決方法與貓抓板引導指南</h3>
                     <p>貓咪抓沙發是天性，懲罰無效。本文介紹貓咪抓撓行為的原因、貓抓板的選擇與擺放、引導貓咪使用貓抓板的方法，以及保護傢俱的實用技巧。</p>
                 </div>
@@ -182,7 +182,7 @@
 <a href="posts/post-123.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1058_pets-exotic-substratematerial-organic-plastic-macro.webp" alt="寵物教育 - 狗狗分離焦慮識別與改善訓練指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗分離焦慮識別與改善訓練指南</h3>
                     <p>狗狗在家破壞物品、過度吠叫可能是分離焦慮。本文介紹分離焦慮的症狀識別、形成原因、漸進式脫敏感訓練方法，以及嚴重案例的專業介入建議。</p>
                 </div>
@@ -190,7 +190,7 @@
 <a href="posts/post-124.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1059_pets-exotic-waterdish-ceramic-plastic-macro.webp" alt="寵物教育 - 貓咪亂尿原因分析與行為矯正完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪亂尿原因分析與行為矯正完全指南</h3>
                     <p>貓咪突然不在貓砂盆如廁讓飼主崩潰。本文分析貓咪亂尿的醫療與行為原因、貓砂盆的選擇與擺放、多貓家庭的如廁規劃，以及行為矯正步驟。</p>
                 </div>
@@ -198,7 +198,7 @@
 <a href="posts/post-125.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1060_pets-exotic-hidingspot-wood-plastic-macro.webp" alt="寵物教育 - 狗狗基礎指令訓練：坐下握手趴下完全教學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗基礎指令訓練：坐下握手趴下完全教學</h3>
                     <p>學會基礎指令是狗狗訓練的第一步。本文用圖文步驟教你訓練狗狗坐下、握手、趴下、等待，包含正向獎勵技巧、訓練時機與常見錯誤糾正。</p>
                 </div>
@@ -206,7 +206,7 @@
 <a href="posts/post-126.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1061_pets-emergencysurgery-surgicalkit-metal-plastic-macro.webp" alt="寵物教育 - 貓咪使用貓抓板訓練方法與引導技巧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪使用貓抓板訓練方法與引導技巧</h3>
                     <p>買了貓抓板貓咪卻不用？本文介紹貓抓板的材質選擇、擺放位置、貓薄荷吸引法、遊戲引導技巧，以及如何讓貓咪養成使用貓抓板的習慣。</p>
                 </div>
@@ -214,7 +214,7 @@
 <a href="posts/post-127.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1062_pets-emergencysurgery-woundcare-fabric-plastic-macro.webp" alt="寵物教育 - 狗狗牽繩行走訓練：告別暴衝與拉扯" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗牽繩行走訓練：告別暴衝與拉扯</h3>
                     <p>狗狗出門暴衝拉扯讓散步變成折磨。本文介紹牽繩與胸背帶選擇、停止行走法、獎勵行走法、變向訓練等技巧，幫助狗狗學會優雅地陪你散步。</p>
                 </div>
@@ -222,7 +222,7 @@
 <a href="posts/post-128.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1063_pets-emergencysurgery-suturekit-metal-fabric-macro.webp" alt="寵物教育 - 貓咪攻擊行為原因分析與應對處理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪攻擊行為原因分析與應對處理指南</h3>
                     <p>貓咪突然攻擊人可能是恐懼、疼痛或遊戲性攻擊。本文分析貓咪攻擊行為的類型與原因、攻擊前的身體語言訊號、安全應對方法，以及行為矯正方向。</p>
                 </div>
@@ -230,7 +230,7 @@
 <a href="posts/post-129.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1064_pets-emergencysurgery-draintube-plastic-silicone-macro.webp" alt="寵物教育 - 狗狗召回訓練有效方法：一叫就回來的秘訣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗召回訓練有效方法：一叫就回來的秘訣</h3>
                     <p>狗狗放出去叫不回來是許多飼主的噩夢。本文介紹召回訓練的基礎建立、長線訓練法、高價值獎勵運用、干擾環境漸進訓練，以及常見錯誤避免。</p>
                 </div>
@@ -238,7 +238,7 @@
 <a href="posts/post-130.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1065_pets-emergencysurgery-sterilegloves-fabric-plastic-macro.webp" alt="寵物教育 - 貓咪半夜吵鬧解決方案：讓你一夜好眠" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪半夜吵鬧解決方案：讓你一夜好眠</h3>
                     <p>貓咪凌晨跑酷、叫喚讓飼主睡眠不足。本文分析貓咪夜間活躍的原因、白天放電方法、睡前儀式建立、餵食時間調整，以及忽略與獎勵的行為矯正策略。</p>
                 </div>
@@ -246,7 +246,7 @@
 <a href="posts/post-131.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1066_pets-emergencysurgery-scalpel-metal-plastic-macro.webp" alt="寵物教育 - 狗狗不亂撲人訓練方法：熱情也要有禮貌" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗不亂撲人訓練方法：熱情也要有禮貌</h3>
                     <p>狗狗見人就撲既危險又失禮。本文介紹狗狗撲人行為的原因、轉身忽略法、坐下替代法、訪客訓練技巧，以及如何教狗狗用禮貌方式表達熱情。</p>
                 </div>
@@ -254,7 +254,7 @@
 <a href="posts/post-132.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1067_pets-emergencysurgery-hemostat-metal-plastic-macro.webp" alt="寵物教育 - 貓咪怕生社交化訓練：從膽小到自信" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪怕生社交化訓練：從膽小到自信</h3>
                     <p>貓咪見到陌生人就躲起來？本文介紹貓咪社交化的黃金期、漸進式接觸法、安全空間設置、獎勵聯想建立，以及如何幫助膽小貓咪建立對人的信任感。</p>
                 </div>
@@ -262,7 +262,7 @@
 <a href="posts/post-133.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1068_pets-emergencysurgery-tissueforceps-metal-plastic-macro.webp" alt="寵物教育 - 狗狗定點如廁訓練完全指南：室內與室外" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗定點如廁訓練完全指南：室內與室外</h3>
                     <p>狗狗隨地大小便是新手飼主最頭痛的問題。本文介紹幼犬定點如廁訓練步驟、報紙/尿墊引導法、定時餵食與如廁規律、獎勵時機，以及成年狗重新訓練的方法。</p>
                 </div>
@@ -270,7 +270,7 @@
 <a href="posts/post-134.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1069_pets-emergencysurgery-retractor-metal-plastic-macro.webp" alt="寵物教育 - 貓咪與新寵物和平共處：貓狗、多貓引導指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪與新寵物和平共處：貓狗、多貓引導指南</h3>
                     <p>家裡要添新成員？貓咪與新寵物的初次見面至關重要。本文介紹貓狗相處、多貓家庭的漸進式介紹步驟、氣味交換法、資源分配原則，以及打架時的處理方法。</p>
                 </div>
@@ -278,7 +278,7 @@
 <a href="posts/post-135.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1070_pets-emergencysurgery-suctiontip-plastic-metal-macro.webp" alt="寵物教育 - 狗狗吠叫控制訓練：告別擾人噪音" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗吠叫控制訓練：告別擾人噪音</h3>
                     <p>狗狗過度吠叫影響鄰居關係。本文分析狗狗吠叫的各種原因（警戒、需求、焦慮、無聊）、針對性的訓練方法、安靜指令教學，以及 Bark collar 的使用與替代方案。</p>
                 </div>
@@ -286,7 +286,7 @@
 <a href="posts/post-136.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1071_pets-anesthesiology-machine-plastic-metal-macro.webp" alt="寵物教育 - 狗狗飲食禁忌清單：這些食物絕對不能吃" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗飲食禁忌清單：這些食物絕對不能吃</h3>
                     <p>巧克力、葡萄、洋蔥對狗狗可能致命。本文整理狗狗絕對不能吃的食物清單、中毒症狀、誤食後的應急處理，以及安全的人類食物替代選擇。</p>
                 </div>
@@ -294,7 +294,7 @@
 <a href="posts/post-137.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1072_pets-anesthesiology-mask-plastic-rubber-macro.webp" alt="寵物教育 - 貓咪可以吃的人類食物安全清單" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪可以吃的人類食物安全清單</h3>
                     <p>想給貓咪分享人類食物？本文整理貓咪可以安全食用的人類食物、適量餵食原則、需要避免的食物，以及如何用健康零食進行獎勵訓練。</p>
                 </div>
@@ -302,7 +302,7 @@
 <a href="posts/post-138.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1073_pets-anesthesiology-endotrachealtube-plastic-silicone-macro.webp" alt="寵物教育 - 寵物生食飲食優缺點分析與安全餵食指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物生食飲食優缺點分析與安全餵食指南</h3>
                     <p>生食飲食在寵物圈越來越流行，但爭議也不少。本文分析生食飲食的優點、潛在風險、營養均衡問題、食材選擇與處理安全，以及是否適合你的寵物的評估要點。</p>
                 </div>
@@ -310,7 +310,7 @@
 <a href="posts/post-139.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1074_pets-anesthesiology-laryngoscope-metal-plastic-macro.webp" alt="寵物教育 - 狗狗乾糧與濕糧選擇指南：哪個更適合？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗乾糧與濕糧選擇指南：哪個更適合？</h3>
                     <p>乾糧方便、濕糧可口，該怎麼選？本文比較乾糧與濕糧的優缺點、營養差異、價格考量、適合的狗狗類型，以及乾濕混合餵食的方法與注意事項。</p>
                 </div>
@@ -318,7 +318,7 @@
 <a href="posts/post-140.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1075_pets-anesthesiology-vaporizer-metal-glass-macro.webp" alt="寵物教育 - 貓咪營養需求完全解析：肉食動物的飲食密碼" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪營養需求完全解析：肉食動物的飲食密碼</h3>
                     <p>貓咪是專性肉食動物，營養需求與狗狗大不同。本文解析貓咪所需的蛋白質、脂肪、牛磺酸、維生素等關鍵營養素，以及如何閱讀貓糧標籤選擇合適的食物。</p>
                 </div>
@@ -326,7 +326,7 @@
 <a href="posts/post-141.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1076_pets-anesthesiology-breathingcircuit-plastic-silicone-macro.webp" alt="寵物教育 - 寵物零食健康選擇與餵食量控制指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物零食健康選擇與餵食量控制指南</h3>
                     <p>零食是訓練好幫手，但過量會導致肥胖。本文介紹健康零食的選擇原則、市售零食的成分判讀、自製零食食譜、每日零食熱量控制，以及用零食進行訓練的技巧。</p>
                 </div>
@@ -334,7 +334,7 @@
 <a href="posts/post-145.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1077_pets-anesthesiology-co2absorber-plastic-metal-macro.webp" alt="寵物教育 - 狗狗換糧正確過渡方法與腸胃適應指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗換糧正確過渡方法與腸胃適應指南</h3>
                     <p>突然換糧容易讓狗狗拉肚子。本文介紹7天換糧過渡法、換糧期間的腸胃觀察、換糧失敗的處理方法、不同生命階段換糧的時機，以及如何選擇合適的新飼料。</p>
                 </div>
@@ -342,7 +342,7 @@
 <a href="posts/post-147.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1078_pets-anesthesiology-monitor-plastic-electronic-macro.webp" alt="寵物教育 - 寵物有機食品真偽辨識與選購指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物有機食品真偽辨識與選購指南</h3>
                     <p>有機寵物食品標籤眼花撩亂，怎麼辨真偽？本文介紹有機認證標誌、成分標籤閱讀方法、有機飼料的優缺點、價格合理性判斷，以及避免被行銷話術誤導的要點。</p>
                 </div>
@@ -350,7 +350,7 @@
 <a href="posts/post-174.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1079_pets-anesthesiology-pulseoximetersensor-plastic-electronic-macro.webp" alt="寵物教育 - 寵物指甲修剪完全指南：狗狗與貓咪" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物指甲修剪完全指南：狗狗與貓咪</h3>
                     <p>寵物指甲過長會影響行走甚至導致變形。本文介紹狗狗與貓咪指甲的結構、修剪頻率、工具選擇（指甲剪、磨甲器）、正確修剪步驟、誤剪血管的出血處理，以及讓寵物配合的訓練方法。</p>
                 </div>
@@ -358,7 +358,7 @@
 <a href="posts/post-177.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1080_pets-anesthesiology-temperatureprobe-plastic-electronic-macro.webp" alt="寵物教育 - 寵物耳朵清潔正確方法與常見問題" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物耳朵清潔正確方法與常見問題</h3>
                     <p>寵物耳朵需要定期清潔以預防感染。本文介紹狗狗與貓咪耳朵的結構、清潔頻率、清潔液選擇、正確清潔步驟、耳螨與中耳炎的識別、垂耳品種的特別護理，以及清潔時的安全注意事項。</p>
                 </div>
@@ -366,7 +366,7 @@
 <a href="posts/post-185.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1081_pets-pathology-tissuesample-glass-plastic-macro.webp" alt="寵物教育 - 寵物自動餵食器推薦與使用完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物自動餵食器推薦與使用完全指南</h3>
                     <p>自動餵食器是忙碌飼主的好幫手。本文介紹自動餵食器的類型（乾糧型、濕糧型、智慧型）、功能比較（定時、定量、APP控制、攝影機）、優缺點分析、選擇要點、使用與清潔注意事項，以及常見故障...</p>
                 </div>
@@ -374,7 +374,7 @@
 <a href="posts/post-188.html" class="cat-card" data-category="寵物教育">
                 <img src="images/188_pets-safety-livingroom-furniture-anchored-tv-strap.webp" alt="寵物教育 - 寵物運輸籃選購與使用完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物運輸籃選購與使用完全指南</h3>
                     <p>帶寵物外出需要合適的運輸籃。本文介紹運輸籃的類型（硬殼、軟殼、背包、推車）、尺寸選擇原則、材質與通風、安全認證、航空託運要求、車內固定方法、讓寵物適應運輸籃的訓練，以及清潔保養。</p>
                 </div>
@@ -382,7 +382,7 @@
 <a href="posts/post-196.html" class="cat-card" data-category="寵物教育">
                 <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="寵物教育 - 帶寵物搬家的完整準備與適應指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>帶寵物搬家的完整準備與適應指南</h3>
                     <p>搬家對寵物來說是巨大的壓力事件。本文介紹搬家前的準備（寵物健康檢查、用品打包、運輸安排）、搬家當天的寵物安置、新家的環境佈置與氣味建立、貓咪與狗狗的適應期差異、行為問題的預期與處理...</p>
                 </div>
@@ -390,7 +390,7 @@
 <a href="posts/post-198.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1082_pets-pathology-microscopeslide-glass-plastic-macro.webp" alt="寵物教育 - 領養寵物前的準備與評估完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>領養寵物前的準備與評估完全指南</h3>
                     <p>領養代替購買是溫暖的選擇，但需要充分準備。本文介紹領養前的自我評估（生活型態、時間、經濟、居住環境）、領養管道（收容所、救援團體、中途家庭）、領養流程與面談、領養前的用品準備、領養...</p>
                 </div>

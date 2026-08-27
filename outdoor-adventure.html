@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-073.html" class="cat-card" data-category="節日寵物">
                 <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="節日寵物 - 聖誕節的狗狗：如何和寵物度過一個溫馨的聖誕節" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>聖誕節的狗狗：如何和寵物度過一個溫馨的聖誕節</h3>
                     <p>一隻穿著聖誕毛衣的狗狗坐在聖誕樹旁。探索和寵物一起慶祝聖誕節的安全和有趣方式。</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-074.html" class="cat-card" data-category="節日寵物">
                 <img src="images/122_pet-holiday-easter-cat-bunny-ears-eggs.webp" alt="節日寵物 - 復活節的貓咪：春天的節日與寵物安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>復活節的貓咪：春天的節日與寵物安全</h3>
                     <p>一隻戴著兔子耳朵的貓咪旁邊是復活節彩蛋。探索復活節期間的寵物安全注意事項。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-075.html" class="cat-card" data-category="節日寵物">
                 <img src="images/123_pet-holiday-halloween-dog-wizard-costume.webp" alt="節日寵物 - 萬聖節的狗狗巫師：節日服裝與安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>萬聖節的狗狗巫師：節日服裝與安全</h3>
                     <p>一隻穿著巫師服裝的狗狗。探索如何為寵物選擇合適的萬聖節服裝和安全注意事項。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-076.html" class="cat-card" data-category="節日寵物">
                 <img src="images/124_pet-holiday-thanksgiving-cat-pilgrim-hat.webp" alt="節日寵物 - 感恩節的貓咪：節日餐桌上的寵物安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>感恩節的貓咪：節日餐桌上的寵物安全</h3>
                     <p>一隻戴著清教徒帽子的貓咪。探索感恩節期間哪些食物對寵物是安全的，哪些是危險的。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-077.html" class="cat-card" data-category="節日寵物">
                 <img src="images/126_pet-holiday-valentine-cat-heart-glasses-roses.webp" alt="節日寵物 - 情人節的貓咪：用愛寵物度過情人節" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>情人節的貓咪：用愛寵物度過情人節</h3>
                     <p>一隻戴著心形眼鏡的貓咪旁邊是玫瑰花。探索和寵物一起度過情人節的可愛方式。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-078.html" class="cat-card" data-category="節日寵物">
                 <img src="images/129_pet-holiday-new-year-dog-party-hat-confetti.webp" alt="節日寵物 - 新年派對的狗狗：如何和寵物迎接新年" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>新年派對的狗狗：如何和寵物迎接新年</h3>
                     <p>一隻戴著派對帽的狗狗在彩帶中。探索如何在新年慶祝活動中確保寵物的安全和舒適。</p>
                 </div>
@@ -166,7 +166,7 @@
 <a href="posts/post-085.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1152_pets-nutrition-foodscale-metal-plastic-macro.webp" alt="戶外探險 - 登山的狗狗：帶著狗狗探索高山的樂趣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>登山的狗狗：帶著狗狗探索高山的樂趣</h3>
                     <p>一隻背著背包的狗狗在山間徒步。探索帶狗狗登山的準備工作和安全注意事項。</p>
                 </div>
@@ -174,7 +174,7 @@
 <a href="posts/post-086.html" class="cat-card" data-category="戶外探險">
                 <img src="images/142_pet-outdoor-cat-exploring-forest-trail.webp" alt="戶外探險 - 森林探險的貓咪：帶貓咪走進大自然" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>森林探險的貓咪：帶貓咪走進大自然</h3>
                     <p>一隻貓咪在森林小徑上探索。探索帶貓咪戶外探險的方法和安全須知。</p>
                 </div>
@@ -182,7 +182,7 @@
 <a href="posts/post-087.html" class="cat-card" data-category="戶外探險">
                 <img src="images/143_pet-outdoor-dog-camping-tent-lakeside-stars.webp" alt="戶外探險 - 湖邊露營的狗狗：星空下的露營冒險" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>湖邊露營的狗狗：星空下的露營冒險</h3>
                     <p>一隻狗狗在湖邊的帳篷旁，背景是星空。探索帶狗狗露營的完整指南。</p>
                 </div>
@@ -190,7 +190,7 @@
 <a href="posts/post-088.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1153_pets-nutrition-measuringcup-plastic-metal-macro.webp" alt="戶外探險 - 海邊日出的狗狗：清晨的海灘漫步" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>海邊日出的狗狗：清晨的海灘漫步</h3>
                     <p>一隻狗狗在海邊的日出中奔跑。探索帶狗狗去海灘的最佳時間和安全注意事項。</p>
                 </div>
@@ -198,7 +198,7 @@
 <a href="posts/post-089.html" class="cat-card" data-category="戶外探險">
                 <img src="images/148_pet-outdoor-dog-kayaking-river-canyon.webp" alt="戶外探險 - 獨木舟上的狗狗：水上冒險的樂趣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>獨木舟上的狗狗：水上冒險的樂趣</h3>
                     <p>一隻狗狗在獨木舟上，背景是河流峽谷。探索帶狗狗進行水上活動的安全須知。</p>
                 </div>
@@ -206,7 +206,7 @@
 <a href="posts/post-090.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1154_pets-nutrition-supplementbottle-plastic-glass-macro.webp" alt="戶外探險 - 雪地森林的狗狗：冬季戶外探險" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>雪地森林的狗狗：冬季戶外探險</h3>
                     <p>一隻穿著冬季外套的狗狗在雪地森林中。探索帶狗狗冬季戶外活動的安全和保暖須知。</p>
                 </div>
@@ -214,7 +214,7 @@
 <a href="posts/post-193.html" class="cat-card" data-category="節日寵物">
                 <img src="images/1156_pets-nutrition-waterfountain-plastic-metal-macro.webp" alt="節日寵物 - 過年期間寵物照護與安全須知" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>過年期間寵物照護與安全須知</h3>
                     <p>過年團圓時別忘了毛孩子的安全。本文介紹過年期間的寵物安全注意事項：年夜飯的食物禁忌、鞭炮聲的恐懼處理、親友來訪的壓力管理、返鄉或出遊的安排、寵物寄宿選擇、红包與裝飾品的危險，以及應...</p>
                 </div>
@@ -222,7 +222,7 @@
 <a href="posts/post-197.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1155_pets-nutrition-bodyconditionchart-paper-plastic-macro.webp" alt="戶外探險 - 寵物旅行：帶貓狗出遠門的注意事項" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>寵物旅行：帶貓狗出遠門的注意事項</h3>
                     <p>想帶毛孩子一起旅行？本文介紹寵物旅行的完整規劃：交通方式選擇（自駕、大眾運輸、航空）、住宿的寵物友善篩選、旅行必備物品清單、暈車與應激處理、目的地的寵物友善設施、旅行中的飲食與如廁...</p>
                 </div>

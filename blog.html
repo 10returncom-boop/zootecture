@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -130,15 +130,15 @@
         <div class="cat-grid" id="articleGrid"><a href="posts/post-250.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="寵物空間規劃 - 寵物滑雪渡假村空間設計：冬季的雪地樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物滑雪渡假村空間設計：冬季的雪地樂園</h3>
                     <p>寵物滑雪渡假村是冬季獨特的寵物設施。本文介紹雪地活動區、室內暖身區、靴子更換站、清洗區、保暖設施，以及冬季寵物安全的空間設計。</p>
                 </div>
             </a>
 <a href="posts/post-249.html" class="cat-card" data-category="寵物空間規劃">
-                <img src="images/1149_pets-psychology-calmingmedication-plastic-glass-macro.webp" alt="寵物空間規劃 - 寵物水上樂園空間設計：夏天的終極放電場" class="cat-card-img" loading="lazy">
+                <img src="images/321_pets-waterpark-swimming-pool-splash-pads.webp" alt="寵物空間規劃 - 寵物水上樂園空間設計：夏天的終極放電場" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物水上樂園空間設計：夏天的終極放電場</h3>
                     <p>寵物水上樂園是夏天最受歡迎的寵物設施。本文介紹泳池設計、潑水區、淺水區、安全設施、沖洗區、休息區，以及不同體型寵物的水域規劃。</p>
                 </div>
@@ -146,7 +146,7 @@
 <a href="posts/post-248.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/311_pets-restaurant-dogfriendly-seating-patio.webp" alt="寵物空間規劃 - 寵物餐廳空間設計：人寵共食的新趨勢" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物餐廳空間設計：人寵共食的新趨勢</h3>
                     <p>寵物餐廳是新興的餐飲業態。本文介紹人寵共食區、寵物專屬菜單、清潔消毒、安全圍籬、座位設計、空氣品質，以及法規與衛生管理。</p>
                 </div>
@@ -154,7 +154,7 @@
 <a href="posts/post-247.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1148_pets-psychology-behaviormat-fabric-rubber-macro.webp" alt="寵物空間規劃 - 衣櫃內的隱藏貓窩：收納與寵物空間的完美結合" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>衣櫃內的隱藏貓窩：收納與寵物空間的完美結合</h3>
                     <p>衣櫃也能變成貓咪的秘密基地。本文介紹衣櫃貓窩設計、通風處理、出入門、收納整合、清潔便利性，以及貓咪喜歡的隱蔽空間營造。</p>
                 </div>
@@ -162,7 +162,7 @@
 <a href="posts/post-246.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1147_pets-psychology-slowfeeder-plastic-ceramic-macro.webp" alt="寵物空間規劃 - 走廊空間的寵物功能化：把動線變成遊戲場" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>走廊空間的寵物功能化：把動線變成遊戲場</h3>
                     <p>走廊不只是過道，也能成為寵物的遊戲與收納空間。本文介紹走廊貓走道、牆面收納、懸掛式貓窩、互動玩具，以及不影響動線的設計原則。</p>
                 </div>
@@ -170,7 +170,7 @@
 <a href="posts/post-245.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="寵物空間規劃 - 夾層空間的寵物利用：開發被忽略的垂直寶地" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>夾層空間的寵物利用：開發被忽略的垂直寶地</h3>
                     <p>夾層空間常常被浪費，其實是寵物的絕佳領域。本文介紹夾層貓走道、閣樓貓窩、樓梯收納、吊橋連接，以及結構安全與出入設計。</p>
                 </div>
@@ -178,7 +178,7 @@
 <a href="posts/post-244.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/341_pets-memorial-garden-stones-flowers.webp" alt="寵物空間規劃 - 寵物紀念空間設計：溫柔道別的神聖場域" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物紀念空間設計：溫柔道別的神聖場域</h3>
                     <p>寵物紀念空間需要溫柔而莊重的設計。本文介紹紀念花園、壁龕區、燭光區、紀念牆、噴泉裝置、植樹區，以及幫助飼主療癒的空間氛圍營造。</p>
                 </div>
@@ -186,7 +186,7 @@
 <a href="posts/post-243.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/286_pets-photostudio-outdoor-garden-backdrop-props.webp" alt="寵物空間規劃 - 寵物攝影棚空間設計：捕捉毛孩子最美瞬間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物攝影棚空間設計：捕捉毛孩子最美瞬間</h3>
                     <p>寵物攝影棚需要特殊的空間設計。本文介紹背景系統、燈光配置、安全地墊、道具收納、等候與梳化區、空調與通風，以及讓寵物放鬆的環境營造。</p>
                 </div>
@@ -194,7 +194,7 @@
 <a href="posts/post-242.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/291_pets-rehab-hydrotherapy-pool-underwater-treadmill.webp" alt="寵物空間規劃 - 寵物復健中心空間設計：協助毛孩子恢復健康" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物復健中心空間設計：協助毛孩子恢復健康</h3>
                     <p>寵物復健中心需要專業的設備與空間。本文介紹水療池、水下跑步機、雷射治療區、針灸區、按摩區、運動訓練區，以及復健設備的空間配置。</p>
                 </div>
@@ -202,7 +202,7 @@
 <a href="posts/post-241.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/362_pets-vetclinic-exam-room-medical-equipment.webp" alt="寵物空間規劃 - 寵物醫院空間規劃：降低焦慮的醫療環境" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物醫院空間規劃：降低焦慮的醫療環境</h3>
                     <p>寵物醫院的空間設計會影響寵物的就醫體驗。本文介紹分區動線、貓狗分離等候區、診間設計、住院區、手術室、通風除臭，以及降低寵物焦慮的設計元素。</p>
                 </div>
@@ -210,7 +210,7 @@
 <a href="posts/post-240.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/371_pets-trainingschool-classroom-obedience-equipment.webp" alt="寵物空間規劃 - 寵物訓練學校空間設計：紀律與快樂的學習場" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物訓練學校空間設計：紀律與快樂的學習場</h3>
                     <p>寵物訓練學校需要開闊且安全的空間。本文介紹室內訓練場、戶外活動區、障礙設施、觀眾區、收納空間、安全圍籬，以及不同訓練課程的空間需求。</p>
                 </div>
@@ -218,7 +218,7 @@
 <a href="posts/post-239.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/261_pets-grooming-salon-multiple-stations-tables.webp" alt="寵物空間規劃 - 寵物美容沙龍空間規劃：專業與舒適兼具" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物美容沙龍空間規劃：專業與舒適兼具</h3>
                     <p>寵物美容沙龍需要專業的空間規劃。本文介紹洗澡區、吹毛區、修剪區、等候區、收納系統、通風除毛、防滑防水，以及美容師的工作動線。</p>
                 </div>
@@ -226,7 +226,7 @@
 <a href="posts/post-238.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/254_pets-hotel-bathroom-pet-washing-station.webp" alt="寵物空間規劃 - 寵物旅館空間規劃：給毛孩子一個安心的暫住家" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物旅館空間規劃：給毛孩子一個安心的暫住家</h3>
                     <p>寵物旅館需要兼顧舒適與安全。本文介紹房型設計、通風除臭系統、安全圍籬、活動區規劃、清潔消毒、監控系統，以及不同寵物的空間需求差異。</p>
                 </div>
@@ -234,7 +234,7 @@
 <a href="posts/post-237.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/271_pets-cafe-interior-cat-climbing-coffee-bar.webp" alt="寵物空間規劃 - 寵物咖啡廳空間設計：營造人寵共樂的場域" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物咖啡廳空間設計：營造人寵共樂的場域</h3>
                     <p>寵物咖啡廳是近年熱門業態。本文介紹動線規劃、貓咪/狗狗區域設計、安全防護、清潔消毒系統、座位與互動區、空氣品質，以及法規與衛生要求。</p>
                 </div>
@@ -242,7 +242,7 @@
 <a href="posts/post-236.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1146_pets-psychology-puzzlefeeder-plastic-wood-macro.webp" alt="寵物空間規劃 - 寵物空間預算規劃與DIY：小資族也能打造夢幻空間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物空間預算規劃與DIY：小資族也能打造夢幻空間</h3>
                     <p>打造寵物空間不需要花大錢。本文介紹預算分配原則、必備與可選項目、DIY寵物傢俱教學、二手與回收利用、省錢技巧，以及預算與品質的平衡。</p>
                 </div>
@@ -250,7 +250,7 @@
 <a href="posts/post-235.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1145_pets-psychology-enrichmenttoys-rubber-fabric-macro.webp" alt="寵物空間規劃 - 寵物安全閘門與空間分隔：靈活劃分家中區域" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物安全閘門與空間分隔：靈活劃分家中區域</h3>
                     <p>安全閘門是多寵物與有幼兒家庭的必備。本文介紹閘門類型、安裝位置、材質選擇、美觀設計、臨時與永久方案，以及空間分隔的靈活運用。</p>
                 </div>
@@ -258,7 +258,7 @@
 <a href="posts/post-234.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1144_pets-psychology-calmingcollar-fabric-plastic-macro.webp" alt="寵物空間規劃 - 中島廚房的寵物區：現代廚房的寵物整合" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>中島廚房的寵物區：現代廚房的寵物整合</h3>
                     <p>中島是現代廚房的核心，也能成為寵物的小天地。本文介紹中島下方寵物窩、抽屜式餵食站、收納整合、防潑濺設計，以及與廚房動線的配合。</p>
                 </div>
@@ -266,7 +266,7 @@
 <a href="posts/post-233.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1143_pets-psychology-behaviorclicker-plastic-metal-macro.webp" alt="寵物空間規劃 - 電視牆整合寵物空間：娛樂與陪伴的結合" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>電視牆整合寵物空間：娛樂與陪伴的結合</h3>
                     <p>電視牆是客廳核心，也能整合寵物空間。本文介紹電視牆貓跳台、櫃體貓窩、隱藏式貓通道、電線管理、防抓保護，以及美觀與功能的平衡。</p>
                 </div>
@@ -274,7 +274,7 @@
 <a href="posts/post-232.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1142_pets-psychology-anxietyvest-fabric-plastic-macro.webp" alt="寵物空間規劃 - 窗邊寵物觀景台設計：給毛孩子一個風景窗" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>窗邊寵物觀景台設計：給毛孩子一個風景窗</h3>
                     <p>寵物最愛坐在窗邊看風景。本文介紹窗邊貓窩、吸盤式吊床、窗台加寬、安全防護、貓咪電視（魚缸/鳥籠），以及窗邊空間的多功能利用。</p>
                 </div>
@@ -282,7 +282,7 @@
 <a href="posts/post-231.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1141_pets-psychology-calmingdiffuser-plastic-electronic-macro.webp" alt="寵物空間規劃 - 挑高住宅寵物垂直空間：把高度變成優勢" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>挑高住宅寵物垂直空間：把高度變成優勢</h3>
                     <p>挑高住宅是貓咪的天堂。本文介紹垂直空間的最大化利用、多層次貓走道、吊橋設計、樓中樓貓窩、高空觀景台，以及安全防護設計。</p>
                 </div>
@@ -290,7 +290,7 @@
 <a href="posts/post-230.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1140_pets-tcm-herbalpaste-ceramic-glass-macro.webp" alt="寵物空間規劃 - 租屋族寵物空間規劃：不釘牆也能打造舒適家園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>租屋族寵物空間規劃：不釘牆也能打造舒適家園</h3>
                     <p>租屋不能釘牆？一樣可以打造寵物友善空間。本文介紹免釘貓跳台、移動式傢俱、吸盤式貓走道、無痕收納、臨時隔間，以及退租時的恢復原狀技巧。</p>
                 </div>
@@ -298,7 +298,7 @@
 <a href="posts/post-229.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1139_pets-tcm-heatlamp-metal-glass-macro.webp" alt="寵物空間規劃 - 工業風寵物空間設計：粗獷與個性的寵物樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>工業風寵物空間設計：粗獷與個性的寵物樂園</h3>
                     <p>工業風的粗獷美學與寵物空間意外合拍。本文介紹工業風的金屬與水泥元素、管線設計、開放式收納、復古燈具、耐磨地板，以及寵物設施的工業風改造。</p>
                 </div>
@@ -306,7 +306,7 @@
 <a href="posts/post-228.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/74_pet-interior-midcentury-feeding-station-kitchen.webp" alt="寵物空間規劃 - 北歐風寵物空間設計：簡約與溫馨的完美結合" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>北歐風寵物空間設計：簡約與溫馨的完美結合</h3>
                     <p>北歐風的簡約美學也能融入寵物空間。本文介紹北歐風的色彩搭配、木質傢俱、收納哲學、燈光設計、質感選擇，以及寵物設施的隱藏與整合。</p>
                 </div>
@@ -314,7 +314,7 @@
 <a href="posts/post-227.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/241_pets-eco-livingroom-reclaimed-wood-organic.webp" alt="寵物空間規劃 - 環保寵物友善空間設計：綠色生活從家開始" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>環保寵物友善空間設計：綠色生活從家開始</h3>
                     <p>愛寵物也愛地球。本文介紹環保材質選擇、節水設計、廚餘堆肥、再生傢俱、無毒塗料、永續清潔產品，以及寵物廢棄物的環保處理。</p>
                 </div>
@@ -322,7 +322,7 @@
 <a href="posts/post-226.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1138_pets-tcm-massageoil-glass-plastic-macro.webp" alt="寵物空間規劃 - 智慧寵物空間設計：科技改變寵物生活" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>智慧寵物空間設計：科技改變寵物生活</h3>
                     <p>智慧科技讓寵物照護更輕鬆。本文介紹自動餵食器、智慧貓砂盆、寵物監視器、互動玩具、溫濕度控制、寵物門，以及智慧設備的整合與隱私考量。</p>
                 </div>
@@ -330,7 +330,7 @@
 <a href="posts/post-225.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1137_pets-tcm-acupuncturechart-paper-fabric-macro.webp" alt="寵物空間規劃 - 夏季寵物降溫空間設計：對抗酷暑的清涼綠洲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>夏季寵物降溫空間設計：對抗酷暑的清涼綠洲</h3>
                     <p>夏天高溫對寵物是嚴峻考驗。本文介紹室內降溫、涼感床墊、遮陽設計、噴霧降溫、飲水增加、地板材質選擇，以及避免熱傷害的空間策略。</p>
                 </div>
@@ -338,7 +338,7 @@
 <a href="posts/post-224.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1136_pets-tcm-herbaltea-glass-ceramic-macro.webp" alt="寵物空間規劃 - 冬季寵物保暖空間設計：對抗寒冬的溫暖堡壘" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>冬季寵物保暖空間設計：對抗寒冬的溫暖堡壘</h3>
                     <p>冬天寵物需要特別的保暖空間。本文介紹加熱床墊、保暖窩、室內溫度控制、防風區、衣物收納、外出保暖裝備，以及短毛與高齡寵物的特別需求。</p>
                 </div>
@@ -346,7 +346,7 @@
 <a href="posts/post-223.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1135_pets-tcm-acupressuretools-plastic-metal-macro.webp" alt="寵物空間規劃 - 寵物泳池與戲水區設計：夏天的清涼樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物泳池與戲水區設計：夏天的清涼樂園</h3>
                     <p>夏天寵物也需要戲水降溫。本文介紹寵物泳池類型、安全圍籬、入水坡道、防滑設計、戲水玩具、日曬防護，以及清潔維護。</p>
                 </div>
@@ -354,7 +354,7 @@
 <a href="posts/post-222.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1134_pets-tcm-cuppingdevice-glass-plastic-macro.webp" alt="寵物空間規劃 - 後院狗狗遊樂區設計：放電與娛樂的天堂" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>後院狗狗遊樂區設計：放電與娛樂的天堂</h3>
                     <p>後院可以變成狗狗的終極遊樂場。本文介紹敏捷設施、挖掘坑、遮陽區、戲水池、嗅聞遊戲區、安全圍籬，以及不同品種的活動需求考量。</p>
                 </div>
@@ -362,7 +362,7 @@
 <a href="posts/post-221.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1133_pets-tcm-moxibustion-wood-metal-macro.webp" alt="寵物空間規劃 - 花園寵物友善戶外空間設計：安全的遊樂場" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>花園寵物友善戶外空間設計：安全的遊樂場</h3>
                     <p>花園是寵物的天然遊樂場。本文介紹圍籬安全、無毒植物選擇、挖掘區設計、遮陽休息區、戲水設施、糞便處理站，以及防逃脫設計。</p>
                 </div>
@@ -370,7 +370,7 @@
 <a href="posts/post-220.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1132_pets-tcm-herbalmedicine-glass-paper-macro.webp" alt="寵物空間規劃 - 寵物睡眠區域規劃：給毛孩子一個好夢" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物睡眠區域規劃：給毛孩子一個好夢</h3>
                     <p>好的睡眠對寵物健康至關重要。本文介紹睡眠區位置選擇、寵物床類型、材質選擇、溫度控制、安全感營造，以及多寵物的睡眠區分配。</p>
                 </div>
@@ -378,7 +378,7 @@
 <a href="posts/post-219.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1131_pets-tcm-acupunctureneedles-metal-plastic-macro.webp" alt="寵物空間規劃 - 寵物餐廚空間設計：餵食與收納的完美整合" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物餐廚空間設計：餵食與收納的完美整合</h3>
                     <p>寵物的餐廚空間需要美觀與實用兼具。本文介紹餵食站設計、食品儲存櫃、碗架選擇、防潑濺設計、智慧餵食器整合，以及多寵物的餵食區隔離。</p>
                 </div>
@@ -386,7 +386,7 @@
 <a href="posts/post-218.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/79_pet-interior-luxury-dog-washing-bathroom.webp" alt="寵物空間規劃 - 寵物友善浴室設計：洗澡與護理的專屬空間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物友善浴室設計：洗澡與護理的專屬空間</h3>
                     <p>寵物浴室是許多家庭的夢幻設施。本文介紹寵物浴缸尺寸、水溫控制、防滑設計、收納整合、吹毛區、除水漬設計，以及與人用浴室的整合方案。</p>
                 </div>
@@ -394,7 +394,7 @@
 <a href="posts/post-217.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/174_pets-multipet-entryway-organization-supplies.webp" alt="寵物空間規劃 - 寵物用品收納系統設計：告別雜亂" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物用品收納系統設計：告別雜亂</h3>
                     <p>寵物用品越買越多，收納成為挑戰。本文介紹食品儲存、藥品收納、清潔用品整理、外出裝備收納、季節性物品存放，以及標籤化管理系統。</p>
                 </div>
@@ -402,7 +402,7 @@
 <a href="posts/post-216.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/176_pets-multipet-playroom-toy-organization.webp" alt="寵物空間規劃 - 寵物玩具收納與遊戲區設計：整潔又有趣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>寵物玩具收納與遊戲區設計：整潔又有趣</h3>
                     <p>寵物玩具散落一地？本文介紹玩具收納系統、遊戲區規劃、旋轉玩具機制、益智玩具安排、DIY玩具收納，以及讓寵物自己取玩具的設計。</p>
                 </div>
@@ -410,7 +410,7 @@
 <a href="posts/post-215.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1130_pets-rehabilitation-orthopedicbrace-fabric-metal-macro.webp" alt="寵物空間規劃 - 幼犬幼貓安全空間規劃：寶寶級的防護設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>幼犬幼貓安全空間規劃：寶寶級的防護設計</h3>
                     <p>幼犬幼貓像嬰兒一樣需要安全防護。本文介紹電線保護、有毒植物移除、小物品收納、安全閘門、化學品上鎖、窗戶防護，以及探索區的安全設計。</p>
                 </div>
@@ -418,7 +418,7 @@
 <a href="posts/post-214.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1129_pets-rehabilitation-hydrotherapypool-metal-glass-macro.webp" alt="寵物空間規劃 - 高齡寵物友善空間改造：讓老寵物行動自如" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>高齡寵物友善空間改造：讓老寵物行動自如</h3>
                     <p>高齡寵物需要特別的空間改造。本文介紹防滑地板、樓梯坡道、低矮傢俱、加熱床墊、夜燈配置、容易進出的貓砂盆，以及關節友好的空間設計。</p>
                 </div>
@@ -426,7 +426,7 @@
 <a href="posts/post-213.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/82_pet-space-cat-dog-shared-multilevel-furniture.webp" alt="寵物空間規劃 - 貓狗共處空間設計：打造和諧的跨物種家庭" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>貓狗共處空間設計：打造和諧的跨物種家庭</h3>
                     <p>貓狗共處需要空間上的巧妙安排。本文介紹貓咪安全區、狗狗無法進入的貓咪領域、垂直逃脫路線、分開進食區、貓砂盆保護，以及漸進式介紹的空間準備。</p>
                 </div>
@@ -434,7 +434,7 @@
 <a href="posts/post-212.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1128_pets-rehabilitation-electrostimulation-plastic-electronic-macro.webp" alt="寵物空間規劃 - 多狗家庭空間規劃：和平共處的空間魔法" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>多狗家庭空間規劃：和平共處的空間魔法</h3>
                     <p>多狗家庭需要精心的空間規劃。本文介紹進食區隔離、睡眠區分配、玩具資源管理、戶外空間利用、品種差異考量，以及狗狗衝突的空間解決方案。</p>
                 </div>
@@ -442,7 +442,7 @@
 <a href="posts/post-211.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1127_pets-rehabilitation-acupunctureneedles-metal-plastic-macro.webp" alt="寵物空間規劃 - 多貓家庭空間規劃：讓每隻貓都有自己的領域" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>多貓家庭空間規劃：讓每隻貓都有自己的領域</h3>
                     <p>多貓家庭的空間規劃是一門藝術。本文介紹資源分配原則、垂直領域劃分、貓砂盆數量與位置、進食區隔離、躲藏空間設計，以及貓咪衝突預防。</p>
                 </div>
@@ -450,7 +450,7 @@
 <a href="posts/post-210.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1126_pets-rehabilitation-therapyball-rubber-plastic-macro.webp" alt="寵物空間規劃 - 樓梯下的寵物空間利用：被忽略的黃金區域" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>樓梯下的寵物空間利用：被忽略的黃金區域</h3>
                     <p>樓梯下的空間常常被拿來堆雜物，其實是絕佳的寵物空間。本文介紹樓梯下空間的各種利用方式：寵物窩、貓砂盆區、餵食站、收納櫃，以及結構安全與通風設計。</p>
                 </div>
@@ -458,7 +458,7 @@
 <a href="posts/post-209.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1125_pets-rehabilitation-resistanceband-fabric-rubber-macro.webp" alt="寵物空間規劃 - 隱藏式貓砂盆設計：讓貓如廁區消失於無形" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>隱藏式貓砂盆設計：讓貓如廁區消失於無形</h3>
                     <p>貓砂盆是貓咪家庭最頭痛的美觀問題。本文介紹隱藏式貓砂盆的各種方案：傢俱整合、櫃體隱藏、通風設計、除臭系統、清潔便利性，以及擺放位置選擇。</p>
                 </div>
@@ -466,7 +466,7 @@
 <a href="posts/post-208.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/88_pet-space-laundry-room-pet-washing-station.webp" alt="寵物空間規劃 - 洗衣間寵物洗澡區規劃：一機多用的空間魔法" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>洗衣間寵物洗澡區規劃：一機多用的空間魔法</h3>
                     <p>洗衣間是最適合做寵物洗澡區的空間。本文介紹寵物浴缸選擇、水電配置、收納整合、吹毛區設計、防滑與排水，以及與洗衣機的空間安排。</p>
                 </div>
@@ -474,7 +474,7 @@
 <a href="posts/post-207.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/90_pet-space-mudroom-pet-cleaning-entryway.webp" alt="寵物空間規劃 - 玄關寵物清潔站設計：進門第一步的整潔把關" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>玄關寵物清潔站設計：進門第一步的整潔把關</h3>
                     <p>遛狗回來滿腳泥？玄關寵物清潔站是必備設計。本文介紹洗腳區、擦腳墊、牽繩收納、外出用品整理、除塵除味，以及與玄關整體風格的整合。</p>
                 </div>
@@ -482,7 +482,7 @@
 <a href="posts/post-206.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/83_pet-space-home-office-under-desk-dog-bed.webp" alt="寵物空間規劃 - 居家辦公室寵物友善空間設計：工作與陪伴兼得" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>居家辦公室寵物友善空間設計：工作與陪伴兼得</h3>
                     <p>在家工作又想陪伴毛孩子？本文介紹居家辦公室的寵物友善設計：桌下寵物窩、電線管理、防抓保護、噪音控制、互動玩具安排，以及工作與陪伴的平衡技巧。</p>
                 </div>
@@ -490,7 +490,7 @@
 <a href="posts/post-205.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1124_pets-rehabilitation-balancepad-rubber-fabric-macro.webp" alt="寵物空間規劃 - 陽台貓樂園Catio設計：安全的戶外貓咪空間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>陽台貓樂園Catio設計：安全的戶外貓咪空間</h3>
                     <p>想讓貓咪享受戶外新鮮空氣又怕危險？Catio（貓咪陽台）是最佳解。本文介紹Catio的類型、防護網選擇、攀爬設施、遮陽與防雨、植物選擇，以及安全注意事項。</p>
                 </div>
@@ -498,7 +498,7 @@
 <a href="posts/post-204.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1123_pets-rehabilitation-messagetools-plastic-metal-macro.webp" alt="寵物空間規劃 - 客廳貓牆與攀爬系統設計：把整面牆變成貓咪樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>客廳貓牆與攀爬系統設計：把整面牆變成貓咪樂園</h3>
                     <p>客廳貓牆是貓咪的終極遊樂場。本文介紹貓牆的規劃原則、組件選擇（層板、跳台、爬柱、吊床）、安全設計、與電視牆/書架整合，以及預算規劃。</p>
                 </div>
@@ -506,7 +506,7 @@
 <a href="posts/post-203.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/86_pet-space-bedroom-elevated-cat-walkway-walls.webp" alt="寵物空間規劃 - 臥室貓咪垂直走道設計：從地板到天花板的貓咪高速公路" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>臥室貓咪垂直走道設計：從地板到天花板的貓咪高速公路</h3>
                     <p>貓咪喜歡居高臨下，臥室垂直走道是最佳解。本文介紹貓走道的材質選擇、安裝位置、安全間距、與臥室風格整合，以及DIY與訂製的比較。</p>
                 </div>
@@ -514,7 +514,7 @@
 <a href="posts/post-202.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1122_pets-rehabilitation-lasertherapy-plastic-electronic-macro.webp" alt="寵物空間規劃 - 開放式廚房寵物餵食區設計：美觀與實用兼具" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>開放式廚房寵物餵食區設計：美觀與實用兼具</h3>
                     <p>開放式廚房的寵物餵食區怎麼設計才不突兀？本文介紹中島整合、抽屜式餵食站、收納櫃隱藏、防潑濺設計等創意方案。</p>
                 </div>
@@ -522,7 +522,7 @@
 <a href="posts/post-201.html" class="cat-card" data-category="寵物空間規劃">
                 <img src="images/1121_pets-rehabilitation-underwatertreadmill-metal-glass-macro.webp" alt="寵物空間規劃 - 小公寓寵物空間規劃完全指南：5坪也能擁有舒適生活" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-space.html" class="cat-badge" onclick="event.stopPropagation()">寵物空間規劃</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-space.html'">寵物空間規劃</span>
                     <h3>小公寓寵物空間規劃完全指南：5坪也能擁有舒適生活</h3>
                     <p>小公寓也能養寵物？本文從垂直空間利用、多功能傢俱、收納整合到安全設計，完整教你在有限空間中為毛孩子打造舒適家園。</p>
                 </div>
@@ -530,7 +530,7 @@
 <a href="posts/post-200.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1050_pets-geriatric-mobilitycart-metal-plastic-macro.webp" alt="寵物健康 - 寵物遺囑與照護計畫：為毛孩子的未來著想" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物遺囑與照護計畫：為毛孩子的未來著想</h3>
                     <p>你有想過如果自己發生意外，毛孩子誰來照顧？本文介紹寵物遺囑的法律意義與制定方法、寵物照護信託的設立、監護人的選擇與溝通、緊急聯絡卡的製作、寵物資產的預留（醫療基金、用品）、數位帳號...</p>
                 </div>
@@ -538,7 +538,7 @@
 <a href="posts/post-199.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1120_pets-toxicology-gloves-fabric-plastic-macro.webp" alt="貓咪物語 - 多貓家庭的和平共處完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>多貓家庭的和平共處完全指南</h3>
                     <p>家裡養多隻貓咪，如何讓牠們和平相處？本文介紹多貓家庭的資源分配原則（貓砂盆、食物、水、窩、貓抓板）、新貓引進的漸進步驟、貓咪之間的關係類型、打架的識別與處理、貓咪壓力訊號、空間垂直...</p>
                 </div>
@@ -546,7 +546,7 @@
 <a href="posts/post-198.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1082_pets-pathology-microscopeslide-glass-plastic-macro.webp" alt="寵物教育 - 領養寵物前的準備與評估完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>領養寵物前的準備與評估完全指南</h3>
                     <p>領養代替購買是溫暖的選擇，但需要充分準備。本文介紹領養前的自我評估（生活型態、時間、經濟、居住環境）、領養管道（收容所、救援團體、中途家庭）、領養流程與面談、領養前的用品準備、領養...</p>
                 </div>
@@ -554,7 +554,7 @@
 <a href="posts/post-197.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1155_pets-nutrition-bodyconditionchart-paper-plastic-macro.webp" alt="戶外探險 - 寵物旅行：帶貓狗出遠門的注意事項" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>寵物旅行：帶貓狗出遠門的注意事項</h3>
                     <p>想帶毛孩子一起旅行？本文介紹寵物旅行的完整規劃：交通方式選擇（自駕、大眾運輸、航空）、住宿的寵物友善篩選、旅行必備物品清單、暈車與應激處理、目的地的寵物友善設施、旅行中的飲食與如廁...</p>
                 </div>
@@ -562,7 +562,7 @@
 <a href="posts/post-196.html" class="cat-card" data-category="寵物教育">
                 <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="寵物教育 - 帶寵物搬家的完整準備與適應指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>帶寵物搬家的完整準備與適應指南</h3>
                     <p>搬家對寵物來說是巨大的壓力事件。本文介紹搬家前的準備（寵物健康檢查、用品打包、運輸安排）、搬家當天的寵物安置、新家的環境佈置與氣味建立、貓咪與狗狗的適應期差異、行為問題的預期與處理...</p>
                 </div>
@@ -570,7 +570,7 @@
 <a href="posts/post-195.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1049_pets-geriatric-cognitivesupplement-plastic-glass-macro.webp" alt="寵物健康 - 寵物過世後的悲傷處理與紀念方式" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物過世後的悲傷處理與紀念方式</h3>
                     <p>失去毛孩子是難以承受的痛。本文介紹寵物臨終照護與安寧選擇、過世後的處理方式（土葬、火化、樹葬）、悲傷的五個階段、兒童與家庭的悲傷輔導、紀念寵物的創意方式（紀念品、珠寶、植栽、繪畫）...</p>
                 </div>
@@ -578,7 +578,7 @@
 <a href="posts/post-194.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1048_pets-geriatric-heatedbed-fabric-electronic-macro.webp" alt="寵物健康 - 梅雨季節寵物皮膚護理與防潮指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>梅雨季節寵物皮膚護理與防潮指南</h3>
                     <p>梅雨季節濕度高，寵物皮膚問題好發。本文介紹梅雨季的寵物皮膚護理要點：黴菌與濕疹的預防、吹毛的重要性、室內除濕、墊材與窩的乾燥保持、腳掌護理、耳朵感染預防、除濕機與除濕劑使用，以及皮...</p>
                 </div>
@@ -586,7 +586,7 @@
 <a href="posts/post-193.html" class="cat-card" data-category="節日寵物">
                 <img src="images/1156_pets-nutrition-waterfountain-plastic-metal-macro.webp" alt="節日寵物 - 過年期間寵物照護與安全須知" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>過年期間寵物照護與安全須知</h3>
                     <p>過年團圓時別忘了毛孩子的安全。本文介紹過年期間的寵物安全注意事項：年夜飯的食物禁忌、鞭炮聲的恐懼處理、親友來訪的壓力管理、返鄉或出遊的安排、寵物寄宿選擇、红包與裝飾品的危險，以及應...</p>
                 </div>
@@ -594,7 +594,7 @@
 <a href="posts/post-192.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1047_pets-geriatric-nonslipmat-rubber-fabric-macro.webp" alt="寵物健康 - 冬天寵物保暖與禦寒完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>冬天寵物保暖與禦寒完全指南</h3>
                     <p>冬天低溫讓短毛與高齡寵物特別難受。本文介紹狗狗與貓咪怕冷的品種與狀況、居家保暖方法（保暖窩、加熱墊、室內溫度）、外出保暖（衣服、鞋子、保溫時間）、短毛犬與幼犬的特別護理、取暖安全（...</p>
                 </div>
@@ -602,7 +602,7 @@
 <a href="posts/post-191.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1046_pets-geriatric-liftingsling-fabric-metal-macro.webp" alt="寵物健康 - 夏天寵物降溫與防中暑完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>夏天寵物降溫與防中暑完全指南</h3>
                     <p>夏天高溫對寵物是嚴峻考驗。本文介紹狗狗與貓咪中暑的症狀識別、緊急降溫處理、居家降溫方法（冷氣、電風扇、涼墊、冰墊）、外出時間選擇、散步安全、車內危險、毛髮修剪誤區，以及高溫天的餵食...</p>
                 </div>
@@ -610,7 +610,7 @@
 <a href="posts/post-190.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1045_pets-geriatric-harness-fabric-metal-macro.webp" alt="寵物健康 - 寵物空氣清淨機選購指南：對抗毛髮與異味" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物空氣清淨機選購指南：對抗毛髮與異味</h3>
                     <p>養寵物後室內空氣品質需要特別關注。本文介紹寵物家庭空氣清淨機的選購要點（CADR值、HEPA濾網、活性炭、離子功能）、適用坪數、噪音表現、濾網更換成本、擺放位置，以及與吸塵器、清潔...</p>
                 </div>
@@ -618,7 +618,7 @@
 <a href="posts/post-189.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1119_pets-toxicology-ecgmonitor-plastic-electronic-macro.webp" alt="貓咪物語 - 貓咪飲水器選擇與清潔完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓咪飲水器選擇與清潔完全指南</h3>
                     <p>貓咪喜歡流動水，飲水器可以增加飲水量。本文介紹貓咪飲水器的類型（噴泉式、瀑布式、重力式）、材質選擇（不鏽鋼、陶瓷、塑膠）、濾芯更換頻率、清潔步驟、常見問題（噪音、漏水）、擺放位置，...</p>
                 </div>
@@ -626,7 +626,7 @@
 <a href="posts/post-188.html" class="cat-card" data-category="寵物教育">
                 <img src="images/188_pets-safety-livingroom-furniture-anchored-tv-strap.webp" alt="寵物教育 - 寵物運輸籃選購與使用完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物運輸籃選購與使用完全指南</h3>
                     <p>帶寵物外出需要合適的運輸籃。本文介紹運輸籃的類型（硬殼、軟殼、背包、推車）、尺寸選擇原則、材質與通風、安全認證、航空託運要求、車內固定方法、讓寵物適應運輸籃的訓練，以及清潔保養。</p>
                 </div>
@@ -634,7 +634,7 @@
 <a href="posts/post-187.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1099_pets-microbiology-centrifuge-plastic-metal-macro.webp" alt="狗狗日記 - 狗狗玩具種類與安全選擇完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗玩具種類與安全選擇完全指南</h3>
                     <p>玩具是狗狗的精神食糧，但不安全的玩具可能造成傷害。本文介紹狗狗玩具的類型（咀嚼玩具、益智玩具、拉扯玩具、發聲玩具、球類）、不同品種與咀嚼力的適合玩具、材質安全標準、玩具尺寸原則、定...</p>
                 </div>
@@ -642,7 +642,7 @@
 <a href="posts/post-186.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1118_pets-toxicology-oxygenmask-plastic-rubber-macro.webp" alt="貓咪物語 - 貓跳台選購與安裝完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓跳台選購與安裝完全指南</h3>
                     <p>貓跳台是貓咪的遊樂園與觀景台。本文介紹貓跳台的類型（層架式、柱狀式、牆壁式、窗台式）、高度與穩定性、材質選擇（劍麻柱、絨布、木質）、貓抓板整合、擺放位置、安裝與固定方法，以及不同貓...</p>
                 </div>
@@ -650,7 +650,7 @@
 <a href="posts/post-185.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1081_pets-pathology-tissuesample-glass-plastic-macro.webp" alt="寵物教育 - 寵物自動餵食器推薦與使用完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物自動餵食器推薦與使用完全指南</h3>
                     <p>自動餵食器是忙碌飼主的好幫手。本文介紹自動餵食器的類型（乾糧型、濕糧型、智慧型）、功能比較（定時、定量、APP控制、攝影機）、優缺點分析、選擇要點、使用與清潔注意事項，以及常見故障...</p>
                 </div>
@@ -658,7 +658,7 @@
 <a href="posts/post-184.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1044_pets-geriatric-stairs-plastic-carpet-macro.webp" alt="寵物健康 - 貓窩與狗窩選購原則與推薦" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓窩與狗窩選購原則與推薦</h3>
                     <p>一個合適的窩讓寵物有安全感。本文介紹貓窩與狗窩的類型（開放式、半封閉、窩狀、墊狀）、材質選擇、尺寸判斷、季節性需求（保暖與透氣）、清潔便利性、不同年齡與健康狀況的適合款式，以及擺放...</p>
                 </div>
@@ -666,7 +666,7 @@
 <a href="posts/post-183.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1098_pets-microbiology-microscope-metal-glass-macro.webp" alt="狗狗日記 - 狗狗牽繩與胸背帶選擇完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗牽繩與胸背帶選擇完全指南</h3>
                     <p>牽繩與胸背帶是遛狗必備，但款式百百種。本文介紹頸圈、胸背帶、牽繩的種類與功能、不同品種與個性的適合款式、正確穿戴方法、材質與耐用性、安全設計，以及常見穿戴錯誤。</p>
                 </div>
@@ -674,7 +674,7 @@
 <a href="posts/post-182.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/196_pets-senior-lowentry-litterbox-nonslip-mat.webp" alt="貓咪物語 - 貓砂種類比較與選擇完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓砂種類比較與選擇完全指南</h3>
                     <p>貓砂是貓咪家庭的必需品，種類繁多怎麼選？本文比較凝結砂、木屑砂、水晶砂、豆腐砂、紙砂的優缺點、粉塵、除臭力、腳感、價格、環保性，以及根據貓咪偏好與家庭需求的選擇建議。</p>
                 </div>
@@ -682,7 +682,7 @@
 <a href="posts/post-181.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1043_pets-geriatric-ramp-plastic-metal-macro.webp" alt="寵物健康 - 寵物保險值得買嗎？完整分析與選擇指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物保險值得買嗎？完整分析與選擇指南</h3>
                     <p>寵物醫療費用越來越高，寵物保險成為熱門話題。本文分析寵物保險的優缺點、保障範圍、理賠流程、自付額與保費計算、不同方案比較、年齡與品種的影響，以及投保前的注意事項。</p>
                 </div>
@@ -690,7 +690,7 @@
 <a href="posts/post-180.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1042_pets-geriatric-jointsupplement-plastic-glass-macro.webp" alt="寵物健康 - 寵物肛門腺護理與問題處理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物肛門腺護理與問題處理指南</h3>
                     <p>寵物肛門腺發炎或阻塞會讓狗狗蹭屁股。本文介紹肛門腺的功能、需要擠肛門腺的訊號、正確擠肛門腺的方法（專業與居家）、肛門腺發炎與感染的症狀、飲食與纖維的影響，以及預防復發的方法。</p>
                 </div>
@@ -698,7 +698,7 @@
 <a href="posts/post-179.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1041_pets-geriatric-orthopedicbed-fabric-foam-macro.webp" alt="寵物健康 - 狗狗牙齒護理與刷牙完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗牙齒護理與刷牙完全指南</h3>
                     <p>狗狗口腔健康影響全身健康。本文介紹狗狗牙齒的成長與更換、牙結石與牙齦疾病的形成、刷牙的正確方法（牙刷與手指套）、牙膏選擇、口腔護理零食與玩具、專業洗牙的時機，以及口腔疾病的全身影響...</p>
                 </div>
@@ -706,7 +706,7 @@
 <a href="posts/post-178.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1117_pets-toxicology-antidotemedication-plastic-glass-macro.webp" alt="貓咪物語 - 貓咪眼睛護理與常見眼部問題" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓咪眼睛護理與常見眼部問題</h3>
                     <p>貓咪眼睛是健康的窗口。本文介紹貓咪眼睛的日常清潔方法、正常分泌物與異常的區別、常見眼部疾病（結膜炎、角膜潰瘍、青光眼）、淚痕護理、眼藥使用方法，以及就醫時機判斷。</p>
                 </div>
@@ -714,7 +714,7 @@
 <a href="posts/post-177.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1080_pets-anesthesiology-temperatureprobe-plastic-electronic-macro.webp" alt="寵物教育 - 寵物耳朵清潔正確方法與常見問題" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物耳朵清潔正確方法與常見問題</h3>
                     <p>寵物耳朵需要定期清潔以預防感染。本文介紹狗狗與貓咪耳朵的結構、清潔頻率、清潔液選擇、正確清潔步驟、耳螨與中耳炎的識別、垂耳品種的特別護理，以及清潔時的安全注意事項。</p>
                 </div>
@@ -722,7 +722,7 @@
 <a href="posts/post-176.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1097_pets-microbiology-biosafetycabinet-metal-glass-macro.webp" alt="狗狗日記 - 狗狗毛髮護理與美容完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗毛髮護理與美容完全指南</h3>
                     <p>狗狗毛髮健康反映整體健康狀態。本文介紹不同毛質（短毛、長毛、捲毛、剛毛）的護理要點、梳毛頻率與工具、脫毛季的特別護理、美容造型選擇、皮膚與毛髮的營養補充，以及常見皮膚問題。</p>
                 </div>
@@ -730,7 +730,7 @@
 <a href="posts/post-175.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1116_pets-toxicology-stomachpump-plastic-metal-macro.webp" alt="貓咪物語 - 貓咪毛髮護理與梳毛技巧完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓咪毛髮護理與梳毛技巧完全指南</h3>
                     <p>定期梳毛不僅減少掉毛，還能促進皮膚健康。本文介紹短毛貓與長毛貓的梳毛頻率、梳子種類選擇（針梳、排梳、去毛梳）、正確梳毛手法、毛球預防、掉毛異常的判斷，以及貓咪配合梳毛的技巧。</p>
                 </div>
@@ -738,7 +738,7 @@
 <a href="posts/post-174.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1079_pets-anesthesiology-pulseoximetersensor-plastic-electronic-macro.webp" alt="寵物教育 - 寵物指甲修剪完全指南：狗狗與貓咪" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物指甲修剪完全指南：狗狗與貓咪</h3>
                     <p>寵物指甲過長會影響行走甚至導致變形。本文介紹狗狗與貓咪指甲的結構、修剪頻率、工具選擇（指甲剪、磨甲器）、正確修剪步驟、誤剪血管的出血處理，以及讓寵物配合的訓練方法。</p>
                 </div>
@@ -746,7 +746,7 @@
 <a href="posts/post-173.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1096_pets-microbiology-autoclave-metal-plastic-macro.webp" alt="狗狗日記 - 狗狗洗澡頻率與正確方法完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>狗狗洗澡頻率與正確方法完全指南</h3>
                     <p>狗狗多久洗一次澡才合適？本文介紹不同品種與皮膚狀況的洗澡頻率、狗狗專用洗毛精選擇、正確洗澡步驟、耳朵與眼睛保護、吹乾與毛髮護理，以及皮膚敏感狗狗的特別注意事項。</p>
                 </div>
@@ -754,7 +754,7 @@
 <a href="posts/post-172.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1115_pets-toxicology-urineteststrip-plastic-paper-macro.webp" alt="貓咪物語 - 貓咪洗澡正確步驟與讓貓咪不掙扎的技巧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>貓咪洗澡正確步驟與讓貓咪不掙扎的技巧</h3>
                     <p>多數貓咪怕水，洗澡像打仗。本文介紹貓咪洗澡的頻率、事前準備（修剪指甲、梳理毛髮）、正確洗澡步驟、貓咪專用洗毛精選擇、吹乾技巧，以及怕水貓咪的漸進適應法。</p>
                 </div>
@@ -762,7 +762,7 @@
 <a href="posts/post-171.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1040_pets-behavior-enrichmenttoys-rubber-fabric-macro.webp" alt="寵物健康 - 高齡犬健康管理與照護完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>高齡犬健康管理與照護完全指南</h3>
                     <p>狗狗變老後行動變慢、白髮增多。本文介紹高齡犬的衰老跡象、常見老年疾病（關節炎、認知障礙、心臟病）、飲食與營養調整、運動量調整、環境改造，以及定期健康檢查的重要性。</p>
                 </div>
@@ -770,7 +770,7 @@
 <a href="posts/post-170.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1039_pets-behavior-medication-plastic-glass-macro.webp" alt="寵物健康 - 高齡貓照護與生活品質提升完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>高齡貓照護與生活品質提升完全指南</h3>
                     <p>貓咪進入高齡後需要更多關愛。本文介紹高齡貓的身體變化、常見老年疾病（腎臟病、關節炎、甲狀腺機能亢進）、飲食調整、環境改造（防滑、易清潔貓砂盆）、認知障礙護理，以及安寧照護。</p>
                 </div>
@@ -778,7 +778,7 @@
 <a href="posts/post-169.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1114_pets-toxicology-bloodtesttube-glass-plastic-macro.webp" alt="貓咪物語 - 幼貓餵養與照護完全指南：從斷奶到成年" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>幼貓餵養與照護完全指南：從斷奶到成年</h3>
                     <p>幼貓的成長速度驚人，每個階段都有不同需求。本文介紹幼貓的年齡判斷、奶粉餵養與斷奶過渡、幼貓糧選擇、疫苗與驅蟲時間表、社會化與遊戲，以及常見健康問題。</p>
                 </div>
@@ -786,7 +786,7 @@
 <a href="posts/post-168.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1095_pets-microbiology-incubator-metal-glass-macro.webp" alt="狗狗日記 - 幼犬到家第一週的照護與訓練指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>幼犬到家第一週的照護與訓練指南</h3>
                     <p>幼犬剛到家的第一週是關鍵適應期。本文介紹幼犬的睡眠需求、定時餵食與如廁規律、社會化黃金期、籠內訓練啟動、疫苗期間的外出限制，以及夜間哭鬧的處理方法。</p>
                 </div>
@@ -794,7 +794,7 @@
 <a href="posts/post-167.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1093_pets-microbiology-inoculationloop-metal-plastic-macro.webp" alt="狗狗日記 - 新手養狗入門指南：你需要知道的一切" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>新手養狗入門指南：你需要知道的一切</h3>
                     <p>準備迎接狗狗回家？本文介紹養狗前的評估（時間、空間、經濟）、用品準備清單、幼犬與成犬的差異、第一天的安排、基本訓練啟動，以及新手常見錯誤避免。</p>
                 </div>
@@ -802,7 +802,7 @@
 <a href="posts/post-166.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1113_pets-toxicology-ivfluidbag-plastic-liquid-macro.webp" alt="貓咪物語 - 新手養貓完全指南：從準備到適應的第一個月" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>新手養貓完全指南：從準備到適應的第一個月</h3>
                     <p>第一次養貓不知道從何開始？本文從貓咪到家前的準備清單、第一天的適應方法、餵食與如廁訓練、健康檢查時機，到第一個月的照護重點，完整帶你度過新手期。</p>
                 </div>
@@ -810,7 +810,7 @@
 <a href="posts/post-165.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1112_pets-toxicology-emeticmedication-plastic-glass-macro.webp" alt="貓咪物語 - 緬因貓個性與飼養完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>緬因貓個性與飼養完全指南</h3>
                     <p>緬因貓是體型最大的家貓品種，被稱為「溫柔的巨人」。本文介紹緬因貓的歷史傳說、個性特點（親人、愛水）、體型與成長、毛髮護理、常見健康問題（肥厚性心肌病），以及餵食需求。</p>
                 </div>
@@ -818,7 +818,7 @@
 <a href="posts/post-164.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1092_pets-microbiology-agarplate-plastic-glass-macro.webp" alt="狗狗日記 - 邊境牧羊犬訓練與運動完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>邊境牧羊犬訓練與運動完全指南</h3>
                     <p>邊境牧羊犬是犬界智商冠軍，需要大量腦力與體力活動。本文介紹邊牧的歷史、智商與學習能力、高運動需求、牧羊本能、敏捷與飛盤運動、訓練挑戰，以及不適合的飼主類型。</p>
                 </div>
@@ -826,7 +826,7 @@
 <a href="posts/post-163.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1111_pets-toxicology-activatedcharcoal-plastic-glass-macro.webp" alt="貓咪物語 - 暹羅貓個性與叫聲解讀完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>暹羅貓個性與叫聲解讀完全指南</h3>
                     <p>暹羅貓以藍色杏仁眼和「話多」著稱。本文介紹暹羅貓的歷史、個性特點（黏人、愛叫）、叫聲含義解讀、社交需求、重點色遺傳、常見健康問題，以及適合的家庭。</p>
                 </div>
@@ -834,7 +834,7 @@
 <a href="posts/post-162.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1091_pets-microbiology-petridishculture-glass-plastic-macro.webp" alt="狗狗日記 - 貴賓犬智商與訓練完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>貴賓犬智商與訓練完全指南</h3>
                     <p>貴賓犬是犬界智商排名第二的天才狗。本文介紹貴賓的三個尺寸（標準、迷你、玩具）、智商與學習能力、不掉毛的優點、美容造型、訓練潛力，以及常見健康問題。</p>
                 </div>
@@ -842,7 +842,7 @@
 <a href="posts/post-161.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1110_pets-parasitology-labcoat-fabric-plastic-macro.webp" alt="貓咪物語 - 波斯貓護理與美容完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>波斯貓護理與美容完全指南</h3>
                     <p>波斯貓以優雅的長毛和扁臉聞名。本文介紹波斯貓的歷史、個性特點、每日梳毛的重要性、臉部清潔、眼睛護理、短頭犬症候群、常見健康問題，以及美容頻率。</p>
                 </div>
@@ -850,7 +850,7 @@
 <a href="posts/post-160.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1090_pets-pathology-safetygoggles-plastic-glass-macro.webp" alt="狗狗日記 - 哈士奇犬個性與運動需求完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>哈士奇犬個性與運動需求完全指南</h3>
                     <p>哈士奇以狼一般的外表和「二哈」的諧星性格著稱。本文介紹哈士奇的歷史（雪橇犬）、高運動需求、脫毛護理、叫聲特點、逃跑本能、訓練挑戰，以及適合的飼主類型。</p>
                 </div>
@@ -858,7 +858,7 @@
 <a href="posts/post-159.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1109_pets-parasitology-gloves-fabric-plastic-macro.webp" alt="貓咪物語 - 橘貓的個性特點與有趣事實完全解析" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>橘貓的個性特點與有趣事實完全解析</h3>
                     <p>「十隻橘貓九隻胖」是真的嗎？本文介紹橘貓的毛色遺傳（80%是公貓）、個性特點（親人、愛吃）、體重管理、常見迷思破解，以及橘貓成為網紅的原因。</p>
                 </div>
@@ -866,7 +866,7 @@
 <a href="posts/post-158.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/107_pet-french-bulldog-life-jacket-boat.webp" alt="狗狗日記 - 法國鬥牛犬健康與照護完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>法國鬥牛犬健康與照護完全指南</h3>
                     <p>法鬥以可愛的扁臉和大耳朵成為人氣犬種。本文介紹法鬥的個性特點、呼吸系統問題（短頭犬症候群）、皮膚護理、體溫調節、運動限制，以及高溫季節的特別注意事項。</p>
                 </div>
@@ -874,7 +874,7 @@
 <a href="posts/post-157.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1108_pets-parasitology-microscope-metal-glass-macro.webp" alt="貓咪物語 - 布偶貓個性與飼養完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>布偶貓個性與飼養完全指南</h3>
                     <p>布偶貓以藍色大眼睛和溫柔個性被稱為「仙女貓」。本文介紹布偶的歷史、個性特點、毛髮護理（重點色長毛）、室內飼養要點、常見健康問題（多囊腎），以及互動需求。</p>
                 </div>
@@ -882,7 +882,7 @@
 <a href="posts/post-156.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1089_pets-pathology-labcoat-fabric-plastic-macro.webp" alt="狗狗日記 - 拉布拉多犬個性與訓練完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>拉布拉多犬個性與訓練完全指南</h3>
                     <p>拉布拉多是全球最受歡迎的犬種之一。本文介紹拉拉的三個顏色變種、個性特點、高運動需求、訓練潛力、常見健康問題（髖關節發育不良、肥胖），以及適合的家庭。</p>
                 </div>
@@ -890,7 +890,7 @@
 <a href="posts/post-155.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1107_pets-parasitology-centrifugetube-plastic-glass-macro.webp" alt="貓咪物語 - 美國短毛貓健康與護理完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>美國短毛貓健康與護理完全指南</h3>
                     <p>美國短毛貓是體格強健、個性溫和的經典品種。本文介紹美短的歷史、個性特點、餵食建議、毛髮護理、常見健康問題（如肥厚性心肌病），以及壽命與照護要點。</p>
                 </div>
@@ -898,7 +898,7 @@
 <a href="posts/post-154.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1088_pets-pathology-centrifugetube-plastic-glass-macro.webp" alt="狗狗日記 - 柯基犬飼養指南：短腿狗的大秘密" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>柯基犬飼養指南：短腿狗的大秘密</h3>
                     <p>柯基犬以短腿大屁股成為網紅狗。本文介紹柯基的兩個品種（彭布羅克與卡提根）、個性特點、運動需求、脊椎健康護理、減重管理，以及訓練要點。</p>
                 </div>
@@ -906,7 +906,7 @@
 <a href="posts/post-153.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1087_pets-pathology-pipettetips-plastic-metal-macro.webp" alt="狗狗日記 - 柴犬個性特點與訓練要點完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>柴犬個性特點與訓練要點完全指南</h3>
                     <p>柴犬以獨立、傲嬌的個性擄獲眾多粉絲。本文介紹柴犬的歷史淵源、個性特點、訓練挑戰與技巧、社交化重要性、美容護理，以及常見健康問題。</p>
                 </div>
@@ -914,7 +914,7 @@
 <a href="posts/post-152.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1106_pets-parasitology-fecalflotation-glass-plastic-macro.webp" alt="貓咪物語 - 英國短毛貓個性與照護完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>英國短毛貓個性與照護完全指南</h3>
                     <p>英國短毛貓以圓潤可愛的外表和溫和個性著稱。本文介紹英短的歷史、個性特點、餵食建議、毛髮護理、常見遺傳疾病，以及適合的飼養環境。</p>
                 </div>
@@ -922,7 +922,7 @@
 <a href="posts/post-151.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1086_pets-pathology-coverslip-glass-plastic-macro.webp" alt="狗狗日記 - 黃金獵犬個性特點與飼養完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>黃金獵犬個性特點與飼養完全指南</h3>
                     <p>黃金獵犬是最受歡迎的家庭犬之一。本文介紹黃金獵犬的歷史、個性特點、運動需求、美容護理、常見健康問題，以及適合的家庭類型。</p>
                 </div>
@@ -930,7 +930,7 @@
 <a href="posts/post-150.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1038_pets-behavior-targetstick-plastic-metal-macro.webp" alt="寵物健康 - 寵物食物過敏識別與飲食調整完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物食物過敏識別與飲食調整完全指南</h3>
                     <p>寵物皮膚癢、嘔吐、腹瀉可能是食物過敏。本文介紹食物過敏與食物不耐受的區別、常見過敏原、排除飲食試驗的步驟、低敏飲食的選擇、水解蛋白飼料的介紹，以及長期管理策略。</p>
                 </div>
@@ -938,7 +938,7 @@
 <a href="posts/post-149.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1037_pets-behavior-desensitizationtools-plastic-metal-macro.webp" alt="寵物健康 - 高齡貓營養需求與餵食建議完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>高齡貓營養需求與餵食建議完全指南</h3>
                     <p>貓咪進入高齡後營養需求會改變。本文介紹高齡貓的代謝變化、蛋白質與磷的攝取調整、關節與腎臟保健營養、食慾下降的應對、軟食與流质食物的過渡，以及餵食頻率調整。</p>
                 </div>
@@ -946,7 +946,7 @@
 <a href="posts/post-148.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1036_pets-behavior-anxietyvest-fabric-plastic-macro.webp" alt="寵物健康 - 狗狗體重管理飲食計畫與運動搭配指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗體重管理飲食計畫與運動搭配指南</h3>
                     <p>狗狗減重不能只靠節食。本文介紹狗狗理想體重判斷、減重速度設定、低熱量高纖維飲食規劃、零食熱量計算、運動強度漸進增加，以及定期追蹤與調整的方法。</p>
                 </div>
@@ -954,7 +954,7 @@
 <a href="posts/post-147.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1078_pets-anesthesiology-monitor-plastic-electronic-macro.webp" alt="寵物教育 - 寵物有機食品真偽辨識與選購指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物有機食品真偽辨識與選購指南</h3>
                     <p>有機寵物食品標籤眼花撩亂，怎麼辨真偽？本文介紹有機認證標誌、成分標籤閱讀方法、有機飼料的優缺點、價格合理性判斷，以及避免被行銷話術誤導的要點。</p>
                 </div>
@@ -962,7 +962,7 @@
 <a href="posts/post-146.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1035_pets-behavior-pheromonediffuser-plastic-electronic-macro.webp" alt="寵物健康 - 貓咪食慾不振原因分析與應對方法" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪食慾不振原因分析與應對方法</h3>
                     <p>貓咪突然不吃東西讓飼主擔心。本文分析貓咪食慾不振的醫療與行為原因、居家刺激食慾的方法、食物溫度與質地調整、強制餵食的時機與方法，以及就醫判斷標準。</p>
                 </div>
@@ -970,7 +970,7 @@
 <a href="posts/post-145.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1077_pets-anesthesiology-co2absorber-plastic-metal-macro.webp" alt="寵物教育 - 狗狗換糧正確過渡方法與腸胃適應指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗換糧正確過渡方法與腸胃適應指南</h3>
                     <p>突然換糧容易讓狗狗拉肚子。本文介紹7天換糧過渡法、換糧期間的腸胃觀察、換糧失敗的處理方法、不同生命階段換糧的時機，以及如何選擇合適的新飼料。</p>
                 </div>
@@ -978,7 +978,7 @@
 <a href="posts/post-144.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1034_pets-behavior-calmingcollar-fabric-plastic-macro.webp" alt="寵物健康 - 寵物維生素與營養補充劑選擇指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物維生素與營養補充劑選擇指南</h3>
                     <p>寵物需要額外補充維生素嗎？本文介紹狗狗與貓咪常見的營養補充劑（魚油、葡萄糖胺、益生菌、維生素等）、適用情境、選擇原則、劑量考量，以及與獸醫溝通的要點。</p>
                 </div>
@@ -986,7 +986,7 @@
 <a href="posts/post-143.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1033_pets-behavior-mat-fabric-rubber-macro.webp" alt="寵物健康 - 貓咪多喝水的5個實用小技巧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪多喝水的5個實用小技巧</h3>
                     <p>貓咪喝水少容易引發泌尿問題。本文介紹增加貓咪飲水量的實用方法：流動飲水器、多個水碗擺放、食物加水、貓咪飲水偏好觀察，以及判斷貓咪是否喝夠水的方法。</p>
                 </div>
@@ -994,7 +994,7 @@
 <a href="posts/post-142.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1032_pets-behavior-trainingtreats-plastic-paper-macro.webp" alt="寵物健康 - 狗狗食物過敏識別與低敏飲食挑選原則" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗食物過敏識別與低敏飲食挑選原則</h3>
                     <p>狗狗皮膚癢、腸胃不適可能是食物過敏。本文介紹狗狗食物過敏的常見過敏原、症狀識別、排除飲食試驗方法、低敏處方糧選擇，以及自製低敏餐的注意事項。</p>
                 </div>
@@ -1002,7 +1002,7 @@
 <a href="posts/post-141.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1076_pets-anesthesiology-breathingcircuit-plastic-silicone-macro.webp" alt="寵物教育 - 寵物零食健康選擇與餵食量控制指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物零食健康選擇與餵食量控制指南</h3>
                     <p>零食是訓練好幫手，但過量會導致肥胖。本文介紹健康零食的選擇原則、市售零食的成分判讀、自製零食食譜、每日零食熱量控制，以及用零食進行訓練的技巧。</p>
                 </div>
@@ -1010,7 +1010,7 @@
 <a href="posts/post-140.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1075_pets-anesthesiology-vaporizer-metal-glass-macro.webp" alt="寵物教育 - 貓咪營養需求完全解析：肉食動物的飲食密碼" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪營養需求完全解析：肉食動物的飲食密碼</h3>
                     <p>貓咪是專性肉食動物，營養需求與狗狗大不同。本文解析貓咪所需的蛋白質、脂肪、牛磺酸、維生素等關鍵營養素，以及如何閱讀貓糧標籤選擇合適的食物。</p>
                 </div>
@@ -1018,7 +1018,7 @@
 <a href="posts/post-139.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1074_pets-anesthesiology-laryngoscope-metal-plastic-macro.webp" alt="寵物教育 - 狗狗乾糧與濕糧選擇指南：哪個更適合？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗乾糧與濕糧選擇指南：哪個更適合？</h3>
                     <p>乾糧方便、濕糧可口，該怎麼選？本文比較乾糧與濕糧的優缺點、營養差異、價格考量、適合的狗狗類型，以及乾濕混合餵食的方法與注意事項。</p>
                 </div>
@@ -1026,7 +1026,7 @@
 <a href="posts/post-138.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1073_pets-anesthesiology-endotrachealtube-plastic-silicone-macro.webp" alt="寵物教育 - 寵物生食飲食優缺點分析與安全餵食指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物生食飲食優缺點分析與安全餵食指南</h3>
                     <p>生食飲食在寵物圈越來越流行，但爭議也不少。本文分析生食飲食的優點、潛在風險、營養均衡問題、食材選擇與處理安全，以及是否適合你的寵物的評估要點。</p>
                 </div>
@@ -1034,7 +1034,7 @@
 <a href="posts/post-137.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1072_pets-anesthesiology-mask-plastic-rubber-macro.webp" alt="寵物教育 - 貓咪可以吃的人類食物安全清單" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪可以吃的人類食物安全清單</h3>
                     <p>想給貓咪分享人類食物？本文整理貓咪可以安全食用的人類食物、適量餵食原則、需要避免的食物，以及如何用健康零食進行獎勵訓練。</p>
                 </div>
@@ -1042,7 +1042,7 @@
 <a href="posts/post-136.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1071_pets-anesthesiology-machine-plastic-metal-macro.webp" alt="寵物教育 - 狗狗飲食禁忌清單：這些食物絕對不能吃" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗飲食禁忌清單：這些食物絕對不能吃</h3>
                     <p>巧克力、葡萄、洋蔥對狗狗可能致命。本文整理狗狗絕對不能吃的食物清單、中毒症狀、誤食後的應急處理，以及安全的人類食物替代選擇。</p>
                 </div>
@@ -1050,7 +1050,7 @@
 <a href="posts/post-135.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1070_pets-emergencysurgery-suctiontip-plastic-metal-macro.webp" alt="寵物教育 - 狗狗吠叫控制訓練：告別擾人噪音" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗吠叫控制訓練：告別擾人噪音</h3>
                     <p>狗狗過度吠叫影響鄰居關係。本文分析狗狗吠叫的各種原因（警戒、需求、焦慮、無聊）、針對性的訓練方法、安靜指令教學，以及 Bark collar 的使用與替代方案。</p>
                 </div>
@@ -1058,7 +1058,7 @@
 <a href="posts/post-134.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1069_pets-emergencysurgery-retractor-metal-plastic-macro.webp" alt="寵物教育 - 貓咪與新寵物和平共處：貓狗、多貓引導指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪與新寵物和平共處：貓狗、多貓引導指南</h3>
                     <p>家裡要添新成員？貓咪與新寵物的初次見面至關重要。本文介紹貓狗相處、多貓家庭的漸進式介紹步驟、氣味交換法、資源分配原則，以及打架時的處理方法。</p>
                 </div>
@@ -1066,7 +1066,7 @@
 <a href="posts/post-133.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1068_pets-emergencysurgery-tissueforceps-metal-plastic-macro.webp" alt="寵物教育 - 狗狗定點如廁訓練完全指南：室內與室外" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗定點如廁訓練完全指南：室內與室外</h3>
                     <p>狗狗隨地大小便是新手飼主最頭痛的問題。本文介紹幼犬定點如廁訓練步驟、報紙/尿墊引導法、定時餵食與如廁規律、獎勵時機，以及成年狗重新訓練的方法。</p>
                 </div>
@@ -1074,7 +1074,7 @@
 <a href="posts/post-132.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1067_pets-emergencysurgery-hemostat-metal-plastic-macro.webp" alt="寵物教育 - 貓咪怕生社交化訓練：從膽小到自信" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪怕生社交化訓練：從膽小到自信</h3>
                     <p>貓咪見到陌生人就躲起來？本文介紹貓咪社交化的黃金期、漸進式接觸法、安全空間設置、獎勵聯想建立，以及如何幫助膽小貓咪建立對人的信任感。</p>
                 </div>
@@ -1082,7 +1082,7 @@
 <a href="posts/post-131.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1066_pets-emergencysurgery-scalpel-metal-plastic-macro.webp" alt="寵物教育 - 狗狗不亂撲人訓練方法：熱情也要有禮貌" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗不亂撲人訓練方法：熱情也要有禮貌</h3>
                     <p>狗狗見人就撲既危險又失禮。本文介紹狗狗撲人行為的原因、轉身忽略法、坐下替代法、訪客訓練技巧，以及如何教狗狗用禮貌方式表達熱情。</p>
                 </div>
@@ -1090,7 +1090,7 @@
 <a href="posts/post-130.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1065_pets-emergencysurgery-sterilegloves-fabric-plastic-macro.webp" alt="寵物教育 - 貓咪半夜吵鬧解決方案：讓你一夜好眠" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪半夜吵鬧解決方案：讓你一夜好眠</h3>
                     <p>貓咪凌晨跑酷、叫喚讓飼主睡眠不足。本文分析貓咪夜間活躍的原因、白天放電方法、睡前儀式建立、餵食時間調整，以及忽略與獎勵的行為矯正策略。</p>
                 </div>
@@ -1098,7 +1098,7 @@
 <a href="posts/post-129.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1064_pets-emergencysurgery-draintube-plastic-silicone-macro.webp" alt="寵物教育 - 狗狗召回訓練有效方法：一叫就回來的秘訣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗召回訓練有效方法：一叫就回來的秘訣</h3>
                     <p>狗狗放出去叫不回來是許多飼主的噩夢。本文介紹召回訓練的基礎建立、長線訓練法、高價值獎勵運用、干擾環境漸進訓練，以及常見錯誤避免。</p>
                 </div>
@@ -1106,7 +1106,7 @@
 <a href="posts/post-128.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1063_pets-emergencysurgery-suturekit-metal-fabric-macro.webp" alt="寵物教育 - 貓咪攻擊行為原因分析與應對處理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪攻擊行為原因分析與應對處理指南</h3>
                     <p>貓咪突然攻擊人可能是恐懼、疼痛或遊戲性攻擊。本文分析貓咪攻擊行為的類型與原因、攻擊前的身體語言訊號、安全應對方法，以及行為矯正方向。</p>
                 </div>
@@ -1114,7 +1114,7 @@
 <a href="posts/post-127.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1062_pets-emergencysurgery-woundcare-fabric-plastic-macro.webp" alt="寵物教育 - 狗狗牽繩行走訓練：告別暴衝與拉扯" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗牽繩行走訓練：告別暴衝與拉扯</h3>
                     <p>狗狗出門暴衝拉扯讓散步變成折磨。本文介紹牽繩與胸背帶選擇、停止行走法、獎勵行走法、變向訓練等技巧，幫助狗狗學會優雅地陪你散步。</p>
                 </div>
@@ -1122,7 +1122,7 @@
 <a href="posts/post-126.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1061_pets-emergencysurgery-surgicalkit-metal-plastic-macro.webp" alt="寵物教育 - 貓咪使用貓抓板訓練方法與引導技巧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪使用貓抓板訓練方法與引導技巧</h3>
                     <p>買了貓抓板貓咪卻不用？本文介紹貓抓板的材質選擇、擺放位置、貓薄荷吸引法、遊戲引導技巧，以及如何讓貓咪養成使用貓抓板的習慣。</p>
                 </div>
@@ -1130,7 +1130,7 @@
 <a href="posts/post-125.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1060_pets-exotic-hidingspot-wood-plastic-macro.webp" alt="寵物教育 - 狗狗基礎指令訓練：坐下握手趴下完全教學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗基礎指令訓練：坐下握手趴下完全教學</h3>
                     <p>學會基礎指令是狗狗訓練的第一步。本文用圖文步驟教你訓練狗狗坐下、握手、趴下、等待，包含正向獎勵技巧、訓練時機與常見錯誤糾正。</p>
                 </div>
@@ -1138,7 +1138,7 @@
 <a href="posts/post-124.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1059_pets-exotic-waterdish-ceramic-plastic-macro.webp" alt="寵物教育 - 貓咪亂尿原因分析與行為矯正完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪亂尿原因分析與行為矯正完全指南</h3>
                     <p>貓咪突然不在貓砂盆如廁讓飼主崩潰。本文分析貓咪亂尿的醫療與行為原因、貓砂盆的選擇與擺放、多貓家庭的如廁規劃，以及行為矯正步驟。</p>
                 </div>
@@ -1146,7 +1146,7 @@
 <a href="posts/post-123.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1058_pets-exotic-substratematerial-organic-plastic-macro.webp" alt="寵物教育 - 狗狗分離焦慮識別與改善訓練指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗分離焦慮識別與改善訓練指南</h3>
                     <p>狗狗在家破壞物品、過度吠叫可能是分離焦慮。本文介紹分離焦慮的症狀識別、形成原因、漸進式脫敏感訓練方法，以及嚴重案例的專業介入建議。</p>
                 </div>
@@ -1154,7 +1154,7 @@
 <a href="posts/post-122.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1057_pets-exotic-thermometer-plastic-electronic-macro.webp" alt="寵物教育 - 貓咪亂抓沙發解決方法與貓抓板引導指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>貓咪亂抓沙發解決方法與貓抓板引導指南</h3>
                     <p>貓咪抓沙發是天性，懲罰無效。本文介紹貓咪抓撓行為的原因、貓抓板的選擇與擺放、引導貓咪使用貓抓板的方法，以及保護傢俱的實用技巧。</p>
                 </div>
@@ -1162,7 +1162,7 @@
 <a href="posts/post-121.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1056_pets-exotic-humiditygauge-plastic-metal-macro.webp" alt="寵物教育 - 幼犬籠內訓練完全指南：從抗拒到愛上籠子" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>幼犬籠內訓練完全指南：從抗拒到愛上籠子</h3>
                     <p>籠內訓練不是懲罰，而是給狗狗一個安全的空間。本文介紹籠子選擇、訓練步驟、常見問題解決，以及如何讓幼犬自願進入籠子休息。</p>
                 </div>
@@ -1170,7 +1170,7 @@
 <a href="posts/post-120.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1031_pets-behavior-clicker-plastic-metal-macro.webp" alt="寵物健康 - 貓咪眼睛分泌物解讀與日常護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪眼睛分泌物解讀與日常護理指南</h3>
                     <p>貓咪眼睛有少量分泌物是正常的，但顏色、量的變化可能反映健康問題。本文教你解讀貓咪眼睛分泌物的類型、常見眼部疾病，以及日常清潔護理方法。</p>
                 </div>
@@ -1178,7 +1178,7 @@
 <a href="posts/post-119.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1030_pets-nutrition-probioticpowder-plastic-paper-macro.webp" alt="寵物健康 - 狗狗指甲修剪正確方法與常見錯誤" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗指甲修剪正確方法與常見錯誤</h3>
                     <p>狗狗指甲過長會影響行走甚至導致變形，但很多飼主不敢剪。本文介紹狗狗指甲結構、正確修剪步驟、出血處理方法，以及讓狗狗配合的小技巧。</p>
                 </div>
@@ -1186,7 +1186,7 @@
 <a href="posts/post-118.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1029_pets-nutrition-foodstorage-plastic-metal-macro.webp" alt="寵物健康 - 寵物肥胖危害與科學減重計畫指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物肥胖危害與科學減重計畫指南</h3>
                     <p>寵物肥胖不是可愛，而是健康隱形殺手。本文介紹寵物肥胖的判斷標準、健康危害、科學減重的飲食與運動計畫，以及減重過程的注意事項。</p>
                 </div>
@@ -1194,7 +1194,7 @@
 <a href="posts/post-117.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1028_pets-nutrition-puzzlefeeder-plastic-wood-macro.webp" alt="寵物健康 - 貓咪異常脫毛原因識別與護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪異常脫毛原因識別與護理指南</h3>
                     <p>貓咪掉毛是正常現象，但區域性禿毛、過度舔毛可能是疾病訊號。本文介紹貓咪脫毛的生理與病理原因、識別方法，以及對應的護理與治療方向。</p>
                 </div>
@@ -1202,7 +1202,7 @@
 <a href="posts/post-116.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1027_pets-nutrition-slowfeeder-plastic-ceramic-macro.webp" alt="寵物健康 - 狗狗淚痕原因與改善方法完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗淚痕原因與改善方法完全指南</h3>
                     <p>狗狗眼下的紅褐色淚痕影響美觀，也可能反映健康問題。本文介紹淚痕形成的原因、品種傾向、飲食調整、清潔方法與醫療介入時機。</p>
                 </div>
@@ -1210,7 +1210,7 @@
 <a href="posts/post-115.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1026_pets-nutrition-waterfountain-plastic-metal-macro.webp" alt="寵物健康 - 寵物中暑識別與急救處理完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物中暑識別與急救處理完全指南</h3>
                     <p>夏天高溫下寵物中暑可能致命。本文介紹狗狗與貓咪中暑的症狀識別、現場急救步驟、降溫方法，以及夏季預防中暑的實用技巧。</p>
                 </div>
@@ -1218,7 +1218,7 @@
 <a href="posts/post-114.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1025_pets-nutrition-bodyconditionchart-paper-plastic-macro.webp" alt="寵物健康 - 貓咪泌尿結石預防與治療護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪泌尿結石預防與治療護理指南</h3>
                     <p>貓咪排尿困難、血尿可能是泌尿結石的警訊，公貓尤其危險。本文介紹貓咪結石的類型、症狀、治療方法，以及飲食與飲水的預防策略。</p>
                 </div>
@@ -1226,7 +1226,7 @@
 <a href="posts/post-113.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1024_pets-nutrition-supplementbottle-plastic-glass-macro.webp" alt="寵物健康 - 狗狗腹瀉應急處理與就醫判斷指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗腹瀉應急處理與就醫判斷指南</h3>
                     <p>狗狗突然腹瀉讓飼主慌張，本文教你如何判斷嚴重程度、居家應急處理方法、需要補充的水分與電解質，以及何時必須立即就醫。</p>
                 </div>
@@ -1234,7 +1234,7 @@
 <a href="posts/post-112.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1023_pets-nutrition-measuringcup-plastic-metal-macro.webp" alt="寵物健康 - 寵物驅蟲完全指南：體內驅蟲與體外驅蟲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物驅蟲完全指南：體內驅蟲與體外驅蟲</h3>
                     <p>定期驅蟲是寵物健康管理的重要環節。本文介紹常見體內外寄生蟲、驅蟲藥物種類、驅蟲頻率，以及居家環境的除蟲方法。</p>
                 </div>
@@ -1242,7 +1242,7 @@
 <a href="posts/post-111.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1022_pets-nutrition-foodscale-metal-plastic-macro.webp" alt="寵物健康 - 貓咪感冒症狀識別與居家護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪感冒症狀識別與居家護理指南</h3>
                     <p>貓咪打噴嚏、流鼻涕、眼睛分泌物增多可能是感冒了。本文介紹貓咪上呼吸道感染的症狀、居家護理方法，以及何時需要就醫治療。</p>
                 </div>
@@ -1250,7 +1250,7 @@
 <a href="posts/post-110.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1021_pets-nutrition-prescriptiondiet-plastic-paper-macro.webp" alt="寵物健康 - 狗狗口臭原因與口腔護理完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗口臭原因與口腔護理完全指南</h3>
                     <p>狗狗口臭不只是尷尬，可能是口腔疾病的警訊。本文介紹狗狗口臭的常見原因、牙結石與牙齦疾病的預防，以及日常刷牙護理方法。</p>
                 </div>
@@ -1258,7 +1258,7 @@
 <a href="posts/post-109.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1010_pets-neurology-medication-plastic-glass-macro.webp" alt="寵物健康 - 寵物疫苗接種時間表與注意事項完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物疫苗接種時間表與注意事項完全指南</h3>
                     <p>疫苗是守護寵物健康的第一道防線。本文整理狗狗與貓咪的核心疫苗、非核心疫苗接種時間表，以及接種前後的注意事項。</p>
                 </div>
@@ -1266,7 +1266,7 @@
 <a href="posts/post-108.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1009_pets-neurology-lumbarpuncturetray-plastic-metal-macro.webp" alt="寵物健康 - 貓咪嘔吐常見原因與處理方法" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪嘔吐常見原因與處理方法</h3>
                     <p>貓咪嘔吐是常見現象，但有些情況需要立即就醫。本文解析貓咪嘔吐的各種原因、何時需要擔心、以及居家護理與就醫時機。</p>
                 </div>
@@ -1274,7 +1274,7 @@
 <a href="posts/post-107.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1008_pets-neurology-spinalneedle-metal-plastic-macro.webp" alt="寵物健康 - 狗狗耳螨識別與治療護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗耳螨識別與治療護理指南</h3>
                     <p>狗狗頻繁抓耳朵、耳朵有異味可能是耳螨感染。本文介紹耳螨的症狀、傳染途徑、治療方法與日常耳朵護理要點。</p>
                 </div>
@@ -1282,7 +1282,7 @@
 <a href="posts/post-106.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1007_pets-neurology-ctscanner-metal-glass-macro.webp" alt="寵物健康 - 寵物心絲蟲預防完全指南：藥物與注意事項" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物心絲蟲預防完全指南：藥物與注意事項</h3>
                     <p>心絲蟲是由蚊子傳播的致命寄生蟲，預防重於治療。本文介紹心絲蟲的傳播途徑、症狀、預防藥物選擇與使用注意事項。</p>
                 </div>
@@ -1290,7 +1290,7 @@
 <a href="posts/post-105.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1006_pets-neurology-mriscanner-metal-glass-macro.webp" alt="寵物健康 - 貓咪糖尿病認識與日常管理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪糖尿病認識與日常管理指南</h3>
                     <p>貓咪也會得糖尿病？多飲多尿、體重下降是重要警訊。本文介紹貓咪糖尿病的症狀、診斷、胰島素治療與飲食管理。</p>
                 </div>
@@ -1298,7 +1298,7 @@
 <a href="posts/post-104.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1005_pets-neurology-examinationtools-metal-plastic-macro.webp" alt="寵物健康 - 狗狗關節炎症狀識別與治療護理指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗關節炎症狀識別與治療護理指南</h3>
                     <p>狗狗走路跛腳、不愛動可能是關節炎的警訊。本文介紹狗狗關節炎的症狀、危險因子、治療方法與居家護理要點。</p>
                 </div>
@@ -1306,7 +1306,7 @@
 <a href="posts/post-103.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1004_pets-neurology-reflexhammer-metal-rubber-macro.webp" alt="寵物健康 - 寵物過敏原因與應對方法完全解析" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物過敏原因與應對方法完全解析</h3>
                     <p>寵物也會過敏？食物、環境、跳蚤都可能引發過敏反應。本文解析寵物過敏的類型、症狀與有效的應對策略。</p>
                 </div>
@@ -1314,7 +1314,7 @@
 <a href="posts/post-102.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1003_pets-neurology-eeglectrodes-plastic-metal-macro.webp" alt="寵物健康 - 貓咪腎臟病早期症狀與預防指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>貓咪腎臟病早期症狀與預防指南</h3>
                     <p>貓咪腎臟病是高齡貓常見疾病，早期發現至關重要。本文介紹貓咪腎臟病的症狀、診斷、治療與日常預防方法。</p>
                 </div>
@@ -1322,7 +1322,7 @@
 <a href="posts/post-101.html" class="cat-card" data-category="寵物健康">
                 <img src="images/110_pet-ferret-playing-toy-playpen.webp" alt="寵物健康 - 狗狗常見皮膚問題與護理完全指南" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>狗狗常見皮膚問題與護理完全指南</h3>
                     <p>狗狗皮膚紅癢、掉毛、皮屑怎麼辦？本文詳解狗狗常見皮膚問題的症狀、原因與居家護理方法，幫助毛孩遠離皮膚困擾。</p>
                 </div>
@@ -1330,7 +1330,7 @@
 <a href="posts/post-100.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1002_pets-neurology-eegmachine-plastic-electronic-macro.webp" alt="寵物健康 - 智慧寵物餵食器：科技改變寵物餵食方式" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>智慧寵物餵食器：科技改變寵物餵食方式</h3>
                     <p>廚房中智慧餵食器和飲水噴泉。探索智慧寵物產品如何改變寵物的餵食和護理方式。</p>
                 </div>
@@ -1338,7 +1338,7 @@
 <a href="posts/post-099.html" class="cat-card" data-category="寵物健康">
                 <img src="images/209_pets-medical-physical-therapy-livingroom-yoga-mat.webp" alt="寵物健康 - 寵物康復空間：為受傷寵物打造恢復環境" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物康復空間：為受傷寵物打造恢復環境</h3>
                     <p>寵物物理治療室中的康復設備。探索如何為受傷或手術後的寵物打造合適的康復空間。</p>
                 </div>
@@ -1346,7 +1346,7 @@
 <a href="posts/post-098.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1001_pets-neurology-neurologicalhammer-metal-plastic-macro.webp" alt="寵物健康 - 寵物居家安全：每個房間的危險排查" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>寵物居家安全：每個房間的危險排查</h3>
                     <p>客廳中固定的電視和安全的植物擺放。探索如何排查和消除家中的寵物安全隱患。</p>
                 </div>
@@ -1354,7 +1354,7 @@
 <a href="posts/post-097.html" class="cat-card" data-category="寵物健康">
                 <img src="images/1000_pets-cardiology-ecgpaper-paper-plastic-macro.webp" alt="寵物健康 - 高齡寵物的居家改造：讓老寵物安享晚年" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-health.html" class="cat-badge" onclick="event.stopPropagation()">寵物健康</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-health.html'">寵物健康</span>
                     <h3>高齡寵物的居家改造：讓老寵物安享晚年</h3>
                     <p>為高齡寵物設計的防滑地板和傢俱。探索如何改造居家環境以適應高齡寵物的需求。</p>
                 </div>
@@ -1362,7 +1362,7 @@
 <a href="posts/post-096.html" class="cat-card" data-category="居家設計">
                 <img src="images/1151_pets-nutrition-prescriptiondiet-plastic-paper-macro.webp" alt="居家設計 - 玄關寵物站：進門處的寵物收納設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>玄關寵物站：進門處的寵物收納設計</h3>
                     <p>玄關處的內建式寵物用品收納站。探索如何在玄關處創造實用的寵物用品收納空間。</p>
                 </div>
@@ -1370,7 +1370,7 @@
 <a href="posts/post-095.html" class="cat-card" data-category="居家設計">
                 <img src="images/158_pet-space-hidden-cat-door-bookshelf-secret-room.webp" alt="居家設計 - 隱藏式貓門：書架後的秘密空間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>隱藏式貓門：書架後的秘密空間</h3>
                     <p>一個藏在書架中的隱藏式貓門。探索如何將貓咪通道隱藏在傢俱中，保持室內美觀。</p>
                 </div>
@@ -1378,7 +1378,7 @@
 <a href="posts/post-094.html" class="cat-card" data-category="居家設計">
                 <img src="images/1150_pets-psychology-targetstick-plastic-metal-macro.webp" alt="居家設計 - 客廳貓牆：從地板到天花板的攀爬樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>客廳貓牆：從地板到天花板的攀爬樂園</h3>
                     <p>客廳中從地板到天花板的貓咪攀爬牆。探索如何將客廳牆壁轉變為貓咪的運動場。</p>
                 </div>
@@ -1386,7 +1386,7 @@
 <a href="posts/post-093.html" class="cat-card" data-category="居家設計">
                 <img src="images/154_pet-space-balcony-catio-multilevel-climbing.webp" alt="居家設計 - 陽台貓樂園：將小空間變成貓咪天堂" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>陽台貓樂園：將小空間變成貓咪天堂</h3>
                     <p>一個多層次攀爬結構的陽台貓樂園。探索如何將小陽台轉變為貓咪的遊樂場。</p>
                 </div>
@@ -1394,7 +1394,7 @@
 <a href="posts/post-092.html" class="cat-card" data-category="居家設計">
                 <img src="images/153_pet-space-bedroom-under-bed-den-cat-walkways.webp" alt="居家設計 - 臥室裡的貓咪通道：垂直空間的創意利用" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>臥室裡的貓咪通道：垂直空間的創意利用</h3>
                     <p>臥室床下的隱藏窩和貓咪走道。探索如何在臥室中為貓咪創造垂直活動空間。</p>
                 </div>
@@ -1402,7 +1402,7 @@
 <a href="posts/post-091.html" class="cat-card" data-category="居家設計">
                 <img src="images/152_pet-space-kitchen-island-feeding-station.webp" alt="居家設計 - 寵物友善廚房：將餵食區融入室內設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>寵物友善廚房：將餵食區融入室內設計</h3>
                     <p>一個島台式廚房中的寵物餵食站。探索如何將寵物餵食區美觀地融入廚房設計。</p>
                 </div>
@@ -1410,7 +1410,7 @@
 <a href="posts/post-090.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1154_pets-nutrition-supplementbottle-plastic-glass-macro.webp" alt="戶外探險 - 雪地森林的狗狗：冬季戶外探險" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>雪地森林的狗狗：冬季戶外探險</h3>
                     <p>一隻穿著冬季外套的狗狗在雪地森林中。探索帶狗狗冬季戶外活動的安全和保暖須知。</p>
                 </div>
@@ -1418,7 +1418,7 @@
 <a href="posts/post-089.html" class="cat-card" data-category="戶外探險">
                 <img src="images/148_pet-outdoor-dog-kayaking-river-canyon.webp" alt="戶外探險 - 獨木舟上的狗狗：水上冒險的樂趣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>獨木舟上的狗狗：水上冒險的樂趣</h3>
                     <p>一隻狗狗在獨木舟上，背景是河流峽谷。探索帶狗狗進行水上活動的安全須知。</p>
                 </div>
@@ -1426,7 +1426,7 @@
 <a href="posts/post-088.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1153_pets-nutrition-measuringcup-plastic-metal-macro.webp" alt="戶外探險 - 海邊日出的狗狗：清晨的海灘漫步" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>海邊日出的狗狗：清晨的海灘漫步</h3>
                     <p>一隻狗狗在海邊的日出中奔跑。探索帶狗狗去海灘的最佳時間和安全注意事項。</p>
                 </div>
@@ -1434,7 +1434,7 @@
 <a href="posts/post-087.html" class="cat-card" data-category="戶外探險">
                 <img src="images/143_pet-outdoor-dog-camping-tent-lakeside-stars.webp" alt="戶外探險 - 湖邊露營的狗狗：星空下的露營冒險" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>湖邊露營的狗狗：星空下的露營冒險</h3>
                     <p>一隻狗狗在湖邊的帳篷旁，背景是星空。探索帶狗狗露營的完整指南。</p>
                 </div>
@@ -1442,7 +1442,7 @@
 <a href="posts/post-086.html" class="cat-card" data-category="戶外探險">
                 <img src="images/142_pet-outdoor-cat-exploring-forest-trail.webp" alt="戶外探險 - 森林探險的貓咪：帶貓咪走進大自然" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>森林探險的貓咪：帶貓咪走進大自然</h3>
                     <p>一隻貓咪在森林小徑上探索。探索帶貓咪戶外探險的方法和安全須知。</p>
                 </div>
@@ -1450,7 +1450,7 @@
 <a href="posts/post-085.html" class="cat-card" data-category="戶外探險">
                 <img src="images/1152_pets-nutrition-foodscale-metal-plastic-macro.webp" alt="戶外探險 - 登山的狗狗：帶著狗狗探索高山的樂趣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">戶外探險</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">戶外探險</span>
                     <h3>登山的狗狗：帶著狗狗探索高山的樂趣</h3>
                     <p>一隻背著背包的狗狗在山間徒步。探索帶狗狗登山的準備工作和安全注意事項。</p>
                 </div>
@@ -1458,7 +1458,7 @@
 <a href="posts/post-084.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/140_pet-art-ink-wash-chinese-cat-sumi-e.webp" alt="寵物藝術 - 水墨畫中的貓咪：東方藝術的禪意與寵物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>水墨畫中的貓咪：東方藝術的禪意與寵物</h3>
                     <p>一幅中國水墨畫風格的貓咪。探索東方傳統藝術在寵物肖像中的應用。</p>
                 </div>
@@ -1466,7 +1466,7 @@
 <a href="posts/post-083.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/134_pet-art-pixel-8bit-cat-retro-game.webp" alt="寵物藝術 - 像素藝術中的貓咪：復古遊戲風格的寵物畫像" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>像素藝術中的貓咪：復古遊戲風格的寵物畫像</h3>
                     <p>一幅8位元像素風格的貓咪畫像。探索復古像素藝術在寵物肖像中的應用。</p>
                 </div>
@@ -1474,7 +1474,7 @@
 <a href="posts/post-082.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/135_pet-art-ukiyoe-japanese-dog-wave.webp" alt="寵物藝術 - 浮世繪中的狗狗：日本傳統藝術與寵物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>浮世繪中的狗狗：日本傳統藝術與寵物</h3>
                     <p>一幅浮世繪風格的狗狗畫像，背景是海浪。探索日本傳統藝術風格在寵物肖像中的應用。</p>
                 </div>
@@ -1482,7 +1482,7 @@
 <a href="posts/post-081.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/133_pet-art-pop-art-dog-warhol-style.webp" alt="寵物藝術 - 普普藝術風格的狗狗：安迪沃荷的寵物世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>普普藝術風格的狗狗：安迪沃荷的寵物世界</h3>
                     <p>一幅普普藝術風格的狗狗畫像，色彩鮮豔。探索普普藝術在寵物肖像中的應用。</p>
                 </div>
@@ -1490,7 +1490,7 @@
 <a href="posts/post-080.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/132_pet-art-oil-painting-classical-cat.webp" alt="寵物藝術 - 古典油畫中的貓咪：當貓咪遇見文藝復興" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>古典油畫中的貓咪：當貓咪遇見文藝復興</h3>
                     <p>一幅古典油畫風格的貓咪肖像。探索將寵物融入古典藝術風格的創意。</p>
                 </div>
@@ -1498,7 +1498,7 @@
 <a href="posts/post-079.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="寵物藝術 - 水彩畫中的黃金獵犬：用藝術記錄寵物的美好" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>水彩畫中的黃金獵犬：用藝術記錄寵物的美好</h3>
                     <p>一幅水彩畫風格的黃金獵犬畫像。探索寵物肖像畫的藝術形式和製作方法。</p>
                 </div>
@@ -1506,7 +1506,7 @@
 <a href="posts/post-078.html" class="cat-card" data-category="節日寵物">
                 <img src="images/129_pet-holiday-new-year-dog-party-hat-confetti.webp" alt="節日寵物 - 新年派對的狗狗：如何和寵物迎接新年" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>新年派對的狗狗：如何和寵物迎接新年</h3>
                     <p>一隻戴著派對帽的狗狗在彩帶中。探索如何在新年慶祝活動中確保寵物的安全和舒適。</p>
                 </div>
@@ -1514,7 +1514,7 @@
 <a href="posts/post-077.html" class="cat-card" data-category="節日寵物">
                 <img src="images/126_pet-holiday-valentine-cat-heart-glasses-roses.webp" alt="節日寵物 - 情人節的貓咪：用愛寵物度過情人節" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>情人節的貓咪：用愛寵物度過情人節</h3>
                     <p>一隻戴著心形眼鏡的貓咪旁邊是玫瑰花。探索和寵物一起度過情人節的可愛方式。</p>
                 </div>
@@ -1522,7 +1522,7 @@
 <a href="posts/post-076.html" class="cat-card" data-category="節日寵物">
                 <img src="images/124_pet-holiday-thanksgiving-cat-pilgrim-hat.webp" alt="節日寵物 - 感恩節的貓咪：節日餐桌上的寵物安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>感恩節的貓咪：節日餐桌上的寵物安全</h3>
                     <p>一隻戴著清教徒帽子的貓咪。探索感恩節期間哪些食物對寵物是安全的，哪些是危險的。</p>
                 </div>
@@ -1530,7 +1530,7 @@
 <a href="posts/post-075.html" class="cat-card" data-category="節日寵物">
                 <img src="images/123_pet-holiday-halloween-dog-wizard-costume.webp" alt="節日寵物 - 萬聖節的狗狗巫師：節日服裝與安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>萬聖節的狗狗巫師：節日服裝與安全</h3>
                     <p>一隻穿著巫師服裝的狗狗。探索如何為寵物選擇合適的萬聖節服裝和安全注意事項。</p>
                 </div>
@@ -1538,7 +1538,7 @@
 <a href="posts/post-074.html" class="cat-card" data-category="節日寵物">
                 <img src="images/122_pet-holiday-easter-cat-bunny-ears-eggs.webp" alt="節日寵物 - 復活節的貓咪：春天的節日與寵物安全" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>復活節的貓咪：春天的節日與寵物安全</h3>
                     <p>一隻戴著兔子耳朵的貓咪旁邊是復活節彩蛋。探索復活節期間的寵物安全注意事項。</p>
                 </div>
@@ -1546,7 +1546,7 @@
 <a href="posts/post-073.html" class="cat-card" data-category="節日寵物">
                 <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="節日寵物 - 聖誕節的狗狗：如何和寵物度過一個溫馨的聖誕節" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="outdoor-adventure.html" class="cat-badge" onclick="event.stopPropagation()">節日寵物</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='outdoor-adventure.html'">節日寵物</span>
                     <h3>聖誕節的狗狗：如何和寵物度過一個溫馨的聖誕節</h3>
                     <p>一隻穿著聖誕毛衣的狗狗坐在聖誕樹旁。探索和寵物一起慶祝聖誕節的安全和有趣方式。</p>
                 </div>
@@ -1554,7 +1554,7 @@
 <a href="posts/post-072.html" class="cat-card" data-category="寵物教育">
                 <img src="images/116_pet-education-first-aid-kit-emergency.webp" alt="寵物教育 - 寵物急救知識：每個主人都應該知道的急救技能" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物急救知識：每個主人都應該知道的急救技能</h3>
                     <p>一個整齊的寵物急救箱。探索常見的寵物緊急情況和基本的急救處理方法。</p>
                 </div>
@@ -1562,7 +1562,7 @@
 <a href="posts/post-071.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1055_pets-exotic-uvblight-plastic-electronic-macro.webp" alt="寵物教育 - 寵物美容工具與技巧：在家也能做的寵物SPA" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物美容工具與技巧：在家也能做的寵物SPA</h3>
                     <p>各種寵物美容工具整齊擺放。探索基本的寵物美容技巧和在家護理的方法。</p>
                 </div>
@@ -1570,7 +1570,7 @@
 <a href="posts/post-070.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1054_pets-exotic-heatlamp-metal-glass-macro.webp" alt="寵物教育 - 狗狗訓練手勢：與你的狗狗建立有效溝通" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>狗狗訓練手勢：與你的狗狗建立有效溝通</h3>
                     <p>一隻狗狗正在學習手勢指令。探索常用的狗狗訓練手勢和正向訓練方法。</p>
                 </div>
@@ -1578,7 +1578,7 @@
 <a href="posts/post-069.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1053_pets-exotic-smallmammalenclosure-plastic-metal-macro.webp" alt="寵物教育 - 寵物疫苗接種：守護健康的第一道防線" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物疫苗接種：守護健康的第一道防線</h3>
                     <p>一隻狗狗在獸醫院接受疫苗接種。探索寵物疫苗的種類、接種時間表和重要性。</p>
                 </div>
@@ -1586,7 +1586,7 @@
 <a href="posts/post-068.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1052_pets-exotic-birdcage-metal-plastic-macro.webp" alt="寵物教育 - 寵物營養學：如何為你的寵物選擇合適的食物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物營養學：如何為你的寵物選擇合適的食物</h3>
                     <p>各種寵物食物的平鋪圖展示了營養的多樣性。探索寵物營養的基本原則和餵食建議。</p>
                 </div>
@@ -1594,7 +1594,7 @@
 <a href="posts/post-067.html" class="cat-card" data-category="寵物教育">
                 <img src="images/1051_pets-exotic-reptileterrarium-glass-metal-macro.webp" alt="寵物教育 - 寵物牙齒健康：被忽略的重要課題" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-education.html" class="cat-badge" onclick="event.stopPropagation()">寵物教育</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-education.html'">寵物教育</span>
                     <h3>寵物牙齒健康：被忽略的重要課題</h3>
                     <p>一張寵物牙齒解剖圖揭示了牙齒健康的重要性。探索如何為你的寵物保持口腔健康。</p>
                 </div>
@@ -1602,7 +1602,7 @@
 <a href="posts/post-066.html" class="cat-card" data-category="異寵世界">
                 <img src="images/106_pet-guinea-pig-eating-carrot-cage.webp" alt="異寵世界 - 吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>吃胡蘿蔔的天竺鼠：小型哺乳動物的飲食智慧</h3>
                     <p>一隻天竺鼠在籠子裡開心地吃著胡蘿蔔，那個畫面既可愛又治愈。探索天竺鼠的飲食需求和飼養要點。</p>
                 </div>
@@ -1610,7 +1610,7 @@
 <a href="posts/post-065.html" class="cat-card" data-category="異寵世界">
                 <img src="images/105_pet-bearded-dragon-basking-heat-lamp.webp" alt="異寵世界 - 加熱燈下的鬃獅蜥：爬蟲寵物的世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>加熱燈下的鬃獅蜥：爬蟲寵物的世界</h3>
                     <p>一隻鬃獅蜥在加熱燈下享受日光浴，那個畫面既獨特又迷人。探索爬蟲類寵物的飼養知識和獨特魅力。</p>
                 </div>
@@ -1618,7 +1618,7 @@
 <a href="posts/post-064.html" class="cat-card" data-category="異寵世界">
                 <img src="images/104_pet-rabbit-agility-course-jumping.webp" alt="異寵世界 -  agility course的兔子：兔兔的運動天賦" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3> agility course的兔子：兔兔的運動天賦</h3>
                     <p>一隻兔子在敏捷訓練場上跳躍障礙，那個畫面既可愛又驚喜。探索兔子的運動需求和敏捷訓練。</p>
                 </div>
@@ -1626,7 +1626,7 @@
 <a href="posts/post-063.html" class="cat-card" data-category="異寵世界">
                 <img src="images/103_pet-parrot-shoulder-human-interaction.webp" alt="異寵世界 - 肩膀上的鸚鵡：鳥類寵物的智慧與情感" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>肩膀上的鸚鵡：鳥類寵物的智慧與情感</h3>
                     <p>一隻色彩繽紛的鸚鵡站在主人的肩膀上，親密地互動。探索鸚鵡作為寵物的獨特魅力和飼養要點。</p>
                 </div>
@@ -1634,7 +1634,7 @@
 <a href="posts/post-062.html" class="cat-card" data-category="異寵世界">
                 <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="異寵世界 - 精靈花園的刺蝟：另類寵物的魅力" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">異寵世界</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">異寵世界</span>
                     <h3>精靈花園的刺蝟：另類寵物的魅力</h3>
                     <p>一隻刺蝟在精靈花園的迷你場景中探索，那個畫面既夢幻又可愛。探索飼養刺蝟作為寵物的知識和樂趣。</p>
                 </div>
@@ -1642,7 +1642,7 @@
 <a href="posts/post-061.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1085_pets-pathology-microtomeblade-metal-plastic-macro.webp" alt="狗狗日記 - 學游泳的黃金獵犬幼犬：狗狗的第一堂游泳課" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>學游泳的黃金獵犬幼犬：狗狗的第一堂游泳課</h3>
                     <p>一隻黃金獵犬幼犬在泳池中學習游泳，旁邊是教練的鼓勵。探索狗狗游泳的好處和安全須知。</p>
                 </div>
@@ -1650,7 +1650,7 @@
 <a href="posts/post-060.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/60_corgi-picnic-park-checkered-bandana.webp" alt="狗狗日記 - 野餐公園的柯基：狗狗的社交派對" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>野餐公園的柯基：狗狗的社交派對</h3>
                     <p>一隻戴著格紋領巾的柯基在公園野餐，旁邊是籃子和美食。探索狗狗的社交需求和公園禮儀。</p>
                 </div>
@@ -1658,7 +1658,7 @@
 <a href="posts/post-059.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/59_corgi-astronaut-space-cosmic.webp" alt="狗狗日記 - 太空宇航員的柯基：狗狗的太空夢" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>太空宇航員的柯基：狗狗的太空夢</h3>
                     <p>一隻穿著宇航服的柯基漂浮在太空中，那個畫面既科幻又可愛。回顧人類太空探索史上的動物宇航員們。</p>
                 </div>
@@ -1666,7 +1666,7 @@
 <a href="posts/post-058.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/58_corgi-bubble-bath-wooden-tub.webp" alt="狗狗日記 - 泡泡浴的柯基：狗狗的SPA時光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>泡泡浴的柯基：狗狗的SPA時光</h3>
                     <p>一隻柯基在木質浴缸裡享受泡泡浴，那個畫面既療癒又可愛。探索狗狗洗澡的正確方式和護理要點。</p>
                 </div>
@@ -1674,7 +1674,7 @@
 <a href="posts/post-057.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/57_corgi-vintage-pickup-truck-road-trip.webp" alt="狗狗日記 - 復古皮卡的柯基：狗狗的公路旅行" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>復古皮卡的柯基：狗狗的公路旅行</h3>
                     <p>一隻柯基坐在復古皮卡車的後座，準備展開一場公路旅行。探索帶狗狗自駕旅行的完整指南。</p>
                 </div>
@@ -1682,7 +1682,7 @@
 <a href="posts/post-056.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/56_corgi-sunflower-field-summer.webp" alt="狗狗日記 - 向日葵田的柯基：狗狗與夏天的約定" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>向日葵田的柯基：狗狗與夏天的約定</h3>
                     <p>一隻柯基在金黃色的向日葵田中開心地奔跑，那個畫面就是夏天本身。探索如何和狗狗一起度過一個美好的夏天。</p>
                 </div>
@@ -1690,7 +1690,7 @@
 <a href="posts/post-055.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/55_corgi-yoga-stretch-morning-light.webp" alt="狗狗日記 - 晨光瑜伽的柯基：狗狗的晨練時光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>晨光瑜伽的柯基：狗狗的晨練時光</h3>
                     <p>一隻柯基在晨光中做著瑜伽姿勢，那個畫面既療癒又有趣。探索狗狗的運動需求和晨練的好處。</p>
                 </div>
@@ -1698,7 +1698,7 @@
 <a href="posts/post-054.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/54_corgi-puppy-giant-pumpkin-halloween.webp" alt="狗狗日記 - 巨型南瓜的柯基：狗狗的萬聖節派對" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>巨型南瓜的柯基：狗狗的萬聖節派對</h3>
                     <p>一隻柯基坐在一個比牠還大的南瓜旁邊，那個畫面既應景又可愛。探索如何和狗狗一起度過一個安全又快樂的萬聖節。</p>
                 </div>
@@ -1706,7 +1706,7 @@
 <a href="posts/post-053.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/53_corgi-sunglasses-surfboard-beach.webp" alt="狗狗日記 - 沖浪板墨鏡的柯基：狗狗的海邊時尚" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>沖浪板墨鏡的柯基：狗狗的海邊時尚</h3>
                     <p>一隻戴著墨鏡、趴在衝浪板上的柯基，成為了沙灘上最時尚的明星。探索狗狗的海邊樂趣和安全須知。</p>
                 </div>
@@ -1714,7 +1714,7 @@
 <a href="posts/post-052.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/52_corgi-herding-ducklings-meadow.webp" alt="狗狗日記 - 牧鴨的柯基：狗狗的工作本能" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>牧鴨的柯基：狗狗的工作本能</h3>
                     <p>一隻柯基在草地上牧趕一群小鴨子，那個畫面既有趣又不可思議。探索柯基犬的牧牛本能和工作犬的遺傳記憶。</p>
                 </div>
@@ -1722,7 +1722,7 @@
 <a href="posts/post-051.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/51_corgi-puppy-yellow-raincoat-puddle.webp" alt="狗狗日記 - 黃色雨衣的柯基幼犬：狗狗的雨天時尚" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>黃色雨衣的柯基幼犬：狗狗的雨天時尚</h3>
                     <p>一隻穿著黃色雨衣的柯基幼犬在水坑中開心地跳躍，那個畫面既可愛又治愈。探索狗狗雨衣的選擇和雨天散步的樂趣。</p>
                 </div>
@@ -1730,7 +1730,7 @@
 <a href="posts/post-050.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/50_british-shorthair-cat-vintage-bookshelf-library.webp" alt="貓咪物語 - 複古書架圖書館的英短：貓咪與閱讀的不解之緣" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>複古書架圖書館的英短：貓咪與閱讀的不解之緣</h3>
                     <p>一隻英國短毛貓坐在複古書架前，旁邊是堆積如山的書本。為什麼貓咪這麼喜歡待在圖書館和書房裡？</p>
                 </div>
@@ -1738,7 +1738,7 @@
 <a href="posts/post-049.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1105_pets-parasitology-tickremover-metal-plastic-macro.webp" alt="貓咪物語 - 野花草原日落的美短：貓咪的戶外探險" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>野花草原日落的美短：貓咪的戶外探險</h3>
                     <p>一隻美國短毛貓在野花草原的日落中漫步，那個畫面既自由又美麗。探索帶貓咪戶外探險的正確方式。</p>
                 </div>
@@ -1746,7 +1746,7 @@
 <a href="posts/post-048.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/48_british-shorthair-cat-latte-cozy-cafe.webp" alt="貓咪物語 - 拿鐵咖啡廳的英短：貓咪咖啡廳的治愈魔法" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>拿鐵咖啡廳的英短：貓咪咖啡廳的治愈魔法</h3>
                     <p>一隻英國短毛貓坐在咖啡廳的吧檯上，旁邊是一杯香氣撲鼻的拿鐵。探索貓咪咖啡廳為什麼這麼治愈。</p>
                 </div>
@@ -1754,7 +1754,7 @@
 <a href="posts/post-047.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1104_pets-parasitology-fleacomb-plastic-metal-macro.webp" alt="貓咪物語 - 紙箱辦公室的美短：貓咪的紙箱哲學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>紙箱辦公室的美短：貓咪的紙箱哲學</h3>
                     <p>一隻美國短毛貓把紙箱當成了辦公室，在裡面認真地「工作」。為什麼貓咪這麼愛紙箱？</p>
                 </div>
@@ -1762,7 +1762,7 @@
 <a href="posts/post-046.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1103_pets-parasitology-dewormermedication-plastic-glass-macro.webp" alt="貓咪物語 - 秋楓中的英短：貓咪與季節的變化" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>秋楓中的英短：貓咪與季節的變化</h3>
                     <p>一隻英國短毛貓坐在秋楓樹下，毛色與落葉融為一體。探索貓咪如何感知和應對季節的變化。</p>
                 </div>
@@ -1770,7 +1770,7 @@
 <a href="posts/post-045.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1102_pets-parasitology-microscopeslide-glass-plastic-macro.webp" alt="貓咪物語 - 花園裡與蝴蝶親吻的美短：貓咪的好奇心" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>花園裡與蝴蝶親吻的美短：貓咪的好奇心</h3>
                     <p>一隻美國短毛貓在花園裡與一隻蝴蝶「親吻」，那個畫面既溫馨又有趣。探索貓咪的好奇心和探索精神。</p>
                 </div>
@@ -1778,7 +1778,7 @@
 <a href="posts/post-044.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/44_british-shorthair-lilac-cat-minimalist-interior.webp" alt="貓咪物語 - 極簡空間中的英短丁香貓：貓咪與室內設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>極簡空間中的英短丁香貓：貓咪與室內設計</h3>
                     <p>一隻英國短毛丁香貓在極簡風格的房間中，創造出一種寧靜的和諧。探索如何為貓咪打造一個美觀又實用的家。</p>
                 </div>
@@ -1786,7 +1786,7 @@
 <a href="posts/post-043.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="貓咪物語 - 玩毛線的美短虎斑：貓咪的狩獵遊戲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>玩毛線的美短虎斑：貓咪的狩獵遊戲</h3>
                     <p>一隻美國短毛虎斑貓在地上翻滾，瘋狂地撲打一個毛線球。為什麼貓咪對移動的物體毫無抵抗力？</p>
                 </div>
@@ -1794,7 +1794,7 @@
 <a href="posts/post-042.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1101_pets-parasitology-fecalsample-plastic-glass-macro.webp" alt="貓咪物語 - 金色眼睛的英短藍貓：貓咪的眼睛之謎" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>金色眼睛的英短藍貓：貓咪的眼睛之謎</h3>
                     <p>一隻英國短毛藍貓的金色眼睛在燈光下閃耀，彷彿兩顆寶石。探索貓咪眼睛的顏色、結構和神秘能力。</p>
                 </div>
@@ -1802,7 +1802,7 @@
 <a href="posts/post-041.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/1100_pets-microbiology-testtuberack-plastic-glass-macro.webp" alt="貓咪物語 - 陽光窗邊的美短：貓咪的日光浴哲學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>陽光窗邊的美短：貓咪的日光浴哲學</h3>
                     <p>為什麼貓咪這麼喜歡曬太陽？一隻在窗邊享受日光浴的美國短毛貓，告訴你貓咪的太陽崇拜。</p>
                 </div>
@@ -1810,7 +1810,7 @@
 <a href="posts/post-040.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/40_柴犬_雨中撑伞.webp" alt="狗狗日記 - 雨中撐傘的柴犬：狗狗與雨天的故事" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>雨中撐傘的柴犬：狗狗與雨天的故事</h3>
                     <p>一隻撐著小雨傘的柴犬站在雨中，那個畫面既可愛又讓人心疼。為什麼有些狗狗討厭下雨，而有些卻喜歡？</p>
                 </div>
@@ -1818,7 +1818,7 @@
 <a href="posts/post-039.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/39_柴犬_洗衣篮里.webp" alt="狗狗日記 - 洗衣籃裡的柴犬：狗狗的躲藏遊戲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>洗衣籃裡的柴犬：狗狗的躲藏遊戲</h3>
                     <p>為什麼狗狗喜歡躲在洗衣籃、沙發底下和各種奇怪的地方？探索狗狗的躲藏行為背後的心理學。</p>
                 </div>
@@ -1826,7 +1826,7 @@
 <a href="posts/post-038.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1084_pets-pathology-formalincontainer-plastic-glass-macro.webp" alt="狗狗日記 - 星空剪影的柴犬：與狗狗一起仰望星空" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>星空剪影的柴犬：與狗狗一起仰望星空</h3>
                     <p>在星空下，一隻柴犬的剪影顯得格外寧靜。狗狗能看到星星嗎？探索狗狗的夜視能力和星空下的故事。</p>
                 </div>
@@ -1834,7 +1834,7 @@
 <a href="posts/post-037.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/37_柴犬_咖啡吧台.webp" alt="狗狗日記 - 咖啡吧台的柴犬：狗狗咖啡廳的興起" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>咖啡吧台的柴犬：狗狗咖啡廳的興起</h3>
                     <p>一隻柴犬站在咖啡吧台後面，彷彿在為你調製一杯特調咖啡。探索狗狗咖啡廳為什麼這麼受歡迎。</p>
                 </div>
@@ -1842,7 +1842,7 @@
 <a href="posts/post-036.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/36_柴犬_海边追浪.webp" alt="狗狗日記 - 海邊追浪的柴犬：狗狗的海邊假期" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>海邊追浪的柴犬：狗狗的海邊假期</h3>
                     <p>當柴犬第一次看到大海，會發生什麼？探索狗狗與海洋的奇妙緣分，以及帶狗狗去海邊的完整指南。</p>
                 </div>
@@ -1850,7 +1850,7 @@
 <a href="posts/post-035.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/35_柴犬_樱花奔跑.webp" alt="狗狗日記 - 櫻花奔跑的柴犬：春天最治愈的畫面" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>櫻花奔跑的柴犬：春天最治愈的畫面</h3>
                     <p>當柴犬跑過盛開的櫻花樹下，花瓣隨風飄落，這就是春天最治愈的瞬間。探索狗狗與春天的故事。</p>
                 </div>
@@ -1858,7 +1858,7 @@
 <a href="posts/post-034.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/34_柴犬_雪埋脑袋.webp" alt="狗狗日記 - 雪埋腦袋的柴犬：狗狗的冬日遊戲" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>雪埋腦袋的柴犬：狗狗的冬日遊戲</h3>
                     <p>為什麼狗狗看到雪就會瘋狂？一隻把腦袋埋進雪裡的柴犬，告訴你冬天最快樂的事情是什麼。</p>
                 </div>
@@ -1866,7 +1866,7 @@
 <a href="posts/post-033.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/33_柴犬_复古摩托.webp" alt="狗狗日記 - 復古摩托上的柴犬：狗狗的冒險精神" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>復古摩托上的柴犬：狗狗的冒險精神</h3>
                     <p>一隻戴著護目鏡的柴犬坐在復古摩托上，彷彿準備展開一場偉大的冒險。探索狗狗的冒險精神和旅行樂趣。</p>
                 </div>
@@ -1874,7 +1874,7 @@
 <a href="posts/post-032.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/32_柴犬_红叶隧道.webp" alt="狗狗日記 - 紅葉隧道中的柴犬：秋天最浪漫的散步" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>紅葉隧道中的柴犬：秋天最浪漫的散步</h3>
                     <p>帶著柴犬走進紅葉隧道，是一種什麼樣的體驗？探索狗狗與季節的奇妙連結。</p>
                 </div>
@@ -1882,7 +1882,7 @@
 <a href="posts/post-031.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/1083_pets-pathology-stainingsolution-glass-plastic-macro.webp" alt="狗狗日記 - 紙箱探頭的柴犬：狗狗為什麼愛鑽紙箱？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>紙箱探頭的柴犬：狗狗為什麼愛鑽紙箱？</h3>
                     <p>不是只有貓咪才愛紙箱，狗狗也對紙箱有著莫名的執著。探索狗狗的「紙箱情結」背後的心理學。</p>
                 </div>
@@ -1890,7 +1890,7 @@
 <a href="posts/post-030.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/30_英短_镜面迷宫.webp" alt="貓咪物語 - 鏡面迷宮中的英短：貓咪能認出鏡中的自己嗎？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>鏡面迷宮中的英短：貓咪能認出鏡中的自己嗎？</h3>
                     <p>當貓咪走進鏡面迷宮，會發生什麼？貓咪能認出鏡中的自己嗎？動物心理學家為你解密。</p>
                 </div>
@@ -1898,7 +1898,7 @@
 <a href="posts/post-029.html" class="cat-card" data-category="狗狗日記">
                 <img src="images/29_英短_天窗仰拍.webp" alt="狗狗日記 - 天窗仰拍的柴犬：狗狗眼中的天空" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="dog-diary.html" class="cat-badge" onclick="event.stopPropagation()">狗狗日記</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='dog-diary.html'">狗狗日記</span>
                     <h3>天窗仰拍的柴犬：狗狗眼中的天空</h3>
                     <p>從天窗仰拍一隻仰望天空的柴犬，是一種什麼樣的體驗？狗狗看到的天空和我們一樣嗎？</p>
                 </div>
@@ -1906,7 +1906,7 @@
 <a href="posts/post-028.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/28_英短_棋盘格透视.webp" alt="貓咪物語 - 棋盤格透視中的英短：貓咪的空間感知能力" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>棋盤格透視中的英短：貓咪的空間感知能力</h3>
                     <p>貓咪為什麼能在複雜的環境中準確跳躍？探索貓咪驚人的空間感知和運動控制能力。</p>
                 </div>
@@ -1914,7 +1914,7 @@
 <a href="posts/post-027.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/27_英短_万花筒.webp" alt="貓咪物語 - 萬花筒中的英短：貓咪的視覺奇幻世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>萬花筒中的英短：貓咪的視覺奇幻世界</h3>
                     <p>透過萬花筒看貓咪，是一場視覺的奇幻之旅。但你知道貓咪自己看到的世界是什麼樣子嗎？</p>
                 </div>
@@ -1922,7 +1922,7 @@
 <a href="posts/post-026.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/26_英短_留声机喇叭.webp" alt="貓咪物語 - 留聲機喇叭中的英短：貓咪的音樂品味" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>留聲機喇叭中的英短：貓咪的音樂品味</h3>
                     <p>貓咪喜歡聽什麼樣的音樂？研究顯示，貓咪有自己獨特的音樂偏好，而且和人類完全不同。</p>
                 </div>
@@ -1930,7 +1930,7 @@
 <a href="posts/post-025.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/25_英短_水下仰视.webp" alt="貓咪物語 - 水下仰視的英短：貓咪其實愛喝水？" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>水下仰視的英短：貓咪其實愛喝水？</h3>
                     <p>從水下仰視一隻正在喝水的貓咪，是一種什麼樣的體驗？揭開貓咪飲水習慣的秘密。</p>
                 </div>
@@ -1938,7 +1938,7 @@
 <a href="posts/post-024.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/24_英短_墙壁裂缝.webp" alt="貓咪物語 - 牆壁裂縫中的英短：貓咪的液體之謎" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>牆壁裂縫中的英短：貓咪的液體之謎</h3>
                     <p>貓咪是液體嗎？為什麼貓咪能鑽進任何縫隙？探索貓咪身體的驚人柔韌性。</p>
                 </div>
@@ -1946,7 +1946,7 @@
 <a href="posts/post-023.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/23_英短_俯视书本.webp" alt="貓咪物語 - 俯視書本上的英短：貓咪與閱讀的慵懶午後" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>俯視書本上的英短：貓咪與閱讀的慵懶午後</h3>
                     <p>為什麼貓咪總是喜歡坐在你正在看的書上？探索貓咪的佔有慾與注意力爭奪行為。</p>
                 </div>
@@ -1954,7 +1954,7 @@
 <a href="posts/post-022.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/22_英短_毛线球迷宫.webp" alt="貓咪物語 - 毛線球迷宮中的英短：貓咪的狩獵本能" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>毛線球迷宮中的英短：貓咪的狩獵本能</h3>
                     <p>為什麼貓咪對毛線球毫無抵抗力？一個簡單的毛線球，如何喚醒貓咪體內沉睡萬年的狩獵本能？</p>
                 </div>
@@ -1962,7 +1962,7 @@
 <a href="posts/post-021.html" class="cat-card" data-category="貓咪物語">
                 <img src="images/21_英短_钥匙孔视角.webp" alt="貓咪物語 - 鑰匙孔視角的英短：窺探貓咪的秘密世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="cat-story.html" class="cat-badge" onclick="event.stopPropagation()">貓咪物語</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='cat-story.html'">貓咪物語</span>
                     <h3>鑰匙孔視角的英短：窺探貓咪的秘密世界</h3>
                     <p>從鑰匙孔的角度看貓咪，是一種什麼樣的體驗？透過獨特視角，發現貓咪不為人知的一面。</p>
                 </div>
@@ -1970,7 +1970,7 @@
 <a href="posts/post-020.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/20_居中_溪边鸭嘴兽.webp" alt="萌寵日常 - 溪邊的鴨嘴獸：大自然最古怪的發明" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>溪邊的鴨嘴獸：大自然最古怪的發明</h3>
                     <p>鴨嘴獸有鴨子的嘴、河狸的尾巴、水獺的腳，而且是會下蛋的哺乳動物。揭開這個澳洲最奇怪動物的秘密。</p>
                 </div>
@@ -1978,7 +1978,7 @@
 <a href="posts/post-019.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/19_居中_树桩猫头鹰.webp" alt="萌寵日常 - 樹樁上的貓頭鷹：黑夜中的智慧象徵" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹樁上的貓頭鷹：黑夜中的智慧象徵</h3>
                     <p>貓頭鷹的頭可以旋轉270度，眼睛是人類的1.3倍大。揭開這個夜行猛禽的神秘面紗。</p>
                 </div>
@@ -1986,7 +1986,7 @@
 <a href="posts/post-018.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/18_居中_蝴蝶小猪.webp" alt="萌寵日常 - 蝴蝶旁的小豬：農場動物的智慧與情感" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>蝴蝶旁的小豬：農場動物的智慧與情感</h3>
                     <p>小豬其實是世界上最聰明的動物之一，智商堪比三歲人類孩童。重新認識我們最熟悉卻最不了解的農場動物。</p>
                 </div>
@@ -1994,7 +1994,7 @@
 <a href="posts/post-017.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/17_居中_晨雾小鹿.webp" alt="萌寵日常 - 晨霧中的小鹿：森林精靈的溫柔目光" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>晨霧中的小鹿：森林精靈的溫柔目光</h3>
                     <p>當晨霧籠罩森林，一隻小鹿安靜地站在樹叢間，那雙溫柔的眼睛彷彿能看穿你的靈魂。探索鹿的神秘世界。</p>
                 </div>
@@ -2002,7 +2002,7 @@
 <a href="posts/post-016.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/16_居中_树干考拉.webp" alt="萌寵日常 - 樹幹上的無尾熊：最會睡覺的動物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹幹上的無尾熊：最會睡覺的動物</h3>
                     <p>無尾熊每天睡20小時，不是因為懶，而是因為桉樹葉有毒。揭開這個澳洲國寶的睡眠秘密。</p>
                 </div>
@@ -2010,7 +2010,7 @@
 <a href="posts/post-015.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/15_居中_沙滩海豹.webp" alt="萌寵日常 - 沙灘上的海豹：海洋與陸地之間的優雅舞者" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>沙灘上的海豹：海洋與陸地之間的優雅舞者</h3>
                     <p>海豹在水中是矯健的獵手，在陸地上卻是笨拙的「蠕蟲」。探索海豹的雙重生活和令人驚嘆的適應能力。</p>
                 </div>
@@ -2018,7 +2018,7 @@
 <a href="posts/post-014.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/14_居中_落叶刺猬.webp" alt="萌寵日常 - 落葉中的刺蝟：秋天裡的小刺球" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>落葉中的刺蝟：秋天裡的小刺球</h3>
                     <p>刺蝟為什麼會長滿刺？牠們真的會把水果刺在背上嗎？走進刺蝟的奇妙世界，了解這個秋天最應景的小動物。</p>
                 </div>
@@ -2026,7 +2026,7 @@
 <a href="posts/post-013.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/13_居中_树枝树懒.webp" alt="萌寵日常 - 樹枝上的樹懶：慢，是一種生活哲學" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>樹枝上的樹懶：慢，是一種生活哲學</h3>
                     <p>樹懶為什麼這麼慢？牠的慢不是懶惰，而是一種歷經千萬年演化的生存策略。從樹懶身上學習慢生活的智慧。</p>
                 </div>
@@ -2034,7 +2034,7 @@
 <a href="posts/post-012.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/12_居中_冰面企鹅.webp" alt="萌寵日常 - 冰面上的企鵝：南極紳士的生存智慧" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>冰面上的企鵝：南極紳士的生存智慧</h3>
                     <p>企鵝為什麼不會凍死在南極？牠們的腳為什麼不會黏在冰上？揭開南極最可愛居民的生存秘密。</p>
                 </div>
@@ -2042,7 +2042,7 @@
 <a href="posts/post-011.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/11_居中_花海小羊.webp" alt="萌寵日常 - 花海中的小羊：治癒系動物的心理魔力" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>花海中的小羊：治癒系動物的心理魔力</h3>
                     <p>一隻小羊站在紫色花海中，為什麼能讓人瞬間感到平靜？探索動物輔助治療背後的科學證據。</p>
                 </div>
@@ -2050,7 +2050,7 @@
 <a href="posts/post-010.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/10_鱼缸倒影蓝猫.webp" alt="萌寵日常 - 魚缸倒影中的藍貓：當貓咪遇見另一個自己" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>魚缸倒影中的藍貓：當貓咪遇見另一個自己</h3>
                     <p>一隻英國短毛貓趴在魚缸旁，水中的倒影與牠的臉龐重合，創造出一幅超現實的畫面。貓咪真的能認出鏡中的自己嗎？</p>
                 </div>
@@ -2058,7 +2058,7 @@
 <a href="posts/post-009.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/09_雪中小狐狸.webp" alt="萌寵日常 - 雪地中的小狐狸：北國精靈的生存傳奇" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>雪地中的小狐狸：北國精靈的生存傳奇</h3>
                     <p>在白雪皚皚的森林中，一隻小狐狸的出現就像一團跳動的火焰。探索北極狐和赤狐在極寒環境中的生存秘訣。</p>
                 </div>
@@ -2066,7 +2066,7 @@
 <a href="posts/post-008.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/08_草莓田豚鼠.webp" alt="萌寵日常 - 草莓田中的天竺鼠：舌尖上的寵物樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>草莓田中的天竺鼠：舌尖上的寵物樂園</h3>
                     <p>當天竺鼠走進一片草莓田，會發生什麼？這不只是一張可愛的照片，更是關於寵物飲食與環境豐容的啟示。</p>
                 </div>
@@ -2074,7 +2074,7 @@
 <a href="posts/post-007.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/07_倒挂小熊猫.webp" alt="萌寵日常 - 倒掛的小熊貓：動物園裡最矯健的運動員" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>倒掛的小熊貓：動物園裡最矯健的運動員</h3>
                     <p>小熊貓為什麼喜歡倒掛在樹上？這個看似特技的動作背後，藏著這個物種千年以來的生存智慧。</p>
                 </div>
@@ -2082,7 +2082,7 @@
 <a href="posts/post-006.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/06_秋叶柴犬.webp" alt="萌寵日常 - 秋葉中的柴犬：日本國犬的四季物語" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>秋葉中的柴犬：日本國犬的四季物語</h3>
                     <p>當赤柴的毛色與楓葉融為一體，這就是秋天最完美的畫面。走進柴犬的世界，了解這個最受歡迎的日本犬種。</p>
                 </div>
@@ -2090,7 +2090,7 @@
 <a href="posts/post-005.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/05_蘑菇伞兔子.webp" alt="萌寵日常 - 蘑菇傘下的兔子：一場微型世界的奇幻之旅" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>蘑菇傘下的兔子：一場微型世界的奇幻之旅</h3>
                     <p>當兔子遇到巨型蘑菇，整個畫面就像走進了愛麗絲夢遊仙境。探索微縮攝影如何為寵物打造童話般的夢幻場景。</p>
                 </div>
@@ -2098,7 +2098,7 @@
 <a href="posts/post-004.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/04_合十水獭.webp" alt="萌寵日常 - 合十的水獺：網路迷因背後的真實動物行為" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>合十的水獺：網路迷因背後的真實動物行為</h3>
                     <p>那張雙手合十、表情虔誠的水獺照片為什麼爆紅？牠真的在祈禱嗎？動物行為學家為你解密水獺的奇妙世界。</p>
                 </div>
@@ -2106,7 +2106,7 @@
 <a href="posts/post-003.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/03_仓鼠南瓜车.webp" alt="萌寵日常 - 倉鼠的南瓜車：童話故事在現實中上演" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>倉鼠的南瓜車：童話故事在現實中上演</h3>
                     <p>當一隻倉鼠住進南瓜做的小屋，整個畫面就像從童話書裡走出來一樣。一起探討小型寵物的環境豐容藝術。</p>
                 </div>
@@ -2114,7 +2114,7 @@
 <a href="posts/post-002.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/1158_pets-nutrition-puzzlefeeder-plastic-wood-macro.webp" alt="萌寵日常 - 魚眼鏡頭下的柯基：當短腿狗遇上超廣角" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>魚眼鏡頭下的柯基：當短腿狗遇上超廣角</h3>
                     <p>用魚眼鏡頭拍柯基是一種什麼樣的體驗？扭曲的透視讓短腿更短、屁股更大，卻意外捕捉到了狗狗最真實的快樂。</p>
                 </div>
@@ -2122,7 +2122,7 @@
 <a href="posts/post-001.html" class="cat-card" data-category="萌寵日常">
                 <img src="images/1157_pets-nutrition-slowfeederbowl-plastic-ceramic-macro.webp" alt="萌寵日常 - 茶杯裡的橘貓：世界上最療癒的角落" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-daily.html" class="cat-badge" onclick="event.stopPropagation()">萌寵日常</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-daily.html'">萌寵日常</span>
                     <h3>茶杯裡的橘貓：世界上最療癒的角落</h3>
                     <p>一隻蜷縮在古董茶杯裡的橘貓，為什麼能讓數百萬人瞬間忘記煩惱？探索萌寵經濟背後的心理學秘密。</p>
                 </div>

@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-091.html" class="cat-card" data-category="居家設計">
                 <img src="images/152_pet-space-kitchen-island-feeding-station.webp" alt="居家設計 - 寵物友善廚房：將餵食區融入室內設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>寵物友善廚房：將餵食區融入室內設計</h3>
                     <p>一個島台式廚房中的寵物餵食站。探索如何將寵物餵食區美觀地融入廚房設計。</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-092.html" class="cat-card" data-category="居家設計">
                 <img src="images/153_pet-space-bedroom-under-bed-den-cat-walkways.webp" alt="居家設計 - 臥室裡的貓咪通道：垂直空間的創意利用" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>臥室裡的貓咪通道：垂直空間的創意利用</h3>
                     <p>臥室床下的隱藏窩和貓咪走道。探索如何在臥室中為貓咪創造垂直活動空間。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-093.html" class="cat-card" data-category="居家設計">
                 <img src="images/154_pet-space-balcony-catio-multilevel-climbing.webp" alt="居家設計 - 陽台貓樂園：將小空間變成貓咪天堂" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>陽台貓樂園：將小空間變成貓咪天堂</h3>
                     <p>一個多層次攀爬結構的陽台貓樂園。探索如何將小陽台轉變為貓咪的遊樂場。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-094.html" class="cat-card" data-category="居家設計">
                 <img src="images/1150_pets-psychology-targetstick-plastic-metal-macro.webp" alt="居家設計 - 客廳貓牆：從地板到天花板的攀爬樂園" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>客廳貓牆：從地板到天花板的攀爬樂園</h3>
                     <p>客廳中從地板到天花板的貓咪攀爬牆。探索如何將客廳牆壁轉變為貓咪的運動場。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-095.html" class="cat-card" data-category="居家設計">
                 <img src="images/158_pet-space-hidden-cat-door-bookshelf-secret-room.webp" alt="居家設計 - 隱藏式貓門：書架後的秘密空間" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>隱藏式貓門：書架後的秘密空間</h3>
                     <p>一個藏在書架中的隱藏式貓門。探索如何將貓咪通道隱藏在傢俱中，保持室內美觀。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-096.html" class="cat-card" data-category="居家設計">
                 <img src="images/1151_pets-nutrition-prescriptiondiet-plastic-paper-macro.webp" alt="居家設計 - 玄關寵物站：進門處的寵物收納設計" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="home-design.html" class="cat-badge" onclick="event.stopPropagation()">居家設計</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='home-design.html'">居家設計</span>
                     <h3>玄關寵物站：進門處的寵物收納設計</h3>
                     <p>玄關處的內建式寵物用品收納站。探索如何在玄關處創造實用的寵物用品收納空間。</p>
                 </div>

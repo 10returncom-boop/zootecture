@@ -27,10 +27,10 @@
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; }
+        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
@@ -118,7 +118,7 @@
         <div class="cat-grid"><a href="posts/post-079.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="寵物藝術 - 水彩畫中的黃金獵犬：用藝術記錄寵物的美好" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>水彩畫中的黃金獵犬：用藝術記錄寵物的美好</h3>
                     <p>一幅水彩畫風格的黃金獵犬畫像。探索寵物肖像畫的藝術形式和製作方法。</p>
                 </div>
@@ -126,7 +126,7 @@
 <a href="posts/post-080.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/132_pet-art-oil-painting-classical-cat.webp" alt="寵物藝術 - 古典油畫中的貓咪：當貓咪遇見文藝復興" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>古典油畫中的貓咪：當貓咪遇見文藝復興</h3>
                     <p>一幅古典油畫風格的貓咪肖像。探索將寵物融入古典藝術風格的創意。</p>
                 </div>
@@ -134,7 +134,7 @@
 <a href="posts/post-081.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/133_pet-art-pop-art-dog-warhol-style.webp" alt="寵物藝術 - 普普藝術風格的狗狗：安迪沃荷的寵物世界" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>普普藝術風格的狗狗：安迪沃荷的寵物世界</h3>
                     <p>一幅普普藝術風格的狗狗畫像，色彩鮮豔。探索普普藝術在寵物肖像中的應用。</p>
                 </div>
@@ -142,7 +142,7 @@
 <a href="posts/post-082.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/135_pet-art-ukiyoe-japanese-dog-wave.webp" alt="寵物藝術 - 浮世繪中的狗狗：日本傳統藝術與寵物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>浮世繪中的狗狗：日本傳統藝術與寵物</h3>
                     <p>一幅浮世繪風格的狗狗畫像，背景是海浪。探索日本傳統藝術風格在寵物肖像中的應用。</p>
                 </div>
@@ -150,7 +150,7 @@
 <a href="posts/post-083.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/134_pet-art-pixel-8bit-cat-retro-game.webp" alt="寵物藝術 - 像素藝術中的貓咪：復古遊戲風格的寵物畫像" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>像素藝術中的貓咪：復古遊戲風格的寵物畫像</h3>
                     <p>一幅8位元像素風格的貓咪畫像。探索復古像素藝術在寵物肖像中的應用。</p>
                 </div>
@@ -158,7 +158,7 @@
 <a href="posts/post-084.html" class="cat-card" data-category="寵物藝術">
                 <img src="images/140_pet-art-ink-wash-chinese-cat-sumi-e.webp" alt="寵物藝術 - 水墨畫中的貓咪：東方藝術的禪意與寵物" class="cat-card-img" loading="lazy">
                 <div class="cat-card-body">
-                    <a href="pet-art.html" class="cat-badge" onclick="event.stopPropagation()">寵物藝術</a>
+                    <span class="cat-badge" onclick="event.stopPropagation(); location.href='pet-art.html'">寵物藝術</span>
                     <h3>水墨畫中的貓咪：東方藝術的禪意與寵物</h3>
                     <p>一幅中國水墨畫風格的貓咪。探索東方傳統藝術在寵物肖像中的應用。</p>
                 </div>
