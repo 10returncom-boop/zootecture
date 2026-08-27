@@ -19,30 +19,30 @@ body { font-size: 1.05rem; line-height: 1.8; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
         .cat-nav { background: #1a1a2e; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
         .cat-nav a { color: #fff; text-decoration: none; font-weight: 600; }
-        .cat-nav a:hover { color: #f39c12; }
+        .cat-nav a:hover { color: #F5B841; }
         .cat-nav .logo { font-size: 1.2rem; }
         .cat-nav .links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
         .cat-header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 3rem 5%; text-align: center; }
         .cat-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
         .cat-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
-        .cat-header .tag { display: inline-block; background: rgba(243,156,18,0.2); color: #f39c12; padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; font-weight: 500; }
+        .cat-header .tag { display: inline-block; background: rgba(243,156,18,0.2); color: #F5B841; padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; font-weight: 500; }
         .cat-container { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
         .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
         .cat-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.3s, box-shadow 0.3s; display: block; }
-        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #e67e22;}
+        .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); border: 3px solid #D4941A;}
         .cat-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
         .cat-card-body { padding: 1.2rem; }
-        .cat-badge { display: inline-block; background: #fff5ef; color: #e67e22; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
+        .cat-badge { display: inline-block; background: #FFF8E1; color: #D4941A; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; text-decoration: none; cursor: pointer;}
         .cat-card h3 { font-size: 1.05rem; color: #222; margin-bottom: 0.5rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-card p { font-size: 0.9rem; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .cat-footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem 5%; margin-top: 3rem; }
-        .cat-footer a { color: #f39c12; text-decoration: none; }
-        .back-btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; background: #f39c12; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
-        .back-btn:hover { background: #e67e22; }
+        .cat-footer a { color: #F5B841; text-decoration: none; }
+        .back-btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; background: #F5B841; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .back-btn:hover { background: #D4941A; }
         .filter-bar { max-width: 1200px; margin: 0 auto; padding: 1.5rem 5%; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
         .filter-btn { padding: 0.4rem 1rem; border: 2px solid #ddd; background: #fff; border-radius: 20px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
-        .filter-btn:hover { border-color: #f39c12; color: #f39c12; }
-        .filter-btn.active { background: #f39c12; color: #fff; border-color: #f39c12; }
+        .filter-btn:hover { border-color: #F5B841; color: #F5B841; }
+        .filter-btn.active { background: #F5B841; color: #fff; border-color: #F5B841; }
         .cat-card.hidden { display: none; }
 </style>
 
@@ -104,7 +104,7 @@ body { font-size: 1.05rem; line-height: 1.8; }
 </head>
 <body>
     <nav class="cat-nav">
-        <a href="index.html" class="logo">🐾 ZooTecture 入梯毛孩</a>
+        <a href="index.html" class="logo"><img src="images/logo.webp" alt="ZooTecture" style="height:24px;width:24px;border-radius:50%;object-fit:cover;vertical-align:middle;display:inline;"> ZooTecture 入梯毛孩</a>
         <div class="links">
             <a href="index.html">首頁</a>
             <a href="blog.html">全部文章</a>
@@ -326,20 +326,20 @@ body { font-size: 1.05rem; line-height: 1.8; }
     </footer>
 
     <!-- Internal Linking Footer -->
-    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+    <div style="background:#1a1a2e; color:#ddd; padding:2rem 5%; margin-top:3rem; text-align:center;">
         <div style="max-width:800px; margin:0 auto;">
             <p style="margin-bottom:1rem; font-size:0.9rem;">
-                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
-                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
-                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
-                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
-                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
-                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
-                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
-                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
-                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+                <a href="index.html" style="color:#F5B841;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#F5B841;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#F5B841;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#F5B841;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#F5B841;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#F5B841;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#F5B841;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#F5B841;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#F5B841;">RSS訂閱</a>
             </p>
-            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+            <p style="font-size:0.95rem; opacity:1;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
         </div>
     </div>
 

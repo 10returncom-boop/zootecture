@@ -47,12 +47,12 @@ body { font-size: 1.05rem; line-height: 1.8;
         /* 標題開頭橘圓點 */
         h1::before, h2::before, h3::before {
             content: "●";
-            color: #e67e22;
+            color: #D4941A;
             margin-right: 8px;
         }
         /* hover橘色規則 */
         h1:hover, h2:hover, .logo a:hover, .dropdown-btn:hover, h4:hover, p:hover {
-            color: #e67e22;
+            color: #D4941A;
             transition: color 0.3s ease;
         }
         .card-content h3:hover {
@@ -81,11 +81,11 @@ body { font-size: 1.05rem; line-height: 1.8;
             bottom: -3px;
             width: 0;
             height: 2px;
-            background-color: #e67e22;
+            background-color: #D4941A;
             transition: width 0.3s ease;
         }
         a:hover, .sidebar-box a:hover, .blog-extra a:hover, .nav-link a:hover {
-            color: #e67e22;
+            color: #D4941A;
         }
         a:hover::after, .sidebar-box a:hover::after, .blog-extra a:hover::after, .nav-link a:hover::after {
             width: 100%;
@@ -126,7 +126,7 @@ body { font-size: 1.05rem; line-height: 1.8;
             white-space: nowrap;
         }
         .logo-text a:hover {
-            color: #e67e22 !important;
+            color: #D4941A !important;
         }
         .nav-link {
             display: flex;
@@ -178,7 +178,7 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
         .dropdown-menu a:hover {
             background: #fff8e8;
-            color: #e67e22 !important;
+            color: #D4941A !important;
         }
         .dropdown-menu a::after {
             content: "";
@@ -188,7 +188,7 @@ body { font-size: 1.05rem; line-height: 1.8;
             bottom: 8px;
             width: 0;
             height: 2px;
-            background-color: #e67e22;
+            background-color: #D4941A;
             transition: width 0.3s ease;
         }
         .dropdown-menu a:hover::after {
@@ -382,7 +382,7 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
     
 /* === Unified Site Navigation === */
-.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #ff6b35, #f7931e); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
@@ -399,24 +399,24 @@ body { font-size: 1.05rem; line-height: 1.8;
 @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 .dropdown-header { padding: 16px 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; border-radius: 16px 16px 0 0; position: sticky; top: 0; z-index: 1; }
 .dd-title { font-weight: 700; color: #333; font-size: 0.95rem; }
-.view-all { color: #ff6b35; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.view-all { color: #F5B841; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
 .view-all:hover { text-decoration: underline; }
 .dropdown-cats { padding: 8px; }
 .cat-accordion { border-bottom: 1px solid #f0f0f0; }
 .cat-accordion:last-child { border-bottom: none; }
 .cat-toggle { width: 100%; background: none; border: none; padding: 12px 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; border-radius: 10px; transition: background 0.15s; text-align: left; }
-.cat-toggle:hover { background: #fff8f0; }
+.cat-toggle:hover { background: #FFF8E1; }
 .cat-icon { font-size: 1.4rem; flex-shrink: 0; }
 .cat-info { flex: 1; display: flex; flex-direction: column; }
 .cat-name { font-weight: 600; color: #333; font-size: 0.95rem; }
 .cat-count { font-size: 0.75rem; color: #999; }
 .cat-arrow { color: #ccc; font-size: 0.7rem; transition: transform 0.2s; flex-shrink: 0; }
-.cat-accordion.open .cat-arrow { transform: rotate(90deg); color: #ff6b35; }
+.cat-accordion.open .cat-arrow { transform: rotate(90deg); color: #F5B841; }
 .cat-content { display: none; padding: 0 14px 14px 50px; }
 .cat-accordion.open .cat-content { display: block; animation: fadeIn 0.2s; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 .cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
-.cat-view-all { color: #ff6b35; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
+.cat-view-all { color: #F5B841; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
 .cat-view-all:hover { text-decoration: underline; }
 .mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
 /* Mobile */
@@ -424,10 +424,10 @@ body { font-size: 1.05rem; line-height: 1.8;
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
   .site-nav.show { display: flex; }
   .nav-link { color: #333; width: 100%; padding: 12px 16px; }
-  .nav-link:hover { background: #fff8f0; }
+  .nav-link:hover { background: #FFF8E1; }
   .dropdown { width: 100%; }
   .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
-  .dropbtn:hover { background: #fff8f0; }
+  .dropbtn:hover { background: #FFF8E1; }
   .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
@@ -436,9 +436,9 @@ body { font-size: 1.05rem; line-height: 1.8;
 
 /* Dropdown link colors */
 .dropdown-content a { color: #333 !important; text-decoration: none; }
-.dropdown-content a:hover { color: #ff6b35 !important; }
-.cat-view-all { color: #ff6b35 !important; }
-.view-all { color: #ff6b35 !important; }
+.dropdown-content a:hover { color: #F5B841 !important; }
+.cat-view-all { color: #F5B841 !important; }
+.view-all { color: #F5B841 !important; }
 .cat-name { color: #333 !important; }
 .cat-count { color: #999 !important; }
 .cat-desc { color: #666 !important; }
@@ -448,8 +448,8 @@ body { font-size: 1.05rem; line-height: 1.8;
         <style>
         .card-count {
             display: inline-block;
-            background: #fff5ef;
-            color: #e67e22;
+            background: #FFF8E1;
+            color: #D4941A;
             font-size: 12px;
             padding: 2px 10px;
             border-radius: 12px;
@@ -469,7 +469,7 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
         
 /* === Unified Site Navigation === */
-.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #ff6b35, #f7931e); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+.site-header { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #F5B841, #E8A317); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .site-logo { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .site-logo .paw { font-size: 1.5rem; }
@@ -486,24 +486,24 @@ body { font-size: 1.05rem; line-height: 1.8;
 @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 .dropdown-header { padding: 16px 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; border-radius: 16px 16px 0 0; position: sticky; top: 0; z-index: 1; }
 .dd-title { font-weight: 700; color: #333; font-size: 0.95rem; }
-.view-all { color: #ff6b35; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.view-all { color: #F5B841; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
 .view-all:hover { text-decoration: underline; }
 .dropdown-cats { padding: 8px; }
 .cat-accordion { border-bottom: 1px solid #f0f0f0; }
 .cat-accordion:last-child { border-bottom: none; }
 .cat-toggle { width: 100%; background: none; border: none; padding: 12px 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; border-radius: 10px; transition: background 0.15s; text-align: left; }
-.cat-toggle:hover { background: #fff8f0; }
+.cat-toggle:hover { background: #FFF8E1; }
 .cat-icon { font-size: 1.4rem; flex-shrink: 0; }
 .cat-info { flex: 1; display: flex; flex-direction: column; }
 .cat-name { font-weight: 600; color: #333; font-size: 0.95rem; }
 .cat-count { font-size: 0.75rem; color: #999; }
 .cat-arrow { color: #ccc; font-size: 0.7rem; transition: transform 0.2s; flex-shrink: 0; }
-.cat-accordion.open .cat-arrow { transform: rotate(90deg); color: #ff6b35; }
+.cat-accordion.open .cat-arrow { transform: rotate(90deg); color: #F5B841; }
 .cat-content { display: none; padding: 0 14px 14px 50px; }
 .cat-accordion.open .cat-content { display: block; animation: fadeIn 0.2s; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 .cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
-.cat-view-all { color: #ff6b35; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
+.cat-view-all { color: #F5B841; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
 .cat-view-all:hover { text-decoration: underline; }
 .mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
 /* Mobile */
@@ -511,10 +511,10 @@ body { font-size: 1.05rem; line-height: 1.8;
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
   .site-nav.show { display: flex; }
   .nav-link { color: #333; width: 100%; padding: 12px 16px; }
-  .nav-link:hover { background: #fff8f0; }
+  .nav-link:hover { background: #FFF8E1; }
   .dropdown { width: 100%; }
   .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
-  .dropbtn:hover { background: #fff8f0; }
+  .dropbtn:hover { background: #FFF8E1; }
   .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
   .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
@@ -523,9 +523,9 @@ body { font-size: 1.05rem; line-height: 1.8;
 
 /* Dropdown link colors */
 .dropdown-content a { color: #333 !important; text-decoration: none; }
-.dropdown-content a:hover { color: #ff6b35 !important; }
-.cat-view-all { color: #ff6b35 !important; }
-.view-all { color: #ff6b35 !important; }
+.dropdown-content a:hover { color: #F5B841 !important; }
+.cat-view-all { color: #F5B841 !important; }
+.view-all { color: #F5B841 !important; }
 .cat-name { color: #333 !important; }
 .cat-count { color: #999 !important; }
 .cat-desc { color: #666 !important; }
@@ -593,7 +593,7 @@ body { font-size: 1.05rem; line-height: 1.8;
 <body>
     <!-- 導航：圖片+文字同一行 -->
     <header class="site-header"><div class="header-inner">
-<a href="index.html" class="site-logo"><span class="paw">🐾</span>ZooTecture 入梯毛孩</a>
+<a href="index.html" class="site-logo"><img src="images/logo.webp" alt="ZooTecture 入梯毛孩" style="height:36px;width:36px;border-radius:50%;object-fit:cover;vertical-align:middle;">ZooTecture 入梯毛孩</a>
 <nav class="site-nav">
 <a href="index.html" class="nav-link">首頁</a>
 <span class="nav-sep">|</span>
@@ -607,77 +607,77 @@ body { font-size: 1.05rem; line-height: 1.8;
 <a href="blog.html#all-posts" class="view-all">查看全部文章 →</a>
 </div>
 <div class="dropdown-cats" style="padding:12px;">
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">萌寵日常</span>
 <span style="font-size:0.75rem; color:#999;">20篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">可愛療癒的寵物日常故事</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">貓咪物語</span>
 <span style="font-size:0.75rem; color:#999;">35篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">貓咪護理、行為與品種指南</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">狗狗日記</span>
 <span style="font-size:0.75rem; color:#999;">36篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">狗狗訓練、健康與品種介紹</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">異寵世界</span>
 <span style="font-size:0.75rem; color:#999;">5篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">爬蟲、小型哺乳動物等另類寵物</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">寵物健康</span>
 <span style="font-size:0.75rem; color:#999;">43篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">疾病預防、醫療護理與營養</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">寵物教育</span>
 <span style="font-size:0.75rem; color:#999;">35篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">訓練方法、行為矯正與飼養知識</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">寵物空間規劃</span>
 <span style="font-size:0.75rem; color:#999;">50篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">居家空間設計、收納與寵物友善裝修</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">居家設計</span>
 <span style="font-size:0.75rem; color:#999;">6篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">寵物友善居家佈置與收納</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">戶外探險</span>
 <span style="font-size:0.75rem; color:#999;">7篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">帶寵物旅行、露營與戶外活動</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">節日寵物</span>
 <span style="font-size:0.75rem; color:#999;">7篇</span>
 </div>
 <div style="font-size:0.82rem; color:#666; margin-top:2px;">節日慶祝與寵物安全須知</div>
 </a>
-<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#fff8f0\'" onmouseout="this.style.background=\'transparent\'">
+<a href="blog.html#categories" style="display:block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#333; transition:background 0.15s; margin-bottom:2px;" onmouseover="this.style.background=\'#FFF8E1\'" onmouseout="this.style.background=\'transparent\'">
 <div style="display:flex; justify-content:space-between; align-items:center;">
 <span style="font-weight:600; font-size:0.95rem;">寵物藝術</span>
 <span style="font-size:0.75rem; color:#999;">6篇</span>
@@ -727,7 +727,7 @@ body { font-size: 1.05rem; line-height: 1.8;
                         <p><strong>可信（Trustworthiness）：</strong>我們標註每篇文章的資訊來源，醫療相關內容皆經過獸醫顧問審閱。我們不販賣恐懼、不推銷未經證實的「秘方」，所有建議皆以<strong>科學實證</strong>為基礎。如果文章有誤，我們公開更正並記錄更新日期。</p>
                         <p style="margin-top:1rem; color:#666; font-size:0.95rem;">📚 參考來源：American Veterinary Medical Association (AVMA)、ASPCA Animal Poison Control、International Association of Animal Behavior Consultants (IAABC)、台灣獸醫師公會全國聯合會。</p>
                     </div>
-                    <button onclick="toggleEeat()" id="eeat-btn" style="margin-top:1rem; background:none; color:#ff6b35; border:2px solid #ff6b35; padding:0.5rem 1.5rem; border-radius:8px; cursor:pointer; font-size:1rem; font-weight:600; transition:all 0.2s;">展開更多 ▼</button>
+                    <button onclick="toggleEeat()" id="eeat-btn" style="margin-top:1rem; background:none; color:#F5B841; border:2px solid #F5B841; padding:0.5rem 1.5rem; border-radius:8px; cursor:pointer; font-size:1rem; font-weight:600; transition:all 0.2s;">展開更多 ▼</button>
                 </div>
             </section>
 
@@ -855,20 +855,20 @@ body { font-size: 1.05rem; line-height: 1.8;
 
 
     <!-- Internal Linking Footer -->
-    <div style="background:#1a1a2e; color:#aaa; padding:2rem 5%; margin-top:3rem; text-align:center;">
+    <div style="background:#1a1a2e; color:#ddd; padding:2rem 5%; margin-top:3rem; text-align:center;">
         <div style="max-width:800px; margin:0 auto;">
-            <p style="margin-bottom:1rem; font-size:0.9rem;">
-                <a href="index.html" style="color:#f39c12;">首頁</a> ｜ 
-                <a href="blog.html" style="color:#f39c12;">全部文章</a> ｜ 
-                <a href="pet-space.html" style="color:#f39c12;">寵物空間規劃</a> ｜ 
-                <a href="pet-health.html" style="color:#f39c12;">寵物健康</a> ｜ 
-                <a href="pet-education.html" style="color:#f39c12;">寵物教育</a> ｜ 
-                <a href="dog-diary.html" style="color:#f39c12;">狗狗日記</a> ｜ 
-                <a href="cat-story.html" style="color:#f39c12;">貓咪物語</a> ｜ 
-                <a href="sitemap.xml" style="color:#f39c12;">網站地圖</a> ｜ 
-                <a href="rss.xml" style="color:#f39c12;">RSS訂閱</a>
+            <p style="margin-bottom:1rem; font-size:1rem;">
+                <a href="index.html" style="color:#F5B841;">首頁</a> ｜ 
+                <a href="blog.html" style="color:#F5B841;">全部文章</a> ｜ 
+                <a href="pet-space.html" style="color:#F5B841;">寵物空間規劃</a> ｜ 
+                <a href="pet-health.html" style="color:#F5B841;">寵物健康</a> ｜ 
+                <a href="pet-education.html" style="color:#F5B841;">寵物教育</a> ｜ 
+                <a href="dog-diary.html" style="color:#F5B841;">狗狗日記</a> ｜ 
+                <a href="cat-story.html" style="color:#F5B841;">貓咪物語</a> ｜ 
+                <a href="sitemap.xml" style="color:#F5B841;">網站地圖</a> ｜ 
+                <a href="rss.xml" style="color:#F5B841;">RSS訂閱</a>
             </p>
-            <p style="font-size:0.8rem; opacity:0.7;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+            <p style="font-size:0.95rem; opacity:1;">© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
         </div>
     </div>
 
