@@ -126,7 +126,6 @@ body { margin: 0; padding: 0; font-size: 1.05rem; line-height: 1.8; }
 .cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
 .cat-view-all { color: #F5B841; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
 .cat-view-all:hover { text-decoration: underline; }
-.mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
 /* Mobile */
 @media (max-width: 768px) {
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
@@ -137,7 +136,6 @@ body { margin: 0; padding: 0; font-size: 1.05rem; line-height: 1.8; }
   .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
   .dropbtn:hover { background: #FFF8E1; }
   .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
-  .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
 
@@ -332,7 +330,7 @@ footer a, footer a:link, footer a:visited { color: #F5B841 !important; }
 </div>
 </div>
 </nav>
-<button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
 </div></header>
 <main class="container"><article>
 <div class="post-header"><span class="post-category">寵物空間規劃</span><h1 class="post-title">工業風寵物空間設計：粗獷與個性的寵物樂園</h1>
@@ -403,10 +401,6 @@ function toggleCat(index, event) {
   var content = document.getElementById("cat-content-" + index);
   var accordion = content.parentElement;
   accordion.classList.toggle("open");
-}
-function toggleMobileMenu() {
-  var nav = document.querySelector(".site-nav");
-  nav.classList.toggle("show");
 }
 document.addEventListener("click", function(e) {
   var dd = document.getElementById("catDropdown");

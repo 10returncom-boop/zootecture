@@ -418,7 +418,6 @@ body { font-size: 1.05rem; line-height: 1.8; background: #fff; margin: 0; paddin
 .cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
 .cat-view-all { color: #F5B841; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
 .cat-view-all:hover { text-decoration: underline; }
-.mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
 /* Mobile */
 @media (max-width: 768px) {
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
@@ -429,7 +428,6 @@ body { font-size: 1.05rem; line-height: 1.8; background: #fff; margin: 0; paddin
   .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
   .dropbtn:hover { background: #FFF8E1; }
   .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
-  .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
 .nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
@@ -514,7 +512,6 @@ footer a, footer a:link, footer a:visited { color: #F5B841 !important; }
 .cat-desc { color: #666; font-size: 0.85rem; margin: 0 0 8px; line-height: 1.5; }
 .cat-view-all { color: #F5B841; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
 .cat-view-all:hover { text-decoration: underline; }
-.mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
 /* Mobile */
 @media (max-width: 768px) {
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); gap: 4px; }
@@ -525,7 +522,6 @@ footer a, footer a:link, footer a:visited { color: #F5B841 !important; }
   .dropbtn { width: 100%; justify-content: space-between; color: #333; background: #f8f9fa; }
   .dropbtn:hover { background: #FFF8E1; }
   .dropdown-content { position: static; width: 100%; margin-top: 4px; box-shadow: none; border: 1px solid #eee; max-height: 60vh; }
-  .mobile-menu-btn { display: block; }
   .site-logo { font-size: 1.1rem; }
 }
 .nav-sep { color: rgba(255,255,255,0.5); margin: 0 4px; font-weight: 300; }
@@ -710,7 +706,7 @@ footer a, footer a:link, footer a:visited { color: #F5B841 !important; }
 </div>
 </div>
 </nav>
-<button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
 </div></header>
     <!-- Banner -->
     <div class="banner" id="home" style="width:100%;height:60vh;min-height:400px;background:url('./images/banner.webp') center/cover;display:flex;align-items:flex-end;">
@@ -892,10 +888,6 @@ function toggleDropdown() {
   var btn = dd.previousElementSibling;
   dd.classList.toggle("show");
   btn.classList.toggle("active");
-}
-function toggleMobileMenu() {
-  var nav = document.querySelector(".site-nav");
-  nav.classList.toggle("show");
 }
 document.addEventListener("click", function(e) {
   var dd = document.getElementById("catDropdown");
