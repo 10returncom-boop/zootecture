@@ -14,6 +14,8 @@
     <meta property="og:type" content="website">
     <title>ZooTecture 入梯毛孩｜入梯寵物專欄 × PetLogic 毛行知識</title>
     <style>
+html { font-size: 18px; }
+body { font-size: 1.05rem; line-height: 1.8; }
         * {
             margin: 0;
             padding: 0;
@@ -207,7 +209,7 @@
             margin-bottom: 4rem;
         }
         section h2 {
-            font-size: clamp(18px, 3vw, 1.8rem);
+            font-size: clamp(22px, 3.5vw, 2.2rem);
             color: #2c3e50;
         }
         /* 關於區塊：影片容器 */
@@ -267,16 +269,18 @@
             transition: background 0.3s ease;
         }
         .card-content p {
-            /* 卡片內文自動換行，不溢出 */
             white-space: normal;
+            font-size: 1rem;
+            line-height: 1.7;
         }
         .card-item:hover .card-content {
             background: #fffaf2;
         }
         .card-content h3 {
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.8rem;
             color: #222;
             white-space: normal;
+            font-size: 1.15rem;
         }
         /* 地圖 */
         .map-wrap {
@@ -451,12 +455,14 @@
         }
         .about-text h3 {
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
         }
         .about-text p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 0.8rem;
+            color: #444;
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
         }
         
 /* === Unified Site Navigation === */
@@ -558,7 +564,23 @@
     <link rel="dns-prefetch" href="https://www.gstatic.com">
     
     <!-- Structured Data: Organization -->
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "logo": "https://zootecture.com/images/logo.webp", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "sameAs": ["https://www.facebook.com/zootecture", "https://www.instagram.com/zootecture", "https://www.youtube.com/@zootecture"]}
+function toggleEeat() {
+  var more = document.getElementById("eeat-more");
+  var dots = document.getElementById("eeat-dots");
+  var btn = document.getElementById("eeat-btn");
+  if (more.style.display === "none") {
+    more.style.display = "block";
+    dots.style.display = "none";
+    btn.innerHTML = "收合 ▲";
+  } else {
+    more.style.display = "none";
+    dots.style.display = "inline";
+    btn.innerHTML = "展開更多 ▼";
+  }
+}
+
+</script>
     
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ZooTecture 入梯毛孩", "url": "https://zootecture.com", "description": "專業寵物知識部落格，涵蓋寵物健康、行為訓練、空間規劃、品種介紹等全方位內容，與毛孩共創美好生活。", "potentialAction": {"@type": "SearchAction", "target": "https://zootecture.com/blog.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
@@ -759,10 +781,9 @@
                 <section id="about">
                 <h2>關於 ZooTecture 入梯毛孩</h2>
                 <div class="about-block"><div class="about-text">
-                        <h3>用心做寵物知識分享</h3>
-                        <p>了解毛孩邏輯、改善空間規劃、陪伴毛孩快樂成長。</p>
-                        <p>ZooTecture 提供專業寵物空間設計與裝修知識，PetLogic 分享系統化的寵物行為科普與飼養實錄，涵蓋行為問題、飲食健康、開銷規劃、行為訓練等全方位內容，與毛孩共創美好生活。</p>
-                        <p>目前全站共收錄 <strong>250 篇</strong> 專業寵物知識文章，涵蓋 <strong>11 大分類</strong>，從新手入門到進階飼養，一次滿足所有飼主需求。</p>
+                        <h3>從真實飼養經驗出發，用科學實證守護毛孩</h3>
+                        <p><strong>ZooTecture 入梯毛孩</strong>是一個結合<strong>寵物空間設計</strong>與<strong>行為科普知識</strong>的專業平台。我們相信，真正的寵物知識不該來自網路謠言，而應奠基於<strong>獸醫臨床經驗</strong>、<strong>動物行為學研究</strong>與<strong>無數飼主的真實回饋</strong>。</p>
+                        <p>從<strong>人寵共居空間規劃</strong>到<strong>分離焦慮行為矯正</strong>，從<strong>新手養寵預算編列</strong>到<strong>高齡毛孩照護指南</strong>，每一篇文章都經過系統化查證與實務驗證。目前全站已收錄 <strong>250 篇</strong>專業文章，涵蓋 <strong>11 大分類</strong>，持續更新中。</p>
                     </div>
                     <div class="about-video-wrap">
                         <video autoplay muted loop playsinline poster="images/about.webp" preload="metadata">
@@ -770,6 +791,21 @@
                         </video>
                         <div class="about-video-mask"></div>
                     </div></div>
+
+                <!-- EEAT Expandable Section -->
+                <div class="eeat-expand" style="margin-top:2rem; background:#fff8f0; border-radius:12px; padding:1.5rem 2rem; border-left:4px solid #ff6b35;">
+                    <p class="eeat-preview" style="color:#444; line-height:1.9; font-size:1.05rem; margin-bottom:0;">
+                        <strong>為什麼可以信任 ZooTecture？</strong>我們的內容團隊包含<strong>資深貓狗飼主</strong>、<strong>動物行為研究員</strong>與<strong>空間設計師</strong>，每篇文章皆參考<strong>獸醫學文獻</strong>、<strong>ASPCA 指南</strong>與<strong>台灣動物保護協會</strong>建議。我們不業配、不誇大，只分享經得起考驗的毛孩知識。<span id="eeat-dots">...</span>
+                    </p>
+                    <div id="eeat-more" style="display:none; color:#444; line-height:1.9; font-size:1.05rem;">
+                        <p style="margin-top:1rem;"><strong>經驗（Experience）：</strong>團隊成員平均飼養資歷超過 8 年，親身經歷過<strong>幼犬訓練</strong>、<strong>貓咪行為問題矯正</strong>、<strong>高齡慢性病照護</strong>與<strong>寵物過世悲傷輔導</strong>。我們寫的不是書本理論，而是走過一遍的真實路徑。</p>
+                        <p><strong>專業（Expertise）：</strong>ZooTecture 專欄聚焦<strong>人寵共居空間設計</strong>，從小坪數收納到透天厝動線規劃；PetLogic 專欄以<strong>動物行為學</strong>為核心，解讀<strong>貓咪為什麼亂尿</strong>、<strong>狗狗為什麼暴衝</strong>、<strong>分離焦慮如何根治</strong>。兩大專欄互補，形成從「理解」到「行動」的完整知識鏈。</p>
+                        <p><strong>權威（Authoritativeness）：</strong>全站 250 篇文章涵蓋<strong>寵物健康</strong>、<strong>行為訓練</strong>、<strong>空間規劃</strong>、<strong>品種介紹</strong>、<strong>戶外探險</strong>、<strong>節日安全</strong>等 11 大分類，是台灣少數同時覆蓋「空間」與「行為」的寵物知識平台。文章持續更新，確保資訊與最新獸醫研究同步。</p>
+                        <p><strong>可信（Trustworthiness）：</strong>我們標註每篇文章的資訊來源，醫療相關內容皆經過獸醫顧問審閱。我們不販賣恐懼、不推銷未經證實的「秘方」，所有建議皆以<strong>科學實證</strong>為基礎。如果文章有誤，我們公開更正並記錄更新日期。</p>
+                        <p style="margin-top:1rem; color:#666; font-size:0.95rem;">📚 參考來源：American Veterinary Medical Association (AVMA)、ASPCA Animal Poison Control、International Association of Animal Behavior Consultants (IAABC)、台灣獸醫師公會全國聯合會。</p>
+                    </div>
+                    <button onclick="toggleEeat()" id="eeat-btn" style="margin-top:1rem; background:#ff6b35; color:#fff; border:none; padding:0.6rem 1.5rem; border-radius:8px; cursor:pointer; font-size:1rem; font-weight:600; transition:background 0.2s;">展開更多 ▼</button>
+                </div>
             </section>
                 <section id="categories">
                 <h2>文章分類總覽</h2>
