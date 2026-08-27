@@ -212,7 +212,7 @@ body { font-size: 1.05rem; line-height: 1.8;
         }
         section h2 {
             font-size: clamp(22px, 3.5vw, 2.2rem);
-            color: #2c3e50;
+            color: #1a1a2e;
         }
         /* 關於區塊：影片容器 */
         .about-block {
@@ -274,6 +274,7 @@ body { font-size: 1.05rem; line-height: 1.8;
             white-space: normal;
             font-size: 1rem;
             line-height: 1.7;
+            color: #444;
         }
         .card-item:hover .card-content {
             background: #fffaf2;
@@ -461,7 +462,7 @@ body { font-size: 1.05rem; line-height: 1.8;
             font-size: 1.3rem;
         }
         .about-text p {
-            color: #444;
+            color: #222;
             line-height: 1.9;
             margin-bottom: 1rem;
             font-size: 1.05rem;
@@ -782,197 +783,125 @@ body { font-size: 1.05rem; line-height: 1.8;
 
                 <!-- EEAT Expandable Section -->
                 <div class="eeat-expand" style="margin-top:2rem; background:#fff8f0; border-radius:12px; padding:1.5rem 2rem; border-left:4px solid #ff6b35;">
-                    <p class="eeat-preview" style="color:#444; line-height:1.9; font-size:1.05rem; margin-bottom:0;">
+                    <p class="eeat-preview" style="color:#222; line-height:1.9; font-size:1.05rem; margin-bottom:0;">
                         <strong>為什麼可以信任 ZooTecture？</strong>我們的內容團隊包含<strong>資深貓狗飼主</strong>、<strong>動物行為研究員</strong>與<strong>空間設計師</strong>，每篇文章皆參考<strong>獸醫學文獻</strong>、<strong>ASPCA 指南</strong>與<strong>台灣動物保護協會</strong>建議。我們不業配、不誇大，只分享經得起考驗的毛孩知識。<span id="eeat-dots">...</span>
                     </p>
-                    <div id="eeat-more" style="display:none; color:#444; line-height:1.9; font-size:1.05rem;">
+                    <div id="eeat-more" style="display:none; color:#222; line-height:1.9; font-size:1.05rem;">
                         <p style="margin-top:1rem;"><strong>經驗（Experience）：</strong>團隊成員平均飼養資歷超過 8 年，親身經歷過<strong>幼犬訓練</strong>、<strong>貓咪行為問題矯正</strong>、<strong>高齡慢性病照護</strong>與<strong>寵物過世悲傷輔導</strong>。我們寫的不是書本理論，而是走過一遍的真實路徑。</p>
                         <p><strong>專業（Expertise）：</strong>ZooTecture 專欄聚焦<strong>人寵共居空間設計</strong>，從小坪數收納到透天厝動線規劃；PetLogic 專欄以<strong>動物行為學</strong>為核心，解讀<strong>貓咪為什麼亂尿</strong>、<strong>狗狗為什麼暴衝</strong>、<strong>分離焦慮如何根治</strong>。兩大專欄互補，形成從「理解」到「行動」的完整知識鏈。</p>
                         <p><strong>權威（Authoritativeness）：</strong>全站 250 篇文章涵蓋<strong>寵物健康</strong>、<strong>行為訓練</strong>、<strong>空間規劃</strong>、<strong>品種介紹</strong>、<strong>戶外探險</strong>、<strong>節日安全</strong>等 11 大分類，是台灣少數同時覆蓋「空間」與「行為」的寵物知識平台。文章持續更新，確保資訊與最新獸醫研究同步。</p>
                         <p><strong>可信（Trustworthiness）：</strong>我們標註每篇文章的資訊來源，醫療相關內容皆經過獸醫顧問審閱。我們不販賣恐懼、不推銷未經證實的「秘方」，所有建議皆以<strong>科學實證</strong>為基礎。如果文章有誤，我們公開更正並記錄更新日期。</p>
-                        <p style="margin-top:1rem; color:#666; font-size:0.95rem;">📚 參考來源：American Veterinary Medical Association (AVMA)、ASPCA Animal Poison Control、International Association of Animal Behavior Consultants (IAABC)、台灣獸醫師公會全國聯合會。</p>
+                        <p style="margin-top:1rem; color:#444; font-size:0.95rem;">📚 參考來源：American Veterinary Medical Association (AVMA)、ASPCA Animal Poison Control、International Association of Animal Behavior Consultants (IAABC)、台灣獸醫師公會全國聯合會。</p>
                     </div>
                     <button onclick="toggleEeat()" id="eeat-btn" style="margin-top:1rem; background:#ff6b35; color:#fff; border:none; padding:0.6rem 1.5rem; border-radius:8px; cursor:pointer; font-size:1rem; font-weight:600; transition:background 0.2s;">展開更多 ▼</button>
                 </div>
             </section>
                 <section id="categories">
                 <h2>文章分類總覽</h2>
-                <p style="text-align:center; color:#666; margin-bottom:2rem; font-size:1.1rem;">11 大分類 · 250 篇專業寵物知識文章</p>
-                <div class="cat-accordion-list" style="max-width:900px; margin:0 auto;">
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(0)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="最新文章" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">最新文章</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">最新上架</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-0" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-0" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">最新上架的寵物知識文章，掌握第一手毛孩資訊</p>
-                            <a href="blog.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                <p style="text-align:center; color:#555; margin-bottom:2rem; font-size:1.1rem;">11 大分類 · 250 篇專業寵物知識文章</p>
+                <div class="card-grid">
+                    <a href="blog.html" class="card-item">
+                    <img src="images/331_pets-skiresort-dog-sledding-snow-trails.webp" alt="ZooTecture 🆕 最新文章 - 最新上架的寵物知識文章，掌握第一手毛孩資訊" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>🆕 最新文章</h3>
+                        <p>最新上架的寵物知識文章，掌握第一手毛孩資訊</p>
+                        <span class="card-count">最新上架</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(1)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="萌寵日常" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">萌寵日常</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">20篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-1" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-1" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">可愛療癒的寵物日常故事</p>
-                            <a href="pet-daily.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="cat-story.html" class="card-item">
+                    <img src="images/119_pet-education-cat-body-language-emotions.webp" alt="ZooTecture 貓咪物語 - 貓咪護理、行為與品種指南" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>貓咪物語</h3>
+                        <p>貓咪護理、行為與品種指南</p>
+                        <span class="card-count">貓咪護理全攻略</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(2)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/119_pet-education-cat-body-language-emotions.webp" alt="貓咪物語" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">貓咪物語</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">35篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-2" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-2" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">貓咪護理、行為與品種指南</p>
-                            <a href="cat-story.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="dog-diary.html" class="card-item">
+                    <img src="images/101_pet-golden-retriever-puppy-learning-swim.webp" alt="ZooTecture 狗狗日記 - 狗狗訓練、健康與品種介紹" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>狗狗日記</h3>
+                        <p>狗狗訓練、健康與品種介紹</p>
+                        <span class="card-count">狗狗照護百科</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(3)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/101_pet-golden-retriever-puppy-learning-swim.webp" alt="狗狗日記" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">狗狗日記</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">36篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-3" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-3" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">狗狗訓練、健康與品種介紹</p>
-                            <a href="dog-diary.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-health.html" class="card-item">
+                    <img src="images/111_pet-education-dental-health-anatomy.webp" alt="ZooTecture 寵物健康 - 疾病預防、醫療護理與營養" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物健康</h3>
+                        <p>疾病預防、醫療護理與營養</p>
+                        <span class="card-count">健康醫療知識</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(4)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="異寵世界" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">異寵世界</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">5篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-4" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-4" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">爬蟲、小型哺乳動物等另類寵物</p>
-                            <a href="pet-daily.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-education.html" class="card-item">
+                    <img src="images/114_pet-education-dog-training-hand-signals.webp" alt="ZooTecture 寵物教育 - 訓練方法、行為矯正與飼養知識" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物教育</h3>
+                        <p>訓練方法、行為矯正與飼養知識</p>
+                        <span class="card-count">行為訓練指南</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(5)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/111_pet-education-dental-health-anatomy.webp" alt="寵物健康" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">寵物健康</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">43篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-5" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-5" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">疾病預防、醫療護理與營養</p>
-                            <a href="pet-health.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-space.html" class="card-item">
+                    <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="ZooTecture 寵物空間規劃 - 居家空間設計、收納與寵物友善裝修" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物空間規劃</h3>
+                        <p>居家空間設計、收納與寵物友善裝修</p>
+                        <span class="card-count">空間設計實錄</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(6)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/114_pet-education-dog-training-hand-signals.webp" alt="寵物教育" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">寵物教育</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">35篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-6" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-6" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">訓練方法、行為矯正與飼養知識</p>
-                            <a href="pet-education.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="home-design.html" class="card-item">
+                    <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="ZooTecture 居家設計 - 寵物友善居家佈置與收納" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>居家設計</h3>
+                        <p>寵物友善居家佈置與收納</p>
+                        <span class="card-count">居家佈置靈感</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(7)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/151_pet-space-aerial-view-room-layout-zones.webp" alt="寵物空間規劃" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">寵物空間規劃</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">50篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-7" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-7" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">居家空間設計、收納與寵物友善裝修</p>
-                            <a href="pet-space.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/141_pet-outdoor-dog-hiking-mountain-backpack.webp" alt="ZooTecture 戶外探險 - 帶寵物旅行、露營與戶外活動" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>戶外探險</h3>
+                        <p>帶寵物旅行、露營與戶外活動</p>
+                        <span class="card-count">旅行露營攻略</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(8)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/155_pet-space-home-office-under-desk-pet-corner.webp" alt="居家設計" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">居家設計</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">6篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-8" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-8" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">寵物友善居家佈置與收納</p>
-                            <a href="home-design.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="outdoor-adventure.html" class="card-item">
+                    <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="ZooTecture 節日寵物 - 節日慶祝與寵物安全須知" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>節日寵物</h3>
+                        <p>節日慶祝與寵物安全須知</p>
+                        <span class="card-count">節日安全須知</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(9)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/141_pet-outdoor-dog-hiking-mountain-backpack.webp" alt="戶外探險" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">戶外探險</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">7篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-9" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-9" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">帶寵物旅行、露營與戶外活動</p>
-                            <a href="outdoor-adventure.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-art.html" class="card-item">
+                    <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="ZooTecture 寵物藝術 - 寵物肖像、攝影與創作" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>寵物藝術</h3>
+                        <p>寵物肖像、攝影與創作</p>
+                        <span class="card-count">創作攝影靈感</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(10)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/121_pet-holiday-christmas-dog-sweater-tree.webp" alt="節日寵物" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">節日寵物</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">7篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-10" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-10" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">節日慶祝與寵物安全須知</p>
-                            <a href="outdoor-adventure.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-daily.html" class="card-item">
+                    <img src="images/102_pet-hedgehog-fairy-garden-miniature.webp" alt="ZooTecture 異寵世界 - 爬蟲、小型哺乳動物等另類寵物" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>異寵世界</h3>
+                        <p>爬蟲、小型哺乳動物等另類寵物</p>
+                        <span class="card-count">另類寵物指南</span>
                     </div>
-                    <div class="cat-acc-item" style="border:1px solid #e8e8e8; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                        <button class="cat-acc-toggle" onclick="toggleCatAcc(11)" style="width:100%; background:none; border:none; padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem; cursor:pointer; text-align:left; transition:background 0.2s;">
-                            <img src="images/131_pet-art-watercolor-golden-retriever.webp" alt="寵物藝術" style="width:60px; height:60px; object-fit:cover; border-radius:10px; flex-shrink:0;">
-                            <div style="flex:1;">
-                                <div style="font-size:1.15rem; font-weight:700; color:#222;">寵物藝術</div>
-                                <div style="font-size:0.9rem; color:#999; margin-top:2px;">6篇</div>
-                            </div>
-                            <span class="cat-acc-arrow" id="cat-acc-arrow-11" style="color:#ff6b35; font-size:1.2rem; transition:transform 0.3s; flex-shrink:0;">▶</span>
-                        </button>
-                        <div class="cat-acc-content" id="cat-acc-content-11" style="display:none; padding:0 1.5rem 1.2rem 88px; border-top:1px solid #f0f0f0; animation:fadeIn 0.2s;">
-                            <p style="color:#555; line-height:1.8; margin-bottom:0.8rem; font-size:1rem;">寵物肖像、攝影與創作</p>
-                            <a href="pet-art.html" style="display:inline-block; color:#ff6b35; text-decoration:none; font-weight:600; font-size:0.95rem;">查看此分類全部文章 →</a>
-                        </div>
+                </a>
+                    <a href="pet-daily.html" class="card-item">
+                    <img src="images/43_american-shorthair-tabby-cat-playing-yarn.webp" alt="ZooTecture 萌寵日常 - 可愛療癒的寵物日常故事" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>萌寵日常</h3>
+                        <p>可愛療癒的寵物日常故事</p>
+                        <span class="card-count">療癒日常故事</span>
                     </div>
+                </a>
                 </div>
             </section>
                 <section id="zootecture" style="background:#f8f9fa; padding:3rem 5%;">
                 <div style="max-width:1200px; margin:0 auto;">
                     <h2>入梯寵物專欄 ZooTecture</h2>
-                    <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
+                    <p style="color:#333; line-height:1.9; margin-bottom:1.5rem; font-size:1.05rem;">
                         ZooTecture 是<strong>入梯毛孩</strong>旗下的寵物空間設計專欄，專注於<strong>人寵共居空間規劃</strong>、<strong>寵物友善裝修</strong>與<strong>收納動線設計</strong>。從小公寓到透天厝，從貓跳台到狗狗活動區，我們提供系統化的空間解決方案，讓你的家同時滿足人類與毛孩的需求。
                     </p>
                     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
@@ -986,7 +915,7 @@ body { font-size: 1.05rem; line-height: 1.8;
             <section id="petlogic" style="padding:3rem 5%;">
                 <div style="max-width:1200px; margin:0 auto;">
                     <h2>PetLogic 毛行知識</h2>
-                    <p style="color:#555; line-height:1.8; margin-bottom:1.5rem;">
+                    <p style="color:#333; line-height:1.9; margin-bottom:1.5rem; font-size:1.05rem;">
                         PetLogic 是<strong>入梯毛孩</strong>的毛孩行為科普平台，以<strong>科學實證</strong>為基礎，解讀寵物行為背後的邏輯。從<strong>分離焦慮</strong>到<strong>亂咬亂尿</strong>，從<strong>覓食天性</strong>到<strong>社交階級</strong>，我們用淺顯易懂的方式，讓你真正理解毛孩在想什麼，進而建立和諧的人寵關係。
                     </p>
                     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
@@ -1023,17 +952,6 @@ body { font-size: 1.05rem; line-height: 1.8;
 
 
 <script>
-function toggleCatAcc(index) {
-  var content = document.getElementById("cat-acc-content-" + index);
-  var arrow = document.getElementById("cat-acc-arrow-" + index);
-  if (content.style.display === "none" || content.style.display === "") {
-    content.style.display = "block";
-    arrow.style.transform = "rotate(90deg)";
-  } else {
-    content.style.display = "none";
-    arrow.style.transform = "rotate(0deg)";
-  }
-}
 function toggleEeat() {
   var more = document.getElementById("eeat-more");
   var dots = document.getElementById("eeat-dots");
