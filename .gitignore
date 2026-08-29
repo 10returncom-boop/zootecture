@@ -1,5 +1,6 @@
 # Git ignore for zootecture site
 zootecture-main/
+_備用資料區/
 *.pyc
 __pycache__/
 .DS_Store
