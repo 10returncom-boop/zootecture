@@ -229,7 +229,7 @@ def generate_post_html(article, related_articles):
 </main>
 
 <footer class="site-footer">
-<p>&copy; {datetime.now().year} ZooTecture 入梯毛孩 | 共 250+ 篇寵物知識文章</p>
+<p>&copy; {datetime.now().year} ZooTecture 入梯毛孩</p>
 <p><a href="../index.html">首頁</a> | <a href="../blog.html">文章總覽</a> | <a href="../sitemap.xml">Sitemap</a></p>
 </footer>
 
