@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>站內搜尋｜ZooTecture 入梯毛孩</title>
+<meta name="description" content="ZooTecture 入梯毛孩站內搜尋，快速查找寵物知識文章、分類與關鍵字。">
+<link rel="canonical" href="https://zootecture.com/search.html">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;background:#f7f9fa;color:#333;line-height:1.7;}
+.site-header{background:#2c3e50;color:#fff;}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 16px;min-height:60px;}
+.site-logo{color:#fff;font-weight:700;display:flex;align-items:center;gap:8px;text-decoration:none;}
+.site-nav{display:flex;gap:6px;flex-wrap:nowrap;}
+.nav-link{color:#fff;text-decoration:none;padding:8px 14px;border-radius:8px;font-weight:500;white-space:nowrap;}
+.nav-link:hover{background:rgba(255,255,255,0.2);}
+.container{max-width:1000px;margin:0 auto;padding:2.5rem 5%;}
+h1{font-size:1.6rem;color:#2c3e50;border-left:5px solid #e67e22;padding-left:12px;margin-bottom:1rem;}
+.search-box{display:flex;gap:10px;margin-bottom:2rem;}
+.search-box input{flex:1;padding:13px 16px;border:2px solid #ddd;border-radius:10px;font-size:1rem;}
+.search-box input:focus{border-color:#e67e22;outline:none;}
+.search-box button{background:#e67e22;color:#fff;border:none;border-radius:10px;padding:0 22px;font-size:1rem;font-weight:600;cursor:pointer;}
+.result{background:#fff;border-radius:12px;padding:1rem 1.2rem;margin-bottom:0.8rem;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+.result a{color:#2c3e50;text-decoration:none;font-weight:700;font-size:1.05rem;}
+.result a:hover{color:#e67e22;}
+.result .cat{font-size:0.75rem;color:#e67e22;font-weight:600;}
+.result .desc{font-size:0.9rem;color:#666;margin-top:4px;}
+.empty{color:#999;text-align:center;padding:2rem 0;}
+footer{background:#1a1a2e;color:#fff;padding:2rem 5%;text-align:center;}
+footer a{color:#F5B841;text-decoration:none;margin:0 6px;}
+</style>
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:url" content="https://zootecture.com/search.html">
+<meta property="og:site_name" content="ZooTecture 入梯毛孩">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://zootecture.com/images/social-logo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ZooTecture 入梯毛孩","alternateName":["zootecture","PetLogic 毛行知識","入梯城"],"description":"ZooTecture 入梯毛孩（PetLogic 毛行知識）是台灣的寵物知識部落格，提供貓狗飼養照護、寵物行為矯正、寵物健康營養、居家寵物空間規劃與正向訓練教學，與毛孩共創美好生活。本站與建築設計、動物園規劃或其他同名 ZooTecture 網站無關。","url":"https://zootecture.com/","logo":"https://zootecture.com/images/logo.webp","disambiguatingDescription":"台灣寵物知識部落格，與建築／動物園設計領域的同名名稱無關。","areaServed":"TW","sameAs":["https://www.facebook.com/zootecture","https://www.instagram.com/zootecture","https://www.youtube.com/@zootecture"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","availableLanguage":["zh-Hant"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ZooTecture 入梯毛孩","alternateName":["PetLogic 毛行知識","入梯城"],"url":"https://zootecture.com/","description":"ZooTecture 入梯毛孩（PetLogic 毛行知識）是台灣的寵物知識部落格，提供貓狗飼養照護、寵物行為矯正、寵物健康營養、居家寵物空間規劃與正向訓練教學，與毛孩共創美好生活。本站與建築設計、動物園規劃或其他同名 ZooTecture 網站無關。","inLanguage":"zh-Hant","potentialAction":{"@type":"SearchAction","target":"https://zootecture.com/search.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<a href="index.html" class="site-logo"><img src="images/logo.webp" alt="ZooTecture 入梯毛孩" style="height:36px;width:36px;border-radius:50%;object-fit:cover;">ZooTecture 入梯毛孩</a>
+<nav class="site-nav">
+<a href="index.html" class="nav-link">首頁</a>
+<a href="shop.html" class="nav-link">商品</a>
+<a href="blog.html" class="nav-link">文章</a>
+</nav>
+</div></header>
+
+<div class="container">
+<h1>站內文章搜尋</h1>
+<div class="search-box">
+<input id="q" type="text" placeholder="輸入關鍵字，例如：貓咪、狗狗、空間規劃、飼料…" autofocus>
+<button onclick="doSearch()">搜尋</button>
+</div>
+<div id="results"><div class="empty">請輸入關鍵字開始搜尋。</div></div>
+</div>
+
+<footer>
+<p><a href="index.html">首頁</a> ｜ <a href="shop.html">商品</a> ｜ <a href="blog.html">文章</a> ｜ <a href="sitemap.xml">網站地圖</a> ｜ <a href="rss.xml">RSS訂閱</a></p>
+<p>© 2026 ZooTecture 入梯毛孩｜寵物知識部落格</p>
+</footer>
+
+<script>
+var API_BASE = 'https://zootecture-api.10return-com.workers.dev'; /* 自訂網域路由設定後改為 '' */
+function doSearch(){
+  var q=document.getElementById('q').value.trim();
+  var box=document.getElementById('results');
+  if(!q){ box.innerHTML='<div class="empty">請輸入關鍵字開始搜尋。</div>'; return; }
+  box.innerHTML='<div class="empty">搜尋中…</div>';
+  fetch(API_BASE+'/api/search?q='+encodeURIComponent(q)).then(function(r){return r.json();}).then(function(d){
+    if(!d.ok){ box.innerHTML='<div class="empty">搜尋服務未上線（請確認已部署 Worker /api/search）。</div>'; return; }
+    if(!d.data.length){ box.innerHTML='<div class="empty">找不到「'+q+'」相關文章。</div>'; return; }
+    var h='';
+    d.data.forEach(function(a){
+      h+='<div class="result"><div class="cat">'+a.category+'</div>'
+        +'<a href="'+a.url+'">'+a.title+'</a>'
+        +'<div class="desc">'+(a.meta_desc||'')+'</div></div>';
+    });
+    box.innerHTML=h;
+  }).catch(function(){ box.innerHTML='<div class="empty">無法連線搜尋服務（請確認已部署 Worker /api/search）。</div>'; });
+}
+document.getElementById('q').addEventListener('keydown',function(e){ if(e.key==='Enter') doSearch(); });
+</script>
+</body>
+</html>
